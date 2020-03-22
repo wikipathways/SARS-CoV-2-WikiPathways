@@ -1,0 +1,191 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix pav:   <http://purl.org/pav/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix freq:  <http://purl.org/cld/freq/> .
+@prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
+@prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wprdf: <http://rdf.wikipathways.org/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<http://identifiers.org/ncbigene/43740570>
+        a                              wp:GeneProduct , wp:DataNode ;
+        rdfs:label                     "envelope protein"^^xsd:string ;
+        dc:identifier                  <http://identifiers.org/ncbigene/43740570> ;
+        dc:source                      "Entrez Gene"^^xsd:string ;
+        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/32159237> ;
+        dcterms:identifier             "43740570"^^xsd:string ;
+        dcterms:isPartOf               <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/aa466> .
+
+<http://identifiers.org/ncbigene/43740576>
+        a                   wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "ORF10"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/ncbigene/43740576> ;
+        dc:source           "Entrez Gene"^^xsd:string ;
+        dcterms:identifier  "43740576"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/c5b6c> .
+
+<http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/idd0556868>
+        a                              wp:Interaction ;
+        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/32142651> ;
+        dcterms:isPartOf               <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Interaction/id6f7ddc17> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Interaction/idd0556868> ;
+        wp:participants                <http://identifiers.org/ensembl/ENSG00000184012> , <http://identifiers.org/ncbigene/43740568> .
+
+<http://identifiers.org/ncbigene/43740575>
+        a                              wp:GeneProduct , wp:DataNode ;
+        rdfs:label                     "nucleocapsid phosphoprotein"^^xsd:string ;
+        dc:identifier                  <http://identifiers.org/ncbigene/43740575> ;
+        dc:source                      "Entrez Gene"^^xsd:string ;
+        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/32159237> ;
+        dcterms:identifier             "43740575"^^xsd:string ;
+        dcterms:isPartOf               <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/ff3a1> .
+
+<http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id596b2488>
+        a                              wp:Interaction ;
+        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/32132184> , <http://identifiers.org/pubmed/32142651> , <http://identifiers.org/pubmed/32125455> ;
+        dcterms:isPartOf               <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Interaction/id596b2488> ;
+        wp:participants                <http://identifiers.org/ncbigene/59272> , <http://identifiers.org/ncbigene/43740568> .
+
+<http://identifiers.org/pubmed/32142651>
+        a                 wp:PublicationReference ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32142651> .
+
+<http://identifiers.org/ncbigene/43740573>
+        a                   wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "ORF7a"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/ncbigene/43740573> ;
+        dc:source           "Entrez Gene"^^xsd:string ;
+        dcterms:identifier  "43740573"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/ff49a> .
+
+<http://identifiers.org/pubmed/32132184>
+        a                 wp:PublicationReference ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32132184> .
+
+<http://identifiers.org/ncbigene/59272>
+        a                   wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "ACE2"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/ncbigene/59272> ;
+        dc:source           "Entrez Gene"^^xsd:string ;
+        dcterms:identifier  "59272"^^xsd:string ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id596b2488> , <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/e154d> .
+
+<http://identifiers.org/wikipathways/WP4846>
+        pav:hasVersion  <http://identifiers.org/wikipathways/WP4846_r109431> .
+
+<http://identifiers.org/wikipathways/WP4846_r109431>
+        a                      wp:Pathway , skos:Collection ;
+        dc:identifier          <http://identifiers.org/wikipathways/WP4846> ;
+        dc:source              "WikiPathways"^^xsd:string ;
+        dc:title               "SARS-CoV-2 and COVID-19 Pathway"@en ;
+        dcterms:description    "Collaborative project for curation biological processes involved in the COVID-19 disease after SARS-Cov-2 infection.\n\nEditing this pathway is (at this moment) coordinated via the wikipathways.slack.com #sarscov2 channel.\n\nThe large viral Spike (S) protein (surface glycoprotein) needs to be primed by host proteases. For SARS-CoV-2 that is the serine protease TMPRSS2. After priming the virus uses the host's ACE2 receptor for entry (Hoffmann et al 2020). The ACE2 receptor interaction was also suggested as the start of specfic lung damaging effects\n " ;
+        dcterms:identifier     "WP4846"^^xsd:string ;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_0050117> ;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4846_r109431> ;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/DOID_0050117> ;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:organismName        "Homo sapiens"^^xsd:string ;
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000013> ;
+        foaf:page              <http://www.wikipathways.org/instance/WP4846_r109431> .
+
+<http://identifiers.org/pubmed/32159237>
+        a                 wp:PublicationReference ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32159237> .
+
+<http://identifiers.org/ncbigene/43740569>
+        a                   wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "ORF3a"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/ncbigene/43740569> ;
+        dc:source           "Entrez Gene"^^xsd:string ;
+        dcterms:identifier  "43740569"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/ac4ba> .
+
+<http://identifiers.org/ncbigene/43740572>
+        a                   wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "ORF6"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/ncbigene/43740572> ;
+        dc:source           "Entrez Gene"^^xsd:string ;
+        dcterms:identifier  "43740572"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/bce0b> .
+
+<http://identifiers.org/ncbigene/43740578>
+        a                              wp:GeneProduct , wp:DataNode ;
+        rdfs:label                     "orf1ab"^^xsd:string , "orf1a"^^xsd:string ;
+        dc:identifier                  <http://identifiers.org/ncbigene/43740578> ;
+        dc:source                      "Entrez Gene"^^xsd:string ;
+        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/32169673> ;
+        dcterms:identifier             "43740578"^^xsd:string ;
+        dcterms:isPartOf               <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/eb8ab> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/cda8f> .
+
+<http://identifiers.org/pubmed/32125455>
+        a                 wp:PublicationReference ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32125455> .
+
+<http://identifiers.org/ensembl/ENSG00000184012>
+        a                              wp:GeneProduct , wp:DataNode ;
+        rdfs:label                     "TMPRSS2"^^xsd:string ;
+        dc:identifier                  <http://identifiers.org/ensembl/ENSG00000184012> ;
+        dc:source                      "Ensembl"^^xsd:string ;
+        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/32142651> ;
+        dcterms:identifier             "ENSG00000184012"^^xsd:string ;
+        dcterms:isPartOf               <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/idd0556868> , <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/cf321> .
+
+<http://identifiers.org/ncbigene/43740568>
+        a                              wp:DataNode , wp:GeneProduct ;
+        rdfs:label                     "surface glycoprotein"^^xsd:string ;
+        dc:identifier                  <http://identifiers.org/ncbigene/43740568> ;
+        dc:source                      "Entrez Gene"^^xsd:string ;
+        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/32155444> , <http://identifiers.org/pubmed/32159237> ;
+        dcterms:identifier             "43740568"^^xsd:string ;
+        dcterms:isPartOf               <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/idd0556868> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id596b2488> , <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/cc4b9> .
+
+<http://identifiers.org/ncbigene/43740571>
+        a                              wp:GeneProduct , wp:DataNode ;
+        rdfs:label                     "membrane glycoprotein"^^xsd:string ;
+        dc:identifier                  <http://identifiers.org/ncbigene/43740571> ;
+        dc:source                      "Entrez Gene"^^xsd:string ;
+        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/32159237> ;
+        dcterms:identifier             "43740571"^^xsd:string ;
+        dcterms:isPartOf               <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/d614c> .
+
+<http://identifiers.org/ncbigene/43740577>
+        a                   wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "ORF8"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/ncbigene/43740577> ;
+        dc:source           "Entrez Gene"^^xsd:string ;
+        dcterms:identifier  "43740577"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/c6537> .
+
+<http://identifiers.org/pubmed/32169673>
+        a                 wp:PublicationReference ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32169673> .
+
+<http://identifiers.org/pubmed/32155444>
+        a                 wp:PublicationReference ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32155444> .
