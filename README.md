@@ -7,7 +7,7 @@ These zip files are created/updated with these commands:
 
 ```shell
 zip wikipathways-SARS-CoV-2-rdf-authors.zip authors/*
-zip wikipathways-SARS-CoV-2-wp-rdf.zip wp/Human/*
+zip wikipathways-SARS-CoV-2-rdf-wp.zip wp/Human/*
 ```
 
 The Turtle in the `wp/Human` folder is created with WPRDF from the
