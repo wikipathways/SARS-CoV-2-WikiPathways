@@ -20,6 +20,7 @@ mkdir -p /tmp/OPSBRIDGEDB
 echo "bridgefiles=/path/to/where/the/bridge/files/are" > /tmp/OPSBRIDGEDB/config.properties
 mvn clean test -Dtest=org.wikipathways.wp2rdf.WP4846Test
 mvn clean test -Dtest=org.wikipathways.wp2rdf.WP4853Test
+mvn clean test -Dtest=org.wikipathways.wp2rdf.WP4860Test
 ```
 
 To download the BridgeDb identifier mapping files, download them from
