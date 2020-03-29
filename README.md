@@ -6,7 +6,13 @@ The following steps can be taken to update the content of this repository.
 
 ## Step 1: Update the GPML files
 
-To do...
+Use the `getPathway.sh` bash script to download the pathways of interest:
+
+```shell
+bash getPathway.sh WP4846
+bash getPathway.sh WP4853
+bash getPathway.sh WP4860
+```
 
 ## Step 2: Create the RDF (Turtle)
 
