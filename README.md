@@ -14,11 +14,24 @@ bash getPathway.sh WP4853
 bash getPathway.sh WP4860
 ```
 
-## Step 2: Create the RDF (Turtle)
+## Step 2: Update the author information
+
+This is currently a manual step. Check all pathways and see if the authors are updated,
+and update or create the appropriate files in the `authors/` folder. Even the order of
+the authors can have changed.
+
+## Step 3: Create the RDF (Turtle)
 
 The Turtle in the `wp/Human` folder is created with WPRDF from the
 [SARS-CoV-2-WikiPathways](https://github.com/wikipathways/GPML2RDF/tree/SARS-CoV-2-WikiPathways)
-branch. Generate the Turtle with these two Maven commands and manually copy/paste the content
+branch. Check out the repository like this:
+
+```shell
+git clone git@github.com:wikipathways/GPML2RDF.git
+git checkout -b SARS-CoV-2-WikiPathways
+```
+
+Generate the Turtle with these two Maven commands and manually copy/paste the content
 into the `.ttl` files in this repository (GNU/Linux):
 
 ```shell
@@ -34,7 +47,7 @@ To download the BridgeDb identifier mapping files, download them from
 and save them in the `/path/to/where/the/bridge/files/are` folder, mathching what
 you entered in the `config.properties` file above.
 
-## Step 3: Make the zip files
+## Step 4: Make the zip files
 
 Both the source files are in this repository, as are the `.zip` files to be used by the bot.
 These zip files are created/updated with these commands:
