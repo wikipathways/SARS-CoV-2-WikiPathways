@@ -1,3 +1,4 @@
+Running org.wikipathways.wp2rdf.WP4853Test
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix pav:   <http://purl.org/pav/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
@@ -15,17 +16,20 @@
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
 <http://identifiers.org/wikipathways/WP4853_r109431>
-        a                    wp:Pathway , skos:Collection ;
-        dc:identifier        <http://identifiers.org/wikipathways/WP4853> ;
-        dc:source            "WikiPathways"^^xsd:string ;
-        dc:title             "Coronavirus lipid metabolism"@en ;
-        dcterms:description  "Lipid metabolism alternations that are related to infection by the corona virus. The information comes from the Yan et al. in 2019 in the bibliography, particularly Figure 5.\nFig 5 is in turn taken from https://www.kegg.jp/kegg-bin/show_pathway?map00591, which is a very simplified pathway, omitting several steps" ;
-        dcterms:identifier   "WP4853"^^xsd:string ;
-        dcterms:references   <http://identifiers.org/pubmed/30654597> ;
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4853_r109431> ;
-        wp:organism          <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
-        wp:organismName      "Homo sapiens"^^xsd:string ;
-        foaf:page            <http://www.wikipathways.org/instance/WP4853_r109431> .
+        a                      wp:Pathway , skos:Collection ;
+        dc:identifier          <http://identifiers.org/wikipathways/WP4853> ;
+        dc:source              "WikiPathways"^^xsd:string ;
+        dc:title               "Linoleic acid metabolism known to be affected by coronavirus infection"@en ;
+        dcterms:description    "Lipid metabolism alternations that are related to infection by corona viruses. The information comes from the Yan et al. in 2019 in the bibliography, particularly Figure 5. That paper uses the HCoV-229E virus as a model. Note that that is different from the virus that causes the 2020 pandemic SARS-CoV-2. Fig 5 is in turn taken from https://www.kegg.jp/kegg-bin/show_pathway?map00591, which is a very simplified pathway, omitting several steps\nThe paper mentions that after virus infection many of the metabolites in his figure are increased in concentration. Interestingly, exogenous supplement of LA or AA in HCoV-229E-infected cells significantly suppressed HCoV-229E virus replication and this also happened in MERS-CoV." ;
+        dcterms:identifier     "WP4853"^^xsd:string ;
+        dcterms:references     <http://identifiers.org/pubmed/30654597> ;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_934> ;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4853_r109431> ;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/PW_0000010> ;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:organismName        "Homo sapiens"^^xsd:string ;
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000010> ;
+        foaf:page              <http://www.wikipathways.org/instance/WP4853_r109431> .
 
 <http://identifiers.org/lipidmaps/LMFA01030001>
         a                   wp:Metabolite , wp:DataNode ;
@@ -53,6 +57,18 @@
         dcterms:identifier  "1.14.19.3"^^xsd:string ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id8ca14613> , <http://identifiers.org/wikipathways/WP4853_r109431> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4853_r109431/DataNode/d2e0b> .
+
+<http://identifiers.org/chebi/CHEBI:37739>
+        a                   wp:Metabolite , wp:DataNode ;
+        rdfs:label          "Glycerophospholipids"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/chebi/CHEBI:37739> ;
+        dc:source           "ChEBI"^^xsd:string ;
+        dcterms:identifier  "CHEBI:37739"^^xsd:string ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id4fda8300> , <http://identifiers.org/wikipathways/WP4853_r109431> ;
+        wp:bdbChEBI         <http://identifiers.org/chebi/CHEBI:37739> ;
+        wp:bdbLipidMaps     <http://identifiers.org/lipidmaps/LMGP> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q420004> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4853_r109431/DataNode/f34d0> .
 
 <http://identifiers.org/lipidmaps/LMFA01030158>
         a                   wp:Metabolite , wp:DataNode ;
@@ -136,7 +152,7 @@
         a                 wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4853_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4853_r109431/Interaction/id4fda8300> ;
-        wp:participants   <http://identifiers.org/lipidmaps/LMFA01030120> .
+        wp:participants   <http://identifiers.org/lipidmaps/LMFA01030120> , <http://identifiers.org/chebi/CHEBI:37739> .
 
 <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/ideb0617af>
         a                 wp:Interaction ;
@@ -188,13 +204,13 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q207688> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4853_r109431/DataNode/ecc95> .
 
-<http://identifiers.org/wikipathways/WP4853>
-        pav:hasVersion  <http://identifiers.org/wikipathways/WP4853_r109431> .
-
 <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/iddd1cfda4>
         a                 wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4853_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4853_r109431/Interaction/iddd1cfda4> .
+
+<http://identifiers.org/wikipathways/WP4853>
+        pav:hasVersion  <http://identifiers.org/wikipathways/WP4853_r109431> .
 
 <http://identifiers.org/brenda/3.1.1.4>
         a                   wp:GeneProduct , wp:DataNode ;
