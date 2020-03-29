@@ -2,13 +2,13 @@
 
 Temporary repository of RDF of selected pathways from WikiPathways, supporting the Wikidata bot.
 
-Both the source files are in this repository, as are the `.zip` files to be used by the bot.
-These zip files are created/updated with these commands:
+The following steps can be taken to update the content of this repository.
 
-```shell
-zip wikipathways-SARS-CoV-2-rdf-authors.zip authors/*
-zip wikipathways-SARS-CoV-2-rdf-wp.zip wp/Human/*
-```
+## Step 1: Update the GPML files
+
+To do...
+
+## Step 2: Create the RDF (Turtle)
 
 The Turtle in the `wp/Human` folder is created with WPRDF from the
 [SARS-CoV-2-WikiPathways](https://github.com/wikipathways/GPML2RDF/tree/SARS-CoV-2-WikiPathways)
@@ -28,4 +28,20 @@ To download the BridgeDb identifier mapping files, download them from
 and save them in the `/path/to/where/the/bridge/files/are` folder, mathching what
 you entered in the `config.properties` file above.
 
+## Step 3: Make the zip files
 
+Both the source files are in this repository, as are the `.zip` files to be used by the bot.
+These zip files are created/updated with these commands:
+
+```shell
+zip wikipathways-SARS-CoV-2-rdf-authors.zip authors/*
+zip wikipathways-SARS-CoV-2-rdf-wp.zip wp/Human/*
+```
+
+## Step 4: run the Wikidata bot
+
+To do ...
+
+## Step 5: Update the JSON/SVG for Wikidata
+
+The JSON/SVG used on Scholia needs updating. Check ... to ...
