@@ -35,8 +35,22 @@ Generate the Turtle with these two Maven commands and manually copy/paste the co
 into the `.ttl` files in this repository (GNU/Linux):
 
 ```shell
+cd GPML2RDF
 mkdir -p /tmp/OPSBRIDGEDB
 echo "bridgefiles=/path/to/where/the/bridge/files/are" > /tmp/OPSBRIDGEDB/config.properties
+cp WP2RDF
+cp ../../SARS-CoV-2-WikiPathways/gpml/* resources/.
+```
+
+If you added new pathways to the `SARS-CoV-2-WikiPathways` repository, then you need to
+add a new test for each of them, which includes a GPML file you just copied, and a
+copy of `org.wikipathways.wp2rdf.WP4846Test` for the new pathway.
+
+After that, you can run the JUnit test for each pathway to create the Turtle, that
+you need to copy/paste from the Maven command line output into the appropriate
+Turtle file in the `SARS-CoV-2-WikiPathways` repository:
+
+```shell
 mvn clean test -Dtest=org.wikipathways.wp2rdf.WP4846Test
 mvn clean test -Dtest=org.wikipathways.wp2rdf.WP4853Test
 mvn clean test -Dtest=org.wikipathways.wp2rdf.WP4860Test
