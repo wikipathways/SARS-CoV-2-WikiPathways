@@ -12,6 +12,12 @@ Use the `getPathway.sh` bash script to download the pathways of interest:
 bash getPathway.sh WP4846
 bash getPathway.sh WP4853
 bash getPathway.sh WP4860
+bash getPathway.sh WP4862
+bash getPathway.sh WP4861
+bash getPathway.sh WP4863
+bash getPathway.sh WP4864
+bash getPathway.sh WP4868
+bash getPathway.sh WP4869
 ```
 
 ## Step 2: Update the author information
