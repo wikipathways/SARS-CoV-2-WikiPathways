@@ -62,6 +62,12 @@ rm WP*.ttl
 bash createTurtle.sh WP4846
 bash createTurtle.sh WP4853
 bash createTurtle.sh WP4860
+bash createTurtle.sh WP4862
+bash createTurtle.sh WP4861
+bash createTurtle.sh WP4863
+bash createTurtle.sh WP4864
+bash createTurtle.sh WP4868
+bash createTurtle.sh WP4869
 cp WP*.ttl ../../SARS-CoV-2-WikiPathways/wp/Human/.
 ```
 
