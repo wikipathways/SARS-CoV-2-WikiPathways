@@ -88,7 +88,10 @@ zip wikipathways-SARS-CoV-2-rdf-wp.zip wp/Human/*
 
 ## Step 4: run the Wikidata bot
 
-To do ...
+Before you attempt to run the bot, make sure all publications are in Wikidata
+and with statements to list their PubMed identifiers.
+
+To do...
 
 ## Step 5: Update the JSON/SVG for Wikidata
 
