@@ -82,6 +82,7 @@ Both the source files are in this repository, as are the `.zip` files to be used
 These zip files are created/updated with these commands:
 
 ```shell
+rm wikipathways-SARS-CoV-2-rdf-*.zip
 zip wikipathways-SARS-CoV-2-rdf-authors.zip authors/*
 zip wikipathways-SARS-CoV-2-rdf-wp.zip wp/Human/*
 ```
