@@ -51,7 +51,7 @@
         dc:identifier          <http://identifiers.org/wikipathways/WP4868> ;
         dc:source              "WikiPathways"^^xsd:string ;
         dc:title               "Type I Interferon Induction and Signaling During SARS-CoV-2 Infection"@en ;
-        dcterms:description    "The induction of Type I interferons and signaling leading to the innate immune response during SARS-COV-2 infection. TLR7 MYD88-dependent signaling is inhibited at multiple steps by the SARS-CoV Papain-Like Protease (PLpro) domain of nsp3 (red oval). The signaling pathway is critical to induction of type I interferons (INF-I) via IRF3, AP-1 and NFkB transcription factors. INF-I triggers the JAK/STAT pathway leading to the induction of interferon-stimulated genes (ISGs), such as OAS and PKR, which go one to conduct the innate immune response. TREML4 has been shown to be necessary for MYD88 recruitment by TLR7 and STAT1 participation. The inhibition of SARS-CoV-2 PLpro by GRL0617 is proposed based on Ratia, et al. 2008 and 100% sequence identity between SARS-CoV and SARS-CoV-2 across all 13 residues of PLpro involved in binding GRL0617 (82.9% identity across 316 amino acids) as determined by the alignment of RefSeq YP_009725299.1 and PDB 3E9S." ;
+        dcterms:description    "The induction of Type I interferons and signaling leading to the innate immune response during SARS-COV-2 infection. TLR7 MYD88-dependent signaling is inhibited at multiple steps by the SARS-CoV Papain-Like Protease (PLpro) domain of nsp3 (red oval). The signaling pathway is critical to induction of type I interferons (INF-I) via IRF3, AP-1 and NFkB transcription factors. INF-I triggers the JAK/STAT pathway leading to the induction of interferon-stimulated genes (ISGs), such as OAS and PKR, which go one to conduct the innate immune response. TREML4 has been shown to be necessary for MYD88 recruitment by TLR7 and STAT1 participation. The inhibition of SARS-CoV-2 PLpro by GRL0617 is proposed based on Ratia, et al. 2008 and 100% sequence identity between SARS-CoV and SARS-CoV-2 across all 13 residues of PLpro involved in binding GRL0617 (82.9% identity across 316 amino acids) as determined by [https://alexanderpico.github.io/SARS-CoV-2_Alignments/#Nsp3_PLpro_domain the alignment of RefSeq YP_009725299.1 and PDB 3E9S]." ;
         dcterms:identifier     "WP4868"^^xsd:string ;
         dcterms:references     <http://identifiers.org/pubmed/31226023> ;
         wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/DOID_2945> ;
@@ -148,6 +148,15 @@
 
 <http://identifiers.org/wikipathways/WP4868>
         pav:hasVersion  <http://identifiers.org/wikipathways/WP4868_r109431> .
+
+<http://identifiers.org/refseq/QII57165.1>
+        a                   wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "nsp13"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/refseq/QII57165.1> ;
+        dc:source           "RefSeq"^^xsd:string ;
+        dcterms:identifier  "QII57165.1"^^xsd:string ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4868_r109431/WP/Interaction/id69ccff5a> , <http://identifiers.org/wikipathways/WP4868_r109431> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4868_r109431/DataNode/f1b6a> .
 
 <http://rdf.wikipathways.org/Pathway/WP4868_r109431/WP/Interaction/dabfe>
         a                 wp:Interaction ;
@@ -349,7 +358,7 @@
         dc:identifier       <http://identifiers.org/ensembl/ENSG00000183735> ;
         dc:source           "Ensembl"^^xsd:string ;
         dcterms:identifier  "ENSG00000183735"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4868_r109431> , <http://rdf.wikipathways.org/Pathway/WP4868_r109431/Complex/bc0e3> , <http://rdf.wikipathways.org/Pathway/WP4868_r109431/WP/Interaction/ef27c> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4868_r109431/WP/Interaction/id69ccff5a> , <http://identifiers.org/wikipathways/WP4868_r109431> , <http://rdf.wikipathways.org/Pathway/WP4868_r109431/Complex/bc0e3> , <http://rdf.wikipathways.org/Pathway/WP4868_r109431/WP/Interaction/ef27c> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000183735> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/29110> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/TBK1> ;
@@ -415,6 +424,12 @@
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/IKBKE> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/A0A075B7B4> , <http://identifiers.org/uniprot/A0A075B7D5> , <http://identifiers.org/uniprot/A0A075B7C7> , <http://identifiers.org/uniprot/Q14164> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4868_r109431/DataNode/cb0df> .
+
+<http://rdf.wikipathways.org/Pathway/WP4868_r109431/WP/Interaction/id69ccff5a>
+        a                 wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4868_r109431> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4868_r109431/Interaction/id69ccff5a> ;
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000183735> , <http://identifiers.org/refseq/QII57165.1> .
 
 <http://rdf.wikipathways.org/Pathway/WP4868_r109431/ComplexBinding/f5415>
         a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
