@@ -4,7 +4,7 @@
 
 Editing this pathway is (at this moment) coordinated via the wikipathways.slack.com #sarscov2 channel.
 
-The large viral Spike (S) protein (surface glycoprotein) needs to be primed by host proteases. For SARS-CoV-2 that is the serine protease TMPRSS2. After priming the virus uses the host's ACE2 receptor for entry (Hoffmann et al 2020). The ACE2 receptor interaction was also suggested as the start of specfic lung damaging effects
+The large viral Spike protein (S or surface glycoprotein) forms trimers. It interacts with the host's ACE2 receptor to establish binding  (Hoffmann et al 2020. To enter it needs to be primed by the host protease TMPRSS2 that splits the Spike protein into 2 peptides S1 and S2. S1 contains the ACE2 receptor binding site, S2 binds to the host cell membrane which leads to membrane fusion, the start of the uptake process. The ACE2 receptor interaction was also suggested as the start of specific lung-damaging effects.
  </Comment>
   <Graphics BoardWidth="1251.0" BoardHeight="805.3424377441406" />
   <DataNode TextLabel="SARS-CoV-2&#xA;proteins" GraphId="ba78c">
@@ -17,7 +17,7 @@ The large viral Spike (S) protein (surface glycoprotein) needs to be primed by h
     <Xref Database="" ID="" />
   </DataNode>
   <DataNode TextLabel="S2 subunit" GraphId="bdee3" Type="Protein">
-    <Graphics CenterX="796.5" CenterY="289.0" Width="71.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="854.0185185185182" CenterY="280.0092592592596" Width="71.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="" ID="" />
   </DataNode>
   <DataNode TextLabel="orf1ab" GraphId="cda8f" Type="Protein">
@@ -76,7 +76,7 @@ The large viral Spike (S) protein (surface glycoprotein) needs to be primed by h
     <Xref Database="Uniprot-TrEMBL" ID="P0DTC2" />
   </DataNode>
   <DataNode TextLabel="SARS-CoV-2&#xA;RNA" GraphId="e787b">
-    <Graphics CenterX="148.0" CenterY="83.75" Width="90.0" Height="43.5" ZOrder="32778" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="148.0" CenterY="83.75" Width="90.0" Height="43.50000000000001" ZOrder="32778" FontSize="12" Valign="Middle" />
     <Xref Database="Wikidata" ID="Q82069695" />
   </DataNode>
   <DataNode TextLabel="orf1" GraphId="a9a90" Type="GeneProduct">
@@ -119,13 +119,13 @@ The large viral Spike (S) protein (surface glycoprotein) needs to be primed by h
     <Graphics CenterX="148.0" CenterY="206.25" Width="90.0" Height="49.5" ZOrder="32789" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="43740568" />
   </DataNode>
-  <DataNode TextLabel="surface&#xA;glycoprotein" GraphId="e7798" Type="Protein">
+  <DataNode TextLabel="surface&#xA;glycoprotein S" GraphId="e7798" Type="Protein">
     <BiopaxRef>aa3</BiopaxRef>
     <BiopaxRef>e1a</BiopaxRef>
-    <Graphics CenterX="657.0" CenterY="188.25" Width="90.0" Height="49.5" ZOrder="32790" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="694.0" CenterY="191.25" Width="90.0" Height="49.5" ZOrder="32790" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="P0DTC2" />
   </DataNode>
-  <DataNode TextLabel="membrane&#xA;glycoprotein" GraphId="b3da4" Type="Protein">
+  <DataNode TextLabel="membrane&#xA;glycoprotein M" GraphId="b3da4" Type="Protein">
     <BiopaxRef>aa3</BiopaxRef>
     <Graphics CenterX="657.0" CenterY="265.25" Width="90.0" Height="49.5" ZOrder="32791" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="P0DTC5" />
@@ -205,31 +205,77 @@ The large viral Spike (S) protein (surface glycoprotein) needs to be primed by h
     <Graphics CenterX="521.0" CenterY="261.25" Width="90.0" Height="43.5" ZOrder="32827" FontSize="12" Valign="Middle" />
     <Xref Database="Wikidata" ID="Q82069695" />
   </DataNode>
-  <DataNode TextLabel="nucleocapsid&#xA;protein" GraphId="c6154" Type="Protein" GroupRef="cf207">
+  <DataNode TextLabel="nucleocapsid&#xA;protein N" GraphId="c6154" Type="Protein" GroupRef="cf207">
     <BiopaxRef>aa3</BiopaxRef>
     <Graphics CenterX="521.0" CenterY="214.75" Width="90.0" Height="49.5" ZOrder="32828" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="P0DTC9" />
   </DataNode>
-  <DataNode TextLabel="envelope&#xA;protein" GraphId="f6241" Type="Protein">
+  <DataNode TextLabel="envelope&#xA;protein E" GraphId="f6241" Type="Protein">
     <BiopaxRef>aa3</BiopaxRef>
     <Graphics CenterX="657.0" CenterY="328.75" Width="90.0" Height="49.5" ZOrder="32829" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="P0DTC4" />
   </DataNode>
+  <DataNode TextLabel="ORF10" GraphId="cdb2d" Type="Protein">
+    <Graphics CenterX="330.0" CenterY="491.5" Width="90.0" Height="25.0" ZOrder="32830" FontSize="12" Valign="Middle" />
+    <Xref Database="Uniprot-TrEMBL" ID="A0A663DJA2" />
+  </DataNode>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="193.0" Y="492.0" GraphRef="bc696" RelX="1.0" RelY="0.0" />
+      <Point X="285.0" Y="491.5" GraphRef="cdb2d" RelX="-1.0" RelY="0.0" ArrowHead="mim-transcription-translation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id254c7db4">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="193.0" Y="454.75" />
+      <Point X="285.0" Y="454.75" GraphRef="ff3a1" RelX="-1.0" RelY="0.0" ArrowHead="mim-transcription-translation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id31b492b0">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="193.0" Y="144.0" GraphRef="a9a90" RelX="1.0" RelY="0.0" />
+      <Point X="285.0" Y="144.0" GraphRef="eb8ab" RelX="-1.0" RelY="0.0" ArrowHead="mim-transcription-translation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id53ccbca1">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="193.0" Y="150.25" GraphRef="a9a90" RelX="1.0" RelY="0.5" />
+      <Point X="285.0" Y="169.0" GraphRef="cda8f" RelX="-1.0" RelY="0.0" ArrowHead="mim-transcription-translation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
   <Interaction GraphId="id596b2488">
     <BiopaxRef>dd6</BiopaxRef>
     <BiopaxRef>b8f</BiopaxRef>
     <BiopaxRef>af3</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="702.0" Y="188.25" GraphRef="e7798" RelX="1.0" RelY="0.0" />
+      <Point X="739.0" Y="191.25" GraphRef="e7798" RelX="1.0" RelY="0.0" />
       <Point X="812.0" Y="187.25" GraphRef="e154d" RelX="-1.0" RelY="0.0" ArrowHead="mim-binding" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id5c4ff7f0">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="193.0" Y="392.5" GraphRef="bafb8" RelX="1.0" RelY="0.0" />
+      <Point X="285.0" Y="392.5" GraphRef="ff49a" RelX="-1.0" RelY="0.0" ArrowHead="mim-transcription-translation" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction GraphId="id66bc3866">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="702.0" Y="200.625" GraphRef="e7798" RelX="1.0" RelY="0.5" />
-      <Point X="796.5" Y="276.5" GraphRef="bdee3" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+      <Point X="739.0" Y="203.625" GraphRef="e7798" RelX="1.0" RelY="0.5" />
+      <Point X="854.0185185185182" Y="267.5092592592596" GraphRef="bdee3" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
       <Anchor Position="0.5386153567834795" Shape="None" GraphId="f13fb" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id68553d54">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="193.0" Y="417.5" GraphRef="dd961" RelX="1.0" RelY="0.0" />
+      <Point X="285.0" Y="417.5" GraphRef="c6537" RelX="-1.0" RelY="0.0" ArrowHead="mim-transcription-translation" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -237,7 +283,28 @@ The large viral Spike (S) protein (surface glycoprotein) needs to be primed by h
     <BiopaxRef>af3</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="813.0" Y="228.0" GraphRef="cf321" RelX="-1.0" RelY="0.0" />
-      <Point X="752.8991512160388" Y="241.4924401959465" GraphRef="f13fb" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+      <Point X="800.950740388559" Y="238.03404309377441" GraphRef="f13fb" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id95aba954">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="193.0" Y="280.75" GraphRef="e1b6f" RelX="1.0" RelY="0.0" />
+      <Point X="285.0" Y="280.75" GraphRef="aa466" RelX="-1.0" RelY="0.0" ArrowHead="mim-transcription-translation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id9d2699b4">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="193.0" Y="206.25" GraphRef="b920a" RelX="1.0" RelY="0.0" />
+      <Point X="285.0" Y="206.25" GraphRef="cc4b9" RelX="-1.0" RelY="0.0" ArrowHead="mim-transcription-translation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="ida427ca0">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="193.0" Y="367.5" GraphRef="fc02d" RelX="1.0" RelY="0.0" />
+      <Point X="285.0" Y="367.5" GraphRef="bce0b" RelX="-1.0" RelY="0.0" ArrowHead="mim-transcription-translation" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -245,6 +312,20 @@ The large viral Spike (S) protein (surface glycoprotein) needs to be primed by h
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="490.0" Y="676.5" GraphRef="d244b" RelX="0.0" RelY="1.0" />
       <Point X="291.0" Y="750.3424377441406" GraphRef="bb606" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="idc3f0c926">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="193.0" Y="243.5" GraphRef="dc5e7" RelX="1.0" RelY="0.0" />
+      <Point X="285.0" Y="243.5" GraphRef="ac4ba" RelX="-1.0" RelY="0.0" ArrowHead="mim-transcription-translation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="idc79adab4">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="193.0" Y="330.25" GraphRef="d7b3e" RelX="1.0" RelY="0.0" />
+      <Point X="285.0" Y="330.25" GraphRef="d614c" RelX="-1.0" RelY="0.0" ArrowHead="mim-transcription-translation" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -383,54 +464,6 @@ The large viral Spike (S) protein (surface glycoprotein) needs to be primed by h
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yang Y</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ren L</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e1a">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32155444</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structure, Function, and Antigenicity of the SARS-CoV-2 Spike Glycoprotein.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Walls AC</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Park YJ</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tortorici MA</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wall A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">McGuire AT</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veesler D</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000013</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b8f">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32132184</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structural basis for the recognition of the SARS-CoV-2 by full-length human ACE2.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Science</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yan R</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhang Y</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li Y</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xia L</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guo Y</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhou Q</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="dd6">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32125455</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angiotensin-converting enzyme 2 (ACE2) as a SARS-CoV-2 receptor: molecular mechanisms and potential therapeutic target.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intensive Care Med</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhang H</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penninger JM</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li Y</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhong N</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slutsky AS</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease by infectious agent</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0050117</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
-    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="af3">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32142651</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -451,16 +484,11 @@ The large viral Spike (S) protein (surface glycoprotein) needs to be primed by h
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drosten C</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pöhlmann S</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d8f">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32130973</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A potential role for integrins in host cell entry by SARS-CoV-2.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antiviral Res</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sigrist CJ</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bridge A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Mercier P</bp:AUTHORS>
-    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease by infectious agent</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0050117</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="aa3">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32159237</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -472,5 +500,58 @@ The large viral Spike (S) protein (surface glycoprotein) needs to be primed by h
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fayez M</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Al-Nazawi M</bp:AUTHORS>
     </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d8f">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32130973</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A potential role for integrins in host cell entry by SARS-CoV-2.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antiviral Res</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sigrist CJ</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bridge A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Mercier P</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="dd6">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32125455</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angiotensin-converting enzyme 2 (ACE2) as a SARS-CoV-2 receptor: molecular mechanisms and potential therapeutic target.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intensive Care Med</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhang H</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penninger JM</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li Y</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhong N</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slutsky AS</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b8f">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32132184</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structural basis for the recognition of the SARS-CoV-2 by full-length human ACE2.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Science</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yan R</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhang Y</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li Y</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xia L</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guo Y</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhou Q</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e1a">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32155444</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structure, Function, and Antigenicity of the SARS-CoV-2 Spike Glycoprotein.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Walls AC</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Park YJ</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tortorici MA</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wall A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">McGuire AT</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veesler D</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000013</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
   </Biopax>
 </Pathway>
