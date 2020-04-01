@@ -80,7 +80,9 @@ cp WP*.ttl ../../SARS-CoV-2-WikiPathways/wp/Human/.
 To download the BridgeDb identifier mapping files, download them from
 [here](https://bridgedb.github.io/data/gene_database/)
 and save them in the `/path/to/where/the/bridge/files/are` folder, mathching what
-you entered in the `config.properties` file above.
+you entered in the `config.properties` file above. You also want
+to download the identifier mapping database for coronavirus
+genes and proteins.
 
 ## Step 4: Make the zip files
 
