@@ -20,6 +20,7 @@ bash getPathway.sh WP4868
 bash getPathway.sh WP4869
 bash getPathway.sh WP4799
 bash getPathway.sh WP4876
+bash getPathway.sh WP4877
 ```
 
 ## Step 2: Update the author information
