@@ -100,8 +100,27 @@ zip wikipathways-SARS-CoV-2-rdf-wp.zip wp/Human/*
 Before you attempt to run the bot, make sure all publications are in Wikidata
 and with statements to list their PubMed identifiers.
 
-To do...
+The bot is an adaption of the WikiPathways bot in the
+[github.com/SuLab/scheduled-bots/](https://github.com/SuLab/scheduled-bots.git)
+repository. You need, however, the `sars-cov-2-wikipathways-2`
+branch:
+
+```shell
+git clone https://github.com/SuLab/scheduled-bots.git
+cd scheduled-bots
+git checkout -b sars-cov-2-wikipathways-2
+```
+
+In the `scheduled_bots/wikipathways` folder in that repository you
+will find the bot:
+
+```shell
+python3 bot.py
+```
 
 ## Step 5: Update the JSON/SVG for Wikidata
 
-The JSON/SVG used on Scholia needs updating. Check ... to ...
+The JSON/SVG used on Scholia needs updating. A hook on this
+repository has been put in place and each time a commit is made,
+the JSON and SVG needed by Scholia are automatically updated.
+Thanks to Anders!
