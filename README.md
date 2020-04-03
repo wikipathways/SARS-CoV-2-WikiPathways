@@ -74,6 +74,7 @@ bash createTurtle.sh WP4869
 bash createTurtle.sh WP4799
 bash createTurtle.sh WP4876
 bash createTurtle.sh WP4877
+bash createTurtle.sh WP4880
 cp WP*.ttl ../../SARS-CoV-2-WikiPathways/wp/Human/.
 ```
 
