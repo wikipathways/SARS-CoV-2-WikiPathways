@@ -48,19 +48,18 @@ cd GPML2RDF
 mkdir -p /tmp/OPSBRIDGEDB
 echo "bridgefiles=/path/to/where/the/bridge/files/are" > /tmp/OPSBRIDGEDB/config.properties
 cp WP2RDF
-cp ../../SARS-CoV-2-WikiPathways/gpml/* resources/.
 ```
 
-If you added new pathways to the `SARS-CoV-2-WikiPathways` repository, then you need to
+If you add the new pathways to the `SARS-CoV-2-WikiPathways` repository, then you need to
 add a new test for each of them, which includes a GPML file you just copied, and a
 copy of `org.wikipathways.wp2rdf.WP4846Test` for the new pathway.
-
 After that, you can run the JUnit test for each pathway to create the Turtle, that
 you need to copy/paste from the Maven command line output into the appropriate
-Turtle file in the `SARS-CoV-2-WikiPathways` repository. With a `createTurtle.sh`
-helper script, we can do:
+Turtle file in the `SARS-CoV-2-WikiPathways` repository. Combined with the `createTurtle.sh`
+helper script, we can do these steps with:
 
 ```shell
+cp ../../SARS-CoV-2-WikiPathways/gpml/* resources/.
 rm WP*.ttl
 bash createTurtle.sh WP4846
 bash createTurtle.sh WP4853
