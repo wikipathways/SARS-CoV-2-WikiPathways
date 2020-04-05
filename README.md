@@ -22,6 +22,7 @@ bash getPathway.sh WP4799
 bash getPathway.sh WP4876
 bash getPathway.sh WP4877
 bash getPathway.sh WP4880
+bash getPathway.sh WP4883
 ```
 
 ## Step 2: Update the author information
@@ -75,6 +76,7 @@ bash createTurtle.sh WP4799
 bash createTurtle.sh WP4876
 bash createTurtle.sh WP4877
 bash createTurtle.sh WP4880
+bash createTurtle.sh WP4883
 cp WP*.ttl ../../SARS-CoV-2-WikiPathways/wp/Human/.
 ```
 
