@@ -62,7 +62,7 @@
         dc:identifier       <http://identifiers.org/ensembl/ENSG00000175224> ;
         dc:source           "Ensembl"^^xsd:string ;
         dcterms:identifier  "ENSG00000175224"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4863_r109431> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4863_r109431/Complex/ce113> , <http://identifiers.org/wikipathways/WP4863_r109431> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000175224> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/9776> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/ATG13> ;
@@ -75,12 +75,18 @@
         dc:identifier       <http://identifiers.org/ensembl/ENSG00000023287> ;
         dc:source           "Ensembl"^^xsd:string ;
         dcterms:identifier  "ENSG00000023287"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4863_r109431> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4863_r109431/Complex/ce113> , <http://identifiers.org/wikipathways/WP4863_r109431> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000023287> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/9821> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/RB1CC1> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/H0YC28> , <http://identifiers.org/uniprot/E5RH44> , <http://identifiers.org/uniprot/E5RJC1> , <http://identifiers.org/uniprot/H0YC30> , <http://identifiers.org/uniprot/E5RH63> , <http://identifiers.org/uniprot/E5RHX0> , <http://identifiers.org/uniprot/Q8TDY2> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4863_r109431/DataNode/acde0> .
+
+<http://rdf.wikipathways.org/Pathway/WP4863_r109431/Complex/ce113>
+        a                 wp:Complex , wp:DataNode ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4863_r109431> ;
+        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4863_r109431/Group/ce113" ;
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000023287> , <http://identifiers.org/ensembl/ENSG00000177169> , <http://identifiers.org/ensembl/ENSG00000083290> , <http://identifiers.org/ensembl/ENSG00000175224> .
 
 <http://identifiers.org/ensembl/ENSG00000083290>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -88,7 +94,7 @@
         dc:identifier       <http://identifiers.org/ensembl/ENSG00000083290> ;
         dc:source           "Ensembl"^^xsd:string ;
         dcterms:identifier  "ENSG00000083290"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4863_r109431> , <http://rdf.wikipathways.org/Pathway/WP4863_r109431/WP/Interaction/idbfaf590f> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4863_r109431/Complex/ce113> , <http://identifiers.org/wikipathways/WP4863_r109431> , <http://rdf.wikipathways.org/Pathway/WP4863_r109431/WP/Interaction/idbfaf590f> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000083290> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/9706> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/ULK2> ;
@@ -198,7 +204,7 @@
         dc:identifier       <http://identifiers.org/ensembl/ENSG00000177169> ;
         dc:source           "Ensembl"^^xsd:string ;
         dcterms:identifier  "ENSG00000177169"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4863_r109431> , <http://rdf.wikipathways.org/Pathway/WP4863_r109431/WP/Interaction/idc308cab0> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4863_r109431/Complex/ce113> , <http://identifiers.org/wikipathways/WP4863_r109431> , <http://rdf.wikipathways.org/Pathway/WP4863_r109431/WP/Interaction/idc308cab0> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000177169> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/8408> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/ULK1> ;
@@ -230,6 +236,12 @@
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/ATG10> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/D6RC89> , <http://identifiers.org/uniprot/A0A024RAK8> , <http://identifiers.org/uniprot/Q9H0Y0> , <http://identifiers.org/uniprot/D6RBD1> , <http://identifiers.org/uniprot/D6RDX3> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4863_r109431/DataNode/fed47> .
+
+<http://rdf.wikipathways.org/Pathway/WP4863_r109431/ComplexBinding/ce113>
+        a                 wp:Binding , wp:Interaction , wp:ComplexBinding ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4863_r109431> ;
+        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4863_r109431/Group/ce113" ;
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000083290> , <http://identifiers.org/ensembl/ENSG00000175224> , <http://rdf.wikipathways.org/Pathway/WP4863_r109431/Complex/ce113> , <http://identifiers.org/ensembl/ENSG00000023287> , <http://identifiers.org/ensembl/ENSG00000177169> .
 
 <http://identifiers.org/ensembl/ENSG00000144848>
         a                   wp:GeneProduct , wp:DataNode ;
