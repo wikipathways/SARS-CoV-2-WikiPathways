@@ -82,10 +82,36 @@
         wp:bdbUniprot                  <http://identifiers.org/uniprot/C9J5Y1> , <http://identifiers.org/uniprot/C9JB05> , <http://identifiers.org/uniprot/C9JKZ3> , <http://identifiers.org/uniprot/O15393> ;
         wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/cf321> .
 
+<http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id1f86b6c5>
+        a                 wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Interaction/id1f86b6c5> ;
+        wp:participants   <http://identifiers.org/wikidata/Q89686805> ;
+        wp:source         <http://identifiers.org/wikidata/Q89686805> ;
+        wp:target         <http://identifiers.org/wikidata/Q89686805> .
+
+<http://rdf.wikipathways.org/Pathway/WP4846_r109431/ComplexBinding/e6bd7>
+        a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4846_r109431/Group/e6bd7" ;
+        wp:participants   <http://identifiers.org/wikidata/Q89686805> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Complex/e6bd7> .
+
 <http://identifiers.org/pubmed/32155444>
         a                 wp:PublicationReference ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
         foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32155444> .
+
+<http://rdf.wikipathways.org/Pathway/WP4846_r109431/Complex/e6bd7>
+        a                    wp:Complex , wp:DataNode ;
+        rdfs:label           "dimer" ;
+        dc:identifier        <http://identifiers.org/complexportal/CPX-5687> ;
+        dc:source            "Complex Portal"^^xsd:string ;
+        dcterms:identifier   "CPX-5687"^^xsd:string ;
+        dcterms:isPartOf     <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:bdbComplexPortal  <http://identifiers.org/complexportal/CPX-5687> ;
+        wp:bdbWikidata       <http://www.wikidata.org/entity/Q89792653> ;
+        wp:isAbout           "http://rdf.wikipathways.org/Pathway/WP4846_r109431/Group/e6bd7" ;
+        wp:participants      <http://identifiers.org/wikidata/Q89686805> .
 
 <http://identifiers.org/ncbigene/43740575>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -111,7 +137,7 @@
         dc:identifier       <http://identifiers.org/uniprot/P0DTD1> ;
         dc:source           "Uniprot-TrEMBL"^^xsd:string ;
         dcterms:identifier  "P0DTD1"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/cec01> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/b6f1b> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/aec54> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/ec0be> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/c9b9f> , <http://identifiers.org/wikipathways/WP4846_r109431> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/ae185> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/d78c0> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/efcb8> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/aceb2> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/f81a2> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/f8ee8> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/d8831> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id53ccbca1> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/idba2d7d98> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/dd252> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/c3f71> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/f262e> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/cec01> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/b6f1b> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/aec54> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/ec0be> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/c9b9f> , <http://identifiers.org/wikipathways/WP4846_r109431> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/ae185> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/d78c0> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/efcb8> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/aceb2> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/f81a2> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/f8ee8> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/d8831> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/f30e4> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id53ccbca1> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/idba2d7d98> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/dd252> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/c3f71> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/f262e> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/P0DTD1> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q88174316> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/d244b> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/cda8f> .
@@ -189,7 +215,7 @@
 
 <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id596b2488>
         a                              wp:Interaction ;
-        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/32132184> , <http://identifiers.org/pubmed/32125455> , <http://identifiers.org/pubmed/32142651> ;
+        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/32125455> , <http://identifiers.org/pubmed/32142651> , <http://identifiers.org/pubmed/32132184> ;
         dcterms:isPartOf               <http://identifiers.org/wikipathways/WP4846_r109431> ;
         wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Interaction/id596b2488> ;
         wp:participants                <http://identifiers.org/ncbigene/59272> , <http://identifiers.org/uniprot/P0DTC2> .
@@ -221,6 +247,12 @@
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Interaction/id254c7db4> ;
         wp:participants   <http://identifiers.org/uniprot/P0DTC9> .
+
+<http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/f30e4>
+        a                 wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Interaction/f30e4> ;
+        wp:participants   <http://identifiers.org/uniprot/P0DTD1> , <http://identifiers.org/ncbigene/43740578> .
 
 <http://identifiers.org/pubmed/32142651>
         a                 wp:PublicationReference ;
@@ -308,6 +340,12 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q88089283> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/bafb8> .
 
+<http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/ida46f2e34>
+        a                 wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Interaction/ida46f2e34> ;
+        wp:participants   <http://identifiers.org/wikidata/Q89227548> , <http://identifiers.org/ncbigene/43740576> .
+
 <http://identifiers.org/pubmed/32125455>
         a                 wp:PublicationReference ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
@@ -355,11 +393,11 @@
         dc:identifier       <http://identifiers.org/ncbigene/43740578> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "43740578"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id53ccbca1> , <http://identifiers.org/wikipathways/WP4846_r109431> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id31b492b0> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/f30e4> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id53ccbca1> , <http://identifiers.org/wikipathways/WP4846_r109431> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id31b492b0> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/43740578> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/P0DTC1> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q88088053> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/a9a90> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/a9a90> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/ce268> .
 
 <http://identifiers.org/wikidata/Q87917572>
         a                   wp:DataNode , wp:Protein ;
@@ -377,9 +415,9 @@
         dc:identifier       <http://identifiers.org/wikidata/Q89686805> ;
         dc:source           "Wikidata"^^xsd:string ;
         dcterms:identifier  "Q89686805"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4846_r109431> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/cec01> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4846_r109431> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/cec01> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Complex/e6bd7> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id1f86b6c5> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q89686805> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/a7c94> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/b5af3> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/de7fa> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/a7c94> .
 
 <http://identifiers.org/ncbigene/43740572>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -392,12 +430,6 @@
         wp:bdbUniprot       <http://identifiers.org/uniprot/P0DTC6> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q88089203> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/fc02d> .
-
-<http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id6cbbfe3e>
-        a                 wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Interaction/id6cbbfe3e> ;
-        wp:participants   <http://identifiers.org/wikidata/Q89227548> , <http://identifiers.org/ncbigene/43740576> .
 
 <http://identifiers.org/pubmed/32159237>
         a                 wp:PublicationReference ;
@@ -415,6 +447,17 @@
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Interaction/f262e> ;
         wp:participants   <http://identifiers.org/wikidata/Q87917572> , <http://identifiers.org/uniprot/P0DTD1> .
+
+<http://identifiers.org/complexportal/CPX-5687>
+        a                    wp:DataNode , wp:Complex ;
+        rdfs:label           "dimer"^^xsd:string ;
+        dc:identifier        <http://identifiers.org/complexportal/CPX-5687> ;
+        dc:source            "Complex Portal"^^xsd:string ;
+        dcterms:identifier   "CPX-5687"^^xsd:string ;
+        dcterms:isPartOf     <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:bdbComplexPortal  <http://identifiers.org/complexportal/CPX-5687> ;
+        wp:bdbWikidata       <http://www.wikidata.org/entity/Q89792653> ;
+        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/af8ff> .
 
 <http://identifiers.org/ncbigene/43740577>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -540,7 +583,7 @@
         dc:identifier       <http://identifiers.org/ncbigene/43740576> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "43740576"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id6cbbfe3e> , <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/ida46f2e34> , <http://identifiers.org/wikipathways/WP4846_r109431> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/43740576> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q88647313> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/bc696> .
@@ -557,7 +600,7 @@
         dc:identifier       <http://identifiers.org/wikidata/Q89227548> ;
         dc:source           "Wikidata"^^xsd:string ;
         dcterms:identifier  "Q89227548"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id6cbbfe3e> , <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/ida46f2e34> , <http://identifiers.org/wikipathways/WP4846_r109431> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q89227548> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/cdb2d> .
 
