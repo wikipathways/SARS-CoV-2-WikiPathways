@@ -27,6 +27,14 @@
         wp:bdbUniprot       <http://identifiers.org/uniprot/P17275> , <http://identifiers.org/uniprot/Q5U079> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4886_r109431/DataNode/c29dd> .
 
+<http://rdf.wikipathways.org/Pathway/WP4886_r109431/WP/Interaction/id8043327d>
+        a                 wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4886_r109431> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4886_r109431/Interaction/id8043327d> ;
+        wp:participants   <http://identifiers.org/ncbigene/2353> , <http://identifiers.org/ensembl/ENSG00000107643> ;
+        wp:source         <http://identifiers.org/ensembl/ENSG00000107643> ;
+        wp:target         <http://identifiers.org/ncbigene/2353> .
+
 <http://identifiers.org/ensembl/ENSG00000185885>
         a                   wp:DataNode , wp:Protein ;
         rdfs:label          "IFITM1"^^xsd:string ;
@@ -39,6 +47,19 @@
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/IFITM1> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/P13164> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4886_r109431/DataNode/fe7ca> .
+
+<http://identifiers.org/ensembl/ENSG00000107643>
+        a                   wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "MAPK8"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/ensembl/ENSG00000107643> ;
+        dc:source           "Ensembl"^^xsd:string ;
+        dcterms:identifier  "ENSG00000107643"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4886_r109431> , <http://rdf.wikipathways.org/Pathway/WP4886_r109431/WP/Interaction/id8043327d> ;
+        wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000107643> ;
+        wp:bdbEntrezGene    <http://identifiers.org/ncbigene/5599> ;
+        wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/MAPK8> ;
+        wp:bdbUniprot       <http://identifiers.org/uniprot/C9JWQ4> , <http://identifiers.org/uniprot/P45983> , <http://identifiers.org/uniprot/C9J762> , <http://identifiers.org/uniprot/A6NF29> , <http://identifiers.org/uniprot/A1L4K2> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4886_r109431/DataNode/fa0ee> .
 
 <http://identifiers.org/ensembl/ENSG00000142089>
         a                   wp:DataNode , wp:Protein ;
@@ -59,7 +80,7 @@
         dc:identifier       <http://identifiers.org/ncbigene/684> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "684"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4886_r109431> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4886_r109431/WP/Interaction/idb975819d> , <http://identifiers.org/wikipathways/WP4886_r109431> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000130303> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/684> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/BST2> ;
@@ -72,7 +93,7 @@
         dc:identifier       <http://identifiers.org/ncbigene/3429> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "3429"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4886_r109431> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4886_r109431> , <http://rdf.wikipathways.org/Pathway/WP4886_r109431/WP/Interaction/id45e4561d> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000165949> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/3429> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/IFI27> ;
@@ -112,11 +133,12 @@
         a                      skos:Collection , wp:Pathway ;
         dc:identifier          <http://identifiers.org/wikipathways/WP4886> ;
         dc:source              "WikiPathways"^^xsd:string ;
-        dc:title               "The interferon-MAPK pathway in response to SARS-CoV-2 infection"@en ;
+        dc:title               "Interferon-MAPK Pathway in Response to SARS-CoV-2 Infection"@en ;
         dcterms:description    "The interferon-MAPK pathway in response to SARS-CoV-2 infection" ;
         dcterms:identifier     "WP4886"^^xsd:string ;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_2945> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4886_r109431> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000894> , <http://purl.obolibrary.org/obo/PW_0001028> ;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/PW_0000894> , <http://purl.obolibrary.org/obo/PW_0001028> ;
         wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
         wp:organismName        "Homo sapiens"^^xsd:string ;
         wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001028> , <http://purl.obolibrary.org/obo/PW_0000894> ;
@@ -128,10 +150,22 @@
         dc:identifier       <http://identifiers.org/ncbigene/2353> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "2353"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4886_r109431> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4886_r109431/WP/Interaction/id8043327d> , <http://identifiers.org/wikipathways/WP4886_r109431> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000170345> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/2353> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/FOS> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/Q6FG41> , <http://identifiers.org/uniprot/G3V5J9> , <http://identifiers.org/uniprot/P01100> , <http://identifiers.org/uniprot/G3V2V7> , <http://identifiers.org/uniprot/H0YJM3> , <http://identifiers.org/uniprot/G3V5N7> , <http://identifiers.org/uniprot/G3V5N9> , <http://identifiers.org/uniprot/G3V289> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4886_r109431/DataNode/c9a35> .
+
+<http://rdf.wikipathways.org/Pathway/WP4886_r109431/WP/Interaction/idb975819d>
+        a                 wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4886_r109431> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4886_r109431/Interaction/idb975819d> ;
+        wp:participants   <http://identifiers.org/ncbigene/684> .
+
+<http://rdf.wikipathways.org/Pathway/WP4886_r109431/WP/Interaction/id45e4561d>
+        a                 wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4886_r109431> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4886_r109431/Interaction/id45e4561d> ;
+        wp:participants   <http://identifiers.org/ncbigene/3429> .
 
