@@ -61,16 +61,15 @@
         wp:bdbUniprot       <http://identifiers.org/uniprot/Q15418> , <http://identifiers.org/uniprot/E9PGT3> , <http://identifiers.org/uniprot/E9PPN6> , <http://identifiers.org/uniprot/E9PAN7> , <http://identifiers.org/uniprot/A6NND1> , <http://identifiers.org/uniprot/Q5SVM6> , <http://identifiers.org/uniprot/Q5SVM7> , <http://identifiers.org/uniprot/E9PMM7> , <http://identifiers.org/uniprot/E9PPC1> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4877_r109431/DataNode/fb839> .
 
+<http://rdf.wikipathways.org/Pathway/WP4877_r109431/WP/Interaction/idc72f872e>
+        a                 wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Interaction/idc72f872e> .
+
 <http://rdf.wikipathways.org/Pathway/WP4877_r109431/WP/Interaction/id2520366d>
         a                 wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Interaction/id2520366d> .
-
-<http://rdf.wikipathways.org/Pathway/WP4877_r109431/Complex/e7ba5>
-        a                 wp:Complex , wp:DataNode ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4877_r109431/Group/e7ba5" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000177606> , <http://identifiers.org/ensembl/ENSG00000170345> .
 
 <http://identifiers.org/pubmed/31226023>
         a                 wp:PublicationReference ;
@@ -107,6 +106,12 @@
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/EIF4E> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/D6RFJ3> , <http://identifiers.org/uniprot/X5D7E3> , <http://identifiers.org/uniprot/D6RBW1> , <http://identifiers.org/uniprot/H0Y8J7> , <http://identifiers.org/uniprot/P06730> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4877_r109431/DataNode/ce80a> .
+
+<http://rdf.wikipathways.org/Pathway/WP4877_r109431/ComplexBinding/d382f>
+        a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
+        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4877_r109431/Group/d382f" ;
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000177606> , <http://identifiers.org/ncbigene/3726> , <http://identifiers.org/ensembl/ENSG00000170345> , <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Complex/d382f> .
 
 <http://rdf.wikipathways.org/Pathway/WP4877_r109431/WP/Interaction/ide37bb3b6>
         a                 wp:Interaction ;
@@ -157,7 +162,7 @@
         dc:identifier       <http://identifiers.org/ensembl/ENSG00000177606> ;
         dc:source           "Ensembl"^^xsd:string ;
         dcterms:identifier  "ENSG00000177606"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4877_r109431> , <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Complex/e7ba5> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4877_r109431> , <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Complex/d382f> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000177606> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/3725> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/JUN> ;
@@ -328,7 +333,7 @@
         dc:identifier       <http://identifiers.org/ensembl/ENSG00000170345> ;
         dc:source           "Ensembl"^^xsd:string ;
         dcterms:identifier  "ENSG00000170345"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4877_r109431> , <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Complex/e7ba5> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4877_r109431> , <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Complex/d382f> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000170345> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/2353> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/FOS> ;
@@ -369,6 +374,32 @@
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Interaction/id7c30bf1f> .
 
+<http://identifiers.org/ensembl/ENSG00000185201>
+        a                   wp:DataNode , wp:Protein ;
+        rdfs:label          "IFITM2"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/ensembl/ENSG00000185201> ;
+        dc:source           "Ensembl"^^xsd:string ;
+        dcterms:identifier  "ENSG00000185201"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4877_r109431> ;
+        wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000185201> ;
+        wp:bdbEntrezGene    <http://identifiers.org/ncbigene/10581> ;
+        wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/IFITM2> ;
+        wp:bdbUniprot       <http://identifiers.org/uniprot/H0YCL2> , <http://identifiers.org/uniprot/H7BYV1> , <http://identifiers.org/uniprot/Q01629> , <http://identifiers.org/uniprot/E9PQN9> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4877_r109431/DataNode/acf10> .
+
+<http://identifiers.org/ncbigene/3429>
+        a                   wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "IFI27"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/ncbigene/3429> ;
+        dc:source           "Entrez Gene"^^xsd:string ;
+        dcterms:identifier  "3429"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4877_r109431> ;
+        wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000165949> ;
+        wp:bdbEntrezGene    <http://identifiers.org/ncbigene/3429> ;
+        wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/IFI27> ;
+        wp:bdbUniprot       <http://identifiers.org/uniprot/A0A087WZR1> , <http://identifiers.org/uniprot/A0A087X035> , <http://identifiers.org/uniprot/A0A087WUJ8> , <http://identifiers.org/uniprot/G3V4U3> , <http://identifiers.org/uniprot/A0A087WV79> , <http://identifiers.org/uniprot/A0A087WZF8> , <http://identifiers.org/uniprot/A0A087X174> , <http://identifiers.org/uniprot/A8K0H0> , <http://identifiers.org/uniprot/Q9H4B1> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4877_r109431/DataNode/c5ac8> .
+
 <http://rdf.wikipathways.org/Pathway/WP4877_r109431/WP/Interaction/ideee7f970>
         a                 wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
@@ -379,6 +410,12 @@
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Interaction/id9808cc66> ;
         wp:participants   <http://identifiers.org/ensembl/ENSG00000065559> .
+
+<http://rdf.wikipathways.org/Pathway/WP4877_r109431/WP/Interaction/id8828af0>
+        a                 wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Interaction/id8828af0> ;
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000185885> .
 
 <http://identifiers.org/ncbigene/5601>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -398,11 +435,11 @@
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Interaction/id54d4a9a9> .
 
-<http://rdf.wikipathways.org/Pathway/WP4877_r109431/ComplexBinding/e7ba5>
-        a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
+<http://rdf.wikipathways.org/Pathway/WP4877_r109431/Complex/d382f>
+        a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4877_r109431/Group/e7ba5" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000177606> , <http://identifiers.org/ensembl/ENSG00000170345> , <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Complex/e7ba5> .
+        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4877_r109431/Group/d382f" ;
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000177606> , <http://identifiers.org/ncbigene/3726> , <http://identifiers.org/ensembl/ENSG00000170345> .
 
 <http://identifiers.org/ensembl/ENSG00000115966>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -573,6 +610,19 @@
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Interaction/id1b1215f4> .
 
+<http://identifiers.org/ensembl/ENSG00000142089>
+        a                   wp:DataNode , wp:Protein ;
+        rdfs:label          "IFITM3"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/ensembl/ENSG00000142089> ;
+        dc:source           "Ensembl"^^xsd:string ;
+        dcterms:identifier  "ENSG00000142089"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4877_r109431> ;
+        wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000142089> ;
+        wp:bdbEntrezGene    <http://identifiers.org/ncbigene/10410> ;
+        wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/IFITM3> ;
+        wp:bdbUniprot       <http://identifiers.org/uniprot/R4GNG9> , <http://identifiers.org/uniprot/E9PS44> , <http://identifiers.org/uniprot/Q01628> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4877_r109431/DataNode/f50e2> .
+
 <http://identifiers.org/uniprot/P59632>
         a                   wp:GeneProduct , wp:DataNode ;
         rdfs:label          "3a"^^xsd:string ;
@@ -616,6 +666,19 @@
         a                 wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Interaction/id703be87c> , <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Interaction/id589b86fe> .
+
+<http://identifiers.org/ncbigene/3726>
+        a                   wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "JUNB"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/ncbigene/3726> ;
+        dc:source           "Entrez Gene"^^xsd:string ;
+        dcterms:identifier  "3726"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4877_r109431> , <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Complex/d382f> ;
+        wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000171223> ;
+        wp:bdbEntrezGene    <http://identifiers.org/ncbigene/3726> ;
+        wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/JUNB> ;
+        wp:bdbUniprot       <http://identifiers.org/uniprot/P17275> , <http://identifiers.org/uniprot/Q5U079> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4877_r109431/DataNode/fee9e> .
 
 <http://identifiers.org/ensembl/ENSG00000071242>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -680,10 +743,36 @@
         wp:bdbUniprot       <http://identifiers.org/uniprot/E7EX54> , <http://identifiers.org/uniprot/Q16539> , <http://identifiers.org/uniprot/H7C4E2> , <http://identifiers.org/uniprot/B5TY33> , <http://identifiers.org/uniprot/L7RSM2> , <http://identifiers.org/uniprot/A0A024RD15> , <http://identifiers.org/uniprot/B4E0K5> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4877_r109431/DataNode/cef25> .
 
+<http://identifiers.org/ensembl/ENSG00000185885>
+        a                   wp:DataNode , wp:Protein ;
+        rdfs:label          "IFITM1"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/ensembl/ENSG00000185885> ;
+        dc:source           "Ensembl"^^xsd:string ;
+        dcterms:identifier  "ENSG00000185885"^^xsd:string ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4877_r109431/WP/Interaction/id8828af0> , <http://identifiers.org/wikipathways/WP4877_r109431> ;
+        wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000185885> ;
+        wp:bdbEntrezGene    <http://identifiers.org/ncbigene/8519> ;
+        wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/IFITM1> ;
+        wp:bdbUniprot       <http://identifiers.org/uniprot/P13164> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4877_r109431/DataNode/cf41c> .
+
 <http://rdf.wikipathways.org/Pathway/WP4877_r109431/WP/Interaction/id80dca1f4>
         a                 wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Interaction/id80dca1f4> .
+
+<http://identifiers.org/ncbigene/684>
+        a                   wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "BST2"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/ncbigene/684> ;
+        dc:source           "Entrez Gene"^^xsd:string ;
+        dcterms:identifier  "684"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4877_r109431> ;
+        wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000130303> ;
+        wp:bdbEntrezGene    <http://identifiers.org/ncbigene/684> ;
+        wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/BST2> ;
+        wp:bdbUniprot       <http://identifiers.org/uniprot/A0A024R7H5> , <http://identifiers.org/uniprot/Q10589> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4877_r109431/DataNode/b17a4> .
 
 <http://identifiers.org/wikipathways/WP4877_r109431>
         a                      skos:Collection , wp:Pathway ;
