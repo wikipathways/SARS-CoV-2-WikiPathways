@@ -39,7 +39,7 @@
         dc:identifier       <http://identifiers.org/ncbigene/183> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "183"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4891_r109431/WP/Interaction/id122c896d> , <http://identifiers.org/wikipathways/WP4891_r109431> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4891_r109431/WP/Interaction/id69513f9a> , <http://identifiers.org/wikipathways/WP4891_r109431> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000135744> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/183> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/AGT> ;
@@ -147,6 +147,11 @@
         dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r109431> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r109431/DataNode/ace80> .
 
+<http://identifiers.org/pubmed/10969042>
+        a                 wp:PublicationReference ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4891_r109431> ;
+        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/10969042> .
+
 <http://identifiers.org/wikipathways/WP4891_r109431>
         a                      skos:Collection , wp:Pathway ;
         dc:identifier          <http://identifiers.org/wikipathways/WP4891> ;
@@ -181,7 +186,7 @@
         dc:identifier       <http://identifiers.org/ncbigene/59272> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "59272"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4891_r109431/WP/Interaction/id122c896d> , <http://identifiers.org/wikipathways/WP4891_r109431> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r109431> , <http://rdf.wikipathways.org/Pathway/WP4891_r109431/WP/Interaction/id69513f9a> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000130234> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/59272> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/ACE2> ;
@@ -209,6 +214,15 @@
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/TNF> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/Q5STB3> , <http://identifiers.org/uniprot/P01375> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r109431/DataNode/null> .
+
+<http://identifiers.org/wikipathways/WP4883>
+        a                   wp:DataNode ;
+        rdfs:label          "SARS-CoV-2 and Angiotensin-converting enzyme 2 (ACE2) receptor: Molecular mechanisms and potential therapeutic target (Homo sapiens)"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/wikipathways/WP4883> ;
+        dc:source           "WikiPathways"^^xsd:string ;
+        dcterms:identifier  "WP4883"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r109431> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r109431/DataNode/ac2f7> .
 
 <http://identifiers.org/ncbigene/3627>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -240,6 +254,13 @@
         dcterms:identifier  "WP3624"^^xsd:string ;
         dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r109431> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r109431/DataNode/d20e7> .
+
+<http://rdf.wikipathways.org/Pathway/WP4891_r109431/WP/Interaction/id69513f9a>
+        a                              wp:Interaction ;
+        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/10969042> ;
+        dcterms:isPartOf               <http://identifiers.org/wikipathways/WP4891_r109431> ;
+        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4891_r109431/Interaction/id69513f9a> ;
+        wp:participants                <http://identifiers.org/ncbigene/183> , <http://identifiers.org/ncbigene/59272> .
 
 <http://identifiers.org/ncbigene/6348>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -278,7 +299,7 @@
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/7113> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/TMPRSS2> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/C9JB05> , <http://identifiers.org/uniprot/O15393> , <http://identifiers.org/uniprot/C9JKZ3> , <http://identifiers.org/uniprot/C9J5Y1> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r109431/DataNode/null> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r109431/DataNode/eba5c> .
 
 <http://identifiers.org/wikipathways/WP4891>
         pav:hasVersion  <http://identifiers.org/wikipathways/WP4891_r109431> .
@@ -295,12 +316,6 @@
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/CCL2> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/J3KRT7> , <http://identifiers.org/uniprot/P13500> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r109431/DataNode/ee6e7> .
-
-<http://rdf.wikipathways.org/Pathway/WP4891_r109431/WP/Interaction/id122c896d>
-        a                 wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4891_r109431> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4891_r109431/Interaction/id122c896d> ;
-        wp:participants   <http://identifiers.org/ncbigene/183> , <http://identifiers.org/ncbigene/59272> .
 
 <http://rdf.wikipathways.org/Pathway/WP4891_r109431/WP/Interaction/idfe2de42e>
         a                 wp:Interaction ;
