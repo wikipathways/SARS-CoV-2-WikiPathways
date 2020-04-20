@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="LDLRAD4 pathway in COVID-19" Version="20200420" Organism="Homo sapiens">
+  <Comment Source="WikiPathways-description">A recent GWAS study was tweeted (https://twitter.com/BrentRichards19/status/1251550109931888643) showing a intronic SNP in LDLRAD4 as relevant. This pathway will summarize what is known of the biological role of this gene and its proteins.</Comment>
+  <Graphics BoardWidth="778.4811664641554" BoardHeight="362.55164034021874" />
+  <DataNode TextLabel="Ebola Virus&#xA;Pathway on Host" GraphId="b8756" Type="Pathway">
+    <Graphics CenterX="637.2812879708379" CenterY="145.3751518833535" Width="117.9040097205347" Height="30.726002430133686" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
+    <Xref Database="WikiPathways" ID="WP4217" />
+  </DataNode>
+  <DataNode TextLabel="NEDD4" GraphId="c276a" Type="GeneProduct">
+    <Graphics CenterX="458.08019441069257" CenterY="160.38882138517607" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000069869" />
+  </DataNode>
+  <DataNode TextLabel="LDLRAD4" GraphId="e9bfd" Type="GeneProduct">
+    <Graphics CenterX="256.37910085054614" CenterY="160.38882138517607" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000168675" />
+  </DataNode>
+  <Interaction>
+    <BiopaxRef>fea</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="301.37910085054614" Y="160.38882138517607" GraphRef="e9bfd" RelX="1.0" RelY="0.0" />
+      <Point X="413.08019441069257" Y="160.38882138517607" GraphRef="c276a" RelX="-1.0" RelY="0.0" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="503.08019441069257" Y="160.38882138517607" GraphRef="c276a" RelX="1.0" RelY="0.0" />
+      <Point X="578.3292831105705" Y="145.3751518833535" GraphRef="b8756" RelX="-1.0" RelY="0.0" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <InfoBox CenterX="0.0" CenterY="0.0" />
+  <Biopax>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="fea">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28888937</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Low density lipoprotein receptor class A domain containing 4 (LDLRAD4) promotes tumorigenesis of hepatic cancer cells.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exp Cell Res</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liu Z</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Huo X</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhao S</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yang J</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shi W</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jing L</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li W</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li Y</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ma L</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gao Y</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diao A</bp:AUTHORS>
+    </bp:PublicationXref>
+  </Biopax>
+</Pathway>
