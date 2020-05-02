@@ -87,10 +87,29 @@
         wp:participants   <http://identifiers.org/uniprot/Q9BYF1> , <http://identifiers.org/ncbiprotein/694009> .
 
 <http://rdf.wikipathways.org/Pathway/WP4799_r109431/WP/Interaction/id5f17221c>
-        a                 wp:Interaction ;
+        a                 wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r109431/Interaction/id5f17221c> ;
-        wp:participants   <http://identifiers.org/uniprot/P50052> , <http://identifiers.org/chebi/CHEBI:58506> .
+        wp:participants   <http://identifiers.org/uniprot/P50052> , <http://identifiers.org/chebi/CHEBI:2719> ;
+        wp:source         <http://identifiers.org/chebi/CHEBI:2719> ;
+        wp:target         <http://identifiers.org/uniprot/P50052> .
+
+<http://identifiers.org/chebi/CHEBI:2719>
+        a                   wp:DataNode , wp:Metabolite ;
+        rdfs:label          "Ang II"^^xsd:string ;
+        rdfs:seeAlso        <http://identifiers.org/inchikey/CZGUSIXMZVURDU-JZXHSEFVSA-N> ;
+        dc:identifier       <http://identifiers.org/chebi/CHEBI:2719> ;
+        dc:source           "ChEBI"^^xsd:string ;
+        dcterms:identifier  "CHEBI:2719"^^xsd:string ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4799_r109431/WP/Interaction/ide171a636> , <http://rdf.wikipathways.org/Pathway/WP4799_r109431/WP/Interaction/id2567d541> , <http://rdf.wikipathways.org/Pathway/WP4799_r109431/WP/Interaction/idbca35504> , <http://rdf.wikipathways.org/Pathway/WP4799_r109431/WP/Interaction/id5f17221c> , <http://identifiers.org/wikipathways/WP4799_r109431> ;
+        wp:bdbChEBI         <http://identifiers.org/chebi/CHEBI:2719> ;
+        wp:bdbChemspider    <http://identifiers.org/chemspider/150504> ;
+        wp:bdbHmdb          <http://identifiers.org/hmdb/HMDB0001035> ;
+        wp:bdbInChIKey      <http://identifiers.org/inchikey/CZGUSIXMZVURDU-JZXHSEFVSA-N> ;
+        wp:bdbKeggCompound  <http://identifiers.org/kegg.compound/C02135> ;
+        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID172198> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q412999> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r109431/DataNode/b733a> .
 
 <http://identifiers.org/ncbiprotein/694009>
         a                   wp:Protein , wp:DataNode ;
@@ -101,33 +120,27 @@
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4799_r109431/WP/Interaction/idc652beda> , <http://identifiers.org/wikipathways/WP4799_r109431> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r109431/DataNode/cfddc> .
 
-<http://identifiers.org/chebi/CHEBI:58506>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "Ang II"^^xsd:string ;
-        dc:identifier       <http://identifiers.org/chebi/CHEBI:58506> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:58506"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4799_r109431/WP/Interaction/idbca35504> , <http://rdf.wikipathways.org/Pathway/WP4799_r109431/WP/Interaction/id2567d541> , <http://rdf.wikipathways.org/Pathway/WP4799_r109431/WP/Interaction/ide171a636> , <http://identifiers.org/wikipathways/WP4799_r109431> , <http://rdf.wikipathways.org/Pathway/WP4799_r109431/WP/Interaction/id5f17221c> ;
-        wp:bdbChEBI         <http://identifiers.org/chebi/CHEBI:58506> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r109431/DataNode/b733a> .
-
 <http://rdf.wikipathways.org/Pathway/WP4799_r109431/WP/Interaction/id2567d541>
-        a                 wp:Interaction ;
+        a                 wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r109431/Interaction/id2567d541> ;
-        wp:participants   <http://identifiers.org/chebi/CHEBI:58506> , <http://identifiers.org/uniprot/A0A0A0MSN4> .
+        wp:participants   <http://identifiers.org/chebi/CHEBI:2719> , <http://identifiers.org/uniprot/A0A0A0MSN4> ;
+        wp:source         <http://identifiers.org/uniprot/A0A0A0MSN4> ;
+        wp:target         <http://identifiers.org/chebi/CHEBI:2719> .
 
 <http://rdf.wikipathways.org/Pathway/WP4799_r109431/WP/Interaction/ide171a636>
         a                 wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r109431/Interaction/ide171a636> ;
-        wp:participants   <http://identifiers.org/chebi/CHEBI:58506> , <http://identifiers.org/uniprot/Q9BYF1> .
+        wp:participants   <http://identifiers.org/chebi/CHEBI:2719> , <http://identifiers.org/uniprot/Q9BYF1> .
 
 <http://rdf.wikipathways.org/Pathway/WP4799_r109431/WP/Interaction/idbca35504>
-        a                 wp:Interaction ;
+        a                 wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r109431/Interaction/idbca35504> ;
-        wp:participants   <http://identifiers.org/uniprot/P30556> , <http://identifiers.org/chebi/CHEBI:58506> .
+        wp:participants   <http://identifiers.org/uniprot/P30556> , <http://identifiers.org/chebi/CHEBI:2719> ;
+        wp:source         <http://identifiers.org/chebi/CHEBI:2719> ;
+        wp:target         <http://identifiers.org/uniprot/P30556> .
 
 <http://identifiers.org/wikipathways/WP4799>
         pav:hasVersion  <http://identifiers.org/wikipathways/WP4799_r109431> .

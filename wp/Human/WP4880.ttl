@@ -28,7 +28,7 @@
         a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4880_r109431> ;
         wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4880_r109431/Group/bc0e3" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000263528> , <http://identifiers.org/ensembl/ENSG00000183735> , <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Complex/bc0e3> .
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000183735> , <http://identifiers.org/ensembl/ENSG00000263528> , <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Complex/bc0e3> .
 
 <http://identifiers.org/ensembl/ENSG00000269335>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -160,7 +160,7 @@
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4880_r109431> ;
         wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4880_r109431/Group/ebc96" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000177606> , <http://identifiers.org/ensembl/ENSG00000170345> .
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000170345> , <http://identifiers.org/ensembl/ENSG00000177606> .
 
 <http://rdf.wikipathways.org/Pathway/WP4880_r109431/WP/Interaction/d52dc>
         a                 wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
@@ -193,7 +193,7 @@
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4880_r109431> ;
         wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4880_r109431/Group/f5415" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000100906> , <http://identifiers.org/ensembl/ENSG00000109320> .
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000109320> , <http://identifiers.org/ensembl/ENSG00000100906> .
 
 <http://rdf.wikipathways.org/Pathway/WP4880_r109431/WP/Interaction/de9af>
         a                 wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
@@ -367,7 +367,7 @@
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4880_r109431> ;
         wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4880_r109431/Group/e2203" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000107643> , <http://identifiers.org/ensembl/ENSG00000112062> .
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000112062> , <http://identifiers.org/ensembl/ENSG00000107643> .
 
 <http://rdf.wikipathways.org/Pathway/WP4880_r109431/WP/Interaction/a258c>
         a                 wp:Interaction ;
@@ -422,7 +422,8 @@
 <http://rdf.wikipathways.org/Pathway/WP4880_r109431/WP/Interaction/id563444ae>
         a                 wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4880_r109431> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Interaction/id563444ae> .
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Interaction/id563444ae> ;
+        wp:participants   <http://identifiers.org/wikipathways/WP4912> .
 
 <http://rdf.wikipathways.org/Pathway/WP4880_r109431/WP/Interaction/afaf3>
         a                 wp:Interaction ;
@@ -499,17 +500,36 @@
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Interaction/ad7f1> ;
         wp:participants   <http://identifiers.org/ensembl/ENSG00000109320> , <http://identifiers.org/uniprot/P59632> .
 
+<http://identifiers.org/wikipathways/WP4912>
+        a                   wp:DataNode ;
+        rdfs:label          "Innate Immunity"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/wikipathways/WP4912> ;
+        dc:source           "WikiPathways"^^xsd:string ;
+        dcterms:identifier  "WP4912"^^xsd:string ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4880_r109431/WP/Interaction/id563444ae> , <http://identifiers.org/wikipathways/WP4880_r109431> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4880_r109431/DataNode/c1ec8> .
+
 <http://rdf.wikipathways.org/Pathway/WP4880_r109431/ComplexBinding/f5415>
         a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4880_r109431> ;
         wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4880_r109431/Group/f5415" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000100906> , <http://identifiers.org/ensembl/ENSG00000109320> , <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Complex/f5415> .
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000109320> , <http://identifiers.org/ensembl/ENSG00000100906> , <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Complex/f5415> .
+
+<http://identifiers.org/uniprot/694009>
+        a                   wp:Protein , wp:DataNode ;
+        rdfs:label          "S"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/uniprot/694009> ;
+        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
+        dcterms:identifier  "694009"^^xsd:string ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4880_r109431/WP/Interaction/a9f45> , <http://identifiers.org/wikipathways/WP4880_r109431> ;
+        wp:bdbUniprot       <http://identifiers.org/uniprot/694009> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4880_r109431/DataNode/f54c4> .
 
 <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Complex/bc0e3>
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4880_r109431> ;
         wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4880_r109431/Group/bc0e3" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000263528> , <http://identifiers.org/ensembl/ENSG00000183735> .
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000183735> , <http://identifiers.org/ensembl/ENSG00000263528> .
 
 <http://identifiers.org/uniprot/P59634>
         a                   wp:Protein , wp:DataNode ;
@@ -617,7 +637,7 @@
         a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4880_r109431> ;
         wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4880_r109431/Group/e2203" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000107643> , <http://identifiers.org/ensembl/ENSG00000112062> , <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Complex/e2203> .
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000112062> , <http://identifiers.org/ensembl/ENSG00000107643> , <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Complex/e2203> .
 
 <http://rdf.wikipathways.org/Pathway/WP4880_r109431/WP/Interaction/e5c9e>
         a                 wp:Interaction ;
@@ -651,13 +671,13 @@
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4880_r109431> ;
         wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4880_r109431/Group/f7910" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000115267> , <http://identifiers.org/ensembl/ENSG00000107201> .
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000107201> , <http://identifiers.org/ensembl/ENSG00000115267> .
 
 <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Complex/fc0ce>
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4880_r109431> ;
         wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4880_r109431/Group/fc0ce" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000104365> , <http://identifiers.org/ensembl/ENSG00000213341> , <http://identifiers.org/ensembl/ENSG00000269335> .
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000269335> , <http://identifiers.org/ensembl/ENSG00000104365> , <http://identifiers.org/ensembl/ENSG00000213341> .
 
 <http://identifiers.org/uniprot/P59633>
         a                   wp:Protein , wp:DataNode ;
@@ -678,7 +698,7 @@
         a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4880_r109431> ;
         wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4880_r109431/Group/ebc96" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000177606> , <http://identifiers.org/ensembl/ENSG00000170345> , <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Complex/ebc96> .
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000170345> , <http://identifiers.org/ensembl/ENSG00000177606> , <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Complex/ebc96> .
 
 <http://identifiers.org/ensembl/ENSG00000115267>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -884,7 +904,7 @@
         a                 wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4880_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Interaction/a9f45> ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000109320> .
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000109320> , <http://identifiers.org/uniprot/694009> .
 
 <http://rdf.wikipathways.org/Pathway/WP4880_r109431/WP/Interaction/ida2f990b7>
         a                 wp:Interaction ;
@@ -914,13 +934,13 @@
         a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4880_r109431> ;
         wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4880_r109431/Group/f7910" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000115267> , <http://identifiers.org/ensembl/ENSG00000107201> , <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Complex/f7910> .
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000107201> , <http://identifiers.org/ensembl/ENSG00000115267> , <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Complex/f7910> .
 
 <http://rdf.wikipathways.org/Pathway/WP4880_r109431/ComplexBinding/fc0ce>
         a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4880_r109431> ;
         wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4880_r109431/Group/fc0ce" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000104365> , <http://identifiers.org/ensembl/ENSG00000213341> , <http://identifiers.org/ensembl/ENSG00000269335> , <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Complex/fc0ce> .
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000269335> , <http://identifiers.org/ensembl/ENSG00000104365> , <http://identifiers.org/ensembl/ENSG00000213341> , <http://rdf.wikipathways.org/Pathway/WP4880_r109431/Complex/fc0ce> .
 
 <http://identifiers.org/ensembl/ENSG00000175104>
         a                   wp:GeneProduct , wp:DataNode ;

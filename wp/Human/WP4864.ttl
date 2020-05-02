@@ -14,22 +14,6 @@
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-<http://identifiers.org/chebi/CHEBI:4062>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "Cytochrome C"^^xsd:string ;
-        rdfs:seeAlso        <http://identifiers.org/inchikey/WFVBWSTZNVJEAY-UHFFFAOYSA-N> ;
-        dc:identifier       <http://identifiers.org/chebi/CHEBI:4062> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:4062"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4864_r109431/WP/Interaction/id44e385eb> , <http://rdf.wikipathways.org/Pathway/WP4864_r109431/WP/Interaction/id9d25fe73> , <http://identifiers.org/wikipathways/WP4864_r109431> ;
-        wp:bdbChEBI         <http://identifiers.org/chebi/CHEBI:4062> ;
-        wp:bdbChemspider    <http://identifiers.org/chemspider/21248060> , <http://identifiers.org/chemspider/21429645> , <http://identifiers.org/chemspider/388316> ;
-        wp:bdbInChIKey      <http://identifiers.org/inchikey/WFVBWSTZNVJEAY-UHFFFAOYSA-L> ;
-        wp:bdbKeggCompound  <http://identifiers.org/kegg.compound/C00524> ;
-        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID439171> ;
-        wp:bdbWikidata      <http://www.wikidata.org/entity/Q26840776> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4864_r109431/DataNode/f4f84> .
-
 <http://identifiers.org/ensembl/ENSG00000188130>
         a                   wp:DataNode , wp:GeneProduct ;
         rdfs:label          "MAPK12"^^xsd:string ;
@@ -70,7 +54,7 @@
         a                 wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4864_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4864_r109431/Interaction/id44e385eb> ;
-        wp:participants   <http://identifiers.org/chebi/CHEBI:4062> .
+        wp:participants   <http://identifiers.org/chebi/CHEBI:18070> .
 
 <http://identifiers.org/uniprot/P59596>
         a                   wp:Protein , wp:DataNode ;
@@ -452,6 +436,20 @@
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4864_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4864_r109431/Interaction/idda923b3f> .
 
+<http://identifiers.org/chebi/CHEBI:18070>
+        a                   wp:Metabolite , wp:DataNode ;
+        rdfs:label          "Cytochrome C"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/chebi/CHEBI:18070> ;
+        dc:source           "ChEBI"^^xsd:string ;
+        dcterms:identifier  "CHEBI:18070"^^xsd:string ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4864_r109431/WP/Interaction/id9d25fe73> , <http://rdf.wikipathways.org/Pathway/WP4864_r109431/WP/Interaction/id44e385eb> , <http://identifiers.org/wikipathways/WP4864_r109431> ;
+        wp:bdbChEBI         <http://identifiers.org/chebi/CHEBI:18070> ;
+        wp:bdbChemspider    <http://identifiers.org/chemspider/21429645> , <http://identifiers.org/chemspider/21248060> , <http://identifiers.org/chemspider/388316> ;
+        wp:bdbKeggCompound  <http://identifiers.org/kegg.compound/C02416> , <http://identifiers.org/kegg.compound/C00524> ;
+        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID439171> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q26840776> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4864_r109431/DataNode/f4f84> .
+
 <http://rdf.wikipathways.org/Pathway/WP4864_r109431/ComplexBinding/a042f>
         a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4864_r109431> ;
@@ -477,7 +475,7 @@
         a                 wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4864_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4864_r109431/Interaction/id9d25fe73> ;
-        wp:participants   <http://identifiers.org/chebi/CHEBI:4062> .
+        wp:participants   <http://identifiers.org/chebi/CHEBI:18070> .
 
 <http://rdf.wikipathways.org/Pathway/WP4864_r109431/WP/Interaction/id42dbcb94>
         a                 wp:Interaction ;
