@@ -175,7 +175,7 @@
         dc:source                      "Uniprot-TrEMBL"^^xsd:string ;
         dcterms:bibliographicCitation  <http://identifiers.org/pubmed/32159237> ;
         dcterms:identifier             "P0DTC9"^^xsd:string ;
-        dcterms:isPartOf               <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id254c7db4> , <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        dcterms:isPartOf               <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Complex/cf207> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id254c7db4> , <http://identifiers.org/wikipathways/WP4846_r109431> ;
         wp:bdbEntrezGene               <http://identifiers.org/ncbigene/43740575> ;
         wp:bdbUniprot                  <http://identifiers.org/uniprot/P0DTC9> ;
         wp:bdbWikidata                 <http://www.wikidata.org/entity/Q87917584> ;
@@ -427,6 +427,16 @@
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
         foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32169673> .
 
+<http://identifiers.org/wikidata/Q82069695>
+        a                   wp:DataNode , wp:Protein ;
+        rdfs:label          "SARS-CoV-2 proteins"^^xsd:string , "SARS-CoV-2 RNA"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/wikidata/Q82069695> ;
+        dc:source           "Wikidata"^^xsd:string ;
+        dcterms:identifier  "Q82069695"^^xsd:string ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Complex/cf207> , <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q82069695> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/e787b> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/ba78c> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/f4452> .
+
 <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/d8831>
         a                 wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
@@ -558,6 +568,12 @@
         a                 wp:PublicationReference ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
         foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32159237> .
+
+<http://rdf.wikipathways.org/Pathway/WP4846_r109431/Complex/cf207>
+        a                 wp:Complex , wp:DataNode ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4846_r109431/Group/cf207" ;
+        wp:participants   <http://identifiers.org/wikidata/Q82069695> , <http://identifiers.org/uniprot/P0DTC9> .
 
 <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id5c4ff7f0>
         a                 wp:Interaction ;
@@ -718,6 +734,12 @@
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Interaction/id31b492b0> ;
         wp:participants   <http://identifiers.org/uniprot/P0DTC1> , <http://identifiers.org/ncbigene/43740578> .
+
+<http://rdf.wikipathways.org/Pathway/WP4846_r109431/ComplexBinding/cf207>
+        a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4846_r109431/Group/cf207" ;
+        wp:participants   <http://identifiers.org/wikidata/Q82069695> , <http://identifiers.org/uniprot/P0DTC9> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Complex/cf207> .
 
 <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/f81a2>
         a                 wp:Interaction ;
