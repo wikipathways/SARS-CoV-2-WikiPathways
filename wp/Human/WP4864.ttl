@@ -1,5 +1,6 @@
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix pav:   <http://purl.org/pav/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix freq:  <http://purl.org/cld/freq/> .
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
@@ -332,8 +333,8 @@
 <http://rdf.wikipathways.org/Pathway/WP4864_r109431/Complex/a042f>
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4864_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4864_r109431/Group/a042f" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000232810> , <http://identifiers.org/ensembl/ENSG00000117560> .
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4864_r109431/Group/a042f> ;
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000117560> , <http://identifiers.org/ensembl/ENSG00000232810> .
 
 <http://identifiers.org/ensembl/ENSG00000171791>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -416,6 +417,8 @@
 <http://identifiers.org/pubmed/9727492>
         a                 wp:PublicationReference ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4864_r109431> ;
+        wp:bdbWikidata    <http://www.wikidata.org/entity/Q24310597> ;
+        owl:sameAs        <https://doi.org/10.1016%2FS0092-8674%2800%2981590-1> ;
         foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/9727492> .
 
 <http://identifiers.org/ensembl/ENSG00000156711>
@@ -453,8 +456,8 @@
 <http://rdf.wikipathways.org/Pathway/WP4864_r109431/ComplexBinding/a042f>
         a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4864_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4864_r109431/Group/a042f" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000232810> , <http://identifiers.org/ensembl/ENSG00000117560> , <http://rdf.wikipathways.org/Pathway/WP4864_r109431/Complex/a042f> .
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4864_r109431/Group/a042f> ;
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000117560> , <http://identifiers.org/ensembl/ENSG00000232810> , <http://rdf.wikipathways.org/Pathway/WP4864_r109431/Complex/a042f> .
 
 <http://identifiers.org/uniprot/P59632>
         a                   wp:Protein , wp:DataNode ;

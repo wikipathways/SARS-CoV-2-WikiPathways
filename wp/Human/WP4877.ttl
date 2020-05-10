@@ -1,5 +1,6 @@
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix pav:   <http://purl.org/pav/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix freq:  <http://purl.org/cld/freq/> .
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
@@ -110,8 +111,8 @@
 <http://rdf.wikipathways.org/Pathway/WP4877_r109431/ComplexBinding/d382f>
         a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4877_r109431/Group/d382f" ;
-        wp:participants   <http://identifiers.org/ncbigene/3726> , <http://identifiers.org/ensembl/ENSG00000177606> , <http://identifiers.org/ensembl/ENSG00000170345> , <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Complex/d382f> .
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Group/d382f> ;
+        wp:participants   <http://identifiers.org/ncbigene/3726> , <http://identifiers.org/ensembl/ENSG00000170345> , <http://identifiers.org/ensembl/ENSG00000177606> , <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Complex/d382f> .
 
 <http://rdf.wikipathways.org/Pathway/WP4877_r109431/WP/Interaction/ide37bb3b6>
         a                 wp:Interaction ;
@@ -438,8 +439,8 @@
 <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Complex/d382f>
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4877_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4877_r109431/Group/d382f" ;
-        wp:participants   <http://identifiers.org/ncbigene/3726> , <http://identifiers.org/ensembl/ENSG00000177606> , <http://identifiers.org/ensembl/ENSG00000170345> .
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4877_r109431/Group/d382f> ;
+        wp:participants   <http://identifiers.org/ncbigene/3726> , <http://identifiers.org/ensembl/ENSG00000170345> , <http://identifiers.org/ensembl/ENSG00000177606> .
 
 <http://identifiers.org/ensembl/ENSG00000115966>
         a                   wp:GeneProduct , wp:DataNode ;

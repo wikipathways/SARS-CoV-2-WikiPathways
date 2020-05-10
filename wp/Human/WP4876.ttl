@@ -1,5 +1,6 @@
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix pav:   <http://purl.org/pav/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix freq:  <http://purl.org/cld/freq/> .
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
@@ -30,8 +31,8 @@
 <http://rdf.wikipathways.org/Pathway/WP4876_r109431/ComplexBinding/b6589>
         a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4876_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4876_r109431/Group/b6589" ;
-        wp:participants   <http://identifiers.org/refseq/YP_009724391> , <http://identifiers.org/ensembl/ENSG00000131323> , <http://rdf.wikipathways.org/Pathway/WP4876_r109431/Complex/b6589> .
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r109431/Group/b6589> ;
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000131323> , <http://identifiers.org/refseq/YP_009724391> , <http://rdf.wikipathways.org/Pathway/WP4876_r109431/Complex/b6589> .
 
 <http://rdf.wikipathways.org/Pathway/WP4876_r109431/WP/Interaction/id7ef1c6cf>
         a                 wp:Interaction ;
@@ -120,8 +121,8 @@
 <http://rdf.wikipathways.org/Pathway/WP4876_r109431/Complex/f1f54>
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4876_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4876_r109431/Group/f1f54" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000162711> , <http://identifiers.org/ensembl/ENSG00000137752> , <http://identifiers.org/ensembl/ENSG00000103490> .
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r109431/Group/f1f54> ;
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000162711> , <http://identifiers.org/ensembl/ENSG00000103490> , <http://identifiers.org/ensembl/ENSG00000137752> .
 
 <http://identifiers.org/ensembl/ENSG00000109320>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -152,7 +153,7 @@
 <http://rdf.wikipathways.org/Pathway/WP4876_r109431/Complex/d72a0>
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4876_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4876_r109431/Group/d72a0" ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r109431/Group/d72a0> ;
         wp:participants   <http://identifiers.org/ensembl/ENSG00000173039> , <http://identifiers.org/ensembl/ENSG00000109320> .
 
 <http://identifiers.org/refseq/YP_009724391>
@@ -178,8 +179,8 @@
 <http://rdf.wikipathways.org/Pathway/WP4876_r109431/ComplexBinding/f1f54>
         a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4876_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4876_r109431/Group/f1f54" ;
-        wp:participants   <http://identifiers.org/ensembl/ENSG00000162711> , <http://identifiers.org/ensembl/ENSG00000137752> , <http://identifiers.org/ensembl/ENSG00000103490> , <http://rdf.wikipathways.org/Pathway/WP4876_r109431/Complex/f1f54> .
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r109431/Group/f1f54> ;
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000162711> , <http://identifiers.org/ensembl/ENSG00000103490> , <http://identifiers.org/ensembl/ENSG00000137752> , <http://rdf.wikipathways.org/Pathway/WP4876_r109431/Complex/f1f54> .
 
 <http://identifiers.org/wikipathways/WP4876_r109431>
         a                      skos:Collection , wp:Pathway ;
@@ -200,13 +201,13 @@
 <http://rdf.wikipathways.org/Pathway/WP4876_r109431/Complex/b6589>
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4876_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4876_r109431/Group/b6589" ;
-        wp:participants   <http://identifiers.org/refseq/YP_009724391> , <http://identifiers.org/ensembl/ENSG00000131323> .
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r109431/Group/b6589> ;
+        wp:participants   <http://identifiers.org/ensembl/ENSG00000131323> , <http://identifiers.org/refseq/YP_009724391> .
 
 <http://rdf.wikipathways.org/Pathway/WP4876_r109431/ComplexBinding/d72a0>
         a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4876_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4876_r109431/Group/d72a0" ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r109431/Group/d72a0> ;
         wp:participants   <http://identifiers.org/ensembl/ENSG00000173039> , <http://identifiers.org/ensembl/ENSG00000109320> , <http://rdf.wikipathways.org/Pathway/WP4876_r109431/Complex/d72a0> .
 
 <http://identifiers.org/ensembl/ENSG00000131323>

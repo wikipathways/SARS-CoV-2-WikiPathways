@@ -1,5 +1,6 @@
 @prefix void:  <http://rdfs.org/ns/void#> .
 @prefix pav:   <http://purl.org/pav/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix freq:  <http://purl.org/cld/freq/> .
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
@@ -52,7 +53,7 @@
 <http://rdf.wikipathways.org/Pathway/WP4860_r109431/ComplexBinding/c466c>
         a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4860_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4860_r109431/Group/c466c" ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4860_r109431/Group/c466c> ;
         wp:participants   <http://identifiers.org/ensembl/ENSG00000159593> , <http://identifiers.org/ensembl/ENSG00000144744> , <http://rdf.wikipathways.org/Pathway/WP4860_r109431/Complex/c466c> .
 
 <http://identifiers.org/wikipathways/WP183>
@@ -96,7 +97,7 @@
 <http://rdf.wikipathways.org/Pathway/WP4860_r109431/Complex/c466c>
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4860_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4860_r109431/Group/c466c" ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4860_r109431/Group/c466c> ;
         wp:participants   <http://identifiers.org/ensembl/ENSG00000159593> , <http://identifiers.org/ensembl/ENSG00000144744> .
 
 <http://identifiers.org/wikipathways/WP4860>
@@ -135,7 +136,7 @@
 <http://rdf.wikipathways.org/Pathway/WP4860_r109431/ComplexBinding/ac59a>
         a                 wp:ComplexBinding , wp:Interaction , wp:Binding ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4860_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4860_r109431/Group/ac59a" ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4860_r109431/Group/ac59a> ;
         wp:participants   <http://identifiers.org/wikidata/Q89227548> , <http://identifiers.org/ensembl/ENSG00000100387> , <http://identifiers.org/ensembl/ENSG00000108094> , <http://rdf.wikipathways.org/Pathway/WP4860_r109431/Complex/ac59a> , <http://identifiers.org/ensembl/ENSG00000067955> , <http://identifiers.org/ensembl/ENSG00000154582> , <http://identifiers.org/ensembl/ENSG00000162378> , <http://identifiers.org/ensembl/ENSG00000103363> .
 
 <http://identifiers.org/ensembl/ENSG00000159593>
@@ -154,12 +155,14 @@
 <http://rdf.wikipathways.org/Pathway/WP4860_r109431/Complex/ac59a>
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4860_r109431> ;
-        wp:isAbout        "http://rdf.wikipathways.org/Pathway/WP4860_r109431/Group/ac59a" ;
-        wp:participants   <http://identifiers.org/wikidata/Q89227548> , <http://identifiers.org/ensembl/ENSG00000067955> , <http://identifiers.org/ensembl/ENSG00000100387> , <http://identifiers.org/ensembl/ENSG00000154582> , <http://identifiers.org/ensembl/ENSG00000103363> , <http://identifiers.org/ensembl/ENSG00000162378> , <http://identifiers.org/ensembl/ENSG00000108094> .
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4860_r109431/Group/ac59a> ;
+        wp:participants   <http://identifiers.org/wikidata/Q89227548> , <http://identifiers.org/ensembl/ENSG00000067955> , <http://identifiers.org/ensembl/ENSG00000100387> , <http://identifiers.org/ensembl/ENSG00000154582> , <http://identifiers.org/ensembl/ENSG00000162378> , <http://identifiers.org/ensembl/ENSG00000103363> , <http://identifiers.org/ensembl/ENSG00000108094> .
 
 <http://identifiers.org/pubmed/17304241>
         a                 wp:PublicationReference ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4860_r109431> ;
+        wp:bdbWikidata    <http://www.wikidata.org/entity/Q24297442> ;
+        owl:sameAs        <https://doi.org/10.1038%2FSJ.EMBOR.7400895> ;
         foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/17304241> .
 
 <http://identifiers.org/ensembl/ENSG00000144744>
