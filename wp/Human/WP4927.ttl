@@ -1,0 +1,178 @@
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix pav:   <http://purl.org/pav/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix freq:  <http://purl.org/cld/freq/> .
+@prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
+@prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wprdf: <http://rdf.wikipathways.org/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<http://rdf.wikipathways.org/Pathway/WP4927_r109431/ComplexBinding/ca3cc>
+        a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4927_r109431/Group/ca3cc> ;
+        wp:participants   <http://identifiers.org/uniprot/P05160> , <http://identifiers.org/uniprot/P00488> , <http://rdf.wikipathways.org/Pathway/WP4927_r109431/Complex/ca3cc> .
+
+<http://identifiers.org/wikipathways/WP1818>
+        a                   wp:DataNode ;
+        rdfs:label          "Formation of Fibrin Clot  (Clotting Cascade)"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/wikipathways/WP1818> ;
+        dc:source           "WikiPathways"^^xsd:string ;
+        dcterms:identifier  "WP1818"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/d4d5a> .
+
+<http://rdf.wikipathways.org/Pathway/WP4927_r109431/Complex/ca3cc>
+        a                 wp:Complex , wp:DataNode ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4927_r109431/Group/ca3cc> ;
+        wp:participants   <http://identifiers.org/uniprot/P05160> , <http://identifiers.org/uniprot/P00488> .
+
+<http://identifiers.org/wikipathways/WP4927>
+        pav:hasVersion  <http://identifiers.org/wikipathways/WP4927_r109431> .
+
+<http://identifiers.org/wikipathways/WP4927_r109431>
+        a                    wp:Pathway , skos:Collection ;
+        dc:identifier        <http://identifiers.org/wikipathways/WP4927> ;
+        dc:source            "WikiPathways"^^xsd:string ;
+        dc:title             "COVID-19, thrombosis and anticoagulation"@en ;
+        dcterms:description  "new" ;
+        dcterms:identifier   "WP4927"^^xsd:string ;
+        dcterms:references   <http://identifiers.org/pubmed/32344011> , <http://identifiers.org/pubmed/32339221> ;
+        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4927_r109431> ;
+        wp:organism          <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:organismName      "Homo sapiens"^^xsd:string ;
+        foaf:page            <http://www.wikipathways.org/instance/WP4927_r109431> .
+
+<http://identifiers.org/wikipathways/WP4580>
+        a                   wp:DataNode ;
+        rdfs:label          "Blood clotting  and drug effects"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/wikipathways/WP4580> ;
+        dc:source           "WikiPathways"^^xsd:string ;
+        dcterms:identifier  "WP4580"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/f39d4> .
+
+<http://identifiers.org/pubmed/32344011>
+        a                 wp:PublicationReference ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32344011> .
+
+<http://identifiers.org/uniprot/P05160>
+        a                   wp:DataNode , wp:Protein ;
+        rdfs:label          "Factor XIII B chain"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/uniprot/P05160> ;
+        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
+        dcterms:identifier  "P05160"^^xsd:string ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4927_r109431/Complex/ca3cc> , <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000143278> ;
+        wp:bdbEntrezGene    <http://identifiers.org/ncbigene/2165> ;
+        wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/F13B> ;
+        wp:bdbUniprot       <http://identifiers.org/uniprot/P05160> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/a43ac> .
+
+<http://identifiers.org/uniprot/P00488>
+        a                   wp:Protein , wp:DataNode ;
+        rdfs:label          "Factor XIII A chain"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/uniprot/P00488> ;
+        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
+        dcterms:identifier  "P00488"^^xsd:string ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4927_r109431/Complex/ca3cc> , <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000124491> ;
+        wp:bdbEntrezGene    <http://identifiers.org/ncbigene/2162> ;
+        wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/F13A1> ;
+        wp:bdbUniprot       <http://identifiers.org/uniprot/A6PVK5> , <http://identifiers.org/uniprot/Q9NQP5> , <http://identifiers.org/uniprot/H0Y4W5> , <http://identifiers.org/uniprot/H0Y796> , <http://identifiers.org/uniprot/P00488> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/e0c9c> .
+
+<http://identifiers.org/wikipathways/WP4462>
+        a                   wp:DataNode ;
+        rdfs:label          "Platelet-mediated interactions with  vascular and circulating cells"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/wikipathways/WP4462> ;
+        dc:source           "WikiPathways"^^xsd:string ;
+        dcterms:identifier  "WP4462"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/a8be1> .
+
+<http://identifiers.org/pubmed/32339221>
+        a                 wp:PublicationReference ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32339221> .
+
+<http://identifiers.org/uniprot/P00747>
+        a                   wp:DataNode , wp:Protein ;
+        rdfs:label          "Plasmin"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/uniprot/P00747> ;
+        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
+        dcterms:identifier  "P00747"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000122194> ;
+        wp:bdbEntrezGene    <http://identifiers.org/ncbigene/5340> ;
+        wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/PLG> ;
+        wp:bdbUniprot       <http://identifiers.org/uniprot/A6PVI2> , <http://identifiers.org/uniprot/P00747> , <http://identifiers.org/uniprot/Q5TEH5> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/d9680> .
+
+<http://identifiers.org/wikidata/Q27205>
+        a                   wp:DataNode , wp:Metabolite ;
+        rdfs:label          "Fibrin"^^xsd:string ;
+        rdfs:seeAlso        <http://identifiers.org/inchikey/BWGVNKXGVNDBDI-UHFFFAOYSA-N> ;
+        dc:identifier       <http://identifiers.org/wikidata/Q27205> ;
+        dc:source           "Wikidata"^^xsd:string ;
+        dcterms:identifier  "Q27205"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        wp:bdbChEBI         <http://identifiers.org/chebi/CHEBI:5054> ;
+        wp:bdbChemspider    <http://identifiers.org/chemspider/388339> ;
+        wp:bdbInChIKey      <http://identifiers.org/inchikey/BWGVNKXGVNDBDI-UHFFFAOYSA-N> ;
+        wp:bdbKeggCompound  <http://identifiers.org/kegg.compound/C00290> ;
+        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID439199> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q27205> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/c43fd> , <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/a4929> , <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/b75e4> , <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/ea5d5> , <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/bdc25> , <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/a22e1> , <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/e261b> , <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/e9434> .
+
+<http://identifiers.org/wikipathways/WP272>
+        a                   wp:DataNode ;
+        rdfs:label          "Blood Clotting  Cascade"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/wikipathways/WP272> ;
+        dc:source           "WikiPathways"^^xsd:string ;
+        dcterms:identifier  "WP272"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/ced54> .
+
+<http://identifiers.org/wikipathways/WP558>
+        a                   wp:DataNode ;
+        rdfs:label          "Complement and  Coagulation Cascades"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/wikipathways/WP558> ;
+        dc:source           "WikiPathways"^^xsd:string ;
+        dcterms:identifier  "WP558"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/a62fc> .
+
+<http://identifiers.org/uniprot/P00734>
+        a                   wp:DataNode , wp:Protein ;
+        rdfs:label          "Thrombin"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/uniprot/P00734> ;
+        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
+        dcterms:identifier  "P00734"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000180210> ;
+        wp:bdbEntrezGene    <http://identifiers.org/ncbigene/2147> ;
+        wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/F2> ;
+        wp:bdbUniprot       <http://identifiers.org/uniprot/P00734> , <http://identifiers.org/uniprot/E9PIT3> , <http://identifiers.org/uniprot/C9JV37> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/cdb77> .
+
+<http://identifiers.org/wikidata/Q381899>
+        a                   wp:Metabolite , wp:DataNode ;
+        rdfs:label          "Fibrinogen"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/wikidata/Q381899> ;
+        dc:source           "Wikidata"^^xsd:string ;
+        dcterms:identifier  "Q381899"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4927_r109431> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q381899> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4927_r109431/DataNode/bf477> .
+

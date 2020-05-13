@@ -38,7 +38,7 @@
         dc:identifier       <http://identifiers.org/lipidmaps/LMFA01030001> ;
         dc:source           "LIPID MAPS"^^xsd:string ;
         dcterms:identifier  "LMFA01030001"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4853_r109431> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id514f61ff> , <http://identifiers.org/wikipathways/WP4853_r109431> ;
         wp:bdbChEBI         <http://identifiers.org/chebi/CHEBI:40501> , <http://identifiers.org/chebi/CHEBI:15843> ;
         wp:bdbChemspider    <http://identifiers.org/chemspider/392692> ;
         wp:bdbHmdb          <http://identifiers.org/hmdb/HMDB0001043> ;
@@ -64,7 +64,7 @@
         dc:identifier       <http://identifiers.org/chebi/CHEBI:37739> ;
         dc:source           "ChEBI"^^xsd:string ;
         dcterms:identifier  "CHEBI:37739"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id4fda8300> , <http://identifiers.org/wikipathways/WP4853_r109431> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id4fda8300> , <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/iddd1cfda4> , <http://identifiers.org/wikipathways/WP4853_r109431> ;
         wp:bdbChEBI         <http://identifiers.org/chebi/CHEBI:37739> ;
         wp:bdbLipidMaps     <http://identifiers.org/lipidmaps/LMGP> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q420004> ;
@@ -77,7 +77,7 @@
         dc:identifier       <http://identifiers.org/lipidmaps/LMFA01030158> ;
         dc:source           "LIPID MAPS"^^xsd:string ;
         dcterms:identifier  "LMFA01030158"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/idc1be3099> , <http://identifiers.org/wikipathways/WP4853_r109431> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id514f61ff> , <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/idc1be3099> , <http://identifiers.org/wikipathways/WP4853_r109431> ;
         wp:bdbChEBI         <http://identifiers.org/chebi/CHEBI:53486> ;
         wp:bdbChemspider    <http://identifiers.org/chemspider/4444199> ;
         wp:bdbHmdb          <http://identifiers.org/hmdb/HMDB0002925> ;
@@ -88,12 +88,6 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q415398> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4853_r109431/DataNode/e6b51> .
 
-<http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id137e44e>
-        a                 wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4853_r109431> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4853_r109431/Interaction/id137e44e> ;
-        wp:participants   <http://identifiers.org/lipidmaps/LMFA01010001> .
-
 <http://identifiers.org/pubmed/30654597>
         a                 wp:PublicationReference ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4853_r109431> ;
@@ -101,7 +95,7 @@
 
 <http://identifiers.org/lipidmaps/LMFA01030141>
         a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "gamma- linolenic acid"^^xsd:string ;
+        rdfs:label          "gamma-linolenic acid"^^xsd:string ;
         rdfs:seeAlso        <http://identifiers.org/inchikey/VZCCETWTMQHEPK-QNEBEIHSSA-N> ;
         dc:identifier       <http://identifiers.org/lipidmaps/LMFA01030141> ;
         dc:source           "LIPID MAPS"^^xsd:string ;
@@ -117,6 +111,14 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q415885> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4853_r109431/DataNode/cf458> .
 
+<http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id514f61ff>
+        a                 wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4853_r109431> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4853_r109431/Interaction/id514f61ff> ;
+        wp:participants   <http://identifiers.org/lipidmaps/LMFA01030001> , <http://identifiers.org/lipidmaps/LMFA01030158> ;
+        wp:source         <http://identifiers.org/lipidmaps/LMFA01030158> ;
+        wp:target         <http://identifiers.org/lipidmaps/LMFA01030001> .
+
 <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/idc1be3099>
         a                 wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4853_r109431> ;
@@ -125,12 +127,6 @@
         wp:source         <http://identifiers.org/lipidmaps/LMFA01030141> ;
         wp:target         <http://identifiers.org/lipidmaps/LMFA01030158> .
 
-<http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id52f68985>
-        a                 wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4853_r109431> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4853_r109431/Interaction/id52f68985> ;
-        wp:participants   <http://identifiers.org/lipidmaps/LMFA01030002> .
-
 <http://identifiers.org/lipidmaps/LMFA01010001>
         a                   wp:DataNode , wp:Metabolite ;
         rdfs:label          "palmitic acid"^^xsd:string ;
@@ -138,7 +134,7 @@
         dc:identifier       <http://identifiers.org/lipidmaps/LMFA01010001> ;
         dc:source           "LIPID MAPS"^^xsd:string ;
         dcterms:identifier  "LMFA01010001"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4853_r109431> , <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id137e44e> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4853_r109431> , <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id4fda8300> ;
         wp:bdbChEBI         <http://identifiers.org/chebi/CHEBI:15756> ;
         wp:bdbChemspider    <http://identifiers.org/chemspider/960> ;
         wp:bdbHmdb          <http://identifiers.org/hmdb/HMDB0000220> ;
@@ -152,13 +148,8 @@
 <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id4fda8300>
         a                 wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4853_r109431> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4853_r109431/Interaction/id4fda8300> ;
-        wp:participants   <http://identifiers.org/lipidmaps/LMFA01030120> , <http://identifiers.org/chebi/CHEBI:37739> .
-
-<http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/ideb0617af>
-        a                 wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4853_r109431> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4853_r109431/Interaction/ideb0617af> .
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4853_r109431/Interaction/id137e44e> , <http://rdf.wikipathways.org/Pathway/WP4853_r109431/Interaction/ideb0617af> , <http://rdf.wikipathways.org/Pathway/WP4853_r109431/Interaction/id4fda8300> , <http://rdf.wikipathways.org/Pathway/WP4853_r109431/Interaction/id52f68985> ;
+        wp:participants   <http://identifiers.org/lipidmaps/LMFA01030002> , <http://identifiers.org/lipidmaps/LMFA01030120> , <http://identifiers.org/brenda/3.1.1.4> , <http://identifiers.org/lipidmaps/LMFA01010001> , <http://identifiers.org/chebi/CHEBI:37739> .
 
 <http://identifiers.org/lipidmaps/LMGP01050113>
         a                   wp:Metabolite , wp:DataNode ;
@@ -195,7 +186,7 @@
         dc:identifier       <http://identifiers.org/lipidmaps/LMFA01030002> ;
         dc:source           "LIPID MAPS"^^xsd:string ;
         dcterms:identifier  "LMFA01030002"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4853_r109431> , <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id52f68985> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id4fda8300> , <http://identifiers.org/wikipathways/WP4853_r109431> ;
         wp:bdbChEBI         <http://identifiers.org/chebi/CHEBI:16196> ;
         wp:bdbChemspider    <http://identifiers.org/chemspider/393217> ;
         wp:bdbHmdb          <http://identifiers.org/hmdb/HMDB0000207> ;
@@ -206,13 +197,14 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q207688> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4853_r109431/DataNode/ecc95> .
 
+<http://identifiers.org/wikipathways/WP4853>
+        pav:hasVersion  <http://identifiers.org/wikipathways/WP4853_r109431> .
+
 <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/iddd1cfda4>
         a                 wp:Interaction ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4853_r109431> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4853_r109431/Interaction/iddd1cfda4> .
-
-<http://identifiers.org/wikipathways/WP4853>
-        pav:hasVersion  <http://identifiers.org/wikipathways/WP4853_r109431> .
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4853_r109431/Interaction/iddd1cfda4> ;
+        wp:participants   <http://identifiers.org/chebi/CHEBI:37739> .
 
 <http://identifiers.org/brenda/3.1.1.4>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -220,7 +212,7 @@
         dc:identifier       <http://identifiers.org/brenda/3.1.1.4> ;
         dc:source           "BRENDA"^^xsd:string ;
         dcterms:identifier  "3.1.1.4"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4853_r109431> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id4fda8300> , <http://identifiers.org/wikipathways/WP4853_r109431> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4853_r109431/DataNode/b7b4c> .
 
 <http://rdf.wikipathways.org/Pathway/WP4853_r109431/WP/Interaction/id8ca14613>
