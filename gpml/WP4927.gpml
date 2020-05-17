@@ -2,506 +2,628 @@
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="COVID-19, thrombosis and anticoagulation" Version="20200513" Organism="Homo sapiens">
   <Comment Source="WikiPathways-description">Several hospitals and researchers have reported links between thrombosis and anticoagulation quite regularly for Covid-19 patients.
 
-This pathways combines this information, including biological mechanisms involved, in one graphical overview.
+This pathways combines this information, including biological mechanisms involved, in one graphical overview. The D-dimer is one of the protein fragments produced when a blood clot dissolves, a process related to thrombosis.
 
 The graphical visualisation of (crosslinked) fibrin mesh leading to D-dimers is inspired by [https://en.wikipedia.org/wiki/D-dimer Wikipedia].</Comment>
   <BiopaxRef>bfd</BiopaxRef>
   <BiopaxRef>ba8</BiopaxRef>
-  <Graphics BoardWidth="919.0777170143177" BoardHeight="640.22565742715" />
-  <DataNode TextLabel="Platelet-mediated interactions with &#xA;vascular and circulating cells" GraphId="a8be1" Type="Pathway" GroupRef="ce45e">
-    <Graphics CenterX="718.618533340848" CenterY="163.22735782832711" Width="277.24489795918305" Height="36.07142857142816" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
-    <Xref Database="WikiPathways" ID="WP4462" />
-  </DataNode>
-  <DataNode TextLabel="Fibrinogen" GraphId="bf477" Type="Metabolite">
-    <Graphics CenterX="332.47972478893917" CenterY="55.83577079040056" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff" />
-    <Xref Database="Wikidata" ID="Q381899" />
-  </DataNode>
-  <DataNode TextLabel="fibrin degradation &#xA;products (FDPs)" GraphId="c1979" Type="Metabolite">
-    <Graphics CenterX="222.2257383966245" CenterY="547.1958509142053" Width="129.38818565400845" Height="39.22292545710275" ZOrder="32768" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff" />
-    <Xref Database="" ID="" />
-  </DataNode>
-  <DataNode TextLabel="Thrombin" GraphId="cdb77" Type="Protein">
-    <Graphics CenterX="438.51713975492777" CenterY="99.79835582441416" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
-    <Xref Database="Uniprot-TrEMBL" ID="P00734" />
+  <Graphics BoardWidth="1128.849018280298" BoardHeight="708.22565742715"/>
+  <DataNode TextLabel="FGB (Bβ)" GraphId="c3c8d" Type="Protein" GroupRef="dc6b5">
+    <Comment>"FGB is not alternatively spliced"</Comment>
+    <Graphics CenterX="914.8629148629146" CenterY="234.23667377398723" Width="90.0" Height="25.0" ZOrder="-2" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="P02675"/>
   </DataNode>
   <DataNode TextLabel="Plasmin" GraphId="d9680" Type="Protein">
-    <Graphics CenterX="334.75479744136464" CenterY="597.72565742715" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
-    <Xref Database="Uniprot-TrEMBL" ID="P00747" />
+    <Graphics CenterX="334.75479744136464" CenterY="665.72565742715" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="P00747"/>
+  </DataNode>
+  <DataNode TextLabel="FGG (γ)" GraphId="a0032" Type="Protein" GroupRef="e6c77">
+    <Comment>"fibrinogen gamma chain (also termed the γ chain) encoded by the FGG gene"</Comment>
+    <Graphics CenterX="657.4271499644617" CenterY="259.23667377398726" Width="90.0" Height="25.0" ZOrder="32770" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="P02679"/>
+  </DataNode>
+  <DataNode TextLabel="FGB (Bβ)" GraphId="dadbd" Type="Protein" GroupRef="e6c77">
+    <Comment>"the fibrinogen beta chain (also termed the Bβ or β chain) encoded by the FGB gene"</Comment>
+    <Graphics CenterX="657.4271499644617" CenterY="234.23667377398723" Width="90.0" Height="25.0" ZOrder="32772" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="P02675"/>
+  </DataNode>
+  <DataNode TextLabel="Fibrinogen" GraphId="bf477" Type="Metabolite">
+    <Graphics CenterX="332.47972478893917" CenterY="123.83577079040056" Width="90.0" Height="25.0" ZOrder="32774" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+    <Xref Database="Wikidata" ID="Q381899"/>
+  </DataNode>
+  <DataNode TextLabel="FGA (Aα)" GraphId="bad81" Type="Protein" GroupRef="e6c77">
+    <Comment>"fibrinogen alpha chain (also termed the Aα or α chain) encoded by the FGA gene"</Comment>
+    <Graphics CenterX="687.2172650626328" CenterY="209.23667377398723" Width="90.0" Height="25.0" ZOrder="32776" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="P02671"/>
+  </DataNode>
+  <DataNode TextLabel="Blood Clotting &#10;Cascade" GraphId="ced54" Type="Pathway" GroupRef="ce45e">
+    <Graphics CenterX="848.6185333408499" CenterY="582.2987863997552" Width="277.2448979591831" Height="36.07142857142816" ZOrder="32777" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e"/>
+    <Xref Database="WikiPathways" ID="WP272"/>
+  </DataNode>
+  <DataNode TextLabel="Formation of Fibrin Clot &#10;(Clotting Cascade)" GraphId="d4d5a" Type="Pathway" GroupRef="ce45e">
+    <Graphics CenterX="848.618533340848" CenterY="510.15592925689884" Width="277.24489795918305" Height="36.07142857142816" ZOrder="32777" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e"/>
+    <Xref Database="WikiPathways" ID="WP1818"/>
+  </DataNode>
+  <DataNode TextLabel="FGA (AαE)" GraphId="e87a6" Type="Protein" GroupRef="dc6b5">
+    <Comment>"Alternate splicing of the FGA gene produces a minor expanded isoform of Aα termed AαE which replaces Aα in 1–3% of circulating fibrinogen"</Comment>
+    <Graphics CenterX="882.3646074830916" CenterY="209.23667377398726" Width="90.0" Height="25.0" ZOrder="32778" FontSize="12" Valign="Middle"/>
+    <Xref Database="NCBI Protein" ID="NP_000499.1"/>
+  </DataNode>
+  <DataNode TextLabel="Blood clotting &#10;and drug effects" GraphId="f39d4" Type="Pathway" GroupRef="ce45e">
+    <Graphics CenterX="848.6185333408497" CenterY="618.3702149711822" Width="277.2448979591831" Height="36.07142857142816" ZOrder="32779" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e"/>
+    <Xref Database="WikiPathways" ID="WP4580"/>
   </DataNode>
   <DataNode TextLabel="Factor XIII A chain" GraphId="e0c9c" Type="Protein" GroupRef="d5543">
     <Comment>Catalytically active</Comment>
-    <Graphics CenterX="438.51713975492777" CenterY="301.70311772917626" Width="128.80952380952385" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
-    <Xref Database="Uniprot-TrEMBL" ID="P00488" />
+    <Graphics CenterX="438.51713975492777" CenterY="369.70311772917626" Width="128.80952380952385" Height="25.0" ZOrder="32780" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="P00488"/>
   </DataNode>
-  <DataNode TextLabel="Formation of Fibrin Clot &#xA;(Clotting Cascade)" GraphId="d4d5a" Type="Pathway" GroupRef="ce45e">
-    <Graphics CenterX="718.618533340848" CenterY="127.15592925689879" Width="277.24489795918305" Height="36.07142857142816" ZOrder="32769" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
-    <Xref Database="WikiPathways" ID="WP1818" />
+  <DataNode TextLabel="Complement and &#10;Coagulation Cascades" GraphId="a62fc" Type="Pathway" GroupRef="ce45e">
+    <Graphics CenterX="848.6185333408497" CenterY="654.4416435426093" Width="277.2448979591831" Height="36.07142857142816" ZOrder="32781" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e"/>
+    <Xref Database="WikiPathways" ID="WP558"/>
   </DataNode>
-  <DataNode TextLabel="Blood Clotting &#xA;Cascade" GraphId="ced54" Type="Pathway" GroupRef="ce45e">
-    <Graphics CenterX="718.6185333408499" CenterY="199.29878639975516" Width="277.2448979591831" Height="36.07142857142816" ZOrder="32770" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
-    <Xref Database="WikiPathways" ID="WP272" />
-  </DataNode>
-  <DataNode TextLabel="Blood clotting &#xA;and drug effects" GraphId="f39d4" Type="Pathway" GroupRef="ce45e">
-    <Graphics CenterX="718.6185333408497" CenterY="235.37021497118226" Width="277.2448979591831" Height="36.07142857142816" ZOrder="32771" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
-    <Xref Database="WikiPathways" ID="WP4580" />
-  </DataNode>
-  <DataNode TextLabel="Complement and &#xA;Coagulation Cascades" GraphId="a62fc" Type="Pathway" GroupRef="ce45e">
-    <Graphics CenterX="718.6185333408497" CenterY="271.4416435426093" Width="277.2448979591831" Height="36.07142857142816" ZOrder="32772" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
-    <Xref Database="WikiPathways" ID="WP558" />
+  <DataNode TextLabel="Platelet-mediated interactions with &#10;vascular and circulating cells" GraphId="a8be1" Type="Pathway" GroupRef="ce45e">
+    <Graphics CenterX="848.618533340848" CenterY="546.2273578283272" Width="277.24489795918305" Height="36.07142857142816" ZOrder="32782" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e"/>
+    <Xref Database="WikiPathways" ID="WP4462"/>
   </DataNode>
   <DataNode TextLabel="Fibrin" GraphId="e261b" Type="Metabolite" GroupRef="f1d76">
-    <Graphics CenterX="289.8279430731174" CenterY="158.94385728518705" Width="90.0" Height="25.0" ZOrder="32775" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff" />
-    <Xref Database="Wikidata" ID="Q27205" />
+    <Graphics CenterX="289.8279430731174" CenterY="226.94385728518705" Width="90.0" Height="25.0" ZOrder="32783" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+    <Xref Database="Wikidata" ID="Q27205"/>
+  </DataNode>
+  <DataNode TextLabel="fibrin degradation &#10;products (FDPs)" GraphId="c1979" Type="Metabolite">
+    <Graphics CenterX="222.2257383966245" CenterY="615.1958509142053" Width="129.38818565400845" Height="39.22292545710275" ZOrder="32784" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+    <Xref Database="" ID=""/>
   </DataNode>
   <DataNode TextLabel="Fibrin" GraphId="a4929" Type="Metabolite" GroupRef="f1d76">
-    <Graphics CenterX="419.7259022567932" CenterY="158.943857285187" Width="90.0" Height="25.0" ZOrder="32777" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff" />
-    <Xref Database="Wikidata" ID="Q27205" />
+    <Graphics CenterX="419.7259022567932" CenterY="226.943857285187" Width="90.0" Height="25.0" ZOrder="32786" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+    <Xref Database="Wikidata" ID="Q27205"/>
+  </DataNode>
+  <DataNode TextLabel="Thrombin" GraphId="cdb77" Type="Protein">
+    <Graphics CenterX="438.51713975492777" CenterY="167.79835582441416" Width="90.0" Height="25.0" ZOrder="32786" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="P00734"/>
   </DataNode>
   <DataNode TextLabel="Fibrin" GraphId="a22e1" Type="Metabolite" GroupRef="f1d76">
-    <Graphics CenterX="244.66314622149508" CenterY="220.59079309115333" Width="90.0" Height="25.0" ZOrder="32779" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff" />
-    <Xref Database="Wikidata" ID="Q27205" />
+    <Graphics CenterX="244.66314622149508" CenterY="288.59079309115333" Width="90.0" Height="25.0" ZOrder="32789" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+    <Xref Database="Wikidata" ID="Q27205"/>
   </DataNode>
   <DataNode TextLabel="Fibrin" GraphId="bdc25" Type="Metabolite" GroupRef="f1d76">
-    <Graphics CenterX="379.1240548827713" CenterY="220.59079309115333" Width="90.0" Height="25.0" ZOrder="32781" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff" />
-    <Xref Database="Wikidata" ID="Q27205" />
+    <Graphics CenterX="379.1240548827713" CenterY="288.59079309115333" Width="90.0" Height="25.0" ZOrder="32792" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+    <Xref Database="Wikidata" ID="Q27205"/>
   </DataNode>
   <DataNode TextLabel="Fibrin" GraphId="ea5d5" Type="Metabolite" GroupRef="decc6">
-    <Graphics CenterX="290.3041335493078" CenterY="380.37242871375946" Width="90.0" Height="25.0" ZOrder="32801" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff" />
-    <Xref Database="Wikidata" ID="Q27205" />
+    <Graphics CenterX="290.3041335493078" CenterY="448.37242871375946" Width="90.0" Height="25.0" ZOrder="32827" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+    <Xref Database="Wikidata" ID="Q27205"/>
   </DataNode>
   <DataNode TextLabel="Fibrin" GraphId="b75e4" Type="Metabolite" GroupRef="decc6">
-    <Graphics CenterX="420.20209273298354" CenterY="380.37242871375946" Width="90.0" Height="25.0" ZOrder="32805" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff" />
-    <Xref Database="Wikidata" ID="Q27205" />
+    <Graphics CenterX="420.20209273298354" CenterY="448.37242871375946" Width="90.0" Height="25.0" ZOrder="32830" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+    <Xref Database="Wikidata" ID="Q27205"/>
   </DataNode>
   <DataNode TextLabel="Fibrin" GraphId="e9434" Type="Metabolite" GroupRef="decc6">
-    <Graphics CenterX="245.1393366976855" CenterY="442.0193645197272" Width="90.0" Height="25.0" ZOrder="32809" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff" />
-    <Xref Database="Wikidata" ID="Q27205" />
+    <Graphics CenterX="245.1393366976855" CenterY="510.0193645197272" Width="90.0" Height="25.0" ZOrder="32833" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+    <Xref Database="Wikidata" ID="Q27205"/>
   </DataNode>
   <DataNode TextLabel="Fibrin" GraphId="c43fd" Type="Metabolite" GroupRef="decc6">
-    <Graphics CenterX="379.6002453589617" CenterY="442.0193645197272" Width="90.0" Height="25.0" ZOrder="32813" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff" />
-    <Xref Database="Wikidata" ID="Q27205" />
+    <Graphics CenterX="379.6002453589617" CenterY="510.0193645197272" Width="90.0" Height="25.0" ZOrder="32836" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+    <Xref Database="Wikidata" ID="Q27205"/>
   </DataNode>
   <DataNode TextLabel="Factor XIII B chain" GraphId="a43ac" Type="Protein" GroupRef="d5543">
     <Comment>Not catalytically active, believed to stabilise A chain</Comment>
-    <Graphics CenterX="438.5171397549291" CenterY="326.7031177291764" Width="128.8095238095239" Height="25.0" ZOrder="32831" FontSize="12" Valign="Middle" />
-    <Xref Database="Uniprot-TrEMBL" ID="P05160" />
+    <Graphics CenterX="438.5171397549291" CenterY="394.7031177291764" Width="128.8095238095239" Height="25.0" ZOrder="32867" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="P05160"/>
   </DataNode>
   <DataNode TextLabel="D-Dimer" GraphId="f3e67" Type="Metabolite">
     <BiopaxRef>c2a</BiopaxRef>
     <BiopaxRef>bfd</BiopaxRef>
-    <Graphics CenterX="456.4090584364315" CenterY="547.1958509142053" Width="129.38818565400842" Height="39.22292545710275" ZOrder="32836" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff" />
-    <Xref Database="Wikidata" ID="" />
+    <Graphics CenterX="456.4090584364315" CenterY="615.1958509142053" Width="129.38818565400842" Height="39.22292545710275" ZOrder="32875" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+    <Xref Database="Wikidata" ID=""/>
+  </DataNode>
+  <DataNode TextLabel="FGG (γ')" GraphId="d5536" Type="Protein" GroupRef="dc6b5">
+    <Comment>"alternate splicing of FGG produces a minor isoform of γ termed γ' which replaces γ in 8–10% of circulating fibrinogen"</Comment>
+    <Graphics CenterX="914.8629148629146" CenterY="259.23667377398726" Width="90.0" Height="25.0" ZOrder="32902" FontSize="12" Valign="Middle"/>
+    <Xref Database="NCBI Protein" ID="NP_068656.2"/>
   </DataNode>
   <State GraphRef="bf477" TextLabel="D" GraphId="ac4ce">
-    <Graphics RelX="1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="bf477" TextLabel="D" GraphId="b4a78">
-    <Graphics RelX="-1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="-1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="bf477" TextLabel="E" GraphId="e2dda">
-    <Graphics RelX="-0.020408163265298956" RelY="1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="-0.020408163265298956" RelY="1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
+  </State>
+  <State GraphRef="e87a6" TextLabel="1-3%" GraphId="bbde6">
+    <Graphics RelX="1.0" RelY="1.0" Width="46.611655128604085" Height="16.23698632679148" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="e261b" TextLabel="D" GraphId="c5773">
-    <Graphics RelX="-1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="-1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="e261b" TextLabel="E" GraphId="cd6dc">
-    <Graphics RelX="0.002038525848057462" RelY="1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="0.002038525848057462" RelY="1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="e261b" TextLabel="D" GraphId="d3c59">
-    <Graphics RelX="1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="a4929" TextLabel="D" GraphId="fa49a">
-    <Graphics RelX="1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="a4929" TextLabel="E" GraphId="fd3b8">
-    <Graphics RelX="0.0666695100192707" RelY="1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="0.0666695100192707" RelY="1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="a4929" TextLabel="D" GraphId="ff810">
-    <Graphics RelX="-1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="-1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="a22e1" TextLabel="D" GraphId="d7a96">
-    <Graphics RelX="1.0" RelY="-1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="a22e1" TextLabel="D" GraphId="ecef7">
-    <Graphics RelX="-1.0" RelY="-1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="-1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="a22e1" TextLabel="E" GraphId="fe28a">
-    <Graphics RelX="0.008612199088385194" RelY="-1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="0.008612199088385194" RelY="1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="bdc25" TextLabel="D" GraphId="cbe67">
-    <Graphics RelX="1.0" RelY="-1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="bdc25" TextLabel="E" GraphId="dacf1">
-    <Graphics RelX="-0.0928393569366689" RelY="-1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="-0.0928393569366689" RelY="1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="bdc25" TextLabel="D" GraphId="dd8c9">
-    <Graphics RelX="-1.0" RelY="-1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="-1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="ea5d5" TextLabel="E" GraphId="f5605">
-    <Graphics RelX="-0.024730059212815073" RelY="1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="-0.024730059212815073" RelY="1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="ea5d5" TextLabel="D" GraphId="f8d60">
-    <Graphics RelX="-1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="-1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="ea5d5" TextLabel="D" GraphId="fb914">
-    <Graphics RelX="1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="b75e4" TextLabel="D" GraphId="d1901">
-    <Graphics RelX="1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="b75e4" TextLabel="D" GraphId="ee966">
-    <Graphics RelX="-1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="-1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="b75e4" TextLabel="E" GraphId="fe79e">
-    <Graphics RelX="-0.024730059212815073" RelY="1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="-0.024730059212815073" RelY="1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="e9434" TextLabel="D" GraphId="d3aa7">
-    <Graphics RelX="-1.0" RelY="-1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="-1.0" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="e9434" TextLabel="E" GraphId="d8bc4">
-    <Graphics RelX="0.011390500752203379" RelY="-1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="0.011390500752203379" RelY="1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="e9434" TextLabel="D" GraphId="def4d">
-    <Graphics RelX="0.9570169782935737" RelY="-1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="0.9570169782935737" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="c43fd" TextLabel="D" GraphId="a23dd">
-    <Graphics RelX="-0.9713446521957166" RelY="-1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="-0.9713446521957166" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="c43fd" TextLabel="D" GraphId="aba60">
-    <Graphics RelX="0.9713446521957154" RelY="-1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="0.9713446521957154" RelY="1.0" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="c43fd" TextLabel="E" GraphId="e140b">
-    <Graphics RelX="-0.08890321656279083" RelY="-1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="-0.08890321656279083" RelY="1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="f3e67" TextLabel="D" GraphId="b24e1">
-    <Graphics RelX="0.9766888791159055" RelY="0.8256732062200443" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="0.9766888791159055" RelY="0.8256732062200443" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="f3e67" TextLabel="E" GraphId="bf8d8">
-    <Graphics RelX="0.4697695369356058" RelY="-1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="0.4697695369356058" RelY="-1.0" Width="25.816326530611725" Height="17.959183673469504" FillColor="3399ff" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
   <State GraphRef="f3e67" TextLabel="D" GraphId="e7117">
-    <Graphics RelX="0.4774583213198872" RelY="0.8256732062200443" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval" />
-    <Xref Database="" ID="" />
+    <Graphics RelX="0.4774583213198872" RelY="0.8256732062200443" Width="15.0" Height="15.0" FillColor="ff0033" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
   </State>
-  <Interaction GraphId="id65f5c0db">
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="374.11237785016584" Y="301.70311772917626" GraphRef="e0c9c" RelX="-1.0" RelY="0.0" />
-      <Point X="332.44132500397274" Y="302.6531299816012" GraphRef="c36dc" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
-  <Interaction GraphId="id6a3831b2">
-    <Graphics ConnectorType="Elbow" ZOrder="12288" LineThickness="1.0">
-      <Point X="332.6707147153345" Y="462.5193645197272" GraphRef="c1caa" RelX="0.0" RelY="1.0" />
-      <Point X="286.91983122362876" Y="547.1958509142053" GraphRef="c1979" RelX="1.0" RelY="0.0" ArrowHead="Arrow" />
-      <Anchor Position="0.7771889797512247" Shape="None" GraphId="ffbfc" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
-  <Interaction GraphId="id7750ec11">
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="334.75479744136464" Y="585.22565742715" GraphRef="d9680" RelX="0.0" RelY="-1.0" />
-      <Point X="315.98048657633376" Y="547.1958509142053" GraphRef="ffbfc" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
+  <State GraphRef="d5536" TextLabel="8–10%" GraphId="a4074">
+    <Graphics RelX="1.0" RelY="1.0" Width="53.94101839017079" Height="16.168273546214266" ShapeType="Oval"/>
+    <Xref Database="" ID=""/>
+  </State>
   <Interaction GraphId="id87c45ba4">
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="332.47972478893917" Y="68.33577079040056" GraphRef="bf477" RelX="0.0" RelY="1.0" />
-      <Point X="332.19452423914413" Y="138.443857285187" GraphRef="b757b" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
-      <Anchor Position="0.4488569000351369" Shape="None" GraphId="a4d94" />
+    <Graphics ZOrder="12292" LineThickness="1.0">
+      <Point X="332.47972478893917" Y="136.33577079040055" GraphRef="bf477" RelX="0.0" RelY="1.0"/>
+      <Point X="332.19452423914413" Y="206.443857285187" GraphRef="b757b" RelX="0.0" RelY="-1.0" ArrowHead="Arrow"/>
+      <Anchor Position="0.4488569000351369" Shape="None" GraphId="a4d94"/>
     </Graphics>
-    <Xref Database="" ID="" />
+    <Xref Database="" ID=""/>
   </Interaction>
   <Interaction GraphId="ideca8cebf">
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="393.51713975492777" Y="99.79835582441416" GraphRef="cdb77" RelX="-1.0" RelY="0.0" />
-      <Point X="332.35171055426986" Y="99.80426916184564" GraphRef="a4d94" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    <Graphics ZOrder="12294" LineThickness="1.0">
+      <Point X="393.51713975492777" Y="167.79835582441416" GraphRef="cdb77" RelX="-1.0" RelY="0.0"/>
+      <Point X="332.35171055426986" Y="167.80426916184564" GraphRef="a4d94" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis"/>
     </Graphics>
-    <Xref Database="" ID="" />
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="id6a3831b2">
+    <Graphics ConnectorType="Elbow" ZOrder="12296" LineThickness="1.0">
+      <Point X="332.6707147153345" Y="530.5193645197273" GraphRef="c1caa" RelX="0.0" RelY="1.0"/>
+      <Point X="286.91983122362876" Y="615.1958509142053" GraphRef="c1979" RelX="1.0" RelY="0.0" ArrowHead="Arrow"/>
+      <Anchor Position="0.7771889797512247" Shape="None" GraphId="ffbfc"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="id65f5c0db">
+    <Graphics ZOrder="12300" LineThickness="1.0">
+      <Point X="374.11237785016584" Y="369.70311772917626" GraphRef="e0c9c" RelX="-1.0" RelY="0.0"/>
+      <Point X="332.44132500397274" Y="370.65312998160124" GraphRef="c36dc" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="id7750ec11">
+    <Graphics ZOrder="12302" LineThickness="1.0">
+      <Point X="334.75479744136464" Y="653.22565742715" GraphRef="d9680" RelX="0.0" RelY="-1.0"/>
+      <Point X="315.98048657633376" Y="615.1958509142053" GraphRef="ffbfc" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
   </Interaction>
   <Interaction GraphId="ddda1">
-    <Graphics ZOrder="32830" LineThickness="1.0">
-      <Point X="332.19452423914413" Y="241.09079309115333" GraphRef="b757b" RelX="0.0" RelY="1.0" />
-      <Point X="332.6707147153345" Y="359.8724287137594" GraphRef="c1caa" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
-      <Anchor Position="0.5182816061402303" Shape="None" GraphId="c36dc" />
+    <Graphics ZOrder="32865" LineThickness="1.0">
+      <Point X="332.19452423914413" Y="309.09079309115333" GraphRef="b757b" RelX="0.0" RelY="1.0"/>
+      <Point X="332.6707147153345" Y="427.8724287137595" GraphRef="c1caa" RelX="0.0" RelY="-1.0" ArrowHead="Arrow"/>
+      <Anchor Position="0.5182816061402303" Shape="None" GraphId="c36dc"/>
     </Graphics>
-    <Xref Database="" ID="" />
+    <Xref Database="" ID=""/>
   </Interaction>
   <Interaction GraphId="de859">
-    <Graphics ConnectorType="Elbow" ZOrder="32834" LineThickness="1.0">
-      <Point X="332.6707147153345" Y="462.5193645197272" GraphRef="c1caa" RelX="0.0" RelY="1.0" />
-      <Point X="391.7149656094273" Y="547.1958509142053" GraphRef="f3e67" RelX="-1.0" RelY="0.0" ArrowHead="Arrow" />
-      <Anchor Position="0.7445042950387472" Shape="None" GraphId="fce00" />
+    <Graphics ConnectorType="Elbow" ZOrder="32871" LineThickness="1.0">
+      <Point X="332.6707147153345" Y="530.5193645197273" GraphRef="c1caa" RelX="0.0" RelY="1.0"/>
+      <Point X="391.7149656094273" Y="615.1958509142053" GraphRef="f3e67" RelX="-1.0" RelY="0.0" ArrowHead="Arrow"/>
+      <Anchor Position="0.7445042950387472" Shape="None" GraphId="fce00"/>
     </Graphics>
-    <Xref Database="" ID="" />
+    <Xref Database="" ID=""/>
   </Interaction>
   <Interaction GraphId="a0699">
-    <Graphics ZOrder="32835" LineThickness="1.0">
-      <Point X="334.75479744136464" Y="585.22565742715" GraphRef="d9680" RelX="0.0" RelY="-1.0" />
-      <Point X="354.99493451833285" Y="547.1958509142053" GraphRef="fce00" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    <Graphics ZOrder="32873" LineThickness="1.0">
+      <Point X="334.75479744136464" Y="653.22565742715" GraphRef="d9680" RelX="0.0" RelY="-1.0"/>
+      <Point X="354.9949345183329" Y="615.1958509142053" GraphRef="fce00" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis"/>
     </Graphics>
-    <Xref Database="" ID="" />
+    <Xref Database="" ID=""/>
   </Interaction>
-  <GraphicalLine GraphId="id41fb9676">
+  <GraphicalLine>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="295.645362517384" Y="401.8520205504942" GraphRef="f5605" RelX="0.5" RelY="1.0" />
-      <Point X="335.8897360101544" Y="422.0193645197272" GraphRef="a23dd" RelX="0.0" RelY="-1.0" />
+      <Point X="732.2172650626328" Y="209.23667377398723" GraphRef="bad81" RelX="1.0" RelY="0.0"/>
+      <Point X="837.3646074830916" Y="209.23667377398726" GraphRef="e87a6" RelX="-1.0" RelY="0.0"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="ide5eca29f">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="676.7405286034275" Y="100.25" GraphRef="f5fbb" RelX="1.0" RelY="0.0"/>
+      <Point X="750.5" Y="100.25" GraphRef="a62e5" RelX="-1.0" RelY="0.0"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="id41fb9676">
+    <Graphics ZOrder="12290" LineThickness="1.0">
+      <Point X="295.645362517384" Y="469.8520205504942" GraphRef="f5605" RelX="0.5" RelY="1.0"/>
+      <Point X="335.8897360101544" Y="515.0193645197272" GraphRef="a23dd" RelX="0.0" RelY="-1.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="id64653a23" GroupRef="f1d76">
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="289.91967673628" Y="180.4234491219218" GraphRef="cd6dc" RelX="0.0" RelY="1.0" />
-      <Point X="289.6631462214951" Y="200.59079309115333" GraphRef="d7a96" RelX="0.0" RelY="-1.0" />
+    <Graphics ZOrder="12298" LineThickness="1.0">
+      <Point X="289.91967673628" Y="248.4234491219218" GraphRef="cd6dc" RelX="0.0" RelY="1.0"/>
+      <Point X="289.6631462214951" Y="293.59079309115333" GraphRef="d7a96" RelX="0.0" RelY="-1.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="ab5d1" GroupRef="f1d76">
-    <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
-    <Graphics ZOrder="32784" LineThickness="1.0">
-      <Point X="367.2259022567932" Y="171.443857285187" GraphRef="ff810" RelX="-1.0" RelY="0.0" />
-      <Point X="342.3279430731174" Y="171.44385728518705" GraphRef="d3c59" RelX="1.0" RelY="0.0" />
+    <Graphics ZOrder="32795" LineThickness="1.0">
+      <Point X="367.2259022567932" Y="239.443857285187" GraphRef="ff810" RelX="-1.0" RelY="0.0"/>
+      <Point X="342.3279430731174" Y="239.44385728518705" GraphRef="d3c59" RelX="1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="bded1" GroupRef="f1d76">
-    <Graphics ZOrder="32785" LineThickness="1.0">
-      <Point X="244.8279430731174" Y="178.94385728518705" GraphRef="c5773" RelX="0.0" RelY="1.0" />
-      <Point X="245.05069518047242" Y="199.11120125441857" GraphRef="fe28a" RelX="0.0" RelY="-1.0" />
+    <Graphics ZOrder="32797" LineThickness="1.0">
+      <Point X="244.8279430731174" Y="246.94385728518705" GraphRef="c5773" RelX="0.0" RelY="1.0"/>
+      <Point X="245.05069518047242" Y="292.1112012544186" GraphRef="fe28a" RelX="0.0" RelY="-1.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="e1550" GroupRef="f1d76">
-    <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
-    <Graphics ZOrder="32786" LineThickness="1.0">
-      <Point X="326.6240548827713" Y="208.09079309115333" GraphRef="dd8c9" RelX="-1.0" RelY="0.0" />
-      <Point X="297.1631462214956" Y="208.09079309115333" />
+    <Graphics ZOrder="32799" LineThickness="1.0">
+      <Point X="326.6240548827713" Y="301.09079309115333" GraphRef="dd8c9" RelX="-1.0" RelY="0.0"/>
+      <Point X="297.1631462214951" Y="301.09079309115333" GraphRef="d7a96" RelX="1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="d9a6a" GroupRef="f1d76">
-    <Graphics ZOrder="32787" LineThickness="1.0">
-      <Point X="374.7259022567932" Y="178.943857285187" GraphRef="ff810" RelX="0.0" RelY="1.0" />
-      <Point X="374.9462838206212" Y="199.11120125441857" GraphRef="dacf1" RelX="0.0" RelY="-1.0" />
+    <Graphics ZOrder="32801" LineThickness="1.0">
+      <Point X="374.7259022567932" Y="246.943857285187" GraphRef="ff810" RelX="0.0" RelY="1.0"/>
+      <Point X="374.9462838206212" Y="292.1112012544186" GraphRef="dacf1" RelX="0.0" RelY="-1.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="b4a15">
-    <Graphics ZOrder="32788" LineThickness="1.0">
-      <Point X="294.97972478893917" Y="68.33577079040056" GraphRef="b4a78" RelX="1.0" RelY="0.0" />
-      <Point X="318.65319417669485" Y="68.33577079040055" GraphRef="e2dda" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32803" LineThickness="1.0">
+      <Point X="294.97972478893917" Y="136.33577079040055" GraphRef="b4a78" RelX="1.0" RelY="0.0"/>
+      <Point X="318.65319417669485" Y="136.33577079040055" GraphRef="e2dda" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="a0ae7">
-    <Graphics ZOrder="32789" LineThickness="1.0">
-      <Point X="344.4695207073066" Y="68.33577079040055" GraphRef="e2dda" RelX="1.0" RelY="0.0" />
-      <Point X="369.97972478893917" Y="68.33577079040056" GraphRef="ac4ce" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32805" LineThickness="1.0">
+      <Point X="344.4695207073066" Y="136.33577079040055" GraphRef="e2dda" RelX="1.0" RelY="0.0"/>
+      <Point X="369.97972478893917" Y="136.33577079040055" GraphRef="ac4ce" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="dfea9" GroupRef="f1d76">
-    <Graphics ZOrder="32790" LineThickness="1.0">
-      <Point X="252.3279430731174" Y="171.44385728518705" GraphRef="c5773" RelX="1.0" RelY="0.0" />
-      <Point X="277.01151347097414" Y="171.44385728518705" GraphRef="cd6dc" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32807" LineThickness="1.0">
+      <Point X="252.3279430731174" Y="239.44385728518705" GraphRef="c5773" RelX="1.0" RelY="0.0"/>
+      <Point X="277.01151347097414" Y="239.44385728518705" GraphRef="cd6dc" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="aa507" GroupRef="f1d76">
-    <Graphics ZOrder="32791" LineThickness="1.0">
-      <Point X="302.82784000158586" Y="171.44385728518705" GraphRef="cd6dc" RelX="1.0" RelY="0.0" />
-      <Point X="327.3279430731174" Y="171.44385728518705" GraphRef="d3c59" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32809" LineThickness="1.0">
+      <Point X="302.82784000158586" Y="239.44385728518705" GraphRef="cd6dc" RelX="1.0" RelY="0.0"/>
+      <Point X="327.3279430731174" Y="239.44385728518705" GraphRef="d3c59" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="f7560" GroupRef="f1d76">
-    <Graphics ZOrder="32792" LineThickness="1.0">
-      <Point X="207.16314622149508" Y="208.09079309115333" GraphRef="ecef7" RelX="1.0" RelY="0.0" />
-      <Point X="232.14253191516656" Y="208.09079309115333" GraphRef="fe28a" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32811" LineThickness="1.0">
+      <Point X="207.16314622149508" Y="301.09079309115333" GraphRef="ecef7" RelX="1.0" RelY="0.0"/>
+      <Point X="232.14253191516656" Y="301.09079309115333" GraphRef="fe28a" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="ff626" GroupRef="f1d76">
-    <Graphics ZOrder="32793" LineThickness="1.0">
-      <Point X="257.9588584457783" Y="208.09079309115333" GraphRef="fe28a" RelX="1.0" RelY="0.0" />
-      <Point X="282.1631462214951" Y="208.09079309115333" GraphRef="d7a96" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32813" LineThickness="1.0">
+      <Point X="257.9588584457783" Y="301.09079309115333" GraphRef="fe28a" RelX="1.0" RelY="0.0"/>
+      <Point X="282.1631462214951" Y="301.09079309115333" GraphRef="d7a96" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="d04ae" GroupRef="f1d76">
-    <Graphics ZOrder="32794" LineThickness="1.0">
-      <Point X="382.2259022567932" Y="171.443857285187" GraphRef="ff810" RelX="1.0" RelY="0.0" />
-      <Point X="409.8178669423545" Y="171.443857285187" GraphRef="fd3b8" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32815" LineThickness="1.0">
+      <Point X="382.2259022567932" Y="239.443857285187" GraphRef="ff810" RelX="1.0" RelY="0.0"/>
+      <Point X="409.8178669423545" Y="239.443857285187" GraphRef="fd3b8" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="e63f0" GroupRef="f1d76">
-    <Graphics ZOrder="32795" LineThickness="1.0">
-      <Point X="435.6341934729662" Y="171.443857285187" GraphRef="fd3b8" RelX="1.0" RelY="0.0" />
-      <Point X="457.2259022567932" Y="171.443857285187" GraphRef="fa49a" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32817" LineThickness="1.0">
+      <Point X="435.6341934729662" Y="239.443857285187" GraphRef="fd3b8" RelX="1.0" RelY="0.0"/>
+      <Point X="457.2259022567932" Y="239.443857285187" GraphRef="fa49a" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="e7e4f" GroupRef="f1d76">
-    <Graphics ZOrder="32796" LineThickness="1.0">
-      <Point X="387.85444708592706" Y="208.09079309115333" GraphRef="dacf1" RelX="1.0" RelY="0.0" />
-      <Point X="416.6240548827713" Y="208.09079309115333" GraphRef="cbe67" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32819" LineThickness="1.0">
+      <Point X="387.85444708592706" Y="301.09079309115333" GraphRef="dacf1" RelX="1.0" RelY="0.0"/>
+      <Point X="416.6240548827713" Y="301.09079309115333" GraphRef="cbe67" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="b5d1b" GroupRef="f1d76">
-    <Graphics ZOrder="32797" LineThickness="1.0">
-      <Point X="341.6240548827713" Y="208.09079309115333" GraphRef="dd8c9" RelX="1.0" RelY="0.0" />
-      <Point X="362.03812055531534" Y="208.09079309115333" GraphRef="dacf1" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32821" LineThickness="1.0">
+      <Point X="341.6240548827713" Y="301.09079309115333" GraphRef="dd8c9" RelX="1.0" RelY="0.0"/>
+      <Point X="362.03812055531534" Y="301.09079309115333" GraphRef="dacf1" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="bee73" GroupRef="f1d76">
-    <Graphics ZOrder="32798" LineThickness="1.0">
-      <Point X="422.72603020766036" Y="180.42344912192175" GraphRef="fd3b8" RelX="0.0" RelY="1.0" />
-      <Point X="424.1240548827713" Y="200.59079309115333" GraphRef="cbe67" RelX="0.0" RelY="-1.0" />
+    <Graphics ZOrder="32823" LineThickness="1.0">
+      <Point X="422.72603020766036" Y="248.42344912192175" GraphRef="fd3b8" RelX="0.0" RelY="1.0"/>
+      <Point X="424.1240548827713" Y="293.59079309115333" GraphRef="cbe67" RelX="0.0" RelY="-1.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="f3a7f" GroupRef="decc6">
-    <Graphics ZOrder="32800" LineThickness="1.0">
-      <Point X="289.1912808847311" Y="401.8520205504942" GraphRef="f5605" RelX="0.0" RelY="1.0" />
-      <Point X="288.2051007208963" Y="422.0193645197272" GraphRef="def4d" RelX="0.0" RelY="-1.0" />
+    <Graphics ZOrder="32825" LineThickness="1.0">
+      <Point X="289.1912808847311" Y="469.8520205504942" GraphRef="f5605" RelX="0.0" RelY="1.0"/>
+      <Point X="288.2051007208963" Y="515.0193645197272" GraphRef="def4d" RelX="0.0" RelY="-1.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="b5abf" GroupRef="decc6">
-    <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
-    <Graphics ZOrder="32817" LineThickness="1.0">
-      <Point X="367.70209273298354" Y="392.87242871375946" GraphRef="ee966" RelX="-1.0" RelY="0.0" />
-      <Point X="342.8041335493078" Y="392.87242871375946" GraphRef="fb914" RelX="1.0" RelY="0.0" />
+    <Graphics ZOrder="32839" LineThickness="1.0">
+      <Point X="367.70209273298354" Y="460.87242871375946" GraphRef="ee966" RelX="-1.0" RelY="0.0"/>
+      <Point X="342.8041335493078" Y="460.87242871375946" GraphRef="fb914" RelX="1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="e1b3a" GroupRef="decc6">
-    <Graphics ZOrder="32818" LineThickness="1.0">
-      <Point X="245.30413354930778" Y="400.37242871375946" GraphRef="f8d60" RelX="0.0" RelY="1.0" />
-      <Point X="245.65190923153466" Y="420.53977268299246" GraphRef="d8bc4" RelX="0.0" RelY="-1.0" />
+    <Graphics ZOrder="32841" LineThickness="1.0">
+      <Point X="245.30413354930778" Y="468.37242871375946" GraphRef="f8d60" RelX="0.0" RelY="1.0"/>
+      <Point X="245.65190923153466" Y="513.5397726829926" GraphRef="d8bc4" RelX="0.0" RelY="-1.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="fd447" GroupRef="decc6">
-    <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
-    <Graphics ZOrder="32819" LineThickness="1.0">
-      <Point X="328.3897360101544" Y="429.5193645197272" GraphRef="a23dd" RelX="-1.0" RelY="0.0" />
-      <Point X="295.7051007208963" Y="429.5193645197272" GraphRef="def4d" RelX="1.0" RelY="0.0" />
+    <Graphics ZOrder="32843" LineThickness="1.0">
+      <Point X="328.3897360101544" Y="522.5193645197272" GraphRef="a23dd" RelX="-1.0" RelY="0.0"/>
+      <Point X="295.7051007208963" Y="522.5193645197272" GraphRef="def4d" RelX="1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="b5d59" GroupRef="decc6">
-    <Graphics ZOrder="32820" LineThickness="1.0">
-      <Point X="375.20209273298354" Y="400.37242871375946" GraphRef="ee966" RelX="0.0" RelY="1.0" />
-      <Point X="375.5996006136361" Y="420.53977268299246" GraphRef="e140b" RelX="0.0" RelY="-1.0" />
+    <Graphics ZOrder="32845" LineThickness="1.0">
+      <Point X="375.20209273298354" Y="468.37242871375946" GraphRef="ee966" RelX="0.0" RelY="1.0"/>
+      <Point X="375.5996006136361" Y="513.5397726829926" GraphRef="e140b" RelX="0.0" RelY="-1.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="ae3e6" GroupRef="decc6">
-    <Graphics ZOrder="32821" LineThickness="1.0">
-      <Point X="252.80413354930778" Y="392.87242871375946" GraphRef="f8d60" RelX="1.0" RelY="0.0" />
-      <Point X="276.28311761942524" Y="392.87242871375946" GraphRef="f5605" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32847" LineThickness="1.0">
+      <Point X="252.80413354930778" Y="460.87242871375946" GraphRef="f8d60" RelX="1.0" RelY="0.0"/>
+      <Point X="276.28311761942524" Y="460.87242871375946" GraphRef="f5605" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="d2a0e" GroupRef="decc6">
-    <Graphics ZOrder="32822" LineThickness="1.0">
-      <Point X="302.09944415003696" Y="392.87242871375946" GraphRef="f5605" RelX="1.0" RelY="0.0" />
-      <Point X="327.8041335493078" Y="392.87242871375946" GraphRef="fb914" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32849" LineThickness="1.0">
+      <Point X="302.09944415003696" Y="460.87242871375946" GraphRef="f5605" RelX="1.0" RelY="0.0"/>
+      <Point X="327.8041335493078" Y="460.87242871375946" GraphRef="fb914" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="be9e2" GroupRef="decc6">
-    <Graphics ZOrder="32823" LineThickness="1.0">
-      <Point X="207.6393366976855" Y="429.5193645197272" GraphRef="d3aa7" RelX="1.0" RelY="0.0" />
-      <Point X="232.7437459662288" Y="429.5193645197272" GraphRef="d8bc4" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32851" LineThickness="1.0">
+      <Point X="207.6393366976855" Y="522.5193645197272" GraphRef="d3aa7" RelX="1.0" RelY="0.0"/>
+      <Point X="232.7437459662288" Y="522.5193645197273" GraphRef="d8bc4" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="fe3cd" GroupRef="decc6">
-    <Graphics ZOrder="32824" LineThickness="1.0">
-      <Point X="258.5600724968405" Y="429.5193645197272" GraphRef="d8bc4" RelX="1.0" RelY="0.0" />
-      <Point X="280.7051007208963" Y="429.5193645197272" GraphRef="def4d" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32853" LineThickness="1.0">
+      <Point X="258.5600724968405" Y="522.5193645197273" GraphRef="d8bc4" RelX="1.0" RelY="0.0"/>
+      <Point X="280.7051007208963" Y="522.5193645197272" GraphRef="def4d" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="bb4a2" GroupRef="decc6">
-    <Graphics ZOrder="32825" LineThickness="1.0">
-      <Point X="382.70209273298354" Y="392.87242871375946" GraphRef="ee966" RelX="1.0" RelY="0.0" />
-      <Point X="406.181076803101" Y="392.87242871375946" GraphRef="fe79e" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32855" LineThickness="1.0">
+      <Point X="382.70209273298354" Y="460.87242871375946" GraphRef="ee966" RelX="1.0" RelY="0.0"/>
+      <Point X="406.181076803101" Y="460.87242871375946" GraphRef="fe79e" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="f4865" GroupRef="decc6">
-    <Graphics ZOrder="32826" LineThickness="1.0">
-      <Point X="431.9974033337127" Y="392.87242871375946" GraphRef="fe79e" RelX="1.0" RelY="0.0" />
-      <Point X="457.70209273298354" Y="392.87242871375946" GraphRef="d1901" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32857" LineThickness="1.0">
+      <Point X="431.9974033337127" Y="460.87242871375946" GraphRef="fe79e" RelX="1.0" RelY="0.0"/>
+      <Point X="457.70209273298354" Y="460.87242871375946" GraphRef="d1901" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="e5377" GroupRef="decc6">
-    <Graphics ZOrder="32827" LineThickness="1.0">
-      <Point X="388.50776387894194" Y="429.5193645197272" GraphRef="e140b" RelX="1.0" RelY="0.0" />
-      <Point X="415.81075470776887" Y="429.5193645197272" GraphRef="aba60" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32859" LineThickness="1.0">
+      <Point X="388.50776387894194" Y="522.5193645197273" GraphRef="e140b" RelX="1.0" RelY="0.0"/>
+      <Point X="415.81075470776887" Y="522.5193645197272" GraphRef="aba60" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="f2ccc" GroupRef="decc6">
-    <Graphics ZOrder="32828" LineThickness="1.0">
-      <Point X="343.3897360101544" Y="429.5193645197272" GraphRef="a23dd" RelX="1.0" RelY="0.0" />
-      <Point X="362.6914373483302" Y="429.5193645197272" GraphRef="e140b" RelX="-1.0" RelY="0.0" />
+    <Graphics ZOrder="32861" LineThickness="1.0">
+      <Point X="343.3897360101544" Y="522.5193645197272" GraphRef="a23dd" RelX="1.0" RelY="0.0"/>
+      <Point X="362.6914373483302" Y="522.5193645197273" GraphRef="e140b" RelX="-1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="ad5c1" GroupRef="decc6">
-    <Graphics ZOrder="32829" LineThickness="1.0">
-      <Point X="419.08924006840687" Y="401.8520205504942" GraphRef="fe79e" RelX="0.0" RelY="1.0" />
-      <Point X="423.31075470776887" Y="422.0193645197272" GraphRef="aba60" RelX="0.0" RelY="-1.0" />
+    <Graphics ZOrder="32863" LineThickness="1.0">
+      <Point X="419.08924006840687" Y="469.8520205504942" GraphRef="fe79e" RelX="0.0" RelY="1.0"/>
+      <Point X="423.31075470776887" Y="515.0193645197272" GraphRef="aba60" RelX="0.0" RelY="-1.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="efb95">
-    <Graphics ZOrder="32838" LineThickness="1.0">
-      <Point X="486.8003724662424" Y="536.5639800223887" GraphRef="bf8d8" RelX="0.0" RelY="1.0" />
-      <Point X="487.2977913969259" Y="555.8885102239532" GraphRef="e7117" RelX="0.0" RelY="-1.0" />
+    <Graphics ZOrder="32878" LineThickness="1.0">
+      <Point X="486.8003724662424" Y="604.5639800223887" GraphRef="bf8d8" RelX="0.0" RelY="1.0"/>
+      <Point X="487.2977913969259" Y="623.8885102239532" GraphRef="e7117" RelX="0.0" RelY="-1.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="cf1a9">
-    <Graphics ZOrder="32839" LineThickness="1.0">
-      <Point X="493.2544540988953" Y="536.5639800223887" GraphRef="bf8d8" RelX="0.5" RelY="1.0" />
-      <Point X="519.5950594450586" Y="555.8885102239532" GraphRef="b24e1" RelX="0.0" RelY="-1.0" />
+    <Graphics ZOrder="32880" LineThickness="1.0">
+      <Point X="493.2544540988953" Y="604.5639800223887" GraphRef="bf8d8" RelX="0.5" RelY="1.0"/>
+      <Point X="519.5950594450586" Y="623.8885102239532" GraphRef="b24e1" RelX="0.0" RelY="-1.0"/>
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="f9d71">
-    <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
-    <Graphics ZOrder="32840" LineThickness="1.0">
-      <Point X="512.0950594450586" Y="563.3885102239532" GraphRef="b24e1" RelX="-1.0" RelY="0.0" />
-      <Point X="494.7977913969259" Y="563.3885102239532" GraphRef="e7117" RelX="1.0" RelY="0.0" />
+    <Graphics ZOrder="32882" LineThickness="1.0">
+      <Point X="512.0950594450586" Y="631.3885102239532" GraphRef="b24e1" RelX="-1.0" RelY="0.0"/>
+      <Point X="494.7977913969259" Y="631.3885102239532" GraphRef="e7117" RelX="1.0" RelY="0.0"/>
     </Graphics>
   </GraphicalLine>
-  <Label TextLabel="Factor XIII:" GraphId="bff4d">
-    <Graphics CenterX="438.51713975492777" CenterY="258.84597487203337" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle" Color="404040" />
+  <GraphicalLine GraphId="ce68f">
+    <Graphics ZOrder="32888" LineThickness="1.0">
+      <Point X="817.0" Y="100.25" GraphRef="a62e5" RelX="1.0" RelY="0.0"/>
+      <Point X="891.702210442139" Y="100.25000000000003" GraphRef="b9cc5" RelX="-1.0" RelY="0.0"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="c8d5a">
+    <Graphics ZOrder="32890" LineThickness="1.0">
+      <Point X="334.1240548827713" Y="293.59079309115333" GraphRef="dd8c9" RelX="0.0" RelY="-1.0"/>
+      <Point X="289.6631462214951" Y="293.59079309115333" GraphRef="d7a96" RelX="0.0" RelY="-1.0"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="b324a">
+    <Graphics ZOrder="32892" LineThickness="1.0">
+      <Point X="374.7259022567932" Y="231.943857285187" GraphRef="ff810" RelX="0.0" RelY="-1.0"/>
+      <Point X="334.8279430731174" Y="231.94385728518705" GraphRef="d3c59" RelX="0.0" RelY="-1.0"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="ce583">
+    <Graphics ZOrder="32894" LineThickness="1.0">
+      <Point X="375.20209273298354" Y="453.37242871375946" GraphRef="ee966" RelX="0.0" RelY="-1.0"/>
+      <Point X="335.3041335493078" Y="453.37242871375946" GraphRef="fb914" RelX="0.0" RelY="-1.0"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="d0553">
+    <Graphics ZOrder="32896" LineThickness="1.0">
+      <Point X="334.6002453589617" Y="516.2693645197272" GraphRef="c43fd" RelX="-1.0" RelY="0.5"/>
+      <Point X="288.2051007208963" Y="515.0193645197272" GraphRef="def4d" RelX="0.0" RelY="-1.0"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="dddd6">
+    <Graphics ZOrder="32898" LineThickness="1.0">
+      <Point X="519.5950594450586" Y="638.8885102239532" GraphRef="b24e1" RelX="0.0" RelY="1.0"/>
+      <Point X="487.2977913969259" Y="638.8885102239532" GraphRef="e7117" RelX="0.0" RelY="1.0"/>
+    </Graphics>
+  </GraphicalLine>
+  <Label TextLabel="&quot;The two end nodules (D regions/domains) &#10;consist out of Bβ and γ chains, &#10;In the center a slightly smaller nodule (E region/domain) &#10;consists out of two intertwined Aα alpha chains&quot;" GraphId="bc6d6">
+    <Graphics CenterX="794.0199729180778" CenterY="321.0052471225463" Width="368.628977657414" Height="74.7884224779956" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle" Color="404040"/>
+  </Label>
+  <Label TextLabel="D-domain:" GraphId="fec66">
+    <Comment>" fibrinogen alpha chain (also termed the Aα or α chain) encoded by the FGA gene, the fibrinogen beta chain (also termed the Bβ or β chain) encoded by the FGB gene, and the fibrinogen gamma chain (also termed the γ chain) encoded by the FGG gene." [[https://en.wikipedia.org/wiki/Fibrinogen]]</Comment>
+    <Graphics CenterX="673.6763036543732" CenterY="151.11886291853762" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle" Color="404040"/>
   </Label>
   <Label TextLabel="Relevant other pathways:" GraphId="c53e8" GroupRef="ce45e">
-    <Graphics CenterX="718.6185333408482" CenterY="96.62021497118477" Width="340.91836734693914" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="22" Valign="Middle" Color="404040" />
+    <Graphics CenterX="848.6185333408482" CenterY="479.62021497118474" Width="340.91836734693914" Height="25.0" ZOrder="28674" FillColor="ffffff" FontSize="22" Valign="Middle" Color="404040"/>
   </Label>
   <Label TextLabel="Fibrin Mesh" GraphId="d9c7e">
-    <Graphics CenterX="219.94571118349478" CenterY="130.27454630060458" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" Color="404040" />
+    <Graphics CenterX="219.94571118349478" CenterY="198.27454630060458" Width="90.0" Height="25.0" ZOrder="28676" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" Color="404040"/>
   </Label>
-  <Label TextLabel="Crosslinked&#xA;Fibrin Mesh" GraphId="d01e8">
-    <Graphics CenterX="219.94571118349478" CenterY="345.9888320148912" Width="90.0" Height="25.0" ZOrder="32832" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" Color="404040" />
+  <Label TextLabel="Factor XIII:" GraphId="bff4d">
+    <Graphics CenterX="438.51713975492777" CenterY="326.84597487203337" Width="90.0" Height="25.0" ZOrder="28678" FillColor="ffffff" FontSize="12" Valign="Middle" Color="404040"/>
   </Label>
-  <Group GroupId="ce45e" Style="Group" />
-  <Group GroupId="f1d76" GraphId="b757b" Style="Group" />
-  <Group GroupId="decc6" GraphId="c1caa" Style="Group" />
-  <Group GroupId="d5543" GraphId="ca3cc" Style="Complex" />
-  <InfoBox CenterX="0.0" CenterY="0.0" />
+  <Label TextLabel="Crosslinked&#10;Fibrin Mesh" GraphId="d01e8">
+    <Graphics CenterX="219.94571118349478" CenterY="413.9888320148912" Width="90.0" Height="25.0" ZOrder="32869" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" Color="404040"/>
+  </Label>
+  <Label TextLabel="D-domain &#10;(alternative splicing):" GraphId="ce658">
+    <Comment>" Alternate splicing of the FGA gene produces a minor expanded isoform of Aα termed AαE which replaces Aα in 1–3% of circulating fibrinogen; alternate splicing of FGG produces a minor isoform of γ termed γ' which replaces γ in 8–10% of circulating fibrinogen; FGB is not alternatively spliced. Hence, the final fibrinogen product is composed principally of Aα, Bβ, and γ chains with a small percentage of it containing AαE and/or γ' chains in place of Aα and/or γ chains, respectively. " [[https://en.wikipedia.org/wiki/Fibrinogen]]</Comment>
+    <Graphics CenterX="897.259665032177" CenterY="155.85819941142867" Width="146.71415649027617" Height="25.0" ZOrder="32904" FillColor="ffffff" FontSize="12" Valign="Middle" Color="404040"/>
+  </Label>
+  <Shape GraphId="dcf54">
+    <Graphics CenterX="903.5776621882007" CenterY="230.59849128848057" Width="123.72274881516611" Height="114.9211238997969" ZOrder="-6" FillColor="ff0033" FontSize="12" Valign="Middle" ShapeType="Oval" Rotation="0.0"/>
+  </Shape>
+  <Shape GraphId="b794e">
+    <Graphics CenterX="790.1150981719703" CenterY="206.40216655382534" Width="142.18009478672988" Height="54.840893703452934" ZOrder="-4" FillColor="0099ff" FontSize="12" Valign="Middle" ShapeType="Oval" Rotation="0.0"/>
+  </Shape>
+  <Shape TextLabel="E" GraphId="a62e5">
+    <Graphics CenterX="783.75" CenterY="100.25" Width="66.5" Height="38.5" ZOrder="16384" FillColor="0099ff" FontSize="22" Valign="Middle" ShapeType="Oval" Rotation="0.0"/>
+  </Shape>
+  <Shape GraphId="b3d46">
+    <Graphics CenterX="666.6423493568043" CenterY="231.2029451591063" Width="123.72274881516611" Height="114.9211238997969" ZOrder="16384" FillColor="ff0033" FontSize="12" Valign="Middle" ShapeType="Oval" Rotation="0.0"/>
+  </Shape>
+  <Shape TextLabel="D" GraphId="f5fbb">
+    <Comment>"The two end nodules (termed D regions or domains) are alike in consisting of Bβ and γ chains, while the center slightly smaller nodule (termed the E region or domain) consists of two intertwined Aα alpha chains." [https://en.wikipedia.org/wiki/Fibrinogen]</Comment>
+    <Graphics CenterX="658.2213695227832" CenterY="100.25" Width="36.44273904556632" Height="31.5" ZOrder="32884" FillColor="ff0033" FontSize="22" Valign="Middle" ShapeType="Oval" Rotation="3.1224727550684763"/>
+  </Shape>
+  <Shape TextLabel="D" GraphId="b9cc5">
+    <Graphics CenterX="910.2213695227832" CenterY="100.25" Width="36.44273904556632" Height="31.5" ZOrder="32886" FillColor="ff0033" FontSize="22" Valign="Middle" ShapeType="Oval" Rotation="3.1224727550684763"/>
+  </Shape>
+  <Group GroupId="ce45e" Style="Group"/>
+  <Group GroupId="f1d76" GraphId="b757b" Style="Group"/>
+  <Group GroupId="e6c77" GraphId="c0bd5" Style="Complex"/>
+  <Group GroupId="decc6" GraphId="c1caa" Style="Group"/>
+  <Group GroupId="d5543" GraphId="ca3cc" Style="Complex"/>
+  <Group GroupId="dc6b5" GraphId="fa86d" Style="Complex"/>
+  <InfoBox CenterX="0.0" CenterY="0.0"/>
   <Biopax>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="bfd">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32344011</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mild versus severe COVID-19: Laboratory markers.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Int J Infect Dis</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velavan TP</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meyer CG</bp:AUTHORS>
+    </bp:PublicationXref>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thrombosis</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0060903</bp:ID>
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood coagulation disease</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:1247</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
     </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="ba8">
@@ -523,18 +645,9 @@ The graphical visualisation of (crosslinked) fibrin mesh leading to D-dimers is 
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Key NS</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greenberg CS</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="bfd">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32344011</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mild versus severe COVID-19: Laboratory markers.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Int J Infect Dis</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velavan TP</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meyer CG</bp:AUTHORS>
-    </bp:PublicationXref>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood coagulation disease</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:1247</bp:ID>
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thrombosis</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0060903</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
     </bp:openControlledVocabulary>
   </Biopax>
