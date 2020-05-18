@@ -278,6 +278,14 @@
         wp:bdbUniprot                  <http://identifiers.org/uniprot/O15393> , <http://identifiers.org/uniprot/C9J5Y1> , <http://identifiers.org/uniprot/C9JKZ3> , <http://identifiers.org/uniprot/C9JB05> ;
         wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/cf321> .
 
+<http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id126968be>
+        a                 wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Interaction/id126968be> ;
+        wp:participants   <http://identifiers.org/wikipathways/WP4861> , <http://identifiers.org/wikidata/Q87917579> ;
+        wp:source         <http://identifiers.org/wikidata/Q87917579> ;
+        wp:target         <http://identifiers.org/wikipathways/WP4861> .
+
 <http://identifiers.org/uniprot/P0DTC3>
         a                   wp:DataNode , wp:Protein ;
         rdfs:label          "ORF3a"^^xsd:string ;
@@ -437,7 +445,7 @@
         dc:identifier       <http://identifiers.org/wikidata/Q87917579> ;
         dc:source           "Wikidata"^^xsd:string ;
         dcterms:identifier  "Q87917579"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/dd252> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Complex/ac7f7> , <http://identifiers.org/wikipathways/WP4846_r109431> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/d8831> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id54006fd1> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/dd252> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/Complex/ac7f7> , <http://identifiers.org/wikipathways/WP4846_r109431> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/d8831> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id126968be> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id54006fd1> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q87917579> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/abf4b> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/c4ba4> , <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/a9205> .
 
@@ -447,7 +455,7 @@
         dc:identifier       <http://identifiers.org/wikipathways/WP4861> ;
         dc:source           "WikiPathways"^^xsd:string ;
         dcterms:identifier  "WP4861"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id126968be> , <http://identifiers.org/wikipathways/WP4846_r109431> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/a679a> .
 
 <http://identifiers.org/wikidata/Q90038956>
@@ -529,9 +537,9 @@
         dc:title               "SARS-CoV-2 and COVID-19 Pathway"@en ;
         dcterms:description    "Collaborative project for curation biological processes involved in the COVID-19 disease after SARS-Cov-2 infection. It focuses on experimental evidence and plays with improved annotation of complexes and with the Evidence and Conclusion Ontology. The complexes link to EBI's Complex Portal, resulting from a collaboration with that database at the recent online ELIXIR biohackathon.\n\nEditing this pathway is (at this moment) coordinated via the wikipathways.slack.com #sarscov2 channel.\n\nThe large viral Spike protein (S or surface glycoprotein) forms trimers. It interacts with the host's ACE2 receptor to establish binding  (Hoffmann et al 2020. There are suggestions of more than one cell entry approach, with the ACE2/TMPRSS2 entry to most clear now. Lack of expression of TMPRSS2 may explain age differences with COVID19 severity. In this mechanism, to enter it needs to be primed by the host protease TMPRSS2 that splits the Spike protein into 2 peptides S1 and S2. S1 contains the ACE2 receptor binding site, S2 binds to the host cell membrane which leads to membrane fusion, the start of the uptake process. The ACE2 receptor interaction was also suggested as the start of specific lung-damaging effects.\n\nOther human genes that may be involved in alternative cell uptake mechanisms include CTSL and SLC6A19." ;
         dcterms:identifier     "WP4846"^^xsd:string ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_0050117> ;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_0050117> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4846_r109431> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/DOID_0050117> ;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/DOID_0050117> ;
         wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
         wp:organismName        "Homo sapiens"^^xsd:string ;
         wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000013> ;
@@ -660,7 +668,7 @@
         rdfs:label                     "nsp12"^^xsd:string ;
         dc:identifier                  <http://identifiers.org/wikidata/Q94647436> ;
         dc:source                      "Wikidata"^^xsd:string ;
-        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/32283108> ;
+        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/32321524> , <http://identifiers.org/pubmed/32283108> ;
         dcterms:identifier             "Q94647436"^^xsd:string ;
         dcterms:isPartOf               <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/efcb8> , <http://identifiers.org/wikipathways/WP4846_r109431> ;
         wp:bdbWikidata                 <http://www.wikidata.org/entity/Q94647436> ;
@@ -693,6 +701,11 @@
         dcterms:identifier  "WP4860"^^xsd:string ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/id4f170add> , <http://identifiers.org/wikipathways/WP4846_r109431> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4846_r109431/DataNode/ef7e5> .
+
+<http://identifiers.org/pubmed/32321524>
+        a                 wp:PublicationReference ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4846_r109431> ;
+        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32321524> .
 
 <http://rdf.wikipathways.org/Pathway/WP4846_r109431/WP/Interaction/ae185>
         a                 wp:Interaction ;
