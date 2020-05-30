@@ -12,7 +12,6 @@ Use the `getPathway.sh` bash script to download the pathways of interest:
 bash getPathway.sh WP4846
 bash getPathway.sh WP4853
 bash getPathway.sh WP4860
-bash getPathway.sh WP4862
 bash getPathway.sh WP4861
 bash getPathway.sh WP4863
 bash getPathway.sh WP4864
@@ -71,7 +70,6 @@ rm WP*.ttl
 bash createTurtle.sh WP4846
 bash createTurtle.sh WP4853
 bash createTurtle.sh WP4860
-bash createTurtle.sh WP4862
 bash createTurtle.sh WP4861
 bash createTurtle.sh WP4863
 bash createTurtle.sh WP4864
