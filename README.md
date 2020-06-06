@@ -16,7 +16,6 @@ bash getPathway.sh WP4861
 bash getPathway.sh WP4863
 bash getPathway.sh WP4864
 bash getPathway.sh WP4868
-bash getPathway.sh WP4869
 bash getPathway.sh WP4799
 bash getPathway.sh WP4876
 bash getPathway.sh WP4877
@@ -74,7 +73,6 @@ bash createTurtle.sh WP4861
 bash createTurtle.sh WP4863
 bash createTurtle.sh WP4864
 bash createTurtle.sh WP4868
-bash createTurtle.sh WP4869
 bash createTurtle.sh WP4799
 bash createTurtle.sh WP4876
 bash createTurtle.sh WP4877
