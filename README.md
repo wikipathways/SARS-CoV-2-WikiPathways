@@ -141,4 +141,8 @@ the following queries to get some statistics:
 
 ```shell
 roqet sparql/reactions.rq -D wp/Human/WP4846.ttl
+roqet sparql/publications.rq -D wp/Human/WP4846.ttl
+roqet sparql/genes.rq -D wp/Human/WP4846.ttl
+roqet sparql/proteins.rq -D wp/Human/WP4846.ttl
+roqet sparql/metabolites.rq -D wp/Human/WP4846.ttl
 ```
