@@ -1,6 +1,10 @@
 # SARS-CoV-2-WikiPathways
 
 Temporary repository of RDF of selected pathways from WikiPathways, supporting the Wikidata bot.
+If you like this work and want to cite it, for now, please cite
+[this paper](https://www.nature.com/articles/s41597-020-0477-8). If you use specific pathways,
+please cite that pathway according to
+[the guidelines](https://www.wikipathways.org/index.php/How_to_cite_WikiPathways).
 
 The following steps can be taken to update the content of this repository.
 
