@@ -133,3 +133,12 @@ The JSON/SVG used on Scholia needs updating. A hook on this
 repository has been put in place and each time a commit is made,
 the JSON and SVG needed by Scholia are automatically updated.
 Thanks to Anders!
+
+## Step 6: Summary statistics
+
+If you have the Debian/Ubuntu `rasqal-utils` package installed, you can run
+the following queries to get some statistics:
+
+```shell
+roqet sparql/reactions.rq -D wp/Human/WP4846.ttl
+```
