@@ -74,6 +74,14 @@
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4936_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4936_r109431/Interaction/id7e97fc3f> .
 
+<http://rdf.wikipathways.org/Pathway/WP4936_r109431/WP/Interaction/ide9784478>
+        a                 wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4936_r109431> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4936_r109431/Interaction/ide9784478> ;
+        wp:participants   <http://identifiers.org/ncbiprotein/P31749> , <http://identifiers.org/uniprot/P31749> ;
+        wp:source         <http://identifiers.org/uniprot/P31749> ;
+        wp:target         <http://identifiers.org/ncbiprotein/P31749> .
+
 <http://identifiers.org/ncbiprotein/9140>
         a                   wp:Protein , wp:DataNode ;
         rdfs:label          "ATG12"^^xsd:string ;
@@ -115,7 +123,7 @@
         dc:identifier       <http://identifiers.org/ncbiprotein/P31749> ;
         dc:source           "NCBI Protein"^^xsd:string ;
         dcterms:identifier  "P31749"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4936_r109431> , <http://rdf.wikipathways.org/Pathway/WP4936_r109431/WP/Interaction/id788d6f1c> , <http://rdf.wikipathways.org/Pathway/WP4936_r109431/WP/Interaction/id67a2f315> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4936_r109431> , <http://rdf.wikipathways.org/Pathway/WP4936_r109431/WP/Interaction/id788d6f1c> , <http://rdf.wikipathways.org/Pathway/WP4936_r109431/WP/Interaction/id67a2f315> , <http://rdf.wikipathways.org/Pathway/WP4936_r109431/WP/Interaction/ide9784478> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4936_r109431/DataNode/ec6c1> , <http://rdf.wikipathways.org/Pathway/WP4936_r109431/DataNode/ed654> .
 
 <http://identifiers.org/ncbiprotein/8878>
@@ -242,7 +250,7 @@
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4936_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4936_r109431/Group/a094e> ;
-        wp:participants   <http://identifiers.org/ncbiprotein/65082> , <http://identifiers.org/ncbiprotein/51028> , <http://identifiers.org/ncbiprotein/27072> , <http://identifiers.org/ncbiprotein/64601> .
+        wp:participants   <http://identifiers.org/ncbiprotein/51028> , <http://identifiers.org/ncbiprotein/27072> , <http://identifiers.org/ncbiprotein/64601> , <http://identifiers.org/ncbiprotein/65082> .
 
 <http://identifiers.org/ncbiprotein/2475>
         a                   wp:Protein , wp:DataNode ;
@@ -299,7 +307,7 @@
         a                 wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4936_r109431> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4936_r109431/Group/c5e75> ;
-        wp:participants   <http://identifiers.org/ncbiprotein/57521> , <http://identifiers.org/ncbiprotein/64223> , <http://identifiers.org/ncbiprotein/2475> , <http://identifiers.org/ncbiprotein/64798> .
+        wp:participants   <http://identifiers.org/ncbiprotein/64223> , <http://identifiers.org/ncbiprotein/57521> , <http://identifiers.org/ncbiprotein/2475> , <http://identifiers.org/ncbiprotein/64798> .
 
 <http://identifiers.org/ncbiprotein/57521>
         a                   wp:Protein , wp:DataNode ;
@@ -366,6 +374,19 @@
 
 <http://identifiers.org/wikipathways/WP4936>
         pav:hasVersion  <http://identifiers.org/wikipathways/WP4936_r109431> .
+
+<http://identifiers.org/uniprot/P31749>
+        a                   wp:Protein , wp:DataNode ;
+        rdfs:label          "AKT1"^^xsd:string ;
+        dc:identifier       <http://identifiers.org/uniprot/P31749> ;
+        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
+        dcterms:identifier  "P31749"^^xsd:string ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4936_r109431> , <http://rdf.wikipathways.org/Pathway/WP4936_r109431/WP/Interaction/ide9784478> ;
+        wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000142208> ;
+        wp:bdbEntrezGene    <http://identifiers.org/ncbigene/207> ;
+        wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/AKT1> ;
+        wp:bdbUniprot       <http://identifiers.org/uniprot/G3V3X1> , <http://identifiers.org/uniprot/G3V2I6> , <http://identifiers.org/uniprot/B0LPE5> , <http://identifiers.org/uniprot/G3V4I6> , <http://identifiers.org/uniprot/P31749> , <http://identifiers.org/uniprot/A0A087WY56> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4936_r109431/DataNode/c34e3> .
 
 <http://rdf.wikipathways.org/Pathway/WP4936_r109431/WP/Interaction/id788d6f1c>
         a                 wp:DirectedInteraction , wp:Interaction ;
