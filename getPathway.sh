@@ -7,4 +7,4 @@ url="https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=gpml&pwT
 curl -s -o gpml/$wpid.gpml $url
 
 git add gpml/$wpid.gpml
-git commit -m "Revision $revision" gpml/$wpid.gpml
+git commit -m "Revision $revision" gpml/$wpid.gpml >/dev/null 2>&1 || true
