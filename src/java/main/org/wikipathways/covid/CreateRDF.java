@@ -23,6 +23,9 @@ import com.hp.hpl.jena.rdf.model.Model;
 public class CreateRDF {
 
     public static void main(String[] args) throws Exception {
+        String gpmlFile = args[0];
+        String wpid     = gpmlFile.substring(5,11);
+        String rev      = args[1];
         DataSourceTxt.init();
         // the next line is needed until BridgeDb gets updated
         DataSource.register("Cpx", "Complex Portal")
@@ -31,10 +34,10 @@ public class CreateRDF {
         DataSource.register("Pbd", "Digital Object Identifier").asDataSource();
         DataSource.register("Pbm", "PubMed").asDataSource();
         DataSource.register("Gpl", "Guide to Pharmacology Targets").asDataSource();
-        InputStream input = new FileInputStream(args[0]);
+        InputStream input = new FileInputStream(gpmlFile);
         Pathway pathway = PathwayReader.readPathway(input);
         IDMapperStack stack = WPREST2RDF.maps();
-        Model model = GpmlConverter.convertWp(pathway, "WP1111", "111111", stack, Collections.<String>emptyList());
+        Model model = GpmlConverter.convertWp(pathway, wpid, rev, stack, Collections.<String>emptyList());
         input.close();
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         model.write(output, "TURTLE");
