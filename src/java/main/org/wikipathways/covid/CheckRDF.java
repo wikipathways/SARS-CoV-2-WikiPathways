@@ -19,7 +19,7 @@ public class CheckRDF {
         String gpmlFile = args[0];
         String wpid     = gpmlFile.substring(9,gpmlFile.indexOf(".ttl"));
         System.out.println("# WikiPathways " + wpid + "\n");
-        System.out.println("GPML file: [" + gpmlFile + "](" + gpmlFile + ")\n");
+        System.out.println("GPML file: [" + gpmlFile + "](../" + gpmlFile + ")\n");
         List<IAssertion> assertions = new ArrayList<IAssertion>();
         Model loadedData = ModelFactory.createDefaultModel();
         loadedData.read(new FileInputStream(new File(gpmlFile)), "", "TURTLE");
@@ -50,7 +50,7 @@ public class CheckRDF {
             if (assertion.getTest() != currentTest) {
                 currentTest = assertion.getTest();
                 if (!message.isEmpty()) System.out.println(message);
-                message = "** " + currentTest + ": ";
+                message = "    * " + currentTest + ": ";
                 errors = "";
                 tests++;
             }
@@ -58,7 +58,7 @@ public class CheckRDF {
                 AssertEquals typedAssertion = (AssertEquals)assertion;
                 if (!typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
                    message += "x";
-                   errors += "*** " + typedAssertion.getMessage();
+                   errors += "        * " + typedAssertion.getMessage();
                    failed++;
                 } else {
                     message += ".";
@@ -67,13 +67,13 @@ public class CheckRDF {
                 AssertNotNull typedAssertion = (AssertNotNull)assertion;
                 if (typedAssertion.getValue() == null) {
                    message += "x";
-                   errors += "*** Unexpected null found";
+                   errors += "            * Unexpected null found";
                    failed++;
                 } else {
                     message += ".";
                 }
             } else {
-                errors += "*** Unrecognized assertion type: " + assertion.getClass().getName();
+                errors += "        * Unrecognized assertion type: " + assertion.getClass().getName();
                 failed++;
             }
         }
