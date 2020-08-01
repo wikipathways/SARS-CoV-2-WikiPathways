@@ -1,4 +1,5 @@
 TARGETS := ${shell cat pathways.txt | sed -e 's/\(.*\)/gpml\/\1.gpml/' }
+REPORTS := ${shell cat pathways.txt | sed -e 's/\(.*\)/reports\/\1.md/' }
 
 all: wikipathways-SARS-CoV-2-rdf-authors.zip wikipathways-SARS-CoV-2-rdf-wp.zip
 
@@ -28,8 +29,8 @@ src/java/main/org/wikipathways/covid/CreateRDF.class: src/java/main/org/wikipath
 src/java/main/org/wikipathways/covid/CheckRDF.class: src/java/main/org/wikipathways/covid/CheckRDF.java
 	@javac -cp libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar src/java/main/org/wikipathways/covid/CheckRDF.java
 
-check: reports/WP4846.txt
+check: ${REPORTS}
 
-reports/%.txt: wp/Human/%.ttl src/java/main/org/wikipathways/covid/CheckRDF.class
+reports/%.md: wp/Human/%.ttl src/java/main/org/wikipathways/covid/CheckRDF.class
 	@mkdir -p reports
-	@java -cp libs/jena-arq-3.16.0.jar:src/java/main/:libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar org.wikipathways.covid.CheckRDF $< > reports/WP4846.txt
+	@java -cp libs/jena-arq-3.16.0.jar:src/java/main/:libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar org.wikipathways.covid.CheckRDF $< > $@
