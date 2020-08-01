@@ -17,8 +17,9 @@ public class CheckRDF {
 
     public static void main(String[] args) throws Exception {
         String gpmlFile = args[0];
-        String wpid     = gpmlFile.substring(5,11);
-        System.out.println("WP: " + wpid);
+        String wpid     = gpmlFile.substring(9,gpmlFile.indexOf(".ttl"));
+        System.out.println("# WikiPathways " + wpid + "\n");
+        System.out.println("GPML file: [" + gpmlFile + "](" + gpmlFile + ")\n");
         List<IAssertion> assertions = new ArrayList<IAssertion>();
         Model loadedData = ModelFactory.createDefaultModel();
         loadedData.read(new FileInputStream(new File(gpmlFile)), "", "TURTLE");
@@ -26,7 +27,6 @@ public class CheckRDF {
         SPARQLHelper helper = new SPARQLHelper(loadedData);
         assertions.addAll(GeneTests.entrezGeneIdentifiersNotNumber(helper));
         
-        System.out.println("Number of assertions: " + assertions.size());
         int failed = 0;
         for (IAssertion assertion : assertions) {
             if (assertion instanceof AssertEquals) {
@@ -46,7 +46,9 @@ public class CheckRDF {
                 failed++;
             }
         }
-        System.out.println("Number of fails: " + failed);
+        System.out.println("## Summary\n");
+        System.out.println("* Number of assertions: " + assertions.size());
+        System.out.println("* Number of fails: " + failed);
     }
 
 }

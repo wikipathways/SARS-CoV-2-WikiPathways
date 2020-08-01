@@ -30,6 +30,6 @@ src/java/main/org/wikipathways/covid/CheckRDF.class: src/java/main/org/wikipathw
 
 check: reports/WP4846.txt
 
-reports/%.txt: wp/Human/%.ttl
+reports/%.txt: wp/Human/%.ttl src/java/main/org/wikipathways/covid/CheckRDF.class
 	@mkdir -p reports
 	@java -cp libs/jena-arq-3.16.0.jar:src/java/main/:libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar org.wikipathways.covid.CheckRDF $< > reports/WP4846.txt
