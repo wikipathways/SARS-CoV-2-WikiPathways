@@ -31,7 +31,7 @@ public class CheckRDF {
 
         System.out.println("## Tests");
 
-        int failed = 0;
+        List<IAssertion> failedAssertions = new ArrayList<IAssertion>();
         int testClasses = 0;
         int tests = 0;
         String currentTestClass = "";
@@ -60,7 +60,7 @@ public class CheckRDF {
                 if (!typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
                    message += "x";
                    errors += "        * " + typedAssertion.getMessage();
-                   failed++;
+                   failedAssertions.add(assertion);
                 } else {
                     message += ".";
                 }
@@ -69,13 +69,13 @@ public class CheckRDF {
                 if (typedAssertion.getValue() == null) {
                    message += "x";
                    errors += "            * Unexpected null found";
-                   failed++;
+                   failedAssertions.add(assertion);
                 } else {
                     message += ".";
                 }
             } else {
                 errors += "        * Unrecognized assertion type: " + assertion.getClass().getName();
-                failed++;
+                failedAssertions.add(assertion);
             }
         }
         if (!message.isEmpty()) System.out.println(message);
@@ -83,7 +83,13 @@ public class CheckRDF {
         System.out.println("* Number of test classes: " + testClasses);
         System.out.println("* Number of tests: " + tests);
         System.out.println("* Number of assertions: " + assertions.size());
-        System.out.println("* Number of fails: " + failed);
+        System.out.println("* Number of fails: " + failedAssertions.size());
+
+        System.out.println("\n## Fails\n");
+        for (IAssertion assertion : failedAssertions) {
+            System.out.println("## " + assertion.getTestClass() + "." + assertion.getTest());
+            System.out.println("\n```\n" + assertion.getMessage() + "\n```");
+        }        
     }
 
 }
