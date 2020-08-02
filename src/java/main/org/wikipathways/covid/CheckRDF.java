@@ -26,6 +26,7 @@ public class CheckRDF {
 
         SPARQLHelper helper = new SPARQLHelper(loadedData);
         assertions.addAll(GeneTests.all(helper));
+        assertions.addAll(ReferencesTests.all(helper));
         assertions.addAll(InteractionTests.all(helper));
         assertions.addAll(CovidDiseaseMapsTests.all(helper));
 
