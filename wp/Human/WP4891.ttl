@@ -15,33 +15,18 @@
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-<http://identifiers.org/wikipathways/WP4891_r111156>
-        a                      wp:Pathway , skos:Collection ;
-        dc:identifier          <http://identifiers.org/wikipathways/WP4891> ;
-        dc:source              "WikiPathways"^^xsd:string ;
-        dc:title               "COVID-19 AOP"@en ;
-        dcterms:description    "Experimenting with links in line with bioinformatics analysis of COVID-19 genes and AOP knowledge. Work in progress!" , "Experimental pathway to investigate overlap of Covid-19 downstream effects and adverse outcome pathways related to lung injury." ;
-        dcterms:identifier     "WP4891"^^xsd:string ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/DOID_2945> ;
-        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4891_r111156> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000003> , <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/PW_0001308> , <http://purl.obolibrary.org/obo/DOID_934> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
-        wp:organismName        "Homo sapiens"^^xsd:string ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000003> , <http://purl.obolibrary.org/obo/PW_0001308> ;
-        foaf:page              <http://www.wikipathways.org/instance/WP4891_r111156> .
-
 <http://identifiers.org/ncbigene/3569>
         a                   wp:DataNode , wp:GeneProduct ;
         rdfs:label          "IL6"^^xsd:string ;
         dc:identifier       <http://identifiers.org/ncbigene/3569> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "3569"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/idf55cb6e4> , <http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/id981d12bb> , <http://identifiers.org/wikipathways/WP4891_r111156> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/idf55cb6e4> , <http://identifiers.org/wikipathways/WP4891_r111408> , <http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/id981d12bb> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000136244> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/3569> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/IL6> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/P05231> , <http://identifiers.org/uniprot/B5MC21> , <http://identifiers.org/uniprot/C9J5B0> , <http://identifiers.org/uniprot/B4DNV3> , <http://identifiers.org/uniprot/B5MCZ3> , <http://identifiers.org/uniprot/B5MC14> , <http://identifiers.org/uniprot/Q75MH2> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/f425c> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/f425c> .
 
 <http://identifiers.org/ncbigene/183>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -49,24 +34,25 @@
         dc:identifier       <http://identifiers.org/ncbigene/183> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "183"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/id69513f9a> , <http://identifiers.org/wikipathways/WP4891_r111156> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/id69513f9a> , <http://identifiers.org/wikipathways/WP4891_r111408> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000135744> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/183> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/AGT> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/B0ZBE2> , <http://identifiers.org/uniprot/P01019> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/b6003> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/b6003> .
 
-<http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/idf55cb6e4>
+<http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/idfc67b63>
         a                 wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4891_r111156> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4891_r111156/Interaction/idf55cb6e4> ;
-        wp:participants   <http://identifiers.org/ncbigene/3576> , <http://identifiers.org/ncbigene/3569> .
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4891_r111408> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4891_r111408/Interaction/idfc67b63> ;
+        wp:participants   <http://identifiers.org/ncbigene/3627> , <http://identifiers.org/ncbigene/3576> .
 
-<http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/id6de06d86>
-        a                 wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4891_r111156> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4891_r111156/Interaction/id6de06d86> ;
-        wp:participants   <http://identifiers.org/ncbigene/6348> , <http://identifiers.org/ncbigene/3576> .
+<http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/id69513f9a>
+        a                              wp:Interaction ;
+        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/10969042> ;
+        dcterms:isPartOf               <http://identifiers.org/wikipathways/WP4891_r111408> ;
+        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4891_r111408/Interaction/id69513f9a> ;
+        wp:participants                <http://identifiers.org/ncbigene/183> , <http://identifiers.org/ncbigene/59272> .
 
 <http://identifiers.org/ncbigene/3553>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -74,12 +60,12 @@
         dc:identifier       <http://identifiers.org/ncbigene/3553> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "3553"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111408> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000125538> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/3553> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/IL1B> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/C9JSC2> , <http://identifiers.org/uniprot/C9JVK0> , <http://identifiers.org/uniprot/P01584> , <http://identifiers.org/uniprot/C9JWV2> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/null> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/null> .
 
 <http://identifiers.org/ncbigene/3559>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -87,12 +73,12 @@
         dc:identifier       <http://identifiers.org/ncbigene/3559> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "3559"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/idfe2de42e> , <http://identifiers.org/wikipathways/WP4891_r111156> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/idfe2de42e> , <http://identifiers.org/wikipathways/WP4891_r111408> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000134460> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/3559> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/IL2RA> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/Q5W006> , <http://identifiers.org/uniprot/H0Y5Z0> , <http://identifiers.org/uniprot/Q5W005> , <http://identifiers.org/uniprot/P01589> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/f59b7> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/f59b7> .
 
 <http://identifiers.org/wikipathways/WP75>
         a                   wp:DataNode ;
@@ -100,8 +86,8 @@
         dc:identifier       <http://identifiers.org/wikipathways/WP75> ;
         dc:source           "WikiPathways"^^xsd:string ;
         dcterms:identifier  "WP75"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/cd4a3> .
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111408> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/cd4a3> .
 
 <http://identifiers.org/ncbigene/3558>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -109,12 +95,12 @@
         dc:identifier       <http://identifiers.org/ncbigene/3558> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "3558"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> , <http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/idfe2de42e> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/idfe2de42e> , <http://identifiers.org/wikipathways/WP4891_r111408> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000109471> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/3558> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/IL2> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/Q0GK43> , <http://identifiers.org/uniprot/P60568> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/d380c> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/d380c> .
 
 <http://identifiers.org/ncbigene/3586>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -122,18 +108,18 @@
         dc:identifier       <http://identifiers.org/ncbigene/3586> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "3586"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111408> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000136634> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/3586> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/IL10> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/P22301> , <http://identifiers.org/uniprot/Q6FGW4> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/null> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/null> .
 
-<http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/idfc67b63>
+<http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/idfe2de42e>
         a                 wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4891_r111156> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4891_r111156/Interaction/idfc67b63> ;
-        wp:participants   <http://identifiers.org/ncbigene/3627> , <http://identifiers.org/ncbigene/3576> .
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4891_r111408> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4891_r111408/Interaction/idfe2de42e> ;
+        wp:participants   <http://identifiers.org/ncbigene/3559> , <http://identifiers.org/ncbigene/3558> .
 
 <http://identifiers.org/ncbigene/3576>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -141,12 +127,12 @@
         dc:identifier       <http://identifiers.org/ncbigene/3576> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "3576"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> , <http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/idfc67b63> , <http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/idf55cb6e4> , <http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/id6de06d86> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/idfc67b63> , <http://identifiers.org/wikipathways/WP4891_r111408> , <http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/id6de06d86> , <http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/idf55cb6e4> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000169429> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/3576> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/CXCL8> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/P10145> , <http://identifiers.org/uniprot/A0A024RDA5> , <http://identifiers.org/uniprot/C9J4T6> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/cf7c5> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/cf7c5> .
 
 <http://identifiers.org/wikipathways/WP4478>
         a                   wp:DataNode ;
@@ -154,19 +140,12 @@
         dc:identifier       <http://identifiers.org/wikipathways/WP4478> ;
         dc:source           "WikiPathways"^^xsd:string ;
         dcterms:identifier  "WP4478"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/ace80> .
-
-<http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/id69513f9a>
-        a                              wp:Interaction ;
-        dcterms:bibliographicCitation  <http://identifiers.org/pubmed/10969042> ;
-        dcterms:isPartOf               <http://identifiers.org/wikipathways/WP4891_r111156> ;
-        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4891_r111156/Interaction/id69513f9a> ;
-        wp:participants                <http://identifiers.org/ncbigene/183> , <http://identifiers.org/ncbigene/59272> .
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111408> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/ace80> .
 
 <http://identifiers.org/pubmed/10969042>
         a                 wp:PublicationReference ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4891_r111156> ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4891_r111408> ;
         foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/10969042> .
 
 <http://identifiers.org/ncbigene/1440>
@@ -175,12 +154,12 @@
         dc:identifier       <http://identifiers.org/ncbigene/1440> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "1440"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111408> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000108342> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/1440> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/CSF3> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/J3QRD4> , <http://identifiers.org/uniprot/J3KTH8> , <http://identifiers.org/uniprot/J3QRX2> , <http://identifiers.org/uniprot/Q6FH65> , <http://identifiers.org/uniprot/Q8N4W3> , <http://identifiers.org/uniprot/P09919> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/null> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/null> .
 
 <http://identifiers.org/ncbigene/59272>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -188,12 +167,12 @@
         dc:identifier       <http://identifiers.org/ncbigene/59272> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "59272"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> , <http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/id69513f9a> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/id69513f9a> , <http://identifiers.org/wikipathways/WP4891_r111408> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000130234> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/59272> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/ACE2> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/Q9BYF1> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/f33e8> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/f33e8> .
 
 <http://identifiers.org/wikipathways/WP4846>
         a                   wp:DataNode ;
@@ -201,8 +180,8 @@
         dc:identifier       <http://identifiers.org/wikipathways/WP4846> ;
         dc:source           "WikiPathways"^^xsd:string ;
         dcterms:identifier  "WP4846"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/be0b0> .
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111408> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/be0b0> .
 
 <http://identifiers.org/ncbigene/7124>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -210,12 +189,18 @@
         dc:identifier       <http://identifiers.org/ncbigene/7124> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "7124"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111408> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000232810> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/7124> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/TNF> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/Q5STB3> , <http://identifiers.org/uniprot/P01375> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/null> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/null> .
+
+<http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/id981d12bb>
+        a                 wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4891_r111408> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4891_r111408/Interaction/id981d12bb> ;
+        wp:participants   <http://identifiers.org/ncbigene/6347> , <http://identifiers.org/ncbigene/3569> .
 
 <http://identifiers.org/wikipathways/WP4883>
         a                   wp:DataNode ;
@@ -223,8 +208,8 @@
         dc:identifier       <http://identifiers.org/wikipathways/WP4883> ;
         dc:source           "WikiPathways"^^xsd:string ;
         dcterms:identifier  "WP4883"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/ac2f7> .
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111408> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/ac2f7> .
 
 <http://identifiers.org/ncbigene/3627>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -232,12 +217,12 @@
         dc:identifier       <http://identifiers.org/ncbigene/3627> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "3627"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> , <http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/idfc67b63> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111408> , <http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/idfc67b63> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000169245> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/3627> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/CXCL10> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/P02778> , <http://identifiers.org/uniprot/A0A024RDA4> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/feac7> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/feac7> .
 
 <http://identifiers.org/wikipathways/WP530>
         a                   wp:DataNode ;
@@ -245,8 +230,8 @@
         dc:identifier       <http://identifiers.org/wikipathways/WP530> ;
         dc:source           "WikiPathways"^^xsd:string ;
         dcterms:identifier  "WP530"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/f9a57> .
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111408> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/f9a57> .
 
 <http://identifiers.org/wikipathways/WP3624>
         a                   wp:DataNode ;
@@ -254,14 +239,14 @@
         dc:identifier       <http://identifiers.org/wikipathways/WP3624> ;
         dc:source           "WikiPathways"^^xsd:string ;
         dcterms:identifier  "WP3624"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/d20e7> .
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111408> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/d20e7> .
 
-<http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/idfe2de42e>
+<http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/idf55cb6e4>
         a                 wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4891_r111156> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4891_r111156/Interaction/idfe2de42e> ;
-        wp:participants   <http://identifiers.org/ncbigene/3559> , <http://identifiers.org/ncbigene/3558> .
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4891_r111408> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4891_r111408/Interaction/idf55cb6e4> ;
+        wp:participants   <http://identifiers.org/ncbigene/3576> , <http://identifiers.org/ncbigene/3569> .
 
 <http://identifiers.org/ncbigene/6348>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -269,12 +254,33 @@
         dc:identifier       <http://identifiers.org/ncbigene/6348> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "6348"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> , <http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/id6de06d86> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/id6de06d86> , <http://identifiers.org/wikipathways/WP4891_r111408> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000277632> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/6348> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/CCL3> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/P10147> , <http://identifiers.org/uniprot/A0N0R1> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/eb71b> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/eb71b> .
+
+<http://identifiers.org/wikipathways/WP4891_r111408>
+        a                      wp:Pathway , skos:Collection ;
+        dc:identifier          <http://identifiers.org/wikipathways/WP4891> ;
+        dc:source              "WikiPathways"^^xsd:string ;
+        dc:title               "COVID-19 Adverse Outcome Pathway (AOP)"@en ;
+        dcterms:description    "Experimenting with links in line with bioinformatics analysis of COVID-19 genes and AOP knowledge. Work in progress!" , "Experimental pathway to investigate overlap of Covid-19 downstream effects and adverse outcome pathways related to lung injury." ;
+        dcterms:identifier     "WP4891"^^xsd:string ;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/DOID_2945> ;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4891_r111408> ;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/PW_0000003> , <http://purl.obolibrary.org/obo/PW_0001308> , <http://purl.obolibrary.org/obo/DOID_934> ;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:organismName        "Homo sapiens"^^xsd:string ;
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001308> , <http://purl.obolibrary.org/obo/PW_0000003> ;
+        foaf:page              <http://www.wikipathways.org/instance/WP4891_r111408> .
+
+<http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/id6de06d86>
+        a                 wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4891_r111408> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4891_r111408/Interaction/id6de06d86> ;
+        wp:participants   <http://identifiers.org/ncbigene/6348> , <http://identifiers.org/ncbigene/3576> .
 
 <http://identifiers.org/ncbigene/3574>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -282,12 +288,12 @@
         dc:identifier       <http://identifiers.org/ncbigene/3574> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "3574"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111408> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000104432> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/3574> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/IL7> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/Q5FBX5> , <http://identifiers.org/uniprot/Q5FBY3> , <http://identifiers.org/uniprot/A0A0A0MTG5> , <http://identifiers.org/uniprot/P13232> , <http://identifiers.org/uniprot/Q5FBY6> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/null> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/null> .
 
 <http://identifiers.org/ncbigene/7113>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -295,15 +301,15 @@
         dc:identifier       <http://identifiers.org/ncbigene/7113> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "7113"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111408> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000184012> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/7113> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/TMPRSS2> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/C9JB05> , <http://identifiers.org/uniprot/O15393> , <http://identifiers.org/uniprot/C9JKZ3> , <http://identifiers.org/uniprot/C9J5Y1> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/eba5c> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/eba5c> .
 
 <http://identifiers.org/wikipathways/WP4891>
-        pav:hasVersion  <http://identifiers.org/wikipathways/WP4891_r111156> .
+        pav:hasVersion  <http://identifiers.org/wikipathways/WP4891_r111408> .
 
 <http://identifiers.org/ncbigene/6347>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -311,15 +317,9 @@
         dc:identifier       <http://identifiers.org/ncbigene/6347> ;
         dc:source           "Entrez Gene"^^xsd:string ;
         dcterms:identifier  "6347"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111156> , <http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/id981d12bb> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4891_r111408> , <http://rdf.wikipathways.org/Pathway/WP4891_r111408/WP/Interaction/id981d12bb> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000108691> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/6347> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/CCL2> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/J3KRT7> , <http://identifiers.org/uniprot/P13500> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111156/DataNode/ee6e7> .
-
-<http://rdf.wikipathways.org/Pathway/WP4891_r111156/WP/Interaction/id981d12bb>
-        a                 wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4891_r111156> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4891_r111156/Interaction/id981d12bb> ;
-        wp:participants   <http://identifiers.org/ncbigene/6347> , <http://identifiers.org/ncbigene/3569> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111408/DataNode/ee6e7> .
