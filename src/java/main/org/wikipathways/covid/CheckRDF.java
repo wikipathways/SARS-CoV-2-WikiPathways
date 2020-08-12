@@ -16,12 +16,15 @@ import org.apache.jena.rdf.model.ModelFactory;
 public class CheckRDF {
 
     public static void main(String[] args) throws Exception {
-        String gpmlFile = args[0];
-        String wpid     = gpmlFile.substring(9,gpmlFile.indexOf(".ttl"));
+        String wpFile   = args[0];
+        String gpmlFile = wpFile.replace("wp/Human", "wp/gpml/Human");
+        String wpid     = wpFile.substring(9,wpFile.indexOf(".ttl"));
         System.out.println("# WikiPathways " + wpid + "\n");
-        System.out.println("GPML file: [" + gpmlFile + "](../" + gpmlFile + ")\n");
+        System.out.println("* WPRDF file: [" + wpFile + "](../" + wpFile + ")\n");
+        System.out.println("* GPMLRDF file: [" + gpmlFile + "](../" + gpmlFile + ")\n");
         List<IAssertion> assertions = new ArrayList<IAssertion>();
         Model loadedData = ModelFactory.createDefaultModel();
+        loadedData.read(new FileInputStream(new File(wpFile)), "", "TURTLE");
         loadedData.read(new FileInputStream(new File(gpmlFile)), "", "TURTLE");
 
         SPARQLHelper helper = new SPARQLHelper(loadedData);
