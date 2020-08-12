@@ -20,7 +20,7 @@ public class CheckRDF {
         String gpmlFile = wpFile.replace("wp/Human", "wp/gpml/Human");
         String wpid     = wpFile.substring(9,wpFile.indexOf(".ttl"));
         System.out.println("# WikiPathways " + wpid + "\n");
-        System.out.println("* WPRDF file: [" + wpFile + "](../" + wpFile + ")\n");
+        System.out.println("* WPRDF file: [" + wpFile + "](../" + wpFile + ")");
         System.out.println("* GPMLRDF file: [" + gpmlFile + "](../" + gpmlFile + ")\n");
         List<IAssertion> assertions = new ArrayList<IAssertion>();
         Model loadedData = ModelFactory.createDefaultModel();
