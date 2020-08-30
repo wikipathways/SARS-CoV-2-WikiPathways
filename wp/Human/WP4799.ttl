@@ -15,19 +15,41 @@
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-<http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/idc652beda>
-        a                 wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r110803> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r110803/Interaction/idc652beda> ;
-        wp:participants   <http://identifiers.org/uniprot/Q9BYF1> , <http://identifiers.org/uniprot/P0DTC2> .
-
-<http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/id5f17221c>
+<http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/id2567d541>
         a                 wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r110803> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r110803/Interaction/id5f17221c> ;
-        wp:participants   <http://identifiers.org/uniprot/P50052> , <http://identifiers.org/chebi/CHEBI:2719> ;
-        wp:source         <http://identifiers.org/chebi/CHEBI:2719> ;
-        wp:target         <http://identifiers.org/uniprot/P50052> .
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r111615> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r111615/Interaction/id2567d541> ;
+        wp:participants   <http://identifiers.org/chebi/CHEBI:2719> , <http://identifiers.org/uniprot/A0A0A0MSN4> ;
+        wp:source         <http://identifiers.org/uniprot/A0A0A0MSN4> ;
+        wp:target         <http://identifiers.org/chebi/CHEBI:2719> .
+
+<http://identifiers.org/wikipathways/WP4799_r111615>
+        a                      skos:Collection , wp:Pathway ;
+        dc:identifier          <http://identifiers.org/wikipathways/WP4799> ;
+        dc:source              "WikiPathways"^^xsd:string ;
+        dc:title               "Downregulation of ACE2 expression by SARS-CoV infection and SARS-CoV Spike protein"@en ;
+        dcterms:description    "Schematic diagram of the renin-angiotensin system in acute lung failure and proposed SARS-CoV action. The renin-angiotensin system has a crucial role in severe acute lung injury and the SARS-CoV receptor ACE2 has a protective role in acute lung failure. Because ACE2 is a crucial SARS-CoV receptor, SARS-CoV Spike protein binding to ACE2 downmodulates ACE2 expression, and loss of ACE2 expression results in severe acute respiratory failure. The AT1R is the crucial receptor that mediates AngII-induced vascular permeability and severe acute lung injury.  SARS-CoV Spike–mediated lung failure can be rescued by inhibition of AT1R. This research was done in in vivo mice cells." ;
+        dcterms:identifier     "WP4799"^^xsd:string ;
+        dcterms:references     <http://identifiers.org/pubmed/16007097> ;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_934> ;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4799_r111615> ;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/PW_0000013> ;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:organismName        "Homo sapiens"^^xsd:string ;
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000013> ;
+        foaf:page              <http://www.wikipathways.org/instance/WP4799_r111615> .
+
+<http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/id6c434c1e>
+        a                 wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r111615> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r111615/Interaction/id6c434c1e> ;
+        wp:participants   <http://identifiers.org/uniprot/P50052> .
+
+<http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/ide171a636>
+        a                 wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r111615> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r111615/Interaction/ide171a636> ;
+        wp:participants   <http://identifiers.org/chebi/CHEBI:2719> , <http://identifiers.org/uniprot/Q9BYF1> .
 
 <http://identifiers.org/uniprot/Q9BYF1>
         a                   wp:Protein , wp:DataNode ;
@@ -35,12 +57,20 @@
         dc:identifier       <http://identifiers.org/uniprot/Q9BYF1> ;
         dc:source           "Uniprot-TrEMBL"^^xsd:string ;
         dcterms:identifier  "Q9BYF1"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/ide171a636> , <http://identifiers.org/wikipathways/WP4799_r110803> , <http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/idc652beda> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/ide171a636> , <http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/idc652beda> , <http://identifiers.org/wikipathways/WP4799_r111615> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000130234> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/59272> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/ACE2> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/Q9BYF1> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r110803/DataNode/d051e> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r111615/DataNode/d051e> .
+
+<http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/idbca35504>
+        a                 wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r111615> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r111615/Interaction/idbca35504> ;
+        wp:participants   <http://identifiers.org/uniprot/P30556> , <http://identifiers.org/chebi/CHEBI:2719> ;
+        wp:source         <http://identifiers.org/chebi/CHEBI:2719> ;
+        wp:target         <http://identifiers.org/uniprot/P30556> .
 
 <http://identifiers.org/uniprot/P50052>
         a                   wp:DataNode , wp:Protein ;
@@ -48,31 +78,23 @@
         dc:identifier       <http://identifiers.org/uniprot/P50052> ;
         dc:source           "Uniprot-TrEMBL"^^xsd:string ;
         dcterms:identifier  "P50052"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/id6c434c1e> , <http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/id5f17221c> , <http://identifiers.org/wikipathways/WP4799_r110803> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/id5f17221c> , <http://identifiers.org/wikipathways/WP4799_r111615> , <http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/id6c434c1e> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000180772> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/186> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/AGTR2> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/P50052> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r110803/DataNode/ee6b1> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r111615/DataNode/ee6b1> .
 
 <http://identifiers.org/pubmed/16007097>
         a                 wp:PublicationReference ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r110803> ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r111615> ;
         foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/16007097> .
 
-<http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/ide171a636>
+<http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/idc7eb7b47>
         a                 wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r110803> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r110803/Interaction/ide171a636> ;
-        wp:participants   <http://identifiers.org/chebi/CHEBI:2719> , <http://identifiers.org/uniprot/Q9BYF1> .
-
-<http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/id2567d541>
-        a                 wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r110803> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r110803/Interaction/id2567d541> ;
-        wp:participants   <http://identifiers.org/chebi/CHEBI:2719> , <http://identifiers.org/uniprot/A0A0A0MSN4> ;
-        wp:source         <http://identifiers.org/uniprot/A0A0A0MSN4> ;
-        wp:target         <http://identifiers.org/chebi/CHEBI:2719> .
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r111615> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r111615/Interaction/idc7eb7b47> ;
+        wp:participants   <http://identifiers.org/uniprot/P30556> .
 
 <http://identifiers.org/uniprot/A0A0A0MSN4>
         a                   wp:DataNode , wp:Protein ;
@@ -80,20 +102,12 @@
         dc:identifier       <http://identifiers.org/uniprot/A0A0A0MSN4> ;
         dc:source           "Uniprot-TrEMBL"^^xsd:string ;
         dcterms:identifier  "A0A0A0MSN4"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/id2567d541> , <http://identifiers.org/wikipathways/WP4799_r110803> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/id2567d541> , <http://identifiers.org/wikipathways/WP4799_r111615> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000159640> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/1636> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/ACE> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/J3KTH9> , <http://identifiers.org/uniprot/J3QLR4> , <http://identifiers.org/uniprot/P12821> , <http://identifiers.org/uniprot/J3KRH5> , <http://identifiers.org/uniprot/J3KS28> , <http://identifiers.org/uniprot/J3KSQ5> , <http://identifiers.org/uniprot/J3KTB8> , <http://identifiers.org/uniprot/J3QRX8> , <http://identifiers.org/uniprot/J3QSC7> , <http://identifiers.org/uniprot/A0A0A0MSN4> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r110803/DataNode/d08ac> .
-
-<http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/idbca35504>
-        a                 wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r110803> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r110803/Interaction/idbca35504> ;
-        wp:participants   <http://identifiers.org/uniprot/P30556> , <http://identifiers.org/chebi/CHEBI:2719> ;
-        wp:source         <http://identifiers.org/chebi/CHEBI:2719> ;
-        wp:target         <http://identifiers.org/uniprot/P30556> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r111615/DataNode/d08ac> .
 
 <http://identifiers.org/uniprot/P0DTC2>
         a                   wp:Protein , wp:DataNode ;
@@ -101,27 +115,11 @@
         dc:identifier       <http://identifiers.org/uniprot/P0DTC2> ;
         dc:source           "Uniprot-TrEMBL"^^xsd:string ;
         dcterms:identifier  "P0DTC2"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4799_r110803> , <http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/idc652beda> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/idc652beda> , <http://identifiers.org/wikipathways/WP4799_r111615> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/43740568> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/P0DTC2> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q88000922> , <http://www.wikidata.org/entity/Q87917585> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r110803/DataNode/cfddc> .
-
-<http://identifiers.org/wikipathways/WP4799_r110803>
-        a                      skos:Collection , wp:Pathway ;
-        dc:identifier          <http://identifiers.org/wikipathways/WP4799> ;
-        dc:source              "WikiPathways"^^xsd:string ;
-        dc:title               "Downregulation of ACE2 expression by SARS-CoV infection and SARS-CoV Spike protein."@en ;
-        dcterms:description    "Schematic diagram of the renin-angiotensin system in acute lung failure and proposed SARS-CoV action. The renin-angiotensin system has a crucial role in severe acute lung injury and the SARS-CoV receptor ACE2 has a protective role in acute lung failure. Because ACE2 is a crucial SARS-CoV receptor, SARS-CoV Spike protein binding to ACE2 downmodulates ACE2 expression, and loss of ACE2 expression results in severe acute respiratory failure. The AT1R is the crucial receptor that mediates AngII-induced vascular permeability and severe acute lung injury.  SARS-CoV Spike–mediated lung failure can be rescued by inhibition of AT1R. This research was done in in vivo mice cells." ;
-        dcterms:identifier     "WP4799"^^xsd:string ;
-        dcterms:references     <http://identifiers.org/pubmed/16007097> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_934> ;
-        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4799_r110803> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/DOID_934> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
-        wp:organismName        "Homo sapiens"^^xsd:string ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000013> ;
-        foaf:page              <http://www.wikipathways.org/instance/WP4799_r110803> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r111615/DataNode/cfddc> .
 
 <http://identifiers.org/chebi/CHEBI:2719>
         a                   wp:DataNode , wp:Metabolite ;
@@ -130,7 +128,7 @@
         dc:identifier       <http://identifiers.org/chebi/CHEBI:2719> ;
         dc:source           "ChEBI"^^xsd:string ;
         dcterms:identifier  "CHEBI:2719"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/ide171a636> , <http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/idbca35504> , <http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/id5f17221c> , <http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/id2567d541> , <http://identifiers.org/wikipathways/WP4799_r110803> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/id2567d541> , <http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/ide171a636> , <http://identifiers.org/wikipathways/WP4799_r111615> , <http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/id5f17221c> , <http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/idbca35504> ;
         wp:bdbChEBI         <http://identifiers.org/chebi/CHEBI:2719> ;
         wp:bdbChemspider    <http://identifiers.org/chemspider/150504> ;
         wp:bdbHmdb          <http://identifiers.org/hmdb/HMDB0001035> ;
@@ -138,16 +136,10 @@
         wp:bdbKeggCompound  <http://identifiers.org/kegg.compound/C02135> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID172198> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q412999> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r110803/DataNode/b733a> .
-
-<http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/idc7eb7b47>
-        a                 wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r110803> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r110803/Interaction/idc7eb7b47> ;
-        wp:participants   <http://identifiers.org/uniprot/P30556> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r111615/DataNode/b733a> .
 
 <http://identifiers.org/wikipathways/WP4799>
-        pav:hasVersion  <http://identifiers.org/wikipathways/WP4799_r110803> .
+        pav:hasVersion  <http://identifiers.org/wikipathways/WP4799_r111615> .
 
 <http://identifiers.org/uniprot/P30556>
         a                   wp:DataNode , wp:Protein ;
@@ -155,15 +147,23 @@
         dc:identifier       <http://identifiers.org/uniprot/P30556> ;
         dc:source           "Uniprot-TrEMBL"^^xsd:string ;
         dcterms:identifier  "P30556"^^xsd:string ;
-        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4799_r110803> , <http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/idbca35504> , <http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/idc7eb7b47> ;
+        dcterms:isPartOf    <http://identifiers.org/wikipathways/WP4799_r111615> , <http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/idbca35504> , <http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/idc7eb7b47> ;
         wp:bdbEnsembl       <http://identifiers.org/ensembl/ENSG00000144891> ;
         wp:bdbEntrezGene    <http://identifiers.org/ncbigene/185> ;
         wp:bdbHgncSymbol    <http://identifiers.org/hgnc.symbol/AGTR1> ;
         wp:bdbUniprot       <http://identifiers.org/uniprot/Q53YY0> , <http://identifiers.org/uniprot/P30556> , <http://identifiers.org/uniprot/D3DNG8> , <http://identifiers.org/uniprot/A0A0A0MSE3> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r110803/DataNode/ab2a6> .
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4799_r111615/DataNode/ab2a6> .
 
-<http://rdf.wikipathways.org/Pathway/WP4799_r110803/WP/Interaction/id6c434c1e>
+<http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/idc652beda>
         a                 wp:Interaction ;
-        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r110803> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r110803/Interaction/id6c434c1e> ;
-        wp:participants   <http://identifiers.org/uniprot/P50052> .
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r111615> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r111615/Interaction/idc652beda> ;
+        wp:participants   <http://identifiers.org/uniprot/Q9BYF1> , <http://identifiers.org/uniprot/P0DTC2> .
+
+<http://rdf.wikipathways.org/Pathway/WP4799_r111615/WP/Interaction/id5f17221c>
+        a                 wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <http://identifiers.org/wikipathways/WP4799_r111615> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4799_r111615/Interaction/id5f17221c> ;
+        wp:participants   <http://identifiers.org/uniprot/P50052> , <http://identifiers.org/chebi/CHEBI:2719> ;
+        wp:source         <http://identifiers.org/chebi/CHEBI:2719> ;
+        wp:target         <http://identifiers.org/uniprot/P50052> .
