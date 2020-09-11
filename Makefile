@@ -9,7 +9,7 @@ all: wikipathways-SARS-CoV-2-rdf-authors.zip wikipathways-SARS-CoV-2-rdf-wp.zip 
 fetch:clean ${GPMLS}
 
 clean:
-	@rm ${GPMLS}
+	@rm -f ${GPMLS}
 
 gpml/%.gpml:
 	@echo "Git fetching $@ ..."
