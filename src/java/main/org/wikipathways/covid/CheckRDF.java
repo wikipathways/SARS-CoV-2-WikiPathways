@@ -32,6 +32,8 @@ public class CheckRDF {
         assertions.addAll(ReferencesTests.all(helper));
         assertions.addAll(InteractionTests.all(helper));
         assertions.addAll(CovidDiseaseMapsTests.all(helper));
+        assertions.addAll(EnsemblTests.all(helper));
+        assertions.addAll(GeneralTests.all(helper));
 
         System.out.println("## Tests");
 
