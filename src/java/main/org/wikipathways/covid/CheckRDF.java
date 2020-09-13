@@ -72,6 +72,15 @@ public class CheckRDF {
                 } else {
                     message += ".";
                 }
+            } else if (assertion instanceof AssertNotSame) {
+                AssertNotSame typedAssertion = (AssertNotSame)assertion;
+                if (typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
+                   message += "x";
+                   errors += "        * [" + typedAssertion.getMessage() + "](" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
+                   failedAssertions.add(assertion);
+                } else {
+                    message += ".";
+                }
             } else if (assertion instanceof AssertNotNull) {
                 AssertNotNull typedAssertion = (AssertNotNull)assertion;
                 if (typedAssertion.getValue() == null) {
