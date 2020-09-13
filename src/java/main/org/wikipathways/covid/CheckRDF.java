@@ -94,8 +94,8 @@ public class CheckRDF {
         System.out.println("\n## Fails\n");
         for (IAssertion assertion : failedAssertions) {
             System.out.println("## " + assertion.getTestClass() + "." + assertion.getTest());
-            System.out.println("\n```\n" + assertion.getMessage() + "\n```");
-        }        
+            System.out.println("\n```\n" + assertion.getMessage() + "\n" + assertion.getDetails() + "\n```");
+        }
     }
 
 }
