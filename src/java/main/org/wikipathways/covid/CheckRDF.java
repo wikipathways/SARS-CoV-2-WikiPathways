@@ -15,6 +15,8 @@ import org.apache.jena.rdf.model.ModelFactory;
 
 public class CheckRDF {
 
+    public static String getHashcode(String string) { return Integer.toHexString(string.hashCode()); }
+
     public static void main(String[] args) throws Exception {
         String wpFile   = args[0];
         String gpmlFile = wpFile.replace("wp/Human", "wp/gpml/Human");
@@ -65,7 +67,7 @@ public class CheckRDF {
                 AssertEquals typedAssertion = (AssertEquals)assertion;
                 if (!typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
                    message += "x";
-                   errors += "        * " + typedAssertion.getMessage();
+                   errors += "        * [" + typedAssertion.getMessage() + "](" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
                    failedAssertions.add(assertion);
                 } else {
                     message += ".";
@@ -93,8 +95,9 @@ public class CheckRDF {
 
         System.out.println("\n## Fails\n");
         for (IAssertion assertion : failedAssertions) {
+            System.out.println("<a href=\"" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + "\" />\n");
             System.out.println("## " + assertion.getTestClass() + "." + assertion.getTest());
-            System.out.println("\n```\n" + assertion.getMessage() + "\n" + assertion.getDetails() + "\n```");
+            System.out.println("\n" + assertion.getMessage() + "\n```\n" + assertion.getDetails() + "\n```");
         }
     }
 
