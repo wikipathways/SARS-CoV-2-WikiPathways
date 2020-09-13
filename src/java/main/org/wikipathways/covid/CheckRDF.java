@@ -67,7 +67,7 @@ public class CheckRDF {
                 AssertEquals typedAssertion = (AssertEquals)assertion;
                 if (!typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
                    message += "x";
-                   errors += "        * [" + typedAssertion.getMessage() + "](" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
+                   errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
                    failedAssertions.add(assertion);
                 } else {
                     message += ".";
@@ -76,7 +76,7 @@ public class CheckRDF {
                 AssertNotSame typedAssertion = (AssertNotSame)assertion;
                 if (typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
                    message += "x";
-                   errors += "        * [" + typedAssertion.getMessage() + "](" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
+                   errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
                    failedAssertions.add(assertion);
                 } else {
                     message += ".";
