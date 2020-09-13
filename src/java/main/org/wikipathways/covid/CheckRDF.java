@@ -104,7 +104,7 @@ public class CheckRDF {
 
         System.out.println("\n## Fails\n");
         for (IAssertion assertion : failedAssertions) {
-            System.out.println("<a href=\"" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + "\" />\n");
+            System.out.println("<a name=\"" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + "\" />\n");
             System.out.println("## " + assertion.getTestClass() + "." + assertion.getTest());
             System.out.println("\n" + assertion.getMessage() + "\n```\n" + assertion.getDetails() + "\n```");
         }
