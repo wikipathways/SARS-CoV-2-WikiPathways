@@ -12,10 +12,6 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
     <Graphics CenterX="504.07611439637583" CenterY="324.1008403361339" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" />
     <Xref Database="NCBI Protein" ID="64223" />
   </DataNode>
-  <DataNode TextLabel="MAP1LC3B" Type="GeneProduct">
-    <Graphics CenterX="982.7563025210089" CenterY="720.8487394957982" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" LineStyle="Broken" LineThickness="2.0" Color="ff3333" />
-    <Xref Database="NCBI Protein" ID="81631" />
-  </DataNode>
   <DataNode TextLabel="ATG5" Type="Protein" GroupRef="e1129">
     <Graphics CenterX="254.14377820760802" CenterY="658.433268858797" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" />
     <Xref Database="NCBI Protein" ID="9474" />
@@ -32,7 +28,7 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
     <Graphics CenterX="850.7731092436981" CenterY="382.30252100840323" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" />
     <Xref Database="" ID="LARP1" />
   </DataNode>
-  <DataNode TextLabel="ATG13" GraphId="a2fd5" Type="Protein">
+  <DataNode TextLabel="ATG13" GraphId="a2fd5" Type="Protein" GroupRef="cb887">
     <Graphics CenterX="510.0" CenterY="468.0" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" Color="ff3333" />
     <Xref Database="NCBI Protein" ID="9776" />
   </DataNode>
@@ -59,6 +55,10 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
   <DataNode TextLabel="OPTN" GraphId="b3adb" Type="Protein">
     <Graphics CenterX="504.6447453255965" CenterY="624.1579626047715" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" />
     <Xref Database="NCBI Protein" ID="10133" />
+  </DataNode>
+  <DataNode TextLabel="MAP1LC3B" GraphId="b48c5" Type="GeneProduct">
+    <Graphics CenterX="982.7563025210089" CenterY="720.8487394957982" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" LineStyle="Broken" LineThickness="2.0" Color="ff3333" />
+    <Xref Database="NCBI Protein" ID="81631" />
   </DataNode>
   <DataNode TextLabel="ATG7" GraphId="b8149" Type="Protein">
     <Graphics CenterX="1012.0862697448367" CenterY="621.3547995139731" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" />
@@ -116,7 +116,7 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
     <Graphics CenterX="978.9684082624561" CenterY="112.12529483239197" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="P31749" />
   </DataNode>
-  <DataNode TextLabel="FIP200" GraphId="c3fa1" Type="Protein">
+  <DataNode TextLabel="FIP200" GraphId="c3fa1" Type="Protein" GroupRef="cb887">
     <Graphics CenterX="549.0" CenterY="489.0" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" />
     <Xref Database="NCBI Protein" ID="9821" />
   </DataNode>
@@ -144,7 +144,7 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
     <Graphics CenterX="590.9164505308291" CenterY="325.310924369747" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" />
     <Xref Database="NCBI Protein" ID="57521" />
   </DataNode>
-  <DataNode TextLabel="ULK1" GraphId="d8c98" Type="Protein">
+  <DataNode TextLabel="ULK1" GraphId="d8c98" Type="Protein" GroupRef="cb887">
     <Graphics CenterX="591.0" CenterY="468.0" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" />
     <Xref Database="NCBI Protein" ID="8408" />
   </DataNode>
@@ -317,13 +317,6 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
     <Graphics RelX="0.03538872681753617" RelY="0.9999999999999823" Width="34.25277267579759" Height="16.692688634453233" FillColor="ff99ff" ShapeType="Oval" />
     <Xref Database="" ID="" />
   </State>
-  <Interaction>
-    <Graphics ZOrder="12288" LineThickness="3.0" Color="ff3300">
-      <Point X="784.5723909943966" Y="204.22258341658542" GraphRef="cbf03" RelX="0.0" RelY="1.0" />
-      <Point X="784.1616038882148" Y="306.0862697448357" GraphRef="d10c6" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
   <Interaction GraphId="id20e40bd3">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="1202.7894964445027" Y="644.7582205029013" GraphRef="ca424" RelX="0.0" RelY="0.0" />
@@ -424,8 +417,8 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
   </Interaction>
   <Interaction GraphId="id8be830b7">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="924.7619047619047" Y="706.6666666666665" />
-      <Point X="939.0476190476189" Y="733.3333333333333" />
+      <Point X="922.03256302521" Y="707.9096638655475" GraphRef="db161" RelX="0.5" RelY="1.0" />
+      <Point X="942.7563025210089" Y="720.8487394957982" GraphRef="b48c5" RelX="-1.0" RelY="0.0" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -453,6 +446,13 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
+  <Interaction GraphId="id9545f48f">
+    <Graphics ZOrder="12288" LineThickness="3.0" Color="ff3300">
+      <Point X="784.5723909943966" Y="204.22258341658542" GraphRef="cbf03" RelX="0.0" RelY="1.0" />
+      <Point X="784.1616038882148" Y="306.0862697448357" GraphRef="d10c6" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
   <Interaction GraphId="id9b950c0e">
     <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
       <Point X="726.0" Y="526.0" GraphRef="ad6e9" RelX="0.0" RelY="1.0" />
@@ -475,23 +475,16 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Interaction GraphId="idd1781b7d">
-    <Graphics ZOrder="12288" LineThickness="2.0">
-      <Point X="1407.4074074074074" Y="677.3662551440328" />
-      <Point X="1466.9479606188468" Y="677.9184247538678" ArrowHead="TBar" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
   <Interaction GraphId="idd277ed15">
     <Graphics ZOrder="12288" LineThickness="2.0">
       <Point X="547.4962824636025" Y="410.8838158087215" GraphRef="c5e75" RelX="0.0" RelY="1.0" />
-      <Point X="549.0" Y="455.0" ArrowHead="TBar" />
+      <Point X="550.5" Y="450.0" GraphRef="cf768" RelX="0.0" RelY="-1.0" ArrowHead="TBar" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction GraphId="idd3324826">
     <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
-      <Point X="551.640340218712" Y="495.7472660996355" />
+      <Point X="550.5" Y="507.0" GraphRef="cf768" RelX="0.0" RelY="1.0" />
       <Point X="552.9422615535267" Y="572.1814374522827" GraphRef="d9733" RelX="0.0" RelY="0.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -550,7 +543,7 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
   </Interaction>
   <Interaction GraphId="idf0d1849c">
     <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
-      <Point X="839.0" Y="526.0" />
+      <Point X="838.0" Y="528.0" GraphRef="a579d" RelX="0.0" RelY="1.0" />
       <Point X="839.8166734963611" Y="572.9509090726017" GraphRef="f4b91" RelX="0.0" RelY="0.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -587,13 +580,6 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Interaction GraphId="e49f4">
-    <Graphics ZOrder="32790" LineStyle="Broken" LineThickness="3.0">
-      <Point X="1405.7613168724279" Y="597.5308641975308" />
-      <Point X="1455.9295261239374" Y="598.0923450789794" ArrowHead="Arrow" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
   <Interaction GraphId="f725b">
     <Graphics ZOrder="32797" LineThickness="3.0" Color="ff3300">
       <Point X="725.9619255109427" Y="464.8219040702705" GraphRef="b6a2a" RelX="0.0" RelY="1.0" />
@@ -615,13 +601,24 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
-  <Interaction GraphId="b05c3">
+  <GraphicalLine GraphId="ef457">
+    <Graphics ZOrder="12288" LineThickness="2.0">
+      <Point X="1407.4074074074074" Y="677.3662551440328" />
+      <Point X="1466.9479606188468" Y="677.9184247538678" ArrowHead="TBar" />
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="abfbe">
+    <Graphics ZOrder="32790" LineStyle="Broken" LineThickness="3.0">
+      <Point X="1405.7613168724279" Y="597.5308641975308" />
+      <Point X="1455.9295261239374" Y="598.0923450789794" ArrowHead="Arrow" />
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="a4e22">
     <Graphics ZOrder="32800" LineThickness="3.0" Color="ff3300">
       <Point X="1403.2921810699588" Y="557.201646090535" />
       <Point X="1449.3827160493827" Y="558.0246913580247" ArrowHead="mim-conversion" />
     </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
+  </GraphicalLine>
   <Label TextLabel="Phospho(S/T) site" GraphId="a63f8">
     <Graphics CenterX="1547.9738760631835" CenterY="433.77885783718125" Width="119.11907654921214" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
   </Label>
@@ -700,12 +697,13 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
   </Shape>
   <Group GroupId="c16ec" GraphId="a094e" Style="Complex" />
   <Group GroupId="ff46b" GraphId="c5e75" Style="Complex" />
+  <Group GroupId="cb887" GraphId="cf768" Style="Group" />
   <Group GroupId="e1129" GraphId="ddc93" Style="Complex" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altered autophagy pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001562</bp:ID>
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infectious disease pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001028</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
     </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="c7c">
@@ -717,8 +715,8 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alexey Stukalov, Virginie Girault, Vincent Grass, Valter Bergant, Ozge Karayel, Christian Urban, Darya A. Haas, Yiqi Huang, Lila Oubraham, Anqi Wang, Sabri M. Hamad, Antonio Piras, Maria Tanzer, Fynn M. Hansen, Thomas Enghleitner, Maria Reinecke, Teresa M. Lavacca, Rosina Ehmann, Roman WÃƒÂ¶lfel, JÃƒÂ¶rg Jores, Bernhard Kuster, Ulrike Protzer, Roland Rad, John Ziebuhr, Volker Thiel, Pietro Scaturro, Matthias Mann, Andreas Pichlmair</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infectious disease pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001028</bp:ID>
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altered autophagy pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001562</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
     </bp:openControlledVocabulary>
   </Biopax>
