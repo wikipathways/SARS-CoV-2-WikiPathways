@@ -146,9 +146,18 @@ If you have the Debian/Ubuntu `rasqal-utils` package installed, you can run
 the following queries to get some statistics:
 
 ```shell
-roqet sparql/reactions.rq -D wp/Human/WP4846.ttl
-roqet sparql/publications.rq -D wp/Human/WP4846.ttl
-roqet sparql/genes.rq -D wp/Human/WP4846.ttl
-roqet sparql/proteins.rq -D wp/Human/WP4846.ttl
-roqet sparql/metabolites.rq -D wp/Human/WP4846.ttl
+cat wp/Human/WP*.ttl > all.ttl
+echo "## Reactions"
+roqet sparql/reactions.rq -D all.ttl > /dev/null
+echo "## Publications"
+roqet sparql/publications.rq -D all.ttl > /dev/null
+echo "## Genes"
+roqet sparql/genes.rq -D all.ttl > /dev/null
+echo "## Proteins"
+roqet sparql/proteins.rq -D all.ttl > /dev/null
+echo "## Metabolites"
+roqet sparql/metabolites.rq -D all.ttl > /dev/null
+echo "## DataNodes"
+roqet sparql/datanodes.rq -D all.ttl > /dev/null
+rm all.ttl
 ```
