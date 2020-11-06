@@ -53,7 +53,7 @@ public class CheckRDF {
                 currentTest = "";
                 testClasses++;
                 if (!message.isEmpty()) {
-                  if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s)."; }
+                  if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s):"; }
                   if (!errors.isEmpty()) message += "\n" + errors;
                   System.out.println(message);
                 }
@@ -63,7 +63,7 @@ public class CheckRDF {
             if (assertion.getTest() != currentTest) {
                 currentTest = assertion.getTest();
                 if (!message.isEmpty()) {
-                  if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s)."; }
+                  if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s):"; }
                   System.out.println(message);
                 }
                 message = "    * " + currentTest + ": ";
@@ -106,7 +106,10 @@ public class CheckRDF {
                 failedAssertions.add(assertion);
             }
         }
-        if (!message.isEmpty()) System.out.print(message);
+        if (!message.isEmpty())  {
+            if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s):"; }
+            System.out.print(message);
+        }
         System.out.println();
         System.out.println("\n## Summary\n");
         System.out.println("* Number of test classes: " + testClasses);
