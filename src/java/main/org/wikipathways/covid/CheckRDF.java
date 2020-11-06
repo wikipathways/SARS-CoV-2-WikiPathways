@@ -46,20 +46,28 @@ public class CheckRDF {
         String currentTest = "";
         String message = "";
         String errors = "";
+        int errorCount = 0;
         for (IAssertion assertion : assertions) {
             if (assertion.getTestClass() != currentTestClass) {
                 currentTestClass = assertion.getTestClass();
                 currentTest = "";
                 testClasses++;
-                if (!errors.isEmpty()) message += "\n" + errors;
-                if (!message.isEmpty()) System.out.println(message);
+                if (!message.isEmpty()) {
+                  if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s)."; }
+                  if (!errors.isEmpty()) message += "\n" + errors;
+                  System.out.println(message);
+                }
                 message = "";
                 System.out.println("\n* " + currentTestClass);
             }
             if (assertion.getTest() != currentTest) {
                 currentTest = assertion.getTest();
-                if (!message.isEmpty()) System.out.println(message);
+                if (!message.isEmpty()) {
+                  if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s)."; }
+                  System.out.println(message);
+                }
                 message = "    * " + currentTest + ": ";
+                errorCount = 0;
                 errors = "";
                 tests++;
             }
@@ -67,6 +75,7 @@ public class CheckRDF {
                 AssertEquals typedAssertion = (AssertEquals)assertion;
                 if (!typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
                    message += "x";
+                   errorCount++;
                    errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
                    failedAssertions.add(assertion);
                 } else {
@@ -76,6 +85,7 @@ public class CheckRDF {
                 AssertNotSame typedAssertion = (AssertNotSame)assertion;
                 if (typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
                    message += "x";
+                   errorCount++;
                    errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
                    failedAssertions.add(assertion);
                 } else {
@@ -85,6 +95,7 @@ public class CheckRDF {
                 AssertNotNull typedAssertion = (AssertNotNull)assertion;
                 if (typedAssertion.getValue() == null) {
                    message += "x";
+                   errorCount++;
                    errors += "            * Unexpected null found";
                    failedAssertions.add(assertion);
                 } else {
@@ -95,7 +106,8 @@ public class CheckRDF {
                 failedAssertions.add(assertion);
             }
         }
-        if (!message.isEmpty()) System.out.println(message);
+        if (!message.isEmpty()) System.out.print(message);
+        System.out.println();
         System.out.println("\n## Summary\n");
         System.out.println("* Number of test classes: " + testClasses);
         System.out.println("* Number of tests: " + tests);
