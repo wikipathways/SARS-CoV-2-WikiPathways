@@ -50,46 +50,25 @@ git clone git@github.com:wikipathways/GPML2RDF.git
 git checkout -b SARS-CoV-2-WikiPathways
 ```
 
-Generate the Turtle with these two Maven commands and manually copy/paste the content
-into the `.ttl` files in this repository (GNU/Linux):
+Then, create a single Java archive with dependencies with:
 
 ```shell
-cd GPML2RDF
-mkdir -p /tmp/OPSBRIDGEDB
-echo "bridgefiles=/path/to/where/the/bridge/files/are" > /tmp/OPSBRIDGEDB/config.properties
-cp WP2RDF
+cd GPML2RDF/WP2RDF
+mvn assembly:single
 ```
 
-If you add the new pathways to the `SARS-CoV-2-WikiPathways` repository, then you need to
-add a new test for each of them, which includes a GPML file you just copied, and a
-copy of `org.wikipathways.wp2rdf.WP4846Test` for the new pathway.
-After that, you can run the JUnit test for each pathway to create the Turtle, that
-you need to copy/paste from the Maven command line output into the appropriate
-Turtle file in the `SARS-CoV-2-WikiPathways` repository. Combined with the `createTurtle.sh`
-helper script, we can do these steps with:
+Copy the resulting `GPML2RDF-3.0.0-SNAPSHOT-jar-with-dependencies.jar` into the `libs` folder of
+this repository. After that, you can run the Turtle generation with back in this repository:
 
 ```shell
-cp ../../SARS-CoV-2-WikiPathways/gpml/* resources/.
-rm WP*.ttl
-bash createTurtle.sh WP4846
-bash createTurtle.sh WP4853
-bash createTurtle.sh WP4860
-bash createTurtle.sh WP4861
-bash createTurtle.sh WP4863
-bash createTurtle.sh WP4864
-bash createTurtle.sh WP4868
-bash createTurtle.sh WP4799
-bash createTurtle.sh WP4876
-bash createTurtle.sh WP4877
-bash createTurtle.sh WP4880
-bash createTurtle.sh WP4883
-bash createTurtle.sh WP4884
-bash createTurtle.sh WP4891
-bash createTurtle.sh WP4904
-bash createTurtle.sh WP4912
-bash createTurtle.sh WP4927
-bash createTurtle.sh WP4936
-cp WP*.ttl ../../SARS-CoV-2-WikiPathways/wp/Human/.
+javac -cp libs/GPML2RDF-3.0.0-SNAPSHOT-jar-with-dependencies.jar src/java/main/org/wikipathways/covid/CreateRDF.java
+java -cp src/java/main/.:libs/GPML2RDF-3.0.0-SNAPSHOT-jar-with-dependencies.jar:libs/derby-10.5.3.0_1.jar org.wikipathways.covid.CreateRDF gpml/WP4846.gpml
+```
+
+There is a `Makefile` in this folder, that glues things together. Just type:
+
+```shell
+make fetch
 ```
 
 To download the BridgeDb identifier mapping files, download them from
