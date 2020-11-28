@@ -87,6 +87,7 @@ These zip files are created/updated with these commands:
 rm wikipathways-SARS-CoV-2-rdf-*.zip
 zip wikipathways-SARS-CoV-2-rdf-authors.zip authors/*
 zip wikipathways-SARS-CoV-2-rdf-wp.zip wp/Human/*
+zip wikipathways-SARS-CoV-2-rdf-gpml.zip wp/gpml/Human/*
 ```
 
 ## Step 4: run the Wikidata bot
