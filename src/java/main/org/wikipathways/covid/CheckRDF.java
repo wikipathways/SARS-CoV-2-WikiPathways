@@ -36,6 +36,8 @@ public class CheckRDF {
         assertions.addAll(CovidDiseaseMapsTests.all(helper));
         assertions.addAll(EnsemblTests.all(helper));
         assertions.addAll(GeneralTests.all(helper));
+        assertions.addAll(HMDBMetabolitesTests.outdatedIdentifiers(helper));
+        assertions.addAll(HMDBSecMetabolitesTests.all(helper));
 
         System.out.println("## Tests");
 
