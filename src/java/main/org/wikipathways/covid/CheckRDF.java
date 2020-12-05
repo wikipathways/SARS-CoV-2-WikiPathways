@@ -38,6 +38,7 @@ public class CheckRDF {
         assertions.addAll(GeneralTests.all(helper));
         assertions.addAll(HMDBMetabolitesTests.outdatedIdentifiers(helper));
         assertions.addAll(HMDBSecMetabolitesTests.all(helper));
+	assertions.addAll(MetabolitesTests.all(helper));
 
         System.out.println("## Tests");
 
