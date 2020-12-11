@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="STING pathway in Kawasaki-like disease and COVID-19" Version="20200728" Organism="Homo sapiens">
-  <Comment Source="WikiPathways-description">STING pathway relevant to Kawasaki-like disease in COVID-19</Comment>
+  <Comment Source="WikiPathways-description">Triggering of the STING pathway by foreign DNA or damaged mitochondrial DNA can activate multiple downstream responses.  
+The STING pathway is relevant to Kawasaki-like disease in COVID-19.
+
+</Comment>
   <BiopaxRef>efd</BiopaxRef>
-  <Graphics BoardWidth="1648.6046511627899" BoardHeight="1779.4580812445977"/>
+  <Graphics BoardWidth="1050.0" BoardHeight="1494.0"/>
   <DataNode TextLabel="Pyroptosis" GraphId="a367e" Type="Pathway">
     <Graphics CenterX="776.0" CenterY="959.0" Width="90.0" Height="25.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e"/>
     <Xref Database="" ID=""/>
+  </DataNode>
+  <DataNode TextLabel="F3" GraphId="ae651" Type="GeneProduct">
+    <Graphics CenterX="776.0" CenterY="1037.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle"/>
+    <Xref Database="Ensembl" ID="ENSG00000117525"/>
   </DataNode>
   <DataNode TextLabel="CHUK" GraphId="b6583" Type="GeneProduct" GroupRef="e7828">
     <Graphics CenterX="280.5" CenterY="839.0" Width="69.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle"/>
@@ -32,7 +39,7 @@
     <Xref Database="Ensembl" ID="ENSG00000150995"/>
   </DataNode>
   <DataNode TextLabel="angiotensin II" GraphId="ecfbd" Type="Metabolite">
-    <Graphics CenterX="723.6666666666654" CenterY="167.16666666666674" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Graphics CenterX="747.6666666666654" CenterY="167.16666666666674" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff"/>
     <Xref Database="ChEBI" ID="CHEBI:58506"/>
   </DataNode>
   <DataNode TextLabel="FCGR2A" GraphId="f7129" Type="GeneProduct">
@@ -48,11 +55,11 @@
     <Xref Database="ChEBI" ID="CHEBI:15365"/>
   </DataNode>
   <DataNode TextLabel="Vitamin D3" GraphId="fef60" Type="Metabolite">
-    <Graphics CenterX="440.5" CenterY="338.0" Width="79.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Graphics CenterX="442.5" CenterY="367.0" Width="79.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff"/>
     <Xref Database="ChEBI" ID="CHEBI:28940"/>
   </DataNode>
   <DataNode TextLabel="cGAMP" GraphId="bd7f8" Type="Metabolite">
-    <Graphics CenterX="528.0542635658915" CenterY="389.38759689922483" Width="75.96899224806197" Height="25.0" ZOrder="33408" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Graphics CenterX="528.0542635658915" CenterY="462.38759689922483" Width="75.96899224806197" Height="25.0" ZOrder="33408" FontSize="12" Valign="Middle" Color="0000ff"/>
     <Xref Database="ChEBI" ID="CHEBI:71580"/>
   </DataNode>
   <DataNode TextLabel="TBK1" GraphId="d7aac" Type="GeneProduct" GroupRef="e9b41">
@@ -87,10 +94,6 @@
     <Comment>NEMO</Comment>
     <Graphics CenterX="280.5" CenterY="889.0" Width="69.0" Height="25.0" ZOrder="33485" FontSize="12" Valign="Middle"/>
     <Xref Database="Ensembl" ID="ENSG00000269335"/>
-  </DataNode>
-  <DataNode TextLabel="calcium" GraphId="b61db" Type="Metabolite">
-    <Graphics CenterX="891.5" CenterY="806.0" Width="63.0" Height="25.0" ZOrder="33489" FontSize="12" Valign="Middle" Color="0000ff"/>
-    <Xref Database="ChEBI" ID="CHEBI:22984"/>
   </DataNode>
   <DataNode TextLabel="RELA" GraphId="bc70a" Type="GeneProduct" GroupRef="f1085">
     <Comment Source="OCR">RelA</Comment>
@@ -178,20 +181,6 @@
     <Graphics RelX="0.9777777777777777" RelY="1.0" Width="15.0" Height="15.0" ShapeType="Oval"/>
     <Xref Database="" ID=""/>
   </State>
-  <Interaction>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="776.0" Y="760.5" GraphRef="ea20e" RelX="0.0" RelY="1.0"/>
-      <Point X="776.0" Y="788.5" GraphRef="dd6a6" RelX="0.0" RelY="-1.0" ArrowHead="Arrow"/>
-    </Graphics>
-    <Xref Database="" ID=""/>
-  </Interaction>
-  <Interaction>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="776.0" Y="885.5" GraphRef="dcc65" RelX="0.0" RelY="1.0"/>
-      <Point X="776.0" Y="946.5" GraphRef="a367e" RelX="0.0" RelY="-1.0" ArrowHead="Arrow"/>
-    </Graphics>
-    <Xref Database="" ID=""/>
-  </Interaction>
   <Interaction GraphId="id231333be">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="292.1421891589206" Y="91.5" GraphRef="fb3b0" RelX="0.0" RelY="1.0"/>
@@ -201,15 +190,22 @@
   </Interaction>
   <Interaction GraphId="id24f4b7d4">
     <Graphics ZOrder="12288" LineThickness="1.0" Color="ff0033">
-      <Point X="480.0" Y="338.0" GraphRef="fef60" RelX="1.0" RelY="0.0"/>
-      <Point X="528.2232979914763" Y="338.86899224806217" GraphRef="d63c9" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition"/>
+      <Point X="482.0" Y="367.0" GraphRef="fef60" RelX="1.0" RelY="0.0"/>
+      <Point X="528.2232979914763" Y="368.06899224806216" GraphRef="d63c9" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="id394406f9">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="776.0" Y="885.5" GraphRef="dcc65" RelX="0.0" RelY="1.0"/>
+      <Point X="776.0" Y="946.5" GraphRef="a367e" RelX="0.0" RelY="-1.0" ArrowHead="Arrow"/>
     </Graphics>
     <Xref Database="" ID=""/>
   </Interaction>
   <Interaction GraphId="id8f3d31d3">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="528.335987608533" Y="313.5232558139537" GraphRef="a9c5b" RelX="0.0" RelY="1.0"/>
-      <Point X="528.0542635658915" Y="376.88759689922483" GraphRef="bd7f8" RelX="0.0" RelY="-1.0" ArrowHead="Arrow"/>
+      <Point X="528.0542635658915" Y="449.88759689922483" GraphRef="bd7f8" RelX="0.0" RelY="-1.0" ArrowHead="Arrow"/>
       <Anchor Position="0.4" Shape="None" GraphId="d63c9"/>
     </Graphics>
     <Xref Database="" ID=""/>
@@ -218,6 +214,13 @@
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="271.8921891589206" Y="627.6162790697674" GraphRef="fb896" RelX="-0.5" RelY="1.0"/>
       <Point X="92.5942715841569" Y="880.391472868217" GraphRef="f0259" RelX="0.0" RelY="-1.0" ArrowHead="Arrow"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="idab07d001">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="776.0" Y="760.5" GraphRef="ea20e" RelX="0.0" RelY="1.0"/>
+      <Point X="776.0" Y="788.5" GraphRef="dd6a6" RelX="0.0" RelY="-1.0" ArrowHead="Arrow"/>
     </Graphics>
     <Xref Database="" ID=""/>
   </Interaction>
@@ -244,14 +247,14 @@
   </Interaction>
   <Interaction GraphId="idf6aa73a2">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="723.6666666666654" Y="179.66666666666674" GraphRef="ecfbd" RelX="0.0" RelY="1.0"/>
+      <Point X="747.6666666666654" Y="179.66666666666674" GraphRef="ecfbd" RelX="0.0" RelY="1.0"/>
       <Point X="543.959302325583" Y="545.1666666666667" GraphRef="c14f2" RelX="0.5" RelY="-1.0" ArrowHead="Arrow"/>
     </Graphics>
     <Xref Database="" ID=""/>
   </Interaction>
   <Interaction GraphId="f8097">
     <Graphics ZOrder="33396" LineThickness="1.0">
-      <Point X="528.0542635658915" Y="401.88759689922483" GraphRef="bd7f8" RelX="0.0" RelY="1.0"/>
+      <Point X="528.0542635658915" Y="474.88759689922483" GraphRef="bd7f8" RelX="0.0" RelY="1.0"/>
       <Point X="527.639534883722" Y="545.1666666666667" GraphRef="c14f2" RelX="0.0" RelY="-1.0" ArrowHead="Arrow"/>
     </Graphics>
     <Xref Database="" ID=""/>
@@ -279,7 +282,7 @@
   </Interaction>
   <Interaction GraphId="fc1c4">
     <Graphics ZOrder="33476" LineThickness="1.0">
-      <Point X="528.0" Y="200.5" GraphRef="be8eb" RelX="0.0" RelY="1.0"/>
+      <Point X="528.5" Y="206.5" GraphRef="be8eb" RelX="0.0" RelY="1.0"/>
       <Point X="528.335987608533" Y="288.5232558139537" GraphRef="a9c5b" RelX="0.0" RelY="-1.0" ArrowHead="mim-binding"/>
     </Graphics>
     <Xref Database="" ID=""/>
@@ -315,7 +318,7 @@
   <Interaction GraphId="f3a2a">
     <Graphics ZOrder="33490" LineThickness="1.0">
       <Point X="776.0" Y="971.5" GraphRef="a367e" RelX="0.0" RelY="1.0"/>
-      <Point X="776.0" Y="1015.5" GraphRef="d598d" RelX="0.0" RelY="-1.0" ArrowHead="Arrow"/>
+      <Point X="776.0" Y="1024.5" GraphRef="ae651" RelX="0.0" RelY="-1.0" ArrowHead="Arrow"/>
     </Graphics>
     <Xref Database="" ID=""/>
   </Interaction>
@@ -368,8 +371,8 @@
       <Point X="519.0" Y="1216.0" GraphRef="f62a4" RelX="-1.0" RelY="0.0" ArrowHead="mim-transcription-translation"/>
     </Graphics>
   </GraphicalLine>
-  <Label TextLabel="Viral DNA" GraphId="be8eb">
-    <Graphics CenterX="528.0" CenterY="188.0" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle"/>
+  <Label TextLabel="Cytosolic DNA, (Viral DNA and damaged mtDNA)" GraphId="be8eb">
+    <Graphics CenterX="528.5" CenterY="194.0" Width="287.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle"/>
   </Label>
   <Label TextLabel="Calcium release" GraphId="dd6a6">
     <Graphics CenterX="776.0" CenterY="801.0" Width="99.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle"/>
@@ -379,9 +382,6 @@
   </Label>
   <Label TextLabel="IVIg" GraphId="fb3b0">
     <Graphics CenterX="292.1421891589206" CenterY="79.0" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle"/>
-  </Label>
-  <Label TextLabel="Tissue factor" GraphId="d598d">
-    <Graphics CenterX="776.0" CenterY="1028.0" Width="99.0" Height="25.0" ZOrder="33492" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle"/>
   </Label>
   <Shape GraphId="de7cd">
     <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Cell"/>
@@ -395,17 +395,17 @@
   <Shape TextLabel="Nucleus" GraphId="b921d">
     <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Nucleus"/>
     <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double"/>
-    <Graphics CenterX="505.0357119521051" CenterY="1254.2759984763184" Width="918.0714239042102" Height="301.27196238046747" ZOrder="33505" FontWeight="Bold" FontSize="16" Valign="Bottom" ShapeType="RoundedRectangle" LineThickness="3.0" Color="c0c0c0" Rotation="0.0"/>
+    <Graphics CenterX="506.0357119521051" CenterY="1254.2759984763184" Width="918.0714239042102" Height="301.27196238046747" ZOrder="33505" FontWeight="Bold" FontSize="16" Valign="Bottom" ShapeType="RoundedRectangle" LineThickness="3.0" Color="c0c0c0" Rotation="0.0"/>
   </Shape>
   <Shape GraphId="b2dd0">
     <Graphics CenterX="242.5851339671558" CenterY="1053.6949006050122" Width="30.0" Height="30.0" ZOrder="33506" FontSize="12" Valign="Middle" ShapeType="mim-degradation" Rotation="0.0"/>
   </Shape>
-  <Group GroupId="e9b41" GraphId="fb896" Style="Complex"/>
-  <Group GroupId="e7828" GraphId="fef8c" Style="Complex"/>
-  <Group GroupId="dc7db" GraphId="d1991" Style="Complex"/>
   <Group GroupId="bd763" GraphId="c329d" Style="Complex"/>
   <Group GroupId="b37dd" GraphId="c3ce1" Style="Complex"/>
+  <Group GroupId="dc7db" GraphId="d1991" Style="Complex"/>
   <Group GroupId="f1085" GraphId="e7a9d" Style="Complex"/>
+  <Group GroupId="e9b41" GraphId="fb896" Style="Complex"/>
+  <Group GroupId="e7828" GraphId="fef8c" Style="Complex"/>
   <InfoBox CenterX="0.0" CenterY="0.0"/>
   <Biopax>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="efd">
@@ -418,5 +418,5 @@
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drouet L</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lioté F</bp:AUTHORS>
     </bp:PublicationXref>
-  </Biopax>
+  <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"><bp:TERM>Kawasaki disease</bp:TERM><bp:ID>DOID:13378</bp:ID><bp:Ontology>Disease</bp:Ontology></bp:openControlledVocabulary><bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"><bp:TERM>pattern recognition receptor mediated signaling pathway</bp:TERM><bp:ID>PW:0000925</bp:ID><bp:Ontology>Pathway Ontology</bp:Ontology></bp:openControlledVocabulary><bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"><bp:TERM>viral infectious disease</bp:TERM><bp:ID>DOID:934</bp:ID><bp:Ontology>Disease</bp:Ontology></bp:openControlledVocabulary></Biopax>
 </Pathway>
