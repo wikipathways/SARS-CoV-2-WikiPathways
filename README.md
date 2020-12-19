@@ -74,8 +74,8 @@ make fetch
 To download the BridgeDb identifier mapping files, download them from
 [here](https://bridgedb.github.io/data/gene_database/)
 and save them in the `/path/to/where/the/bridge/files/are` folder, mathching what
-you entered in the `config.properties` file above. You also want
-to download the identifier mapping database for coronavirus
+you entered in the `config.properties` file above with the `bridgefiles=` parameter.
+You also want to download the identifier mapping database for coronavirus
 genes and proteins.
 
 ## Step 4: Make the zip files
