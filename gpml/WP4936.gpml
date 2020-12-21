@@ -8,6 +8,10 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
   <Comment Source="WikiPathways-description">Overview of perturbations to host-cell autophagy, induced by distinct proteins of SARS-CoV-2, derived from the network diffusion model and overlaid with the changes in protein levels, ubiquitination and phosphorylation induced by SARS-CoV-2 infection</Comment>
   <Comment Source="WikiPathways-description">Overview of perturbations to host-cell autophagy, induced by distinct proteins of SARS-CoV-2, derived from the network diffusion model and overlaid with the changes in protein levels, ubiquitination and phosphorylation induced by SARS-CoV-2 infection</Comment>
   <Graphics BoardWidth="1689.7812879708392" BoardHeight="869.6111786148239" />
+  <DataNode TextLabel="Phagophore" GraphId="a1420">
+    <Graphics CenterX="398.37818739605177" CenterY="563.5818383937608" Width="90.0" Height="25.0" ZOrder="28672" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" />
+    <Xref Database="" ID="" />
+  </DataNode>
   <DataNode TextLabel="MLST8" Type="Protein" GroupRef="ff46b">
     <Graphics CenterX="504.07611439637583" CenterY="324.1008403361339" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" />
     <Xref Database="NCBI Protein" ID="64223" />
@@ -43,10 +47,6 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
   <DataNode TextLabel="PKM" GraphId="a628b" Type="Protein">
     <Graphics CenterX="376.9999999999999" CenterY="112.40826245443513" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" />
     <Xref Database="NCBI Protein" ID="5315" />
-  </DataNode>
-  <DataNode TextLabel="SQSTM1" GraphId="acae9" Type="Protein">
-    <Graphics CenterX="755.477373209308" CenterY="623.0625759416768" Width="139.10600692281773" Height="32.125151883353794" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" LineStyle="Broken" LineThickness="2.0" Color="ff3333" />
-    <Xref Database="NCBI Protein" ID="8878" />
   </DataNode>
   <DataNode TextLabel="NRB1" GraphId="ad6e9" Type="GeneProduct">
     <Graphics CenterX="726.0" CenterY="516.0" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" LineStyle="Broken" LineThickness="2.0" Color="ff3333" />
@@ -179,6 +179,10 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
   <DataNode TextLabel="mTORC1" GraphId="fc98d" Type="GeneProduct">
     <Graphics CenterX="719.3096582496908" CenterY="367.079561350664" Width="80.0" Height="20.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" />
     <Xref Database="" ID="" />
+  </DataNode>
+  <DataNode TextLabel="SQSTM1" GraphId="acae9" Type="Protein">
+    <Graphics CenterX="755.477373209308" CenterY="623.0625759416768" Width="139.10600692281773" Height="32.125151883353794" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" LineStyle="Broken" LineThickness="2.0" Color="ff3333" />
+    <Xref Database="NCBI Protein" ID="8878" />
   </DataNode>
   <DataNode TextLabel="" GraphId="c2af9" Type="GeneProduct">
     <Graphics CenterX="1425.3213902815085" CenterY="330.2570530034615" Width="80.0" Height="20.0" ZOrder="32782" FillColor="ffcccc" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="Oval" />
@@ -390,7 +394,7 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
   <Interaction GraphId="id6c29c842">
     <Graphics ZOrder="12288" LineThickness="2.0">
       <Point X="353.43881856540105" Y="441.0" GraphRef="c1a5f" RelX="0.0" RelY="1.0" />
-      <Point X="353.37818739605177" Y="557.3318383937608" GraphRef="e1980" RelX="-1.0" RelY="-0.5" ArrowHead="TBar" />
+      <Point X="353.37818739605177" Y="557.3318383937608" GraphRef="a1420" RelX="-1.0" RelY="-0.5" ArrowHead="TBar" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -628,9 +632,6 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
   <Label TextLabel="Autophagosome/" GraphId="d9fbb">
     <Graphics CenterX="1144.7482073698927" CenterY="561.6193164993812" Width="100.19600321715122" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
   </Label>
-  <Label TextLabel="Phagophore" GraphId="e1980">
-    <Graphics CenterX="398.37818739605177" CenterY="563.5818383937608" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
-  </Label>
   <Label TextLabel="Legend" GraphId="e843f">
     <Graphics CenterX="1513.1589147286809" CenterY="296.1724806201547" Width="124.06976744186196" Height="34.20542635658902" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="16" Valign="Middle" LineThickness="2.0" Color="ff3333" />
   </Label>
@@ -701,11 +702,6 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
   <Group GroupId="e1129" GraphId="ddc93" Style="Complex" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infectious disease pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001028</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="c7c">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -714,6 +710,11 @@ phosphorylation induced by SARS-CoV-2 infection.</Comment>
       <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alexey Stukalov, Virginie Girault, Vincent Grass, Valter Bergant, Ozge Karayel, Christian Urban, Darya A. Haas, Yiqi Huang, Lila Oubraham, Anqi Wang, Sabri M. Hamad, Antonio Piras, Maria Tanzer, Fynn M. Hansen, Thomas Enghleitner, Maria Reinecke, Teresa M. Lavacca, Rosina Ehmann, Roman WÃƒÂ¶lfel, JÃƒÂ¶rg Jores, Bernhard Kuster, Ulrike Protzer, Roland Rad, John Ziebuhr, Volker Thiel, Pietro Scaturro, Matthias Mann, Andreas Pichlmair</bp:AUTHORS>
     </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infectious disease pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001028</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
       <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">altered autophagy pathway</bp:TERM>
       <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001562</bp:ID>
