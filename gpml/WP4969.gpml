@@ -13,6 +13,10 @@ The result of a hyperactive bradykinin system is vasodilation to the point of va
 The pathway is based on figure 2A from Garvin et al.</Comment>
   <BiopaxRef>f46</BiopaxRef>
   <Graphics BoardWidth="1343.0" BoardHeight="1029.9433205733694" />
+  <DataNode TextLabel="Degradation" GraphId="e5292" Type="Pathway">
+    <Graphics CenterX="1082.0" CenterY="281.51378169790496" Width="90.0" Height="25.0" ZOrder="28672" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14961e" />
+    <Xref Database="" ID="" />
+  </DataNode>
   <DataNode TextLabel="20-HETE" GraphId="a8cb6" Type="Metabolite">
     <Graphics CenterX="805.3226238286479" CenterY="713.7218879191892" Width="80.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:34306" />
@@ -160,6 +164,10 @@ The pathway is based on figure 2A from Garvin et al.</Comment>
     <Graphics CenterX="1260.6559571619812" CenterY="281.51378169790496" Width="80.0" Height="25.0" ZOrder="32856" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="1636" />
   </DataNode>
+  <DataNode TextLabel="Relaxation" GraphId="c3988" Type="Pathway">
+    <Graphics CenterX="1164.6100998206496" CenterY="826.3322094622589" Width="90.0" Height="25.0" ZOrder="32916" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14961e" />
+    <Xref Database="" ID="" />
+  </DataNode>
   <DataNode TextLabel="PRKG1" GraphId="cdaee" Type="GeneProduct">
     <Graphics CenterX="861.3693590799094" CenterY="888.8322094622592" Width="90.0" Height="25.0" ZOrder="32919" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000185532" />
@@ -262,15 +270,6 @@ The pathway is based on figure 2A from Garvin et al.</Comment>
     <Graphics CenterX="1197.6874310915082" CenterY="502.65711135611775" Width="90.0" Height="25.0" ZOrder="33020" FontSize="12" Valign="Middle" />
     <Xref Database="HGNC" ID="IL1B" />
   </DataNode>
-  <Interaction>
-    <BiopaxRef>c7d</BiopaxRef>
-    <BiopaxRef>d1a</BiopaxRef>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="899.3226238286479" Y="155.467202141901" GraphRef="f0b03" RelX="1.0" RelY="0.0" />
-      <Point X="950.5" Y="155.75" GraphRef="d20d8" RelX="-1.0" RelY="0.0" ArrowHead="Arrow" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
   <Interaction GraphId="id11c88b0d">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="718.3226238286479" Y="155.467202141901" GraphRef="ddce0" RelX="-1.0" RelY="0.0" />
@@ -295,7 +294,7 @@ The pathway is based on figure 2A from Garvin et al.</Comment>
   <Interaction GraphId="id4ceb9356">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="1220.6559571619812" Y="281.51378169790496" GraphRef="e130d" RelX="-1.0" RelY="0.0" />
-      <Point X="1127.0" Y="281.51378169790496" GraphRef="df2a6" RelX="1.0" RelY="0.0" ArrowHead="Arrow" />
+      <Point X="1127.0" Y="281.51378169790496" GraphRef="e5292" RelX="1.0" RelY="0.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -363,6 +362,15 @@ The pathway is based on figure 2A from Garvin et al.</Comment>
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
+  <Interaction GraphId="ida91dd59d">
+    <BiopaxRef>c7d</BiopaxRef>
+    <BiopaxRef>d1a</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="899.3226238286479" Y="155.467202141901" GraphRef="f0b03" RelX="1.0" RelY="0.0" />
+      <Point X="950.5" Y="155.75" GraphRef="d20d8" RelX="-1.0" RelY="0.0" ArrowHead="Arrow" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
   <Interaction GraphId="idb55155be">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="991.8226238286479" Y="737.467202141901" GraphRef="c0de8" RelX="1.0" RelY="0.0" />
@@ -388,7 +396,7 @@ The pathway is based on figure 2A from Garvin et al.</Comment>
   <Interaction GraphId="idc8e789dd">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="931.6559571619812" Y="281.51378169790496" GraphRef="ed520" RelX="1.0" RelY="0.0" />
-      <Point X="1037.0" Y="281.51378169790496" GraphRef="df2a6" RelX="-1.0" RelY="0.0" ArrowHead="Arrow" />
+      <Point X="1037.0" Y="281.51378169790496" GraphRef="e5292" RelX="-1.0" RelY="0.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -505,7 +513,7 @@ The pathway is based on figure 2A from Garvin et al.</Comment>
   <Interaction GraphId="d9883">
     <Graphics ZOrder="32879" LineStyle="Broken" LineThickness="1.0">
       <Point X="1055.6749146354637" Y="826.3322094622588" GraphRef="feb86" RelX="1.0" RelY="0.0" />
-      <Point X="1119.6100998206496" Y="826.3322094622589" GraphRef="b8de7" RelX="-1.0" RelY="0.0" ArrowHead="Arrow" />
+      <Point X="1119.6100998206496" Y="826.3322094622589" GraphRef="c3988" RelX="-1.0" RelY="0.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -639,12 +647,6 @@ The pathway is based on figure 2A from Garvin et al.</Comment>
   <Label TextLabel="Sensitization" GraphId="b24e1">
     <Graphics CenterX="465.7095046854083" CenterY="456.0160642570281" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
   </Label>
-  <Label TextLabel="Degradation" GraphId="df2a6">
-    <Graphics CenterX="1082.0" CenterY="281.51378169790496" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
-  </Label>
-  <Label TextLabel="Relaxation" GraphId="b8de7">
-    <Graphics CenterX="1164.6100998206496" CenterY="826.3322094622589" Width="90.0" Height="25.0" ZOrder="32916" FillColor="ffffff" FontSize="12" Valign="Middle" />
-  </Label>
   <Label TextLabel="Inflammatory mediators" GraphId="dad9d" GroupRef="bf2b4">
     <Graphics CenterX="983.8208379272249" CenterY="581.5755237045199" Width="149.74090407938252" Height="25.0" ZOrder="33006" FillColor="ffffff" FontSize="12" Valign="Middle" />
   </Label>
@@ -673,43 +675,6 @@ The pathway is based on figure 2A from Garvin et al.</Comment>
   </Group>
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d5e">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18086946</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role of bradykinin, nitric oxide, and angiotensin II type 2 receptor in imidapril-induced angiogenesis.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypertension</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li P</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kondo T</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numaguchi Y</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kobayashi K</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aoki M</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inoue N</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Okumura K</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Murohara T</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">severe acute respiratory syndrome</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:2945</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d5e">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18040024</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cGMP-dependent protein kinase I and smooth muscle relaxation: a tale of two isoforms.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circ Res</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2007</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surks HK</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a11">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10320667</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guanylate cyclase and the .NO/cGMP signaling pathway.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochim Biophys Acta</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denninger JW</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marletta MA</bp:AUTHORS>
-    </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="f46">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -732,6 +697,60 @@ The pathway is based on figure 2A from Garvin et al.</Comment>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aronow B</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jacobson D</bp:AUTHORS>
     </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="c74">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18449520</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Are we poised to target ACE2 for the next generation of antihypertensives?</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Mol Med</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ferreira AJ</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raizada MK</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">viral infectious disease</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:934</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d5e">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18086946</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role of bradykinin, nitric oxide, and angiotensin II type 2 receptor in imidapril-induced angiogenesis.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypertension</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li P</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kondo T</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numaguchi Y</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kobayashi K</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aoki M</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inoue N</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Okumura K</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Murohara T</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e40">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9489617</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characterization of the receptor and the mechanisms underlying the inflammatory response induced by des-Arg9-BK in mouse pleurisy.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Br J Pharmacol</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1998</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vianna RM</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calixto JB</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="bc9">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18035185</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Effects of renin-angiotensin system inhibition on end-organ protection: can we do better?</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clin Ther</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2007</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weir MR</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d5e">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18040024</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cGMP-dependent protein kinase I and smooth muscle relaxation: a tale of two isoforms.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circ Res</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2007</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surks HK</bp:AUTHORS>
+    </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b5d">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18729003</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -741,20 +760,6 @@ The pathway is based on figure 2A from Garvin et al.</Comment>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maron BA</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leopold JA</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="bd1">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15174896</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pharmacogenetics of antihypertensive drug responses.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Am J Pharmacogenomics</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2004</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schwartz GL</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turner ST</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000013</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="af8">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16374430</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -770,46 +775,7 @@ The pathway is based on figure 2A from Garvin et al.</Comment>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Noble NA</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Border W</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a7e">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9489617</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characterization of the receptor and the mechanisms underlying the inflammatory response induced by des-Arg9-BK in mouse pleurisy.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Br J Pharmacol</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1998</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vianna RM</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calixto JB</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e6d">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32526773</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Impaired Breakdown of Bradykinin and Its Metabolites as a Possible Cause for Pulmonary Edema in COVID-19 Infection.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semin Thromb Hemost</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">de Maat S</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">de Mast Q</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Danser AHJ</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">van de Veerdonk FL</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maas C</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="c74">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18449520</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Are we poised to target ACE2 for the next generation of antihypertensives?</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Mol Med</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ferreira AJ</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raizada MK</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="c16">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18417113</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The (pro)renin receptor: a new addition to the renin-angiotensin system?</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eur J Pharmacol</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batenburg WW</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jan Danser AH</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="de9">
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a11">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10320667</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
       <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guanylate cyclase and the .NO/cGMP signaling pathway.</bp:TITLE>
@@ -817,26 +783,6 @@ The pathway is based on figure 2A from Garvin et al.</Comment>
       <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999</bp:YEAR>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denninger JW</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marletta MA</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="f9b">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32526773</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Impaired Breakdown of Bradykinin and Its Metabolites as a Possible Cause for Pulmonary Edema in COVID-19 Infection.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semin Thromb Hemost</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">de Maat S</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">de Mast Q</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Danser AHJ</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">van de Veerdonk FL</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maas C</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="bc9">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18035185</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Effects of renin-angiotensin system inhibition on end-organ protection: can we do better?</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clin Ther</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2007</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weir MR</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="ce3">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15134803</bp:ID>
@@ -847,43 +793,6 @@ The pathway is based on figure 2A from Garvin et al.</Comment>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bassett MH</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White PC</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rainey WE</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="ff1">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18040024</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cGMP-dependent protein kinase I and smooth muscle relaxation: a tale of two isoforms.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circ Res</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2007</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surks HK</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">viral infectious disease</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:934</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e40">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9489617</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characterization of the receptor and the mechanisms underlying the inflammatory response induced by des-Arg9-BK in mouse pleurisy.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Br J Pharmacol</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1998</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vianna RM</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calixto JB</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="cf9">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18086946</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role of bradykinin, nitric oxide, and angiotensin II type 2 receptor in imidapril-induced angiogenesis.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypertension</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li P</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kondo T</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numaguchi Y</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kobayashi K</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aoki M</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inoue N</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Okumura K</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Murohara T</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="c7d">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33065209</bp:ID>
@@ -905,5 +814,98 @@ The pathway is based on figure 2A from Garvin et al.</Comment>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">De Fenza M</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pavone V</bp:AUTHORS>
     </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="c16">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18417113</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The (pro)renin receptor: a new addition to the renin-angiotensin system?</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eur J Pharmacol</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Batenburg WW</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jan Danser AH</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="ff1">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18040024</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cGMP-dependent protein kinase I and smooth muscle relaxation: a tale of two isoforms.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circ Res</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2007</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surks HK</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="de9">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10320667</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guanylate cyclase and the .NO/cGMP signaling pathway.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochim Biophys Acta</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denninger JW</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marletta MA</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000013</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="bd1">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15174896</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pharmacogenetics of antihypertensive drug responses.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Am J Pharmacogenomics</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2004</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schwartz GL</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turner ST</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="cf9">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18086946</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role of bradykinin, nitric oxide, and angiotensin II type 2 receptor in imidapril-induced angiogenesis.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypertension</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li P</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kondo T</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numaguchi Y</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kobayashi K</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aoki M</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inoue N</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Okumura K</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Murohara T</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a7e">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9489617</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characterization of the receptor and the mechanisms underlying the inflammatory response induced by des-Arg9-BK in mouse pleurisy.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Br J Pharmacol</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1998</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vianna RM</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calixto JB</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="f9b">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32526773</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Impaired Breakdown of Bradykinin and Its Metabolites as a Possible Cause for Pulmonary Edema in COVID-19 Infection.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semin Thromb Hemost</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">de Maat S</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">de Mast Q</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Danser AHJ</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">van de Veerdonk FL</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maas C</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e6d">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32526773</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Impaired Breakdown of Bradykinin and Its Metabolites as a Possible Cause for Pulmonary Edema in COVID-19 Infection.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semin Thromb Hemost</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">de Maat S</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">de Mast Q</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Danser AHJ</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">van de Veerdonk FL</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maas C</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">severe acute respiratory syndrome</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:2945</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
   </Biopax>
 </Pathway>
