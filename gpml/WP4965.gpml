@@ -19,6 +19,10 @@
     <Graphics CenterX="733.2456074133327" CenterY="95.3087508421645" Width="107.56719531094362" Height="55.250270329459795" ZOrder="-4" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:2720" />
   </DataNode>
+  <DataNode TextLabel="Lung injury" GraphId="a6535" Type="Pathway">
+    <Graphics CenterX="945.0616181570333" CenterY="630.2506285427131" Width="178.83399413867926" Height="69.68361567743568" ZOrder="28672" FillColor="Transparent" FontWeight="Bold" FontSize="24" Valign="Middle" ShapeType="None" />
+    <Xref Database="" ID="" />
+  </DataNode>
   <DataNode TextLabel="AT1R" GraphId="e2b6c" Type="GeneProduct">
     <Graphics CenterX="879.4043432933211" CenterY="513.1858684229334" Width="88.10043252713581" Height="61.3336336993998" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSMUSG00000049115" />
@@ -75,7 +79,7 @@
     <BiopaxRef>a80</BiopaxRef>
     <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
       <Point X="879.4043432933211" Y="543.8526852726333" GraphRef="e2b6c" RelX="0.0" RelY="1.0" />
-      <Point X="900.3531196223635" Y="595.4088207039953" GraphRef="f14c7" RelX="-0.5" RelY="-1.0" ArrowHead="Arrow" />
+      <Point X="900.3531196223635" Y="595.4088207039953" GraphRef="a6535" RelX="-0.5" RelY="-1.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -105,7 +109,7 @@
   <Interaction GraphId="idf8eda287">
     <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
       <Point X="1008.6382653441445" Y="544.1193038807293" GraphRef="c8f71" RelX="0.0" RelY="1.0" />
-      <Point X="989.7701166917029" Y="595.4088207039953" GraphRef="f14c7" RelX="0.5" RelY="-1.0" ArrowHead="TBar" />
+      <Point X="989.7701166917029" Y="595.4088207039953" GraphRef="a6535" RelX="0.5" RelY="-1.0" ArrowHead="TBar" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -210,9 +214,6 @@
   <Label TextLabel="Spike protein" GraphId="ac90f">
     <Graphics CenterX="498.32592875659213" CenterY="390.41408636605166" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle" />
   </Label>
-  <Label TextLabel="Lung injury" GraphId="f14c7">
-    <Graphics CenterX="945.0616181570333" CenterY="630.2506285427131" Width="178.83399413867926" Height="69.68361567743568" ZOrder="28672" FillColor="ffffff" FontSize="24" Valign="Middle" />
-  </Label>
   <Label TextLabel="2. AngII accumulates as ACE2 no longer negatively &#xA;regulates AngII production" GraphId="f44cf">
     <BiopaxRef>a80</BiopaxRef>
     <Graphics CenterX="945.8759308541825" CenterY="261.07104184607874" Width="418.7674829888358" Height="23.568183537097063" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle" />
@@ -291,11 +292,6 @@
       <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:934</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
     </bp:openControlledVocabulary>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">native cell</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000003</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Type</bp:Ontology>
-    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a80">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16007097</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -332,6 +328,11 @@
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jiang C</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penninger JM</bp:AUTHORS>
     </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">native cell</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000003</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Type</bp:Ontology>
+    </bp:openControlledVocabulary>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
       <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G protein mediated signaling pathway</bp:TERM>
       <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000125</bp:ID>
