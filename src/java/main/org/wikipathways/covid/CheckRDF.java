@@ -30,15 +30,22 @@ public class CheckRDF {
         loadedData.read(new FileInputStream(new File(gpmlFile)), "", "TURTLE");
 
         SPARQLHelper helper = new SPARQLHelper(loadedData);
-        assertions.addAll(GeneTests.all(helper));
-        assertions.addAll(ReferencesTests.all(helper));
-        assertions.addAll(InteractionTests.all(helper));
-        assertions.addAll(CovidDiseaseMapsTests.all(helper));
-        assertions.addAll(EnsemblTests.all(helper));
         assertions.addAll(GeneralTests.all(helper));
-        assertions.addAll(HMDBMetabolitesTests.outdatedIdentifiers(helper));
+        assertions.addAll(ReferencesTests.all(helper));
+
+        assertions.addAll(CovidDiseaseMapsTests.all(helper));
+
+        assertions.addAll(GeneTests.all(helper));
+        assertions.addAll(EnsemblTests.all(helper));
+
+        assertions.addAll(CASMetabolitesTests.all(helper));
+        assertions.addAll(ChEBIMetabolitesTests.all(helper));
+        assertions.addAll(HMDBMetabolitesTests.outdatedIdentifiers(helper)); // not all
         assertions.addAll(HMDBSecMetabolitesTests.all(helper));
-	assertions.addAll(MetabolitesTests.all(helper));
+        assertions.addAll(LIPIDMAPSTests.all(helper));
+        assertions.addAll(MetabolitesTests.all(helper));
+
+        assertions.addAll(InteractionTests.all(helper));
 
         System.out.println("## Tests");
 
