@@ -53,6 +53,7 @@ public class CheckRDF {
 
         List<IAssertion> failedAssertions = new ArrayList<IAssertion>();
         int testClasses = 0;
+        int testClassTests = 0;
         int tests = 0;
         String currentTestClass = "";
         String currentTest = "";
@@ -72,10 +73,11 @@ public class CheckRDF {
                     if (!errors.isEmpty()) message += "\n" + errors;
                     System.out.println("\n" + message);
                   } else {
-                    System.out.println(" all OK!");
+                    System.out.println(": all " + testClassTests + " tests OK!");
                   }
                 }
                 message = "";
+                testClassTests = 0;
                 System.out.print("\n* " + currentTestClass);
                 currentTestClassHasFails = false;
             }
@@ -91,6 +93,7 @@ public class CheckRDF {
                 errorCount = 0;
                 errors = "";
                 tests++;
+                testClassTests++;
             }
 
             if (assertion instanceof AssertEquals) {
@@ -142,10 +145,12 @@ public class CheckRDF {
                 failedAssertions.add(assertion);
             }
         }
-        if (!message.isEmpty())  {
+        if (currentTestClassHasFails) {
             if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s):"; }
             if (!errors.isEmpty()) message += "\n" + errors;
-            System.out.print(message);
+            System.out.println("\n" + message);
+        } else {
+            System.out.println(": all " + testClassTests + " tests OK!");
         }
         System.out.println();
         System.out.println("\n## Summary\n");
