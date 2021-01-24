@@ -60,6 +60,7 @@ public class CheckRDF {
         String errors = "";
         int errorCount = 0;
         for (IAssertion assertion : assertions) {
+            // new test class ?
             if (assertion.getTestClass() != currentTestClass) {
                 currentTestClass = assertion.getTestClass();
                 currentTest = "";
@@ -72,10 +73,13 @@ public class CheckRDF {
                 message = "";
                 System.out.println("\n* " + currentTestClass);
             }
+
+            // new test ?
             if (assertion.getTest() != currentTest) {
                 currentTest = assertion.getTest();
                 if (!message.isEmpty()) {
                   if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s):"; }
+                  if (!errors.isEmpty()) message += "\n" + errors;
                   System.out.println(message);
                 }
                 message = "    * " + currentTest + ": ";
@@ -83,6 +87,7 @@ public class CheckRDF {
                 errors = "";
                 tests++;
             }
+
             if (assertion instanceof AssertEquals) {
                 AssertEquals typedAssertion = (AssertEquals)assertion;
                 if (!typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
@@ -130,6 +135,7 @@ public class CheckRDF {
         }
         if (!message.isEmpty())  {
             if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s):"; }
+            if (!errors.isEmpty()) message += "\n" + errors;
             System.out.print(message);
         }
         System.out.println();
