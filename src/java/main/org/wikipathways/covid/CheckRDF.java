@@ -58,39 +58,48 @@ public class CheckRDF {
         String currentTestClass = "";
         String currentTest = "";
         boolean currentTestClassHasFails = false;
+        String currentTestClassMessages = "";
         String message = "";
         String errors = "";
-        int errorCount = 0;
+        int assertionsFailed = 0;
         for (IAssertion assertion : assertions) {
-            // new test class ?
             if (assertion.getTestClass() != currentTestClass) {
-                currentTestClass = assertion.getTestClass();
-                currentTest = "";
-                testClasses++;
-                if (!message.isEmpty()) {
+                // is there report output to finish?
+                if (testClasses > 0) {
+                  // wrap up last test of the previous test class
+                  if (assertionsFailed == 0) { message += " all OK!"; } else { message += " we found " + assertionsFailed + " problem(s):"; }
+                  if (!errors.isEmpty()) message += "\n" + errors;
+
+                  // only output results when there are fails
                   if (currentTestClassHasFails) {
-                    if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s):"; }
-                    if (!errors.isEmpty()) message += "\n" + errors;
-                    System.out.println("\n" + message);
+                    System.out.println(currentTestClassMessages + message);
                   } else {
                     System.out.println(": all " + testClassTests + " tests OK!");
                   }
                 }
+
+                // reset properties for new test
+                currentTestClass = assertion.getTestClass();
+                currentTest = "";
+                testClasses++;
+                currentTestClassMessages = "";
                 message = "";
                 testClassTests = 0;
-                System.out.print("\n* " + currentTestClass);
+                System.out.print("* " + currentTestClass);
                 currentTestClassHasFails = false;
+                currentTestClassMessages = "";
             }
 
             // new test ?
             if (assertion.getTest() != currentTest) {
                 currentTest = assertion.getTest();
                 if (!message.isEmpty()) {
-                  if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s):"; }
+                  if (assertionsFailed == 0) { message += " all OK!"; } else { message += " we found " + assertionsFailed + " problem(s):"; }
                   if (!errors.isEmpty()) message += "\n" + errors;
+                  currentTestClassMessages += message;
                 }
-                message = "    * " + currentTest + ": ";
-                errorCount = 0;
+                message = "\n    * " + currentTest + ": ";
+                assertionsFailed = 0;
                 errors = "";
                 tests++;
                 testClassTests++;
@@ -100,7 +109,7 @@ public class CheckRDF {
                 AssertEquals typedAssertion = (AssertEquals)assertion;
                 if (!typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
                    message += "x";
-                   errorCount++;
+                   assertionsFailed++;
                    errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
                    failedAssertions.add(assertion);
                    currentTestClassHasFails = true;
@@ -111,7 +120,7 @@ public class CheckRDF {
                 AssertNotSame typedAssertion = (AssertNotSame)assertion;
                 if (typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
                    message += "x";
-                   errorCount++;
+                   assertionsFailed++;
                    errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
                    failedAssertions.add(assertion);
                    currentTestClassHasFails = true;
@@ -122,7 +131,7 @@ public class CheckRDF {
                 AssertNotNull typedAssertion = (AssertNotNull)assertion;
                 if (typedAssertion.getValue() == null) {
                    message += "x";
-                   errorCount++;
+                   assertionsFailed++;
                    errors += "            * Unexpected null found";
                    failedAssertions.add(assertion);
                    currentTestClassHasFails = true;
@@ -133,7 +142,7 @@ public class CheckRDF {
                 AssertTrue typedAssertion = (AssertTrue)assertion;
                 if ((boolean)typedAssertion.getValue()) {
                    message += "x";
-                   errorCount++;
+                   assertionsFailed++;
                    errors += "            * Expected true but found false";
                    failedAssertions.add(assertion);
                    currentTestClassHasFails = true;
@@ -141,17 +150,24 @@ public class CheckRDF {
                     message += ".";
                 }
             } else {
+                message += "?";
                 errors += "        * Unrecognized assertion type: " + assertion.getClass().getName();
+                assertionsFailed++;
                 failedAssertions.add(assertion);
+                currentTestClassHasFails = true;
             }
         }
-        if (currentTestClassHasFails) {
-            if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s):"; }
-            if (!errors.isEmpty()) message += "\n" + errors;
-            System.out.println("\n" + message);
-        } else {
-            System.out.println(": all " + testClassTests + " tests OK!");
+        // any test results remaining?
+        if (!message.isEmpty()) {
+          if (assertionsFailed == 0) { message += " all OK!"; } else { message += " we found " + assertionsFailed + " problem(s):"; }
+          if (!errors.isEmpty()) message += "\n" + errors;
         }
+        if (currentTestClassHasFails) {
+          System.out.println(currentTestClassMessages + message);
+        } else {
+          System.out.println(": all " + testClassTests + " tests OK!");
+        }
+
         System.out.println();
         System.out.println("\n## Summary\n");
         System.out.println("* Number of test classes: " + testClasses);
