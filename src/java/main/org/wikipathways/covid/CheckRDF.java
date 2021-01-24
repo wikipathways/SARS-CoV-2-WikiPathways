@@ -56,6 +56,7 @@ public class CheckRDF {
         int tests = 0;
         String currentTestClass = "";
         String currentTest = "";
+        boolean currentTestClassHasFails = false;
         String message = "";
         String errors = "";
         int errorCount = 0;
@@ -66,12 +67,17 @@ public class CheckRDF {
                 currentTest = "";
                 testClasses++;
                 if (!message.isEmpty()) {
-                  if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s):"; }
-                  if (!errors.isEmpty()) message += "\n" + errors;
-                  System.out.println(message);
+                  if (currentTestClassHasFails) {
+                    if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s):"; }
+                    if (!errors.isEmpty()) message += "\n" + errors;
+                    System.out.println("\n" + message);
+                  } else {
+                    System.out.println(" all OK!");
+                  }
                 }
                 message = "";
-                System.out.println("\n* " + currentTestClass);
+                System.out.print("\n* " + currentTestClass);
+                currentTestClassHasFails = false;
             }
 
             // new test ?
@@ -80,7 +86,6 @@ public class CheckRDF {
                 if (!message.isEmpty()) {
                   if (errorCount == 0) { message += " all OK!"; } else { message += " we found " + errorCount + " problem(s):"; }
                   if (!errors.isEmpty()) message += "\n" + errors;
-                  System.out.println(message);
                 }
                 message = "    * " + currentTest + ": ";
                 errorCount = 0;
@@ -95,6 +100,7 @@ public class CheckRDF {
                    errorCount++;
                    errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
                    failedAssertions.add(assertion);
+                   currentTestClassHasFails = true;
                 } else {
                     message += ".";
                 }
@@ -105,6 +111,7 @@ public class CheckRDF {
                    errorCount++;
                    errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
                    failedAssertions.add(assertion);
+                   currentTestClassHasFails = true;
                 } else {
                     message += ".";
                 }
@@ -115,6 +122,7 @@ public class CheckRDF {
                    errorCount++;
                    errors += "            * Unexpected null found";
                    failedAssertions.add(assertion);
+                   currentTestClassHasFails = true;
                 } else {
                     message += ".";
                 }
@@ -125,6 +133,7 @@ public class CheckRDF {
                    errorCount++;
                    errors += "            * Expected true but found false";
                    failedAssertions.add(assertion);
+                   currentTestClassHasFails = true;
                 } else {
                     message += ".";
                 }
