@@ -113,6 +113,16 @@ public class CheckRDF {
                 } else {
                     message += ".";
                 }
+            } else if (assertion instanceof AssertTrue) {
+                AssertTrue typedAssertion = (AssertTrue)assertion;
+                if ((boolean)typedAssertion.getValue()) {
+                   message += "x";
+                   errorCount++;
+                   errors += "            * Expected true but found false";
+                   failedAssertions.add(assertion);
+                } else {
+                    message += ".";
+                }
             } else {
                 errors += "        * Unrecognized assertion type: " + assertion.getClass().getName();
                 failedAssertions.add(assertion);
