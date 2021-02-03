@@ -39,6 +39,7 @@ public class CheckRDF {
 
         assertions.addAll(GeneTests.all(helper));
         assertions.addAll(EnsemblTests.all(helper));
+        assertions.addAll(UniProtTests.all(helper));
 
         assertions.addAll(CASMetabolitesTests.all(helper));
         assertions.addAll(ChEBIMetabolitesTests.all(helper));
