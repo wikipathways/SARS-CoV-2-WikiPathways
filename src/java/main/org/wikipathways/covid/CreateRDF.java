@@ -28,12 +28,6 @@ public class CreateRDF {
         String rev      = args[1];
         DataSourceTxt.init();
         // the next line is needed until BridgeDb gets updated
-        DataSource.register("Cpx", "Complex Portal")
-          .identifiersOrgBase("http://identifiers.org/complexportal/")
-          .asDataSource();
-        DataSource.register("Pbd", "Digital Object Identifier").asDataSource();
-        DataSource.register("Pbm", "PubMed").asDataSource();
-        DataSource.register("Gpl", "Guide to Pharmacology Targets").asDataSource();
         InputStream input = new FileInputStream(gpmlFile);
         Pathway pathway = PathwayReader.readPathway(input);
         IDMapperStack stack = WPREST2RDF.maps();

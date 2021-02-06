@@ -29,11 +29,11 @@ wikipathways-SARS-CoV-2-rdf-gpml.zip: ${GPMLRDFS}
 
 wp/Human/%.ttl: gpml/%.gpml src/java/main/org/wikipathways/covid/CreateRDF.class
 	@mkdir -p wp/Human
-	@cat "$<.rev" | xargs java -cp src/java/main/.:libs/GPML2RDF-3.0.0-SNAPSHOT-jar-with-dependencies.jar:libs/derby-10.5.3.0_1.jar org.wikipathways.covid.CreateRDF $< | grep -v ".bridge" > $@
+	@cat "$<.rev" | xargs java -cp src/java/main/.:libs/GPML2RDF-3.0.0-SNAPSHOT-jar-with-dependencies.jar:libs/derby-10.14.2.0.jar org.wikipathways.covid.CreateRDF $< | grep -v ".bridge" > $@
 
 wp/gpml/Human/%.ttl: gpml/%.gpml src/java/main/org/wikipathways/covid/CreateGPMLRDF.class
 	@mkdir -p wp/gpml/Human
-	@cat "$<.rev" | xargs java -cp src/java/main/.:libs/GPML2RDF-3.0.0-SNAPSHOT-jar-with-dependencies.jar:libs/derby-10.5.3.0_1.jar org.wikipathways.covid.CreateGPMLRDF $< | grep -v ".bridge" > $@
+	@cat "$<.rev" | xargs java -cp src/java/main/.:libs/GPML2RDF-3.0.0-SNAPSHOT-jar-with-dependencies.jar:libs/derby-10.14.2.0.jar org.wikipathways.covid.CreateGPMLRDF $< | grep -v ".bridge" > $@
 
 src/java/main/org/wikipathways/covid/CreateRDF.class: src/java/main/org/wikipathways/covid/CreateRDF.java
 	@echo "Compiling $@ ..."
