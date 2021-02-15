@@ -43,6 +43,7 @@ public class CheckRDF {
 
         assertions.addAll(CASMetabolitesTests.all(helper));
         assertions.addAll(ChEBIMetabolitesTests.all(helper));
+        assertions.addAll(ChemSpiderTests.all(helper));
         assertions.addAll(HMDBMetabolitesTests.outdatedIdentifiers(helper)); // not all
         assertions.addAll(HMDBSecMetabolitesTests.all(helper));
         assertions.addAll(LIPIDMAPSTests.all(helper));
