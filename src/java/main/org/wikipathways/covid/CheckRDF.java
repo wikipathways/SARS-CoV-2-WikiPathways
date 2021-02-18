@@ -34,6 +34,7 @@ public class CheckRDF {
         SPARQLHelper helper = new SPARQLHelper(loadedData);
         assertions.addAll(GeneralTests.all(helper));
         assertions.addAll(ReferencesTests.all(helper));
+	assertions.addAll(WikidataTests.all(helper));
 
         assertions.addAll(CovidDiseaseMapsTests.all(helper));
 
