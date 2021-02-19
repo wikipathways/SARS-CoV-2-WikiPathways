@@ -15,6 +15,11 @@
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
+<https://doi.org/10.1101/2020.06.17.156455>
+        a                 wp:PublicationReference ;
+        dcterms:isPartOf  <https://identifiers.org/ncbiprotein/YP_009725302> ;
+        foaf:page         <https://doi.org/10.1101/2020.06.17.156455> .
+
 <https://identifiers.org/ncbiprotein/57521>
         a                   wp:Protein , wp:DataNode ;
         rdfs:label          "RPTOR"^^xsd:string ;
@@ -217,12 +222,13 @@
         wp:participants   <https://identifiers.org/ncbiprotein/64223> , <http://rdf.wikipathways.org/Pathway/WP4936_r114087/Complex/c5e75> , <https://identifiers.org/ncbiprotein/2475> , <https://identifiers.org/ncbiprotein/64798> , <https://identifiers.org/ncbiprotein/57521> .
 
 <https://identifiers.org/ncbiprotein/YP_009725302>
-        a                   wp:Protein , wp:DataNode ;
+        a                   wp:DataNode , wp:Protein ;
         rdfs:label          "NSP6"^^xsd:string ;
         dc:identifier       <https://identifiers.org/ncbiprotein/YP_009725302> ;
         dc:source           "NCBI Protein"^^xsd:string ;
         dcterms:identifier  "YP_009725302"^^xsd:string ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4936_r114087> ;
+        dcterms:references  <https://doi.org/10.1101/2020.06.17.156455> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4936_r114087/DataNode/b6a2a> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/protein/YP_009725302> .
 

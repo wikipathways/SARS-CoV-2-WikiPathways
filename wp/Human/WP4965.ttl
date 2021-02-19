@@ -17,7 +17,9 @@
 
 <https://identifiers.org/pubmed/16007097>
         a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4965_r114109> ;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4965_r114109/WP/Interaction/idcc7fc0b6> , <http://rdf.wikipathways.org/Pathway/WP4965_r114109/WP/Interaction/idbe2626c9> , <https://identifiers.org/wikipathways/WP4965_r114109> ;
+        wp:bdbWikidata    <http://www.wikidata.org/entity/Q28260798> ;
+        owl:sameAs        <https://doi.org/10.1038/NM1267> ;
         foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/16007097> .
 
 <https://identifiers.org/hmdb/HMDB0001035>
@@ -160,12 +162,13 @@
         foaf:page               <http://www.wikipathways.org/instance/WP4965_r114109> .
 
 <http://rdf.wikipathways.org/Pathway/WP4965_r114109/WP/Interaction/idbe2626c9>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4965_r114109> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4965_r114109/Interaction/idbe2626c9> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000015405> , <http://rdf.wikipathways.org/Pathway/WP4965_r114109/WP/Interaction/id3c85f717> ;
-        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000015405> ;
-        wp:target         <http://rdf.wikipathways.org/Pathway/WP4965_r114109/WP/Interaction/id3c85f717> .
+        a                   wp:Interaction , wp:DirectedInteraction , wp:Catalysis ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4965_r114109> ;
+        dcterms:references  <https://identifiers.org/pubmed/16007097> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r114109/Interaction/idbe2626c9> ;
+        wp:participants     <https://identifiers.org/ensembl/ENSMUSG00000015405> , <http://rdf.wikipathways.org/Pathway/WP4965_r114109/WP/Interaction/id3c85f717> ;
+        wp:source           <https://identifiers.org/ensembl/ENSMUSG00000015405> ;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP4965_r114109/WP/Interaction/id3c85f717> .
 
 <http://rdf.wikipathways.org/Pathway/WP4965_r114109/WP/Interaction/id7289f3b9>
         a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
@@ -192,22 +195,21 @@
         wp:target         <https://identifiers.org/hmdb/HMDB0061196> .
 
 <http://rdf.wikipathways.org/Pathway/WP4965_r114109/WP/Interaction/id3c85f717>
-        a                              wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
-        dcterms:bibliographicCitation  <https://identifiers.org/pubmed/16007097> ;
-        dcterms:isPartOf               <https://identifiers.org/wikipathways/WP4965_r114109> ;
-        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4965_r114109/Interaction/id3c85f717> ;
-        wp:participants                <https://identifiers.org/hmdb/HMDB0001035> , <https://identifiers.org/chebi/CHEBI:55438> ;
-        wp:source                      <https://identifiers.org/hmdb/HMDB0001035> ;
-        wp:target                      <https://identifiers.org/chebi/CHEBI:55438> .
+        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4965_r114109> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4965_r114109/Interaction/id3c85f717> ;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:55438> , <https://identifiers.org/hmdb/HMDB0001035> ;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001035> ;
+        wp:target         <https://identifiers.org/chebi/CHEBI:55438> .
 
 <http://rdf.wikipathways.org/Pathway/WP4965_r114109/WP/Interaction/idcc7fc0b6>
-        a                              wp:Stimulation , wp:Interaction , wp:DirectedInteraction ;
-        dcterms:bibliographicCitation  <https://identifiers.org/pubmed/16007097> ;
-        dcterms:isPartOf               <https://identifiers.org/wikipathways/WP4965_r114109> ;
-        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4965_r114109/Interaction/idcc7fc0b6> ;
-        wp:participants                <https://identifiers.org/ensembl/ENSMUSG00000049115> , <https://identifiers.org/hmdb/HMDB0001035> ;
-        wp:source                      <https://identifiers.org/hmdb/HMDB0001035> ;
-        wp:target                      <https://identifiers.org/ensembl/ENSMUSG00000049115> .
+        a                   wp:Stimulation , wp:Interaction , wp:DirectedInteraction ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4965_r114109> ;
+        dcterms:references  <https://identifiers.org/pubmed/16007097> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r114109/Interaction/idcc7fc0b6> ;
+        wp:participants     <https://identifiers.org/ensembl/ENSMUSG00000049115> , <https://identifiers.org/hmdb/HMDB0001035> ;
+        wp:source           <https://identifiers.org/hmdb/HMDB0001035> ;
+        wp:target           <https://identifiers.org/ensembl/ENSMUSG00000049115> .
 
 <https://identifiers.org/chebi/CHEBI:55438>
         a                   wp:DataNode , wp:Metabolite ;

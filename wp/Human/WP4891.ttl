@@ -221,15 +221,15 @@
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6347> .
 
 <http://rdf.wikipathways.org/Pathway/WP4891_r111616/WP/Interaction/idd81b881e>
-        a                              wp:Interaction , wp:DirectedInteraction ;
-        dc:source                      "BioGrid"^^xsd:string ;
-        dcterms:bibliographicCitation  <https://identifiers.org/pubmed/10969042> ;
-        dcterms:identifier             "882484"^^xsd:string ;
-        dcterms:isPartOf               <https://identifiers.org/wikipathways/WP4891_r111616> ;
-        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4891_r111616/Interaction/idd81b881e> ;
-        wp:participants                <https://identifiers.org/ncbigene/59272> , <https://identifiers.org/ncbigene/183> ;
-        wp:source                      <https://identifiers.org/ncbigene/59272> ;
-        wp:target                      <https://identifiers.org/ncbigene/183> .
+        a                   wp:Interaction , wp:DirectedInteraction ;
+        dc:source           "BioGrid"^^xsd:string ;
+        dcterms:identifier  "882484"^^xsd:string ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4891_r111616> ;
+        dcterms:references  <https://identifiers.org/pubmed/10969042> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4891_r111616/Interaction/idd81b881e> ;
+        wp:participants     <https://identifiers.org/ncbigene/59272> , <https://identifiers.org/ncbigene/183> ;
+        wp:source           <https://identifiers.org/ncbigene/59272> ;
+        wp:target           <https://identifiers.org/ncbigene/183> .
 
 <https://identifiers.org/wikipathways/WP4883>
         a                   wp:DataNode ;
@@ -281,7 +281,9 @@
 
 <https://identifiers.org/pubmed/10969042>
         a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4891_r111616> ;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4891_r111616/WP/Interaction/idd81b881e> ;
+        wp:bdbWikidata    <http://www.wikidata.org/entity/Q24290169> ;
+        owl:sameAs        <https://doi.org/10.1161/01.RES.87.5.E1> ;
         foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/10969042> .
 
 <https://identifiers.org/ncbigene/3553>
