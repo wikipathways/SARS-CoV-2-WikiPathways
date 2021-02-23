@@ -34,7 +34,14 @@ public class CheckRDF {
         SPARQLHelper helper = new SPARQLHelper(loadedData);
         assertions.addAll(GeneralTests.all(helper));
         assertions.addAll(ReferencesTests.all(helper));
-	assertions.addAll(WikidataTests.all(helper));
+	assertions.addAll(WikidataTests.keggWithoutMapping(helper)); // not all
+	assertions.addAll(WikidataTests.pubchemCIDWithoutMapping(helper));
+	assertions.addAll(WikidataTests.hmdbWithoutMapping(helper));
+	assertions.addAll(WikidataTests.casWithoutMapping(helper));
+	assertions.addAll(WikidataTests.wikDataTypo(helper));
+	assertions.addAll(WikidataTests.duplicateWikidataMappings(helper));
+	assertions.addAll(WikidataTests.wikidataIdentifiersWrong(helper));
+	assertions.addAll(WikidataTests.chemspiderCIDWithoutMapping(helper));
 
         assertions.addAll(CovidDiseaseMapsTests.all(helper));
 
