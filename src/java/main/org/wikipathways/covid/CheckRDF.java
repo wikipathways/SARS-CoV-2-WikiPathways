@@ -56,6 +56,7 @@ public class CheckRDF {
         assertions.addAll(HMDBSecMetabolitesTests.all(helper));
         assertions.addAll(LIPIDMAPSTests.all(helper));
         assertions.addAll(MetabolitesTests.all(helper));
+        assertions.addAll(PubChemMetabolitesTests.all(helper));
 
         assertions.addAll(InteractionTests.all(helper));
 
