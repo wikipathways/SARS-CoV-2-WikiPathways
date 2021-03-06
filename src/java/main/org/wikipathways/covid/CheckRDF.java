@@ -193,6 +193,9 @@ public class CheckRDF {
             System.out.println("\n" + assertion.getMessage());
             if (assertion.getDetails() != null && !assertion.getDetails().isEmpty()) {
                 System.out.println("```\n" + assertion.getDetails() + "\n```");
+                if (assertion.hasLinkToDocs()) {
+                    System.out.println("More details at [" + assertion.getLinkToDocs() + "](" + assertion.getLinkToDocs() + ")\n");
+                }
             }
         }
     }
