@@ -33,6 +33,7 @@ public class CheckRDF {
 
         SPARQLHelper helper = new SPARQLHelper(loadedData);
         assertions.addAll(GeneralTests.all(helper));
+        assertions.addAll(DataNodesTests.all(helper));
         assertions.addAll(ReferencesTests.all(helper));
 	assertions.addAll(WikidataTests.keggWithoutMapping(helper)); // not all
 	assertions.addAll(WikidataTests.pubchemCIDWithoutMapping(helper));
