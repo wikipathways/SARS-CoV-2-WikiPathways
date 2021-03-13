@@ -16,11 +16,17 @@
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
 <https://identifiers.org/pubmed/16007097>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4965_r114109/WP/Interaction/idcc7fc0b6> , <http://rdf.wikipathways.org/Pathway/WP4965_r114109/WP/Interaction/idbe2626c9> , <https://identifiers.org/wikipathways/WP4965_r114109> ;
-        wp:bdbWikidata    <http://www.wikidata.org/entity/Q28260798> ;
-        owl:sameAs        <https://doi.org/10.1038/NM1267> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/16007097> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "16007097" ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4965_r114109/WP/Interaction/idcc7fc0b6> , <http://rdf.wikipathways.org/Pathway/WP4965_r114109/WP/Interaction/idbe2626c9> , <https://identifiers.org/wikipathways/WP4965_r114109> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q28260798> ;
+        owl:sameAs          <https://doi.org/10.1038%2FNM1267> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16007097> .
+
+<https://doi.org/10.1038%2FNM1267>
+        dc:source           "DOI" ;
+        dcterms:identifier  "10.1038/NM1267" .
 
 <https://identifiers.org/hmdb/HMDB0001035>
         a                   wp:DataNode , wp:Metabolite ;

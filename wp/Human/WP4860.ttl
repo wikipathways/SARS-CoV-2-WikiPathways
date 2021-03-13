@@ -116,6 +116,10 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860_r111111/DataNode/d10c6> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000159593> .
 
+<https://doi.org/10.1038%2FSJ.EMBOR.7400895>
+        dc:source           "DOI" ;
+        dcterms:identifier  "10.1038/SJ.EMBOR.7400895" .
+
 <https://identifiers.org/ensembl/ENSG00000144744>
         a                   wp:DataNode , wp:GeneProduct ;
         rdfs:label          "UBA3"^^xsd:string ;
@@ -151,11 +155,13 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000154582> .
 
 <https://identifiers.org/pubmed/17304241>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/ensembl/ENSG00000162378> ;
-        wp:bdbWikidata    <http://www.wikidata.org/entity/Q24297442> ;
-        owl:sameAs        <https://doi.org/10.1038/SJ.EMBOR.7400895> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/17304241> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "17304241" ;
+        dcterms:isPartOf    <https://identifiers.org/ensembl/ENSG00000162378> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q24297442> ;
+        owl:sameAs          <https://doi.org/10.1038%2FSJ.EMBOR.7400895> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/17304241> .
 
 <https://identifiers.org/wikipathways/WP183>
         a                   wp:DataNode ;

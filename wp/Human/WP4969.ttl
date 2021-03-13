@@ -37,6 +37,10 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4969_r115143/DataNode/c0de8> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000100030> .
 
+<https://doi.org/10.2165%2F00129785-200404030-00002>
+        dc:source           "DOI" ;
+        dcterms:identifier  "10.2165/00129785-200404030-00002" .
+
 <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/d28a2>
         a                 wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4969_r115143> ;
@@ -124,11 +128,13 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/idbcf919df> .
 
 <https://identifiers.org/pubmed/15174896>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/ncbigene/1636> ;
-        wp:bdbWikidata    <http://www.wikidata.org/entity/Q28645953> ;
-        owl:sameAs        <https://doi.org/10.2165/00129785-200404030-00002> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/15174896> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "15174896" ;
+        dcterms:isPartOf    <https://identifiers.org/ncbigene/1636> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q28645953> ;
+        owl:sameAs          <https://doi.org/10.2165%2F00129785-200404030-00002> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15174896> .
 
 <https://identifiers.org/chebi/CHEBI:15996>
         a                   wp:Metabolite , wp:DataNode ;
@@ -238,9 +244,11 @@
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:28940> .
 
 <https://identifiers.org/pubmed/32526773>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/ensembl/ENSG00000130234> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32526773> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "32526773" ;
+        dcterms:isPartOf    <https://identifiers.org/ensembl/ENSG00000130234> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/32526773> .
 
 <https://identifiers.org/ncbigene/183>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -260,9 +268,11 @@
         pav:hasVersion  <https://identifiers.org/wikipathways/WP4969_r115143> .
 
 <https://identifiers.org/pubmed/18040024>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/ensembl/ENSG00000164867> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/18040024> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "18040024" ;
+        dcterms:isPartOf    <https://identifiers.org/ensembl/ENSG00000164867> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18040024> .
 
 <https://identifiers.org/cas/35121-78-9>
         a                   wp:Metabolite , wp:DataNode ;
@@ -322,20 +332,6 @@
         wp:source         <https://identifiers.org/chebi/CHEBI:133068> ;
         wp:target         <https://identifiers.org/ncbigene/1636> .
 
-<https://identifiers.org/ensembl/ENSG00000164344>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "KLKB1"^^xsd:string ;
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000164344> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000164344"^^xsd:string ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4969_r115143> , <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/ec428> , <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/id54a8211b> ;
-        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000164344> ;
-        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3818> ;
-        wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/KLKB1> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/E9PBC5> , <https://identifiers.org/uniprot/H0YAC1> , <https://identifiers.org/uniprot/C9J075> , <https://identifiers.org/uniprot/P03952> , <https://identifiers.org/uniprot/C9JCT1> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4969_r115143/DataNode/f7722> ;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000164344> .
-
 <https://identifiers.org/kegg.compound/C15851>
         a                   wp:Metabolite , wp:DataNode ;
         rdfs:label          "Ang 1-9"^^xsd:string ;
@@ -351,6 +347,20 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q58310864> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4969_r115143/DataNode/b1bb7> ;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C15851> .
+
+<https://identifiers.org/ensembl/ENSG00000164344>
+        a                   wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "KLKB1"^^xsd:string ;
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000164344> ;
+        dc:source           "Ensembl"^^xsd:string ;
+        dcterms:identifier  "ENSG00000164344"^^xsd:string ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4969_r115143> , <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/ec428> , <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/id54a8211b> ;
+        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000164344> ;
+        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3818> ;
+        wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/KLKB1> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/E9PBC5> , <https://identifiers.org/uniprot/H0YAC1> , <https://identifiers.org/uniprot/C9J075> , <https://identifiers.org/uniprot/P03952> , <https://identifiers.org/uniprot/C9JCT1> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4969_r115143/DataNode/f7722> ;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000164344> .
 
 <https://identifiers.org/ensembl/ENSG00000067900>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -406,11 +416,13 @@
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=3081372> .
 
 <https://identifiers.org/pubmed/18449520>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/ncbigene/59272> ;
-        wp:bdbWikidata    <http://www.wikidata.org/entity/Q37151964> ;
-        owl:sameAs        <https://doi.org/10.1007/S00109-008-0339-X> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/18449520> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "18449520" ;
+        dcterms:isPartOf    <https://identifiers.org/ncbigene/59272> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q37151964> ;
+        owl:sameAs          <https://doi.org/10.1007%2FS00109-008-0339-X> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18449520> .
 
 <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/c1e80>
         a                 wp:DirectedInteraction , wp:Interaction ;
@@ -521,9 +533,11 @@
         wp:target         <https://identifiers.org/chebi/CHEBI:16356> .
 
 <https://identifiers.org/pubmed/32633718>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4969_r115143> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32633718> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "32633718" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4969_r115143> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/32633718> .
 
 <https://identifiers.org/ncbigene/5054>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -608,9 +622,11 @@
         wp:target         <https://identifiers.org/ncbigene/5054> .
 
 <https://identifiers.org/pubmed/33065209>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/ida91dd59d> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/33065209> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "33065209" ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/ida91dd59d> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/33065209> .
 
 <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/id63c55d3>
         a                 wp:DirectedInteraction , wp:Interaction ;
@@ -700,6 +716,14 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4969_r115143/DataNode/aee67> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000111424> .
 
+<http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/e0e49>
+        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4969_r115143> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4969_r115143/Interaction/e0e49> ;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000164867> , <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/a7811> ;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000164867> ;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/a7811> .
+
 <https://identifiers.org/hmdb/HMDB0000464>
         a                   wp:DataNode , wp:Metabolite ;
         rdfs:label          "Ca++"^^xsd:string ;
@@ -718,13 +742,9 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4969_r115143/DataNode/cc565> ;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000464> .
 
-<http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/e0e49>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4969_r115143> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4969_r115143/Interaction/e0e49> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000164867> , <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/a7811> ;
-        wp:source         <https://identifiers.org/ensembl/ENSG00000164867> ;
-        wp:target         <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/a7811> .
+<https://doi.org/10.1016%2FJ.CLINTHERA.2007.09.019>
+        dc:source           "DOI" ;
+        dcterms:identifier  "10.1016/J.CLINTHERA.2007.09.019" .
 
 <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/id99222b0a>
         a                 wp:DirectedInteraction , wp:Interaction ;
@@ -947,9 +967,11 @@
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/623> .
 
 <https://identifiers.org/pubmed/32562843>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/ida91dd59d> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32562843> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "32562843" ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/ida91dd59d> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/32562843> .
 
 <https://identifiers.org/hmdb/HMDB0004246>
         a                   wp:Metabolite , wp:DataNode ;
@@ -1042,6 +1064,10 @@
         wp:source           <https://identifiers.org/ncbigene/5054> ;
         wp:target           <https://identifiers.org/wikipathways/WP558> .
 
+<https://doi.org/10.1007%2FS00109-008-0339-X>
+        dc:source           "DOI" ;
+        dcterms:identifier  "10.1007/S00109-008-0339-X" .
+
 <https://identifiers.org/ncbigene/185>
         a                   wp:DataNode , wp:GeneProduct ;
         rdfs:label          "AGTR1"^^xsd:string ;
@@ -1107,9 +1133,11 @@
         wp:target         <https://identifiers.org/ncbigene/624> .
 
 <https://identifiers.org/pubmed/33375371>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/fae04> , <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/idfbc3672> , <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/ide64f6ad9> , <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/id672631f5> , <https://identifiers.org/ncbigene/185> , <https://identifiers.org/ncbigene/5054> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/33375371> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "33375371" ;
+        dcterms:isPartOf    <https://identifiers.org/ncbigene/5054> , <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/fae04> , <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/idfbc3672> , <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/id672631f5> , <https://identifiers.org/ncbigene/185> , <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/ide64f6ad9> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/33375371> .
 
 <http://rdf.wikipathways.org/Pathway/WP4969_r115143/WP/Interaction/b3d21>
         a                 wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
@@ -1120,11 +1148,13 @@
         wp:target         <https://identifiers.org/ensembl/ENSG00000185532> .
 
 <https://identifiers.org/pubmed/18035185>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/ncbigene/186> ;
-        wp:bdbWikidata    <http://www.wikidata.org/entity/Q28258541> ;
-        owl:sameAs        <https://doi.org/10.1016/J.CLINTHERA.2007.09.019> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/18035185> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "18035185" ;
+        dcterms:isPartOf    <https://identifiers.org/ncbigene/186> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q28258541> ;
+        owl:sameAs          <https://doi.org/10.1016%2FJ.CLINTHERA.2007.09.019> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18035185> .
 
 <https://identifiers.org/hgnc.symbol/NFKB1>
         a                   wp:DataNode , wp:GeneProduct ;

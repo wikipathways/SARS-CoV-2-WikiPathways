@@ -30,13 +30,9 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4883_r115281/DataNode/e5d6d> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1636> .
 
-<http://rdf.wikipathways.org/Pathway/WP4883_r115281/WP/Interaction/idc649fb6a>
-        a                 wp:TranscriptionTranslation , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4883_r115281> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4883_r115281/Interaction/idc649fb6a> ;
-        wp:participants   <https://identifiers.org/ncbigene/59272> ;
-        wp:source         <https://identifiers.org/ncbigene/59272> ;
-        wp:target         <https://identifiers.org/ncbigene/59272> .
+<https://doi.org/10.1007%2FS00134-020-05985-9>
+        dc:source           "DOI" ;
+        dcterms:identifier  "10.1007/S00134-020-05985-9" .
 
 <http://rdf.wikipathways.org/Pathway/WP4883_r115281/WP/Interaction/id3739bd1>
         a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
@@ -74,6 +70,10 @@
         wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000245> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4883_r115281> .
 
+<https://doi.org/10.1016%2FJ.CELL.2020.02.052>
+        dc:source           "DOI" ;
+        dcterms:identifier  "10.1016/J.CELL.2020.02.052" .
+
 <https://identifiers.org/ncbigene/4142>
         a                   wp:DataNode , wp:GeneProduct ;
         rdfs:label          "MAS1"^^xsd:string ;
@@ -98,11 +98,13 @@
         wp:target         <https://identifiers.org/chebi/CHEBI:2719> .
 
 <https://identifiers.org/pubmed/32142651>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/ncbigene/59272> , <https://identifiers.org/ensembl/ENSG00000184012> ;
-        wp:bdbWikidata    <http://www.wikidata.org/entity/Q88292103> ;
-        owl:sameAs        <https://doi.org/10.1016/J.CELL.2020.02.052> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32142651> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "32142651" ;
+        dcterms:isPartOf    <https://identifiers.org/ncbigene/59272> , <https://identifiers.org/ensembl/ENSG00000184012> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q88292103> ;
+        owl:sameAs          <https://doi.org/10.1016%2FJ.CELL.2020.02.052> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/32142651> .
 
 <https://identifiers.org/chebi/CHEBI:90710>
         a                   wp:Metabolite , wp:DataNode ;
@@ -167,11 +169,13 @@
         pav:hasVersion  <https://identifiers.org/wikipathways/WP4883_r115281> .
 
 <https://identifiers.org/pubmed/32125455>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4883_r115281> , <https://identifiers.org/ncbigene/1636> , <https://identifiers.org/ensembl/ENSG00000184012> , <https://identifiers.org/chebi/CHEBI:2718> , <https://identifiers.org/ncbigene/185> , <https://identifiers.org/ncbigene/5972> , <https://identifiers.org/ncbigene/183> , <https://identifiers.org/ncbigene/4142> , <https://identifiers.org/ncbigene/59272> ;
-        wp:bdbWikidata    <http://www.wikidata.org/entity/Q88291889> ;
-        owl:sameAs        <https://doi.org/10.1007/S00134-020-05985-9> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/32125455> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "32125455" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4883_r115281> , <https://identifiers.org/ncbigene/1636> , <https://identifiers.org/ensembl/ENSG00000184012> , <https://identifiers.org/chebi/CHEBI:2718> , <https://identifiers.org/ncbigene/185> , <https://identifiers.org/ncbigene/5972> , <https://identifiers.org/ncbigene/183> , <https://identifiers.org/ncbigene/4142> , <https://identifiers.org/ncbigene/59272> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q88291889> ;
+        owl:sameAs          <https://doi.org/10.1007%2FS00134-020-05985-9> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/32125455> .
 
 <http://rdf.wikipathways.org/Pathway/WP4883_r115281/WP/Interaction/id7114ee4c>
         a                 wp:Binding , wp:DirectedInteraction , wp:Interaction ;
@@ -264,3 +268,11 @@
         wp:participants   <https://identifiers.org/ncbigene/5972> , <http://rdf.wikipathways.org/Pathway/WP4883_r115281/WP/Interaction/id695320d0> ;
         wp:source         <https://identifiers.org/ncbigene/5972> ;
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4883_r115281/WP/Interaction/id695320d0> .
+
+<http://rdf.wikipathways.org/Pathway/WP4883_r115281/WP/Interaction/idc649fb6a>
+        a                 wp:TranscriptionTranslation , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4883_r115281> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4883_r115281/Interaction/idc649fb6a> ;
+        wp:participants   <https://identifiers.org/ncbigene/59272> ;
+        wp:source         <https://identifiers.org/ncbigene/59272> ;
+        wp:target         <https://identifiers.org/ncbigene/59272> .
