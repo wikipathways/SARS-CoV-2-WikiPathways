@@ -47,7 +47,10 @@ public class CheckRDF {
         assertions.addAll(CovidDiseaseMapsTests.all(helper));
 
         assertions.addAll(GeneTests.all(helper));
-        assertions.addAll(EnsemblTests.all(helper));
+        assertions.addAll(EnsemblTests.wrongEnsemblIDForHumanSpecies(helper)); // exclude outdatedIdentifiers (not all pathways have many genes)
+        assertions.addAll(EnsemblTests.wrongEnsemblIDForRatSpecies(helper));
+        assertions.addAll(EnsemblTests.wrongEnsemblIDForCowSpecies(helper));
+        assertions.addAll(EnsemblTests.wrongEnsemblIDForMouseSpecies(helper));
         assertions.addAll(UniProtTests.all(helper));
 
         assertions.addAll(CASMetabolitesTests.all(helper));
