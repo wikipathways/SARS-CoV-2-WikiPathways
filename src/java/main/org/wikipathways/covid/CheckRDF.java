@@ -34,6 +34,7 @@ public class CheckRDF {
         SPARQLHelper helper = new SPARQLHelper(loadedData);
         assertions.addAll(GeneralTests.all(helper));
         assertions.addAll(DataNodesTests.all(helper));
+        assertions.addAll(PathwayTests.all(helper));
         assertions.addAll(ReferencesTests.all(helper));
 	assertions.addAll(WikidataTests.keggWithoutMapping(helper)); // not all
 	assertions.addAll(WikidataTests.pubchemCIDWithoutMapping(helper));
@@ -51,6 +52,7 @@ public class CheckRDF {
         assertions.addAll(EnsemblTests.wrongEnsemblIDForRatSpecies(helper));
         assertions.addAll(EnsemblTests.wrongEnsemblIDForCowSpecies(helper));
         assertions.addAll(EnsemblTests.wrongEnsemblIDForMouseSpecies(helper));
+        assertions.addAll(ProteinsTests.all(helper));
         assertions.addAll(UniProtTests.all(helper));
 
         assertions.addAll(CASMetabolitesTests.all(helper));
@@ -58,6 +60,7 @@ public class CheckRDF {
         assertions.addAll(ChemSpiderTests.all(helper));
         assertions.addAll(HMDBMetabolitesTests.outdatedIdentifiers(helper)); // not all
         assertions.addAll(HMDBSecMetabolitesTests.all(helper));
+        assertions.addAll(KEGGMetaboliteTests.all(helper));
         assertions.addAll(LIPIDMAPSTests.all(helper));
         assertions.addAll(MetabolitesTests.all(helper));
         assertions.addAll(PubChemMetabolitesTests.all(helper));
