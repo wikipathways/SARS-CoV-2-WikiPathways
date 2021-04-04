@@ -32,7 +32,16 @@ public class CheckRDF {
         loadedData.read(new FileInputStream(new File(gpmlFile)), "", "TURTLE");
 
         SPARQLHelper helper = new SPARQLHelper(loadedData);
-        assertions.addAll(GeneralTests.all(helper));
+        assertions.addAll(GeneralTests.titlesShortEnough(helper)); // not all GeneralTests
+        assertions.addAll(GeneralTests.weirdCharacterTitles(helper));
+        assertions.addAll(GeneralTests.duplicateTitles(helper));
+        assertions.addAll(GeneralTests.noTags(helper));
+        assertions.addAll(GeneralTests.nullDataSources(helper));
+        assertions.addAll(GeneralTests.undefinedDataSources(helper));
+        assertions.addAll(GeneralTests.undefinedIdentifier(helper));
+        assertions.addAll(GeneralTests.dataNodeWithoutGraphId(helper));
+        assertions.addAll(GeneralTests.groupsHaveDetail(helper));
+        assertions.addAll(GeneralTests.emptyLabelOfNodeWithIdentifier(helper));
         assertions.addAll(DataNodesTests.all(helper));
         assertions.addAll(PathwayTests.all(helper));
         assertions.addAll(ReferencesTests.all(helper));
@@ -63,6 +72,7 @@ public class CheckRDF {
         assertions.addAll(KEGGMetaboliteTests.all(helper));
         assertions.addAll(LIPIDMAPSTests.all(helper));
         assertions.addAll(MetabolitesTests.all(helper));
+        assertions.addAll(MetaboliteStructureTests.all(helper));
         assertions.addAll(PubChemMetabolitesTests.all(helper));
 
         assertions.addAll(InteractionTests.all(helper));
