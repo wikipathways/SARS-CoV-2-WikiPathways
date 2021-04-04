@@ -6,6 +6,7 @@
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cito:  <http://purl.org/spar/cito/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
 @prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
@@ -269,14 +270,17 @@
         wp:participants   <https://identifiers.org/uniprot/P02671> , <https://identifiers.org/uniprot/P02675> , <https://identifiers.org/uniprot/P02679> .
 
 <https://identifiers.org/pubmed/21742792>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4927_r115849> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/21742792> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "21742792" ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4927_r115849/Complex/d6df2> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/21742792> .
 
 <http://rdf.wikipathways.org/Pathway/WP4927_r115849/Complex/d6df2>
         a                              wp:Complex , wp:DataNode ;
         dcterms:bibliographicCitation  <https://identifiers.org/pubmed/21742792> ;
         dcterms:isPartOf               <https://identifiers.org/wikipathways/WP4927_r115849> ;
+        dcterms:references             <https://identifiers.org/pubmed/21742792> ;
         wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4927_r115849/Group/d6df2> ;
         wp:participants                <https://identifiers.org/uniprot/P00488> , <https://identifiers.org/uniprot/P05160> .
 
@@ -460,6 +464,7 @@
         dcterms:description    "Several hospitals and researchers have reported links between thrombosis and anticoagulation quite regularly for Covid-19 patients.\n\nThis pathways combines this information, including biological mechanisms involved, in one graphical overview. The D-dimer is one of the protein fragments produced when a blood clot dissolves within the (human) body; when not properly degraded could lead to thrombosis.\n\nThe graphical visualisation of (crosslinked) fibrin mesh leading to D-dimers is inspired by [https://en.wikipedia.org/wiki/D-dimer Wikipedia]." ;
         dcterms:identifier     "WP4927"^^xsd:string ;
         dcterms:references     <https://identifiers.org/pubmed/32344011> , <https://identifiers.org/pubmed/32339221> ;
+        cito:cites             <https://identifiers.org/pubmed/32344011> , <https://identifiers.org/pubmed/11460506> , <https://identifiers.org/pubmed/27363989> , <https://identifiers.org/pubmed/21742792> , <https://identifiers.org/pubmed/32339221> , <https://identifiers.org/pubmed/3021194> , <https://identifiers.org/pubmed/19008457> ;
         wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_1247> , <http://purl.obolibrary.org/obo/DOID_0060903> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4927_r115849> ;
         wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_0060903> , <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/DOID_1247> , <http://purl.obolibrary.org/obo/DOID_2945> ;

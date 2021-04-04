@@ -6,6 +6,7 @@
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cito:  <http://purl.org/spar/cito/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
 @prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
@@ -130,6 +131,7 @@
         dc:title               "COVID-19 Adverse Outcome Pathway"@en ;
         dcterms:description    "Experimental pathway to investigate overlap of Covid-19 downstream effects and adverse outcome pathways related to lung injury." , "Experimenting with links in line with bioinformatics analysis of COVID-19 genes and AOP knowledge. Work in progress!" ;
         dcterms:identifier     "WP4891"^^xsd:string ;
+        cito:cites             <https://identifiers.org/pubmed/10969042> ;
         wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_934> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4891_r111616> ;
         wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/PW_0000003> , <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/PW_0001308> ;

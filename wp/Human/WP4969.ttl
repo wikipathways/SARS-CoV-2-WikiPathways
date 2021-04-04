@@ -6,6 +6,7 @@
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cito:  <http://purl.org/spar/cito/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
 @prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
@@ -170,6 +171,7 @@
         dcterms:description    "This pathway describes imbalances in RAS and Bradykinin pathways in COVID-19. \nThe expression of several genes in this pathway is affected in by SARS-CoV-2: \n\n* SERPING1 is downregulated, which cancels the suppression of F12 of the intrinsic coagulation cascade, resulting in the production of bradykinin from kallikrein and KNG.\n* ACE is downregulated, which increases bradykinin levels.\n* ACE2 is upregulated, ACE is downregulated, which causes an increase in Angiotensin 1-9 and sensitization of bradykinin receptors.\n* NFkappaB is suppressed by SARS-Cov-2, decreasing its binding to the ACE promoter and subsequent transcription.\n\nThe result of a hyperactive bradykinin system is vasodilation to the point of vascular leakage and infiltration of inflammatory cells.\n\nThe pathway is based on figure 2A from [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7410499/ Garvin et al.]" ;
         dcterms:identifier     "WP4969"^^xsd:string ;
         dcterms:references     <https://identifiers.org/pubmed/32633718> ;
+        cito:cites             <https://identifiers.org/pubmed/33065209> , <https://identifiers.org/pubmed/32633718> , <https://identifiers.org/pubmed/15174896> , <https://identifiers.org/pubmed/32562843> , <https://identifiers.org/pubmed/33375371> , <https://identifiers.org/pubmed/32526773> , <https://identifiers.org/pubmed/18040024> , <https://identifiers.org/pubmed/18449520> , <https://identifiers.org/pubmed/18035185> ;
         wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/DOID_2945> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4969_r115143> ;
         wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/PW_0000013> ;

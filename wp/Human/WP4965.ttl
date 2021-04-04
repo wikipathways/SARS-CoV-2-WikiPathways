@@ -6,6 +6,7 @@
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cito:  <http://purl.org/spar/cito/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
 @prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
@@ -158,6 +159,7 @@
         dcterms:description     "The Spike protein of SARS-CoV will down regulate ACE2 which leads to deregulation of the Renin-Angiotensin-system. This deregulation can be the cause of lung injury that is linked to SARS-CoV infection. This work was done in a mouse model." ;
         dcterms:identifier      "WP4965"^^xsd:string ;
         dcterms:references      <https://identifiers.org/pubmed/16007097> ;
+        cito:cites              <https://identifiers.org/pubmed/16007097> ;
         wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000003> ;
         wp:diseaseOntologyTag   <http://purl.obolibrary.org/obo/DOID_934> ;
         wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP4965_r114109> ;

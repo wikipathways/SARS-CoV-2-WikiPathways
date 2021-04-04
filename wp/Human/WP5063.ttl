@@ -6,6 +6,7 @@
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cito:  <http://purl.org/spar/cito/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
 @prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
@@ -37,9 +38,11 @@
         wp:participants                <https://identifiers.org/hgnc.symbol/IL2RA> , <https://identifiers.org/hgnc.symbol/IL2RG> , <http://rdf.wikipathways.org/Pathway/WP5063_r115865/Complex/ef23b> , <https://identifiers.org/hgnc.symbol/IL2RB> .
 
 <https://identifiers.org/pubmed/3091479>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r115865> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/3091479> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "3091479" ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r115865/Complex/ef23b> , <http://rdf.wikipathways.org/Pathway/WP5063_r115865/Complex/c84bb> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/3091479> .
 
 <https://identifiers.org/ensembl/ENSG00000049768>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -241,6 +244,7 @@
         dc:title               "FOXP3 in COVID-19"@en ;
         dcterms:description    "FOXP3 in Covid-19" , "FOXP3 in Covid-19\n" ;
         dcterms:identifier     "WP5063"^^xsd:string ;
+        cito:cites             <https://identifiers.org/pubmed/29456534> , <https://identifiers.org/pubmed/3091479> , <https://identifiers.org/pubmed/12522256> , <https://identifiers.org/pubmed/30076771> , <https://identifiers.org/pubmed/26215792> ;
         wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_2945> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5063_r115865> ;
         wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/DOID_2945> ;
@@ -304,11 +308,12 @@
         foaf:page           <http://www.uniprot.org/uniprot/B7ZLG1> .
 
 <http://rdf.wikipathways.org/Pathway/WP5063_r115865/Complex/ef23b>
-        a                              wp:Complex , wp:DataNode ;
+        a                              wp:DataNode , wp:Complex ;
         dcterms:bibliographicCitation  <https://identifiers.org/pubmed/3091479> ;
         dcterms:isPartOf               <http://rdf.wikipathways.org/Pathway/WP5063_r115865/WP/Interaction/id62c8b91d> , <https://identifiers.org/wikipathways/WP5063_r115865> ;
+        dcterms:references             <https://identifiers.org/pubmed/3091479> ;
         wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP5063_r115865/Group/ef23b> ;
-        wp:participants                <https://identifiers.org/hgnc.symbol/IL2RA> , <https://identifiers.org/hgnc.symbol/IL2RB> , <https://identifiers.org/hgnc.symbol/IL2RG> .
+        wp:participants                <https://identifiers.org/hgnc.symbol/IL2RB> , <https://identifiers.org/hgnc.symbol/IL2RA> , <https://identifiers.org/hgnc.symbol/IL2RG> .
 
 <http://rdf.wikipathways.org/Pathway/WP5063_r115865/WP/Interaction/id918fca0c>
         a                 wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
@@ -342,8 +347,9 @@
         a                              wp:Complex , wp:DataNode ;
         dcterms:bibliographicCitation  <https://identifiers.org/pubmed/3091479> ;
         dcterms:isPartOf               <http://rdf.wikipathways.org/Pathway/WP5063_r115865/WP/Interaction/id53f164a2> , <https://identifiers.org/wikipathways/WP5063_r115865> ;
+        dcterms:references             <https://identifiers.org/pubmed/3091479> ;
         wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP5063_r115865/Group/c84bb> ;
-        wp:participants                <https://identifiers.org/hgnc.symbol/IL2RB> , <https://identifiers.org/hgnc.symbol/IL2RA> , <https://identifiers.org/hgnc.symbol/IL2RG> .
+        wp:participants                <https://identifiers.org/hgnc.symbol/IL2RG> , <https://identifiers.org/hgnc.symbol/IL2RA> , <https://identifiers.org/hgnc.symbol/IL2RB> .
 
 <https://identifiers.org/hgnc.symbol/IL2RB>
         a                   wp:DataNode , wp:GeneProduct ;

@@ -6,6 +6,7 @@
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cito:  <http://purl.org/spar/cito/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
 @prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
@@ -52,6 +53,7 @@
         dcterms:description    "Orf3a from SARS-CoV has been shown to bind TRAF3 and activate the NLRP3 inflammasome. The activation occurs at two points. First, by ubiquinating NF-kB (p105) to stimulate its proteolytic processing into mature NF-kB (p50), which can then go on to promote the transcription of pro-IL-1B together with RELA (p65). And second, by ubiquitinating ASC (PYCARD) in the NLRP3 inflammasome, which leads to its degradtion and the activation of caspase-1 (CASP1) that goes on to catalyze the production of mature IL-1B, leading to a cytokine storm. While Orf3a of SARS-CoV-2 only has 72.7% sequence identity with that of SARS-CoV, the TRAF3 binding motif PxQxS is 100% conserved (https://alexanderpico.github.io/SARS-CoV-2_Alignments/#Orf3a). Chloroquine, a multi-functional antiviral, decreases the production of IL-1B by affecting \"the processing of primary transcripts in the nucleus, the transport of processed mRNA to the cytosol, and the degradation of mRNA.\" (Jang 2006)" ;
         dcterms:identifier     "WP4876"^^xsd:string ;
         dcterms:references     <https://identifiers.org/pubmed/31034780> ;
+        cito:cites             <https://identifiers.org/pubmed/31034780> , <https://identifiers.org/pubmed/16418198> ;
         wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/DOID_2945> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4876_r110321> ;
         wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000883> , <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/PW_0000004> ;

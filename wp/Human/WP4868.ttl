@@ -6,6 +6,7 @@
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cito:  <http://purl.org/spar/cito/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
 @prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
@@ -74,6 +75,7 @@
         dcterms:description    "The induction of Type I interferons and signaling leading to the innate immune response during SARS-COV-2 infection. TLR7 MYD88-dependent signaling is inhibited at multiple steps by the SARS-CoV Papain-Like Protease (PLpro) domain of nsp3 (red oval). The signaling pathway is critical to induction of type I interferons (INF-I) via IRF3, AP-1 and NFkB transcription factors. INF-I triggers the JAK/STAT pathway leading to the induction of interferon-stimulated genes (ISGs), such as OAS and PKR, which go one to conduct the innate immune response. TREML4 has been shown to be necessary for MYD88 recruitment by TLR7 and STAT1 participation. The inhibition of SARS-CoV-2 PLpro by GRL0617 is proposed based on Ratia, et al. 2008 and 100% sequence identity between SARS-CoV and SARS-CoV-2 across all 13 residues of PLpro involved in binding GRL0617 (82.9% identity across 316 amino acids) as determined by the alignment of RefSeq YP_009725299.1 and PDB 3E9S (https://alexanderpico.github.io/SARS-CoV-2_Alignments/#Nsp3_PLpro_domain). The antimicrobial agent, azithromycin, is in clincal trials as COVID-19 therapy in combination with hydroxychloroquine (Gautret 2020) has been shown to modulate inflammation by inhibiting the activation of many of these same transcription factors." ;
         dcterms:identifier     "WP4868"^^xsd:string ;
         dcterms:references     <https://identifiers.org/pubmed/31226023> ;
+        cito:cites             <https://identifiers.org/pubmed/17667842> , <https://identifiers.org/pubmed/22088887> , <https://identifiers.org/pubmed/19893639> , <https://identifiers.org/pubmed/18852458> , <https://identifiers.org/pubmed/31226023> , <https://identifiers.org/pubmed/32205204> ;
         wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_934> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4868_r115857> ;
         wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000895> , <http://purl.obolibrary.org/obo/PW_0000003> , <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/DOID_2945> ;

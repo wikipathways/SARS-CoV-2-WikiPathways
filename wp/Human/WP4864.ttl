@@ -6,6 +6,7 @@
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cito:  <http://purl.org/spar/cito/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
 @prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
@@ -151,6 +152,7 @@
         dcterms:description    "This pathway describes the induction and modulation of the apoptosis system during human coronavirus infection. The information is based on the review of Fung and Liu [10.1146/annurev-micro-020518-115759]. Apoptosis is a highly controlled form of cell death that can be initiated by several internal (DNA damage) and external factors (T-cell death signal). There are some indications that induction of apoptosis in immune cells contribute to the suppression of the host immune system in some human coronavirus infections [10.1128/JVI.00269-12]. SARS-CoV induces caspase-dependent apoptosis by interfering with prosurvival BCL proteins (BCL2, BCL2L1, MCL1) and AKT1 and uses the apoptosis induced cell deconstruction it for replication, although it seems not to be depending on this mechanism for replication [10.1016/j.virusres.2014.09.016]. " ;
         dcterms:identifier     "WP4864"^^xsd:string ;
         dcterms:references     <https://identifiers.org/pubmed/31226023> ;
+        cito:cites             <https://identifiers.org/pubmed/31226023> , <https://identifiers.org/pubmed/9727492> ;
         wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/DOID_2945> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4864_r113801> ;
         wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/PW_0000009> , <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_934> ;

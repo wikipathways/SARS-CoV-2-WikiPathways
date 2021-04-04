@@ -6,6 +6,7 @@
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cito:  <http://purl.org/spar/cito/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
 @prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
@@ -313,6 +314,7 @@
         dcterms:description    "This pathway describes the activation of the human MAPK signaling system during human coronavirus infection. The information is based on the review of Fung and Liu, Figure 7 [10.1146/annurev-micro-020518-115759]. The MAPK signaling system is an important system to regulate response to different environmental stimuli, e.g. inflammation upon an infection. Their downstream effects include regulation of cell cycle, apoptosis, differentiation and immune response. During corona virus infection three MAPK signaling pathways were studied and described. The p38 pathway (MAPK11 - 14) leads to stimulation of apoptosis via CHOP (DDIT3) while the ERK pathway (MAPK1 and MAPK3) counteracts apoptosis stimulation and supports cell survival by stimulation of ATF2 and FOS. The JNK pathway (MAPK 8-10) inhibits cell survival protein BCL2 thus stimulating apoptosis but also stimulating the AP1 complex that leads to the production of effectors to fight the infection. The interplay of apoptosis stimulation and cell survival is not yet fully understood in SARS-CoV infection. " ;
         dcterms:identifier     "WP4877"^^xsd:string ;
         dcterms:references     <https://identifiers.org/pubmed/31226023> ;
+        cito:cites             <https://identifiers.org/pubmed/31226023> , <https://doi.org/10.1101/2020.03.15.20033472> ;
         wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_934> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4877_r115869> ;
         wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000198> , <http://purl.obolibrary.org/obo/PW_0000003> , <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/DOID_2945> ;
@@ -358,10 +360,11 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000095015> .
 
 <http://rdf.wikipathways.org/Pathway/WP4877_r115869/Complex/d382f>
-        a                 wp:DataNode , wp:Complex ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4877_r115869> , <http://rdf.wikipathways.org/Pathway/WP4877_r115869/WP/Interaction/id47483e2> , <http://rdf.wikipathways.org/Pathway/WP4877_r115869/WP/Interaction/c78d1> , <http://rdf.wikipathways.org/Pathway/WP4877_r115869/WP/Interaction/e88fb> , <http://rdf.wikipathways.org/Pathway/WP4877_r115869/WP/Interaction/ac5f2> , <http://rdf.wikipathways.org/Pathway/WP4877_r115869/WP/Interaction/cdc9a> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4877_r115869/Group/d382f> ;
-        wp:participants   <https://identifiers.org/ncbigene/3726> , <https://identifiers.org/ensembl/ENSG00000170345> , <https://identifiers.org/ensembl/ENSG00000177606> .
+        a                   wp:DataNode , wp:Complex ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4877_r115869> , <http://rdf.wikipathways.org/Pathway/WP4877_r115869/WP/Interaction/id47483e2> , <http://rdf.wikipathways.org/Pathway/WP4877_r115869/WP/Interaction/c78d1> , <http://rdf.wikipathways.org/Pathway/WP4877_r115869/WP/Interaction/e88fb> , <http://rdf.wikipathways.org/Pathway/WP4877_r115869/WP/Interaction/ac5f2> , <http://rdf.wikipathways.org/Pathway/WP4877_r115869/WP/Interaction/cdc9a> ;
+        dcterms:references  <https://doi.org/10.1101/2020.03.15.20033472> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4877_r115869/Group/d382f> ;
+        wp:participants     <https://identifiers.org/ncbigene/3726> , <https://identifiers.org/ensembl/ENSG00000170345> , <https://identifiers.org/ensembl/ENSG00000177606> .
 
 <http://rdf.wikipathways.org/Pathway/WP4877_r115869/WP/Interaction/ad2dd>
         a                 wp:TranscriptionTranslation , wp:DirectedInteraction , wp:Interaction ;
@@ -619,7 +622,7 @@
 
 <https://doi.org/10.1101/2020.03.15.20033472>
         a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/ensembl/ENSG00000185885> , <https://identifiers.org/ncbigene/3429> , <https://identifiers.org/ncbigene/5599> ;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4877_r115869/Complex/d382f> , <https://identifiers.org/ensembl/ENSG00000185885> , <https://identifiers.org/ncbigene/3429> , <https://identifiers.org/ncbigene/5599> ;
         foaf:page         <https://doi.org/10.1101/2020.03.15.20033472> .
 
 <https://identifiers.org/uniprot/P59635>

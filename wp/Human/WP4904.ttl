@@ -6,6 +6,7 @@
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cito:  <http://purl.org/spar/cito/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
 @prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
@@ -26,6 +27,7 @@
         a                              wp:Complex , wp:DataNode ;
         dcterms:bibliographicCitation  <https://identifiers.org/pubmed/26186194> ;
         dcterms:isPartOf               <https://identifiers.org/wikipathways/WP4904_r114084> ;
+        dcterms:references             <https://identifiers.org/pubmed/26186194> ;
         wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4904_r114084/Group/ea922> ;
         wp:participants                <https://identifiers.org/ensembl/ENSG00000069869> , <https://identifiers.org/ensembl/ENSG00000168675> .
 
@@ -73,6 +75,7 @@
         dc:title               "LDLRAD4 and what we know about it"@en ;
         dcterms:description    "A recent GWAS study was tweeted (https://twitter.com/BrentRichards19/status/1251550109931888643) showing a intronic SNP in LDLRAD4 as relevant. This pathway will summarize what is known of the biological role of this gene and its proteins." ;
         dcterms:identifier     "WP4904"^^xsd:string ;
+        cito:cites             <https://identifiers.org/pubmed/31602316> , <https://identifiers.org/pubmed/28888937> , <https://identifiers.org/pubmed/31819986> , <https://identifiers.org/pubmed/26165754> , <https://identifiers.org/pubmed/19430479> , <https://identifiers.org/pubmed/26186194> , <https://identifiers.org/pubmed/32111819> ;
         wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_0050117> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4904_r114084> ;
         wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_0050117> , <http://purl.obolibrary.org/obo/PW_0000013> ;
@@ -82,9 +85,13 @@
         foaf:page              <http://www.wikipathways.org/instance/WP4904_r114084> .
 
 <https://identifiers.org/pubmed/26186194>
-        a                 wp:PublicationReference ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4904_r114084> ;
-        foaf:page         <http://www.ncbi.nlm.nih.gov/pubmed/26186194> .
+        a                   wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "26186194" ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4904_r114084/Complex/ea922> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q34485581> ;
+        owl:sameAs          <https://doi.org/10.1016%2FJ.CELL.2015.06.043> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/26186194> .
 
 <https://doi.org/10.1038%2FNG.384>
         dc:source           "DOI" ;
@@ -134,6 +141,10 @@
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4904_r114084> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4904_r114084/Interaction/id71ecd0f3> ;
         wp:participants   <https://identifiers.org/wikipathways/WP4217> , <https://identifiers.org/ensembl/ENSG00000069869> .
+
+<https://doi.org/10.1016%2FJ.CELL.2015.06.043>
+        dc:source           "DOI" ;
+        dcterms:identifier  "10.1016/J.CELL.2015.06.043" .
 
 <http://rdf.wikipathways.org/Pathway/WP4904_r114084/WP/Interaction/id4fe61d16>
         a                 wp:DirectedInteraction , wp:Interaction ;

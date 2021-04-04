@@ -6,6 +6,7 @@
 @prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cito:  <http://purl.org/spar/cito/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
 @prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
@@ -1872,6 +1873,7 @@
         dc:title               "A draft map of SARS-COV-2 signaling pathway map"@en ;
         dcterms:description    "A network map of SARS-CoV-2 signaling pathway" , "A schematic representation of the SARS-CoV-2 signaling pathway. The pathway map represents protein-protein interactions and the downstream molecular events regulated by SARS- CoV-2 including molecular association, catalysis, and gene regulation events. Each events are color coded as described in the pathway legend. Information pertaining to site and residue of post-translational modification are also included in the pathway map." ;
         dcterms:identifier     "WP5017"^^xsd:string ;
+        cito:cites             <https://identifiers.org/pubmed/32176772> ;
         wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/DOID_2945> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5017_r115873> ;
         wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000004> , <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/PW_0000024> , <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/DOID_2945> ;
