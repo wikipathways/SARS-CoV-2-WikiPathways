@@ -25,3 +25,7 @@
 * [reports/WP5027.md](reports/WP5027.md)
 * [reports/WP5038.md](reports/WP5038.md)
 * [reports/WP5039.md](reports/WP5039.md)
+* [reports/WP5063.md](reports/WP5063.md)
+* [reports/WP5065.md](reports/WP5065.md)
+* [reports/WP5076.md](reports/WP5076.md)
+
