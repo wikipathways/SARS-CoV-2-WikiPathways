@@ -53,6 +53,11 @@ public class CheckRDF {
 	assertions.addAll(WikidataTests.duplicateWikidataMappings(helper));
 	assertions.addAll(WikidataTests.wikidataIdentifiersWrong(helper));
 	assertions.addAll(WikidataTests.chemspiderCIDWithoutMapping(helper));
+        assertions.addAll(OudatedDataSourcesTests.outdatedUniprot(helper));
+        assertions.addAll(OudatedDataSourcesTests.outdatedUniprot2(helper));
+        assertions.addAll(OudatedDataSourcesTests.outdatedUniprot3(helper));
+        assertions.addAll(OudatedDataSourcesTests.outdatedUniprot4(helper));
+        assertions.addAll(OudatedDataSourcesTests.oldUniprotSwissProt(helper));
 
         assertions.addAll(CovidDiseaseMapsTests.all(helper));
 
