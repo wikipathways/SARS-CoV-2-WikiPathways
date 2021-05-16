@@ -16,51 +16,42 @@
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-<http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/d72a0>
-        a                 wp:Complex , wp:DataNode ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r110321> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Group/d72a0> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000109320> , <https://identifiers.org/ensembl/ENSG00000173039> .
+<https://identifiers.org/ensembl/ENSG00000103490>
+        a                   wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "ASC"^^xsd:string ;
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000103490> ;
+        dc:source           "Ensembl"^^xsd:string ;
+        dcterms:identifier  "ENSG00000103490"^^xsd:string ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/f1f54> , <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000103490> ;
+        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/29108> ;
+        wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/PYCARD> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/H3BP42> , <https://identifiers.org/uniprot/Q9ULZ3> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r116806/DataNode/bbb80> ;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000103490> .
 
-<http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/id38c72c84>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r110321> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Interaction/id38c72c84> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000137752> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/ed3f9> ;
-        wp:source         <https://identifiers.org/ensembl/ENSG00000137752> ;
-        wp:target         <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/ed3f9> .
-
-<http://rdf.wikipathways.org/Pathway/WP4876_r110321/ComplexBinding/b6589>
-        a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r110321> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Group/b6589> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000131323> , <https://identifiers.org/refseq/YP_009724391> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/b6589> .
+<http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/idad3dc034>
+        a                 wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Interaction/idad3dc034> ;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/b6589> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/id56c2671f> ;
+        wp:source         <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/b6589> ;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/id56c2671f> .
 
 <https://identifiers.org/pubmed/16418198>
         a                   wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "16418198" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/idb1ca554> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/idb1ca554> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q41946037> ;
         owl:sameAs          <https://doi.org/10.1093%2FRHEUMATOLOGY%2FKEI282> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16418198> .
 
-<https://identifiers.org/wikipathways/WP4876_r110321>
-        a                      skos:Collection , wp:Pathway ;
-        dc:identifier          <https://identifiers.org/wikipathways/WP4876> ;
-        dc:source              "WikiPathways"^^xsd:string ;
-        dc:title               "Activation of NLRP3 Inflammasome by SARS-CoV-2"@en ;
-        dcterms:description    "Orf3a from SARS-CoV has been shown to bind TRAF3 and activate the NLRP3 inflammasome. The activation occurs at two points. First, by ubiquinating NF-kB (p105) to stimulate its proteolytic processing into mature NF-kB (p50), which can then go on to promote the transcription of pro-IL-1B together with RELA (p65). And second, by ubiquitinating ASC (PYCARD) in the NLRP3 inflammasome, which leads to its degradtion and the activation of caspase-1 (CASP1) that goes on to catalyze the production of mature IL-1B, leading to a cytokine storm. While Orf3a of SARS-CoV-2 only has 72.7% sequence identity with that of SARS-CoV, the TRAF3 binding motif PxQxS is 100% conserved (https://alexanderpico.github.io/SARS-CoV-2_Alignments/#Orf3a). Chloroquine, a multi-functional antiviral, decreases the production of IL-1B by affecting \"the processing of primary transcripts in the nucleus, the transport of processed mRNA to the cytosol, and the degradation of mRNA.\" (Jang 2006)" ;
-        dcterms:identifier     "WP4876"^^xsd:string ;
-        dcterms:references     <https://identifiers.org/pubmed/31034780> ;
-        cito:cites             <https://identifiers.org/pubmed/31034780> , <https://identifiers.org/pubmed/16418198> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/DOID_2945> ;
-        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4876_r110321> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000883> , <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/PW_0000004> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
-        wp:organismName        "Homo sapiens"^^xsd:string ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000883> , <http://purl.obolibrary.org/obo/PW_0000004> ;
-        foaf:page              <http://www.wikipathways.org/instance/WP4876_r110321> .
+<http://rdf.wikipathways.org/Pathway/WP4876_r116806/ComplexBinding/f1f54>
+        a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Group/f1f54> ;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000103490> , <https://identifiers.org/ensembl/ENSG00000162711> , <https://identifiers.org/ensembl/ENSG00000137752> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/f1f54> .
 
 <https://identifiers.org/wikidata/Q422438>
         a                   wp:Metabolite , wp:DataNode ;
@@ -69,7 +60,7 @@
         dc:identifier       <https://identifiers.org/wikidata/Q422438> ;
         dc:source           "Wikidata"^^xsd:string ;
         dcterms:identifier  "Q422438"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/idb1ca554> , <https://identifiers.org/wikipathways/WP4876_r110321> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/idb1ca554> , <https://identifiers.org/wikipathways/WP4876_r116806> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:3638> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/2618> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0014746> ;
@@ -77,8 +68,16 @@
         wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C07625> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID2719> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q422438> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r110321/DataNode/d8fdf> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r116806/DataNode/d8fdf> ;
         foaf:page           <https://scholia.toolforge.org/Q422438> .
+
+<http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/id56c2671f>
+        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Interaction/id56c2671f> ;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000109320> ;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000109320> ;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000109320> .
 
 <https://identifiers.org/ensembl/ENSG00000173039>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -86,48 +85,34 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000173039> ;
         dc:source           "Ensembl"^^xsd:string ;
         dcterms:identifier  "ENSG00000173039"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/d72a0> , <https://identifiers.org/wikipathways/WP4876_r110321> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4876_r116806> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/d72a0> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000173039> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/5970> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/RELA> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/H0YCB4> , <https://identifiers.org/uniprot/E9PMD5> , <https://identifiers.org/uniprot/E9PI38> , <https://identifiers.org/uniprot/E9PM47> , <https://identifiers.org/uniprot/Q04206> , <https://identifiers.org/uniprot/E9PSE4> , <https://identifiers.org/uniprot/E9PQS6> , <https://identifiers.org/uniprot/E9PRX2> , <https://identifiers.org/uniprot/E9PKH5> , <https://identifiers.org/uniprot/E9PJZ9> , <https://identifiers.org/uniprot/E9PN69> , <https://identifiers.org/uniprot/E9PNV4> , <https://identifiers.org/uniprot/E9PJR1> , <https://identifiers.org/uniprot/A0A087WVP0> , <https://identifiers.org/uniprot/A0A087X0W8> , <https://identifiers.org/uniprot/Q2TAM5> , <https://identifiers.org/uniprot/E9PNK5> , <https://identifiers.org/uniprot/E9PKV4> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r110321/DataNode/fe12b> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r116806/DataNode/fe12b> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000173039> .
 
+<http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/f1f54>
+        a                 wp:Complex , wp:DataNode ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Group/f1f54> ;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000103490> , <https://identifiers.org/ensembl/ENSG00000162711> , <https://identifiers.org/ensembl/ENSG00000137752> .
+
 <https://identifiers.org/wikipathways/WP4876>
-        pav:hasVersion  <https://identifiers.org/wikipathways/WP4876_r110321> .
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP4876_r116806> .
 
-<http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/id3a35678b>
-        a                 wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r110321> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Interaction/id3a35678b> ;
-        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/b6589> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/id7ef1c6cf> ;
-        wp:source         <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/b6589> ;
-        wp:target         <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/id7ef1c6cf> .
+<http://rdf.wikipathways.org/Pathway/WP4876_r116806/ComplexBinding/d72a0>
+        a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Group/d72a0> ;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000109320> , <https://identifiers.org/ensembl/ENSG00000173039> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/d72a0> .
 
-<http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/id7ef1c6cf>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r110321> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Interaction/id7ef1c6cf> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000137752> ;
-        wp:source         <https://identifiers.org/ensembl/ENSG00000137752> ;
-        wp:target         <https://identifiers.org/ensembl/ENSG00000137752> .
-
-<http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/ed3f9>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r110321> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Interaction/ed3f9> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000125538> ;
-        wp:source         <https://identifiers.org/ensembl/ENSG00000125538> ;
-        wp:target         <https://identifiers.org/ensembl/ENSG00000125538> .
-
-<http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/id56c2671f>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r110321> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Interaction/id56c2671f> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000109320> ;
-        wp:source         <https://identifiers.org/ensembl/ENSG00000109320> ;
-        wp:target         <https://identifiers.org/ensembl/ENSG00000109320> .
+<http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/d72a0>
+        a                 wp:Complex , wp:DataNode ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Group/d72a0> ;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000109320> , <https://identifiers.org/ensembl/ENSG00000173039> .
 
 <https://identifiers.org/ensembl/ENSG00000137752>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -135,40 +120,37 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000137752> ;
         dc:source           "Ensembl"^^xsd:string ;
         dcterms:identifier  "ENSG00000137752"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/id38c72c84> , <https://identifiers.org/wikipathways/WP4876_r110321> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/id7ef1c6cf> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/f1f54> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/f1f54> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/id7ef1c6cf> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/id38c72c84> , <https://identifiers.org/wikipathways/WP4876_r116806> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000137752> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/834> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/CASP1> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/H0YEC7> , <https://identifiers.org/uniprot/G3V169> , <https://identifiers.org/uniprot/P29466> , <https://identifiers.org/uniprot/B4DVD8> , <https://identifiers.org/uniprot/Q5FBZ0> , <https://identifiers.org/uniprot/A0A1W2PRX7> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r110321/DataNode/b43c2> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/DataNode/a2318> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r116806/DataNode/a2318> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/DataNode/b43c2> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000137752> .
 
-<http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/idb1ca554>
-        a                   wp:Interaction , wp:Inhibition , wp:DirectedInteraction ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4876_r110321> ;
-        dcterms:references  <https://identifiers.org/pubmed/16418198> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Interaction/idb1ca554> ;
-        wp:participants     <https://identifiers.org/wikidata/Q422438> , <https://identifiers.org/ensembl/ENSG00000125538> ;
-        wp:source           <https://identifiers.org/wikidata/Q422438> ;
-        wp:target           <https://identifiers.org/ensembl/ENSG00000125538> .
+<http://rdf.wikipathways.org/Pathway/WP4876_r116806/ComplexBinding/b6589>
+        a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Group/b6589> ;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000131323> , <https://identifiers.org/refseq/YP_009724391> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/b6589> .
 
-<http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/b6589>
-        a                 wp:Complex , wp:DataNode ;
-        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/id3a35678b> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/idad3dc034> , <https://identifiers.org/wikipathways/WP4876_r110321> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Group/b6589> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000131323> , <https://identifiers.org/refseq/YP_009724391> .
+<http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/idaa5a11ed>
+        a                 wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Interaction/idaa5a11ed> ;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000125538> ;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000125538> ;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000125538> .
 
 <https://doi.org/10.1093%2FRHEUMATOLOGY%2FKEI282>
         dc:source           "DOI" ;
         dcterms:identifier  "10.1093/RHEUMATOLOGY/KEI282" .
 
-<http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/idad3dc034>
-        a                 wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r110321> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Interaction/idad3dc034> ;
-        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/b6589> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/id56c2671f> ;
-        wp:source         <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/b6589> ;
-        wp:target         <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/id56c2671f> .
+<http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/b6589>
+        a                 wp:Complex , wp:DataNode ;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/id3a35678b> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/idad3dc034> , <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Group/b6589> ;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000131323> , <https://identifiers.org/refseq/YP_009724391> .
 
 <https://identifiers.org/ensembl/ENSG00000162711>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -176,13 +158,21 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000162711> ;
         dc:source           "Ensembl"^^xsd:string ;
         dcterms:identifier  "ENSG00000162711"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/f1f54> , <https://identifiers.org/wikipathways/WP4876_r110321> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4876_r116806> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/f1f54> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000162711> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/114548> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/NLRP3> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/Q96P20> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r110321/DataNode/e1fdf> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r116806/DataNode/e1fdf> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000162711> .
+
+<http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/ed3f9>
+        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Interaction/ed3f9> ;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000125538> ;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000125538> ;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000125538> .
 
 <https://identifiers.org/refseq/YP_009724391>
         a                   wp:Protein , wp:DataNode ;
@@ -190,34 +180,66 @@
         dc:identifier       <https://identifiers.org/refseq/YP_009724391> ;
         dc:source           "RefSeq"^^xsd:string ;
         dcterms:identifier  "YP_009724391"^^xsd:string ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4876_r110321> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/b6589> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r110321/DataNode/dc9ef> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4876_r116806> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/b6589> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r116806/DataNode/dc9ef> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=YP_009724391> .
 
-<http://rdf.wikipathways.org/Pathway/WP4876_r110321/ComplexBinding/f1f54>
-        a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r110321> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Group/f1f54> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000103490> , <https://identifiers.org/ensembl/ENSG00000162711> , <https://identifiers.org/ensembl/ENSG00000137752> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/f1f54> .
+<http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/id3a35678b>
+        a                 wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Interaction/id3a35678b> ;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/b6589> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/id7ef1c6cf> ;
+        wp:source         <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/b6589> ;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/id7ef1c6cf> .
 
-<http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/f1f54>
-        a                 wp:Complex , wp:DataNode ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r110321> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Group/f1f54> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000103490> , <https://identifiers.org/ensembl/ENSG00000162711> , <https://identifiers.org/ensembl/ENSG00000137752> .
+<http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/id7ef1c6cf>
+        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Interaction/id7ef1c6cf> ;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000137752> ;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000137752> ;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000137752> .
+
+<http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/id38c72c84>
+        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Interaction/id38c72c84> ;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000137752> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/ed3f9> ;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000137752> ;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/ed3f9> .
+
+<http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/idb1ca554>
+        a                   wp:DirectedInteraction , wp:Interaction , wp:Inhibition ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4876_r116806> ;
+        dcterms:references  <https://identifiers.org/pubmed/16418198> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Interaction/idb1ca554> ;
+        wp:participants     <https://identifiers.org/ensembl/ENSG00000125538> , <https://identifiers.org/wikidata/Q422438> ;
+        wp:source           <https://identifiers.org/wikidata/Q422438> ;
+        wp:target           <https://identifiers.org/ensembl/ENSG00000125538> .
+
+<https://identifiers.org/wikipathways/WP4876_r116806>
+        a                      skos:Collection , wp:Pathway ;
+        dc:identifier          <https://identifiers.org/wikipathways/WP4876> ;
+        dc:source              "WikiPathways"^^xsd:string ;
+        dc:title               "Activation of NLRP3 inflammasome by SARS-CoV-2"@en ;
+        dcterms:description    "Orf3a from SARS-CoV has been shown to bind TRAF3 and activate the NLRP3 inflammasome. The activation occurs at two points. First, by ubiquinating NF-kB (p105) to stimulate its proteolytic processing into mature NF-kB (p50), which can then go on to promote the transcription of pro-IL-1B together with RELA (p65). And second, by ubiquitinating ASC (PYCARD) in the NLRP3 inflammasome, which leads to its degradtion and the activation of caspase-1 (CASP1) that goes on to catalyze the production of mature IL-1B, leading to a cytokine storm. While Orf3a of SARS-CoV-2 only has 72.7% sequence identity with that of SARS-CoV, the TRAF3 binding motif PxQxS is 100% conserved (https://alexanderpico.github.io/SARS-CoV-2_Alignments/#Orf3a). Chloroquine, a multi-functional antiviral, decreases the production of IL-1B by affecting \"the processing of primary transcripts in the nucleus, the transport of processed mRNA to the cytosol, and the degradation of mRNA.\" (Jang 2006)" ;
+        dcterms:identifier     "WP4876"^^xsd:string ;
+        dcterms:references     <https://identifiers.org/pubmed/31034780> ;
+        cito:cites             <https://identifiers.org/pubmed/31034780> , <https://identifiers.org/pubmed/16418198> ;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_934> ;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4876_r116806> ;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/PW_0000883> , <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/PW_0000004> ;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:organismName        "Homo sapiens"^^xsd:string ;
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000883> , <http://purl.obolibrary.org/obo/PW_0000004> ;
+        foaf:page              <http://www.wikipathways.org/instance/WP4876_r116806> .
 
 <https://identifiers.org/pubmed/31034780>
         a                   wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "31034780" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4876_r110321> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4876_r116806> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/31034780> .
-
-<http://rdf.wikipathways.org/Pathway/WP4876_r110321/ComplexBinding/d72a0>
-        a                 wp:ComplexBinding , wp:Binding , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r110321> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Group/d72a0> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000109320> , <https://identifiers.org/ensembl/ENSG00000173039> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/d72a0> .
 
 <https://identifiers.org/ensembl/ENSG00000109320>
         a                   wp:DataNode , wp:GeneProduct ;
@@ -225,12 +247,12 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000109320> ;
         dc:source           "Ensembl"^^xsd:string ;
         dcterms:identifier  "ENSG00000109320"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/d72a0> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/id56c2671f> , <https://identifiers.org/wikipathways/WP4876_r110321> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/d72a0> , <https://identifiers.org/wikipathways/WP4876_r116806> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/id56c2671f> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000109320> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/4790> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/NFKB1> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/D6RDI9> , <https://identifiers.org/uniprot/D6RC45> , <https://identifiers.org/uniprot/D6RF93> , <https://identifiers.org/uniprot/P19838> , <https://identifiers.org/uniprot/A0A024RDJ4> , <https://identifiers.org/uniprot/D6RH30> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r110321/DataNode/ae8f7> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/DataNode/dc151> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r116806/DataNode/dc151> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/DataNode/ae8f7> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000109320> .
 
 <https://identifiers.org/ensembl/ENSG00000125538>
@@ -239,21 +261,13 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000125538> ;
         dc:source           "Ensembl"^^xsd:string ;
         dcterms:identifier  "ENSG00000125538"^^xsd:string ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/idb1ca554> , <https://identifiers.org/wikipathways/WP4876_r110321> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/idaa5a11ed> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/ed3f9> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/idb1ca554> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/ed3f9> , <https://identifiers.org/wikipathways/WP4876_r116806> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/WP/Interaction/idaa5a11ed> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000125538> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3553> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/IL1B> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/C9JVK0> , <https://identifiers.org/uniprot/C9JWV2> , <https://identifiers.org/uniprot/C9JSC2> , <https://identifiers.org/uniprot/P01584> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r110321/DataNode/d3559> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/DataNode/a1e57> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/DataNode/b860a> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r116806/DataNode/b860a> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/DataNode/a1e57> , <http://rdf.wikipathways.org/Pathway/WP4876_r116806/DataNode/d3559> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000125538> .
-
-<http://rdf.wikipathways.org/Pathway/WP4876_r110321/WP/Interaction/idaa5a11ed>
-        a                 wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4876_r110321> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Interaction/idaa5a11ed> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000125538> ;
-        wp:source         <https://identifiers.org/ensembl/ENSG00000125538> ;
-        wp:target         <https://identifiers.org/ensembl/ENSG00000125538> .
 
 <https://identifiers.org/ensembl/ENSG00000131323>
         a                   wp:GeneProduct , wp:DataNode ;
@@ -261,24 +275,10 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000131323> ;
         dc:source           "Ensembl"^^xsd:string ;
         dcterms:identifier  "ENSG00000131323"^^xsd:string ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4876_r110321> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/b6589> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4876_r116806/Complex/b6589> , <https://identifiers.org/wikipathways/WP4876_r116806> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000131323> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/7187> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/TRAF3> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/H0YMI8> , <https://identifiers.org/uniprot/A6NHG8> , <https://identifiers.org/uniprot/H0YL26> , <https://identifiers.org/uniprot/H0YL25> , <https://identifiers.org/uniprot/Q13114> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r110321/DataNode/efb77> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r116806/DataNode/efb77> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000131323> .
-
-<https://identifiers.org/ensembl/ENSG00000103490>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "ASC"^^xsd:string ;
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000103490> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000103490"^^xsd:string ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4876_r110321> , <http://rdf.wikipathways.org/Pathway/WP4876_r110321/Complex/f1f54> ;
-        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000103490> ;
-        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/29108> ;
-        wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/PYCARD> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/H3BP42> , <https://identifiers.org/uniprot/Q9ULZ3> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4876_r110321/DataNode/bbb80> ;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000103490> .
