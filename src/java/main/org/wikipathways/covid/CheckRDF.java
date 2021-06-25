@@ -21,13 +21,14 @@ public class CheckRDF {
         String wpFile   = args[0];
         String gpmlFile = wpFile.replace("wp/Human", "wp/gpml/Human");
         String sbmlFile = wpFile.replace("wp/Human", "sbml").replace(".ttl",".sbml");
+        String notesFile = sbmlFile.replace(".sbml",".txt");
         String wpid     = wpFile.substring(9,wpFile.indexOf(".ttl"));
         System.out.println("# WikiPathways " + wpid + "\n");
         System.out.println("* WikiPathways: [" + wpid + "](https://identifiers.org/wikipathways:" + wpid + ")");
         System.out.println("* Scholia: [" + wpid + "](https://scholia.toolforge.org/wikipathways/" + wpid + ")");
         System.out.println("* WPRDF file: [" + wpFile + "](../" + wpFile + ")");
         System.out.println("* GPMLRDF file: [" + gpmlFile + "](../" + gpmlFile + ")");
-        System.out.println("* SBML file: [" + sbmlFile + "](../" + sbmlFile + ")\n");
+        System.out.println("* SBML file: [" + sbmlFile + "](../" + sbmlFile + ") ([conversion notes](../" + notesFile + "))\n");
         List<IAssertion> assertions = new ArrayList<IAssertion>();
         Model loadedData = ModelFactory.createDefaultModel();
         loadedData.read(new FileInputStream(new File(wpFile)), "", "TURTLE");
