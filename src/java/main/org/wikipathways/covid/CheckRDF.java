@@ -23,6 +23,9 @@ public class CheckRDF {
         String sbmlFile = wpFile.replace("wp/Human", "sbml").replace(".ttl",".sbml");
         String notesFile = sbmlFile.replace(".sbml",".txt");
         String wpid     = wpFile.substring(9,wpFile.indexOf(".ttl"));
+        System.out.println("<img style=\"float: right; width: 200px\"");
+        System.out.println("  src=\"https://www.wikipathways.org/img_auth.php/thumb/2/28/Page1-601px-COVID19-Disease-Map-project-icon.pdf.jpg/150px-Page1-601px-COVID19-Disease-Map-project-icon.pdf.jpg\" />");
+
         System.out.println("# WikiPathways " + wpid + "\n");
         System.out.println("* WikiPathways: [" + wpid + "](https://identifiers.org/wikipathways:" + wpid + ")");
         System.out.println("* Scholia: [" + wpid + "](https://scholia.toolforge.org/wikipathways/" + wpid + ")");
