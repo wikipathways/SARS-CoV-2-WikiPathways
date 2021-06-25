@@ -22,6 +22,7 @@ public class CheckRDF {
         String gpmlFile = wpFile.replace("wp/Human", "wp/gpml/Human");
         String sbmlFile = wpFile.replace("wp/Human", "sbml").replace(".ttl",".sbml");
         String notesFile = sbmlFile.replace(".sbml",".txt");
+        String svgFile  = sbmlFile.replace(".sbml",".svg");
         String wpid     = wpFile.substring(9,wpFile.indexOf(".ttl"));
         System.out.println("<img style=\"float: right; width: 200px\"");
         System.out.println("  src=\"https://www.wikipathways.org/img_auth.php/thumb/2/28/Page1-601px-COVID19-Disease-Map-project-icon.pdf.jpg/150px-Page1-601px-COVID19-Disease-Map-project-icon.pdf.jpg\" />");
@@ -31,7 +32,7 @@ public class CheckRDF {
         System.out.println("* Scholia: [" + wpid + "](https://scholia.toolforge.org/wikipathways/" + wpid + ")");
         System.out.println("* WPRDF file: [" + wpFile + "](../" + wpFile + ")");
         System.out.println("* GPMLRDF file: [" + gpmlFile + "](../" + gpmlFile + ")");
-        System.out.println("* SBML file: [" + sbmlFile + "](../" + sbmlFile + ") ([conversion notes](../" + notesFile + "))\n");
+        System.out.println("* SBML file: [" + sbmlFile + "](../" + sbmlFile + ") ([SVG](../" + svgFile + ")) ([conversion notes](../" + notesFile + "))\n");
         List<IAssertion> assertions = new ArrayList<IAssertion>();
         Model loadedData = ModelFactory.createDefaultModel();
         loadedData.read(new FileInputStream(new File(wpFile)), "", "TURTLE");
