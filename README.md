@@ -43,6 +43,7 @@ make
 
 ```shell
 make sbml
+make svg
 ```
 
 ## Step 6: Run the validation and create the reports
