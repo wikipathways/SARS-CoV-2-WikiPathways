@@ -74,3 +74,6 @@ index.md: ${REPORTS}
 	@for report in $(REPORTS) ; do \
 		echo "* [$$report]($$report)" >> index.md ; \
 	done
+
+update:
+	@wget -O src/java/main/org/wikipathways/covid/CheckRDF.java https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/src/java/main/org/wikipathways/covid/CheckRDF.java
