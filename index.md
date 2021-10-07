@@ -1,3 +1,5 @@
+<img style="float: right; width: 200px" src="logo.png" />
+
 # Validation Reports
 
 * [reports/WP4799.md](reports/WP4799.md)
