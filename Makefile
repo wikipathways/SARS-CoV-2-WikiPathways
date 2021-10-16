@@ -65,11 +65,11 @@ src/java/main/org/wikipathways/covid/CheckRDF.class: src/java/main/org/wikipathw
 
 check: ${REPORTS} index.md
 
-reports/%.md: wp/Human/%.ttl wp/gpml/Human/%.ttl src/java/main/org/wikipathways/covid/CheckRDF.class src/java/main/org/wikipathways/covid/CreateGPMLRDF.class
+reports/%.md: wp/Human/%.ttl wp/gpml/Human/%.ttl src/java/main/org/wikipathways/covid/CheckRDF.class
 	@mkdir -p reports
 	@java -cp libs/jena-arq-3.17.0.jar:src/java/main/:libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar org.wikipathways.covid.CheckRDF $< $@
 
-index.md: ${REPORTS}
+index.md:
 	@echo "<img style=\"float: right; width: 200px\" src=\"logo.png\" />" > index.md
 	@echo "# Validation Reports\n" >> index.md
 	@for report in $(REPORTS) ; do \
