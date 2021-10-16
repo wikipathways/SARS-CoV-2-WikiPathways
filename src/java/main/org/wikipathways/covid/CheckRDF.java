@@ -2,6 +2,8 @@ package org.wikipathways.covid;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.Writer;
+import java.io.PrintWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,20 +20,25 @@ public class CheckRDF {
     public static String getHashcode(String string) { return Integer.toHexString(string.hashCode()); }
 
     public static void main(String[] args) throws Exception {
-        String wpFile   = args[0];
+        String wpFile     = args[0];
+        String reportFile = args[1];
         String gpmlFile = wpFile.replace("wp/Human", "wp/gpml/Human");
         String sbmlFile = wpFile.replace("wp/Human", "sbml").replace(".ttl",".sbml");
         String notesFile = sbmlFile.replace(".sbml",".txt");
         String svgFile  = sbmlFile.replace(".sbml",".svg");
         String wpid     = wpFile.substring(9,wpFile.indexOf(".ttl"));
-        System.out.println("<img style=\"float: right; width: 200px\" src=\"../logo.png\" />");
 
-        System.out.println("# WikiPathways " + wpid + "\n");
-        System.out.println("* WikiPathways: [" + wpid + "](https://identifiers.org/wikipathways:" + wpid + ")");
-        System.out.println("* Scholia: [" + wpid + "](https://scholia.toolforge.org/wikipathways/" + wpid + ")");
-        System.out.println("* WPRDF file: [" + wpFile + "](../" + wpFile + ")");
-        System.out.println("* GPMLRDF file: [" + gpmlFile + "](../" + gpmlFile + ")");
-        System.out.println("* SBML file: [" + sbmlFile + "](../" + sbmlFile + ") ([SVG](../" + svgFile + ")) ([conversion notes](../" + notesFile + "))\n");
+        PrintWriter report = new PrintWriter(reportFile);
+        PrintWriter reportStatus = new PrintWriter(reportFile.replace(".md",".txt"));
+
+        report.println("<img style=\"float: right; width: 200px\" src=\"../logo.png\" />");
+
+        report.println("# WikiPathways " + wpid + "\n");
+        report.println("* WikiPathways: [" + wpid + "](https://identifiers.org/wikipathways:" + wpid + ")");
+        report.println("* Scholia: [" + wpid + "](https://scholia.toolforge.org/wikipathways/" + wpid + ")");
+        report.println("* WPRDF file: [" + wpFile + "](../" + wpFile + ")");
+        report.println("* GPMLRDF file: [" + gpmlFile + "](../" + gpmlFile + ")");
+        report.println("* SBML file: [" + sbmlFile + "](../" + sbmlFile + ") ([SVG](../" + svgFile + ")) ([conversion notes](../" + notesFile + "))\n");
         List<IAssertion> assertions = new ArrayList<IAssertion>();
         Model loadedData = ModelFactory.createDefaultModel();
         loadedData.read(new FileInputStream(new File(wpFile)), "", "TURTLE");
@@ -88,7 +95,7 @@ public class CheckRDF {
 
         assertions.addAll(InteractionTests.all(helper));
 
-        System.out.println("## Tests");
+        report.println("## Tests");
 
         List<IAssertion> failedAssertions = new ArrayList<IAssertion>();
         int testClasses = 0;
@@ -111,9 +118,9 @@ public class CheckRDF {
 
                   // only output results when there are fails
                   if (currentTestClassHasFails) {
-                    System.out.println(currentTestClassMessages + message);
+                    report.println(currentTestClassMessages + message);
                   } else {
-                    System.out.println(": all " + testClassTests + " tests OK!");
+                    report.println(": all " + testClassTests + " tests OK!");
                   }
                 }
 
@@ -124,7 +131,7 @@ public class CheckRDF {
                 currentTestClassMessages = "";
                 message = "";
                 testClassTests = 0;
-                System.out.print("* " + currentTestClass);
+                report.print("* " + currentTestClass);
                 currentTestClassHasFails = false;
                 currentTestClassMessages = "";
             }
@@ -202,30 +209,34 @@ public class CheckRDF {
           if (!errors.isEmpty()) message += "\n" + errors;
         }
         if (currentTestClassHasFails) {
-          System.out.println(currentTestClassMessages + message);
+          report.println(currentTestClassMessages + message);
+          reportStatus.println("status=✓");
         } else {
-          System.out.println(": all " + testClassTests + " tests OK!");
+          report.println(": all " + testClassTests + " tests OK!");
+          reportStatus.println("status=⨯");
         }
 
-        System.out.println();
-        System.out.println("\n## Summary\n");
-        System.out.println("* Number of test classes: " + testClasses);
-        System.out.println("* Number of tests: " + tests);
-        System.out.println("* Number of assertions: " + assertions.size());
-        System.out.println("* Number of fails: " + failedAssertions.size());
+        report.println();
+        report.println("\n## Summary\n");
+        report.println("* Number of test classes: " + testClasses);
+        report.println("* Number of tests: " + tests);
+        report.println("* Number of assertions: " + assertions.size());
+        report.println("* Number of fails: " + failedAssertions.size());
 
-        System.out.println("\n## Fails\n");
+        report.println("\n## Fails\n");
         for (IAssertion assertion : failedAssertions) {
-            System.out.println("<a name=\"" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + "\" />\n");
-            System.out.println("## " + assertion.getTestClass() + "." + assertion.getTest());
-            System.out.println("\n" + assertion.getMessage());
+            report.println("<a name=\"" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + "\" />\n");
+            report.println("## " + assertion.getTestClass() + "." + assertion.getTest());
+            report.println("\n" + assertion.getMessage());
             if (assertion.getDetails() != null && !assertion.getDetails().isEmpty()) {
-                System.out.println("```\n" + assertion.getDetails() + "```\n");
+                report.println("```\n" + assertion.getDetails() + "```\n");
                 if (assertion.hasLinkToDocs()) {
-                    System.out.println("More details at [" + assertion.getLinkToDocs() + "](" + assertion.getLinkToDocs() + ")\n");
+                    report.println("More details at [" + assertion.getLinkToDocs() + "](" + assertion.getLinkToDocs() + ")\n");
                 }
             }
         }
+        report.flush(); report.close();
+        reportStatus.flush(); reportStatus.close();
     }
 
 }
