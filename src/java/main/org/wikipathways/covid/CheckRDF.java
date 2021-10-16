@@ -7,9 +7,9 @@ import java.io.PrintWriter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import nl.unimaas.bigcat.wikipathways.curator.assertions.*;
-import nl.unimaas.bigcat.wikipathways.curator.tests.*;
 import nl.unimaas.bigcat.wikipathways.curator.SPARQLHelper;
 
 import org.apache.jena.rdf.model.Model;
@@ -45,55 +45,16 @@ public class CheckRDF {
         loadedData.read(new FileInputStream(new File(gpmlFile)), "", "TURTLE");
 
         SPARQLHelper helper = new SPARQLHelper(loadedData);
-        assertions.addAll(GeneralTests.titlesShortEnough(helper)); // not all GeneralTests
-        assertions.addAll(GeneralTests.weirdCharacterTitles(helper));
-        assertions.addAll(GeneralTests.duplicateTitles(helper));
-        assertions.addAll(GeneralTests.noTags(helper));
-        assertions.addAll(GeneralTests.nullDataSources(helper));
-        assertions.addAll(GeneralTests.undefinedDataSources(helper));
-        assertions.addAll(GeneralTests.undefinedIdentifier(helper));
-        assertions.addAll(GeneralTests.dataNodeWithoutGraphId(helper));
-        assertions.addAll(GeneralTests.groupsHaveDetail(helper));
-        assertions.addAll(GeneralTests.emptyLabelOfNodeWithIdentifier(helper));
-        assertions.addAll(DataNodesTests.all(helper));
-        assertions.addAll(PathwayTests.all(helper));
-        assertions.addAll(ReferencesTests.all(helper));
-	assertions.addAll(WikidataTests.keggWithoutMapping(helper)); // not all
-	assertions.addAll(WikidataTests.pubchemCIDWithoutMapping(helper));
-	assertions.addAll(WikidataTests.hmdbWithoutMapping(helper));
-	assertions.addAll(WikidataTests.casWithoutMapping(helper));
-	assertions.addAll(WikidataTests.wikDataTypo(helper));
-	assertions.addAll(WikidataTests.duplicateWikidataMappings(helper));
-	assertions.addAll(WikidataTests.wikidataIdentifiersWrong(helper));
-	assertions.addAll(WikidataTests.chemspiderCIDWithoutMapping(helper));
-        assertions.addAll(OutdatedDataSourcesTests.outdatedUniprot(helper));
-        assertions.addAll(OutdatedDataSourcesTests.outdatedUniprot2(helper));
-        assertions.addAll(OutdatedDataSourcesTests.outdatedUniprot3(helper));
-        assertions.addAll(OutdatedDataSourcesTests.outdatedUniprot4(helper));
-        assertions.addAll(OutdatedDataSourcesTests.oldUniprotSwissProt(helper));
 
-        assertions.addAll(CovidDiseaseMapsTests.all(helper));
-
-        assertions.addAll(GeneTests.all(helper));
-        assertions.addAll(EnsemblTests.wrongEnsemblIDForHumanSpecies(helper)); // exclude outdatedIdentifiers (not all pathways have many genes)
-        assertions.addAll(EnsemblTests.wrongEnsemblIDForRatSpecies(helper));
-        assertions.addAll(EnsemblTests.wrongEnsemblIDForCowSpecies(helper));
-        assertions.addAll(EnsemblTests.wrongEnsemblIDForMouseSpecies(helper));
-        assertions.addAll(ProteinsTests.all(helper));
-        assertions.addAll(UniProtTests.all(helper));
-
-        assertions.addAll(CASMetabolitesTests.all(helper));
-        assertions.addAll(ChEBIMetabolitesTests.all(helper));
-        assertions.addAll(ChemSpiderTests.all(helper));
-        assertions.addAll(HMDBMetabolitesTests.outdatedIdentifiers(helper)); // not all
-        assertions.addAll(HMDBSecMetabolitesTests.all(helper));
-        assertions.addAll(KEGGMetaboliteTests.all(helper));
-        assertions.addAll(LIPIDMAPSTests.all(helper));
-        assertions.addAll(MetabolitesTests.all(helper));
-        assertions.addAll(MetaboliteStructureTests.all(helper));
-        assertions.addAll(PubChemMetabolitesTests.all(helper));
-
-        assertions.addAll(InteractionTests.all(helper));
+        Scanner testConfigFile = new Scanner(new FileInputStream("tests.txt"));
+        while (testConfigFile.hasNextLine()) {
+            String testConfig = testConfigFile.nextLine().trim();
+            if (!testConfig.startsWith("#")) { // comment lines start with #
+                String[] config = testConfig.split("\\.");
+                Class testClass = Class.forName("nl.unimaas.bigcat.wikipathways.curator.tests." + config[0]);
+                assertions.addAll((List<IAssertion>)testClass.getDeclaredMethod(config[1], SPARQLHelper.class).invoke(null, helper));
+            }
+        }
 
         report.println("## Tests");
 
