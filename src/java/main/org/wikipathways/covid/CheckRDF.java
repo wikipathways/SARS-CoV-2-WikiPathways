@@ -210,10 +210,10 @@ public class CheckRDF {
         }
         if (currentTestClassHasFails) {
           report.println(currentTestClassMessages + message);
-          reportStatus.println("status=✓");
+          reportStatus.println("status=⨯");
         } else {
           report.println(": all " + testClassTests + " tests OK!");
-          reportStatus.println("status=⨯");
+          reportStatus.println("status=✓");
         }
 
         report.println();
