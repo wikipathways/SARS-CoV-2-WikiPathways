@@ -35,12 +35,15 @@ wikipathways-SARS-CoV-2-rdf-gpml.zip: ${GPMLRDFS}
 
 sbml/%.sbml: gpml/%.gpml
 	@mkdir -p sbml
+	@echo "Fetching SBML for $< ..."
 	@curl -X POST --data-binary @$< -H "Content-Type: text/plain" https://minerva-dev.lcsb.uni.lu/minerva/api/convert/GPML:SBML > $@
 
 sbml/%.txt: sbml/%.sbml
+	@echo "Extracting notes for $@ ..."
 	@xpath -e "/sbml/model/notes/body/p/text()" $< > $@ || :
 
 sbml/%.svg: sbml/%.sbml
+	@echo "Fetching SVG for $@ ..."
 	@curl -X POST --data-binary @$< -H "Content-Type: text/plain" https://minerva-service.lcsb.uni.lu/minerva/api/convert/image/SBML:svg > $@
 
 wp/Human/%.ttl: gpml/%.gpml src/java/main/org/wikipathways/covid/CreateRDF.class
