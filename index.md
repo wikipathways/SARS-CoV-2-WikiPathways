@@ -1,9 +1,10 @@
 <img style="float: right; width: 200px" src="logo.png" />
 # Validation Reports
 
+
 The pathways evaluated here are part of the [COVID-19 Disease Map](https://www.embopress.org/doi/full/10.15252/msb.202110387).
 
-* [reports/WP4799.md](reports/WP4799.md) <span style="color:red">⨯</span>
+* [reports/WP4799.md](reports/WP4799.md) <span style="color:green">✓</span>
 * [reports/WP4846.md](reports/WP4846.md) <span style="color:red">⨯</span>
 * [reports/WP4853.md](reports/WP4853.md) <span style="color:red">⨯</span>
 * [reports/WP4860.md](reports/WP4860.md) <span style="color:red">⨯</span>
