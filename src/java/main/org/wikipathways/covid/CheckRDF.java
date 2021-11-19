@@ -204,11 +204,11 @@ public class CheckRDF {
         if (anyTestClassHasFails) {
           reportStatus.println("status=⨯");
           reportJSON.println("  \"message\": \"" + failedAssertions.size() + " errors\",");
-          reportJSON.println("  \"color\": \"red\",");
+          reportJSON.println("  \"color\": \"red\"");
         } else {
           reportStatus.println("status=✓");
           reportJSON.println("  \"message\": \"success\",");
-          reportJSON.println("  \"color\": \"green\",");
+          reportJSON.println("  \"color\": \"green\"");
         }
         reportJSON.println("}");
 
