@@ -78,7 +78,9 @@ index.md: ${REPORTS}
 	@echo "\nThe pathways evaluated here are part of the [COVID-19 Disease Map](https://www.embopress.org/doi/full/10.15252/msb.202110387).\n" >> index.md
 	@for report in $(REPORTS) ; do \
 		echo -n "* [$$report]($$report) " >> index.md ; \
-		echo `echo "$$report" | sed -e 's/.md/.txt/' | xargs cut -d'=' -f2 | sed -e 's/✓/<span style="color:green">✓<\/span>/' | sed -e 's/⨯/<span style="color:red">⨯<\/span>/'` >> index.md ; \
+		echo -n "<img alt=\"pathway status\" src=\"https://img.shields.io/endpoint?url=https://new.wikipathways.org/SARS-CoV-2-WikiPathways/reports/" >> index.md ; \
+		echo -n "`echo "$$report" | sed -e 's/.md//; s/reports\///'`" >> index.md ; \
+                echo ".json\">" >> index.md ; \
 	done
 
 update:
