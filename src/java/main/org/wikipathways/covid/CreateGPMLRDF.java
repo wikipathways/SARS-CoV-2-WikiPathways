@@ -31,7 +31,7 @@ public class CreateGPMLRDF {
         Pathway pathway = PathwayReader.readPathway(input);
         input.close();
 
-        Model model = GpmlConverter.convertGpml(pathway, wpid, rev);
+        Model model = GpmlConverter.convertGpml(pathway, wpid, rev, Collections.<String>emptyList());
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         model.write(output, "TURTLE");
         System.out.print(new String(output.toByteArray()));
