@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<!-- Created by minerva version 16.0.3 on 2021-11-24 at 09:11:02 CET with JSBML version 1.5. -->
+<!-- Created by minerva version 16.0.3 on 2021-11-26 at 17:03:40 CET with JSBML version 1.5. -->
 <sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" layout:required="false" level="3" multi:required="true" render:required="false" version="2" xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1" xmlns:render="http://www.sbml.org/sbml/level3/version1/render/version1">
   <model areaUnits="area_unit" extentUnits="mole" lengthUnits="metre" substanceUnits="mole" timeUnits="second" volumeUnits="litre">
     <notes>
@@ -10,18 +10,18 @@
 [TBAR:idf8eda287]	Invalid interaction type.
 [STIMULATION:idfa0e6009]	Invalid interaction type.
 [:c9c43]	 Shape can not be part of reaction. Tranforming to Unknown
+[:d8199]	OVAL cannot be part of a complex. Skipping.
+[:d7b3e]	OVAL cannot be part of a complex. Skipping.
+[:fda86]	OVAL cannot be part of a complex. Skipping.
+[:e53de]	OVAL cannot be part of a complex. Skipping.
 [:d54da]	OVAL cannot be part of a complex. Skipping.
-[:aa83a]	OVAL cannot be part of a complex. Skipping.
-[:e6946]	OVAL cannot be part of a complex. Skipping.
+[:c3e72]	OVAL cannot be part of a complex. Skipping.
+[:ba4a3]	OVAL cannot be part of a complex. Skipping.
 [:b826f]	OVAL cannot be part of a complex. Skipping.
 [:e3aaf]	OVAL cannot be part of a complex. Skipping.
-[:fda86]	OVAL cannot be part of a complex. Skipping.
-[:ba4a3]	OVAL cannot be part of a complex. Skipping.
 [:cbc01]	OVAL cannot be part of a complex. Skipping.
-[:c3e72]	OVAL cannot be part of a complex. Skipping.
-[:e53de]	OVAL cannot be part of a complex. Skipping.
-[:d8199]	OVAL cannot be part of a complex. Skipping.
-[:d7b3e]	OVAL cannot be part of a complex. Skipping.</p>
+[:aa83a]	OVAL cannot be part of a complex. Skipping.
+[:e6946]	OVAL cannot be part of a complex. Skipping.</p>
 </body>
     </notes>
     <annotation>
@@ -46,13 +46,13 @@
               <render:colorDefinition render:id="color_FFF5FDFE" render:value="#F5FDFEFF"/>
               <render:colorDefinition render:id="color_FFCCCCCC" render:value="#CCCCCCFF"/>
               <render:colorDefinition render:id="color_FFFFCC00" render:value="#FFCC00FF"/>
-              <render:colorDefinition render:id="color_FFF8F7F0" render:value="#F8F7F0FF"/>
-              <render:colorDefinition render:id="color_FF000000" render:value="#000000FF"/>
               <render:colorDefinition render:id="color_FFFFFFFF" render:value="#FFFFFFFF"/>
               <render:colorDefinition render:id="color_FF0000FF" render:value="#0000FFFF"/>
+              <render:colorDefinition render:id="color_FF000000" render:value="#000000FF"/>
               <render:colorDefinition render:id="color_00000000" render:value="#00000000"/>
-              <render:colorDefinition render:id="color_FFFF3300" render:value="#FF3300FF"/>
+              <render:colorDefinition render:id="color_FFF8F7F0" render:value="#F8F7F0FF"/>
               <render:colorDefinition render:id="color_FF00CC33" render:value="#00CC33FF"/>
+              <render:colorDefinition render:id="color_FFFF3300" render:value="#FF3300FF"/>
             </render:listOfColorDefinitions>
             <render:listOfLineEndings>
               <render:lineEnding render:id="line_ending_NONE">
@@ -83,20 +83,6 @@
                   <render:ellipse render:cx="0" render:cy="0" render:rx="4" render:ry="4"/>
                 </render:g>
               </render:lineEnding>
-              <render:lineEnding render:id="line_ending_CROSSBAR">
-                <layout:boundingBox>
-                  <layout:position layout:x="0" layout:y="-6" layout:z="0"/>
-                  <layout:dimensions layout:height="12" layout:width="1"/>
-                </layout:boundingBox>
-                <render:g>
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="0" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="0" render:y="100%" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
-                </render:g>
-              </render:lineEnding>
               <render:lineEnding render:id="line_ending_BLANK">
                 <layout:boundingBox>
                   <layout:position layout:x="-12" layout:y="-6" layout:z="0"/>
@@ -109,6 +95,20 @@
                       <render:element render:x="100%" render:y="50%" xsi:type="RenderPoint"/>
                       <render:element render:x="0" render:y="100%" xsi:type="RenderPoint"/>
                       <render:element render:x="0" render:y="0" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
+                </render:g>
+              </render:lineEnding>
+              <render:lineEnding render:id="line_ending_CROSSBAR">
+                <layout:boundingBox>
+                  <layout:position layout:x="0" layout:y="-6" layout:z="0"/>
+                  <layout:dimensions layout:height="12" layout:width="1"/>
+                </layout:boundingBox>
+                <render:g>
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="0" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="0" render:y="100%" xsi:type="RenderPoint"/>
                     </render:listOfElements>
                   </render:polygon>
                 </render:g>
@@ -131,28 +131,20 @@
               </render:lineEnding>
             </render:listOfLineEndings>
             <render:listOfStyles>
-              <render:style render:idList="e53de">
+              <render:style render:idList="e3aaf">
                 <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FF808080" render:stroke-width="0">
                   <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
                 </render:g>
               </render:style>
-              <render:style render:idList="text_e53de">
+              <render:style render:idList="text_e3aaf">
                 <render:g render:stroke="color_FFFF0000" render:text-anchor="start" render:vtext-anchor="top"/>
               </render:style>
-              <render:style render:idList="e6946">
+              <render:style render:idList="cbc01">
                 <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FF808080" render:stroke-width="0">
                   <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
                 </render:g>
               </render:style>
-              <render:style render:idList="text_e6946">
-                <render:g render:stroke="color_FFFF0000" render:text-anchor="start" render:vtext-anchor="top"/>
-              </render:style>
-              <render:style render:idList="d8199">
-                <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FF808080" render:stroke-width="0">
-                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_d8199">
+              <render:style render:idList="text_cbc01">
                 <render:g render:stroke="color_FFFF0000" render:text-anchor="start" render:vtext-anchor="top"/>
               </render:style>
               <render:style render:idList="d9375">
@@ -163,36 +155,12 @@
               <render:style render:idList="text_d9375">
                 <render:g render:stroke="color_FFCCCCCC" render:text-anchor="start" render:vtext-anchor="top"/>
               </render:style>
-              <render:style render:idList="fda86">
+              <render:style render:idList="d7b3e">
                 <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FF808080" render:stroke-width="0">
                   <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
                 </render:g>
               </render:style>
-              <render:style render:idList="text_fda86">
-                <render:g render:stroke="color_FFFF0000" render:text-anchor="start" render:vtext-anchor="top"/>
-              </render:style>
-              <render:style render:idList="d54da">
-                <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FF808080" render:stroke-width="0">
-                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_d54da">
-                <render:g render:stroke="color_FFFFCC00" render:text-anchor="start" render:vtext-anchor="top"/>
-              </render:style>
-              <render:style render:idList="cbc01">
-                <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FF808080" render:stroke-width="0">
-                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_cbc01">
-                <render:g render:stroke="color_FFFF0000" render:text-anchor="start" render:vtext-anchor="top"/>
-              </render:style>
-              <render:style render:idList="e3aaf">
-                <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FF808080" render:stroke-width="0">
-                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_e3aaf">
+              <render:style render:idList="text_d7b3e">
                 <render:g render:stroke="color_FFFF0000" render:text-anchor="start" render:vtext-anchor="top"/>
               </render:style>
               <render:style render:idList="b826f">
@@ -201,6 +169,14 @@
                 </render:g>
               </render:style>
               <render:style render:idList="text_b826f">
+                <render:g render:stroke="color_FFFF0000" render:text-anchor="start" render:vtext-anchor="top"/>
+              </render:style>
+              <render:style render:idList="d8199">
+                <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FF808080" render:stroke-width="0">
+                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_d8199">
                 <render:g render:stroke="color_FFFF0000" render:text-anchor="start" render:vtext-anchor="top"/>
               </render:style>
               <render:style render:idList="c3e72">
@@ -219,14 +195,6 @@
               <render:style render:idList="text_ba4a3">
                 <render:g render:stroke="color_FFFF0000" render:text-anchor="start" render:vtext-anchor="top"/>
               </render:style>
-              <render:style render:idList="d7b3e">
-                <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FF808080" render:stroke-width="0">
-                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_d7b3e">
-                <render:g render:stroke="color_FFFF0000" render:text-anchor="start" render:vtext-anchor="top"/>
-              </render:style>
               <render:style render:idList="aa83a">
                 <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FF808080" render:stroke-width="0">
                   <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
@@ -234,6 +202,135 @@
               </render:style>
               <render:style render:idList="text_aa83a">
                 <render:g render:stroke="color_FFFF0000" render:text-anchor="start" render:vtext-anchor="top"/>
+              </render:style>
+              <render:style render:idList="e6946">
+                <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FF808080" render:stroke-width="0">
+                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_e6946">
+                <render:g render:stroke="color_FFFF0000" render:text-anchor="start" render:vtext-anchor="top"/>
+              </render:style>
+              <render:style render:idList="d54da">
+                <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FF808080" render:stroke-width="0">
+                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_d54da">
+                <render:g render:stroke="color_FFFFCC00" render:text-anchor="start" render:vtext-anchor="top"/>
+              </render:style>
+              <render:style render:idList="fda86">
+                <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FF808080" render:stroke-width="0">
+                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_fda86">
+                <render:g render:stroke="color_FFFF0000" render:text-anchor="start" render:vtext-anchor="top"/>
+              </render:style>
+              <render:style render:idList="e53de">
+                <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FF808080" render:stroke-width="0">
+                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_e53de">
+                <render:g render:stroke="color_FFFF0000" render:text-anchor="start" render:vtext-anchor="top"/>
+              </render:style>
+              <render:style render:idList="c9c43">
+                <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FFFF0000" render:stroke-width="1">
+                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%" render:stroke="color_FF808080"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_c9c43">
+                <render:g render:stroke="color_FFFF0000" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="bab13">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF0000FF" render:stroke-width="1">
+                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_bab13">
+                <render:g render:stroke="color_FF0000FF" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="ebb43">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_ebb43">
+                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="e166c">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF0000FF" render:stroke-width="1">
+                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_e166c">
+                <render:g render:stroke="color_FF0000FF" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="f34cf">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF0000FF" render:stroke-width="1">
+                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_f34cf">
+                <render:g render:stroke="color_FF0000FF" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="f86f8">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_f86f8">
+                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="ad44a">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF0000FF" render:stroke-width="1">
+                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_ad44a">
+                <render:g render:stroke="color_FF0000FF" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="e2b6c">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_e2b6c">
+                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="b3515">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF0000FF" render:stroke-width="1">
+                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_b3515">
+                <render:g render:stroke="color_FF0000FF" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="a6535">
+                <render:g render:fill="color_00000000" render:font-size="24" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="0" render:y="35" xsi:type="RenderPoint"/>
+                      <render:element render:x="35" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="144" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="179" render:y="35" xsi:type="RenderPoint"/>
+                      <render:element render:x="144" render:y="70" xsi:type="RenderPoint"/>
+                      <render:element render:x="35" render:y="70" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_a6535">
+                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="c8f71">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_c8f71">
+                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
               <render:style render:idList="df627">
                 <render:g render:fill="color_FFF8F7F0" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
@@ -252,103 +349,6 @@
                 </render:g>
               </render:style>
               <render:style render:idList="text_df627">
-                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="f34cf">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF0000FF" render:stroke-width="1">
-                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_f34cf">
-                <render:g render:stroke="color_FF0000FF" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="e2b6c">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_e2b6c">
-                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="ebb43">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_ebb43">
-                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="f86f8">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_f86f8">
-                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="ad44a">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF0000FF" render:stroke-width="1">
-                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_ad44a">
-                <render:g render:stroke="color_FF0000FF" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="c8f71">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_c8f71">
-                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="e166c">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF0000FF" render:stroke-width="1">
-                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_e166c">
-                <render:g render:stroke="color_FF0000FF" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="b3515">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF0000FF" render:stroke-width="1">
-                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_b3515">
-                <render:g render:stroke="color_FF0000FF" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="c9c43">
-                <render:g render:fill="color_FF808080" render:font-size="12" render:stroke="color_FFFF0000" render:stroke-width="1">
-                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%" render:stroke="color_FF808080"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_c9c43">
-                <render:g render:stroke="color_FFFF0000" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="bab13">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF0000FF" render:stroke-width="1">
-                  <render:ellipse render:cx="50%" render:cy="50%" render:rx="50%" render:ry="50%"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_bab13">
-                <render:g render:stroke="color_FF0000FF" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="a6535">
-                <render:g render:fill="color_00000000" render:font-size="24" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="0" render:y="35" xsi:type="RenderPoint"/>
-                      <render:element render:x="35" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="144" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="179" render:y="35" xsi:type="RenderPoint"/>
-                      <render:element render:x="144" render:y="70" xsi:type="RenderPoint"/>
-                      <render:element render:x="35" render:y="70" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_a6535">
                 <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
               <render:style render:idList="node_1">
@@ -373,69 +373,12 @@
                 </render:g>
               </render:style>
               <render:style render:idList="node_5">
-                <render:g render:endHead="line_ending_NONE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="node_6">
-                <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="node_7">
-                <render:g render:endHead="line_ending_CIRCLE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="a2a1e_4">
-                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="590" render:y="190" xsi:type="RenderPoint"/>
-                      <render:element render:x="580" render:y="190" xsi:type="RenderPoint"/>
-                      <render:element render:x="580" render:y="180" xsi:type="RenderPoint"/>
-                      <render:element render:x="590" render:y="180" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
-                </render:g>
-              </render:style>
-              <render:style render:idList="node_9">
-                <render:g render:endHead="line_ending_NONE" render:fill="color_FFFF3300" render:stroke="color_FFFF3300" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="node_10">
-                <render:g render:endHead="line_ending_CROSSBAR" render:fill="color_FFFF3300" render:stroke="color_FFFF3300" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="id1fae067f_8">
-                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FFFF3300" render:stroke-width="1">
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="567" render:y="443" xsi:type="RenderPoint"/>
-                      <render:element render:x="567" render:y="453" xsi:type="RenderPoint"/>
-                      <render:element render:x="557" render:y="453" xsi:type="RenderPoint"/>
-                      <render:element render:x="557" render:y="443" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
-                </render:g>
-              </render:style>
-              <render:style render:idList="node_12">
-                <render:g render:endHead="line_ending_NONE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="node_13">
-                <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="idc4c8fdab_11">
-                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="738" render:y="135" xsi:type="RenderPoint"/>
-                      <render:element render:x="739" render:y="145" xsi:type="RenderPoint"/>
-                      <render:element render:x="729" render:y="145" xsi:type="RenderPoint"/>
-                      <render:element render:x="728" render:y="135" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
-                </render:g>
-              </render:style>
-              <render:style render:idList="node_15">
                 <render:g render:endHead="line_ending_NONE" render:fill="color_FF00CC33" render:stroke="color_FF00CC33" render:stroke-width="1"/>
               </render:style>
-              <render:style render:idList="node_16">
+              <render:style render:idList="node_6">
                 <render:g render:endHead="line_ending_BLANK" render:fill="color_FF00CC33" render:stroke="color_FF00CC33" render:stroke-width="1"/>
               </render:style>
-              <render:style render:idList="idcc7fc0b6_14">
+              <render:style render:idList="idcc7fc0b6_4">
                 <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF00CC33" render:stroke-width="1">
                   <render:polygon>
                     <render:listOfElements>
@@ -447,70 +390,13 @@
                   </render:polygon>
                 </render:g>
               </render:style>
-              <render:style render:idList="node_18">
-                <render:g render:endHead="line_ending_NONE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="node_19">
-                <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="node_20">
-                <render:g render:endHead="line_ending_CIRCLE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="idc0a82d8_17">
-                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="739" render:y="233" xsi:type="RenderPoint"/>
-                      <render:element render:x="739" render:y="243" xsi:type="RenderPoint"/>
-                      <render:element render:x="729" render:y="243" xsi:type="RenderPoint"/>
-                      <render:element render:x="729" render:y="233" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
-                </render:g>
-              </render:style>
-              <render:style render:idList="node_22">
-                <render:g render:endHead="line_ending_NONE" render:fill="color_FF00CC33" render:stroke="color_FF00CC33" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="node_23">
-                <render:g render:endHead="line_ending_BLANK" render:fill="color_FF00CC33" render:stroke="color_FF00CC33" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="idfa0e6009_21">
-                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF00CC33" render:stroke-width="1">
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="1014" render:y="386" xsi:type="RenderPoint"/>
-                      <render:element render:x="1014" render:y="396" xsi:type="RenderPoint"/>
-                      <render:element render:x="1004" render:y="396" xsi:type="RenderPoint"/>
-                      <render:element render:x="1004" render:y="386" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
-                </render:g>
-              </render:style>
-              <render:style render:idList="node_25">
+              <render:style render:idList="node_8">
                 <render:g render:endHead="line_ending_NONE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-dasharray="8, 8" render:stroke-width="1"/>
               </render:style>
-              <render:style render:idList="node_26">
-                <render:g render:endHead="line_ending_OPEN" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-dasharray="8, 8" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="idaa16182f_24">
-                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-dasharray="8, 8" render:stroke-width="1">
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="893" render:y="563" xsi:type="RenderPoint"/>
-                      <render:element render:x="896" render:y="572" xsi:type="RenderPoint"/>
-                      <render:element render:x="887" render:y="576" xsi:type="RenderPoint"/>
-                      <render:element render:x="883" render:y="567" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
-                </render:g>
-              </render:style>
-              <render:style render:idList="node_28">
-                <render:g render:endHead="line_ending_NONE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-dasharray="8, 8" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="node_29">
+              <render:style render:idList="node_9">
                 <render:g render:endHead="line_ending_CROSSBAR" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-dasharray="8, 8" render:stroke-width="1"/>
               </render:style>
-              <render:style render:idList="idf8eda287_27">
+              <render:style render:idList="idf8eda287_7">
                 <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-dasharray="8, 8" render:stroke-width="1">
                   <render:polygon>
                     <render:listOfElements>
@@ -522,26 +408,134 @@
                   </render:polygon>
                 </render:g>
               </render:style>
+              <render:style render:idList="node_11">
+                <render:g render:endHead="line_ending_NONE" render:fill="color_FFFF3300" render:stroke="color_FFFF3300" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="node_12">
+                <render:g render:endHead="line_ending_CROSSBAR" render:fill="color_FFFF3300" render:stroke="color_FFFF3300" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="id1fae067f_10">
+                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FFFF3300" render:stroke-width="1">
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="567" render:y="443" xsi:type="RenderPoint"/>
+                      <render:element render:x="567" render:y="453" xsi:type="RenderPoint"/>
+                      <render:element render:x="557" render:y="453" xsi:type="RenderPoint"/>
+                      <render:element render:x="557" render:y="443" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
+                </render:g>
+              </render:style>
+              <render:style render:idList="node_14">
+                <render:g render:endHead="line_ending_NONE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-dasharray="8, 8" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="node_15">
+                <render:g render:endHead="line_ending_OPEN" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-dasharray="8, 8" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="idaa16182f_13">
+                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-dasharray="8, 8" render:stroke-width="1">
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="893" render:y="563" xsi:type="RenderPoint"/>
+                      <render:element render:x="896" render:y="572" xsi:type="RenderPoint"/>
+                      <render:element render:x="887" render:y="576" xsi:type="RenderPoint"/>
+                      <render:element render:x="883" render:y="567" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
+                </render:g>
+              </render:style>
+              <render:style render:idList="node_17">
+                <render:g render:endHead="line_ending_NONE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="node_18">
+                <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="node_19">
+                <render:g render:endHead="line_ending_CIRCLE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="idc0a82d8_16">
+                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="739" render:y="233" xsi:type="RenderPoint"/>
+                      <render:element render:x="739" render:y="243" xsi:type="RenderPoint"/>
+                      <render:element render:x="729" render:y="243" xsi:type="RenderPoint"/>
+                      <render:element render:x="729" render:y="233" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
+                </render:g>
+              </render:style>
+              <render:style render:idList="node_21">
+                <render:g render:endHead="line_ending_NONE" render:fill="color_FF00CC33" render:stroke="color_FF00CC33" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="node_22">
+                <render:g render:endHead="line_ending_BLANK" render:fill="color_FF00CC33" render:stroke="color_FF00CC33" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="idfa0e6009_20">
+                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF00CC33" render:stroke-width="1">
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="1014" render:y="386" xsi:type="RenderPoint"/>
+                      <render:element render:x="1014" render:y="396" xsi:type="RenderPoint"/>
+                      <render:element render:x="1004" render:y="396" xsi:type="RenderPoint"/>
+                      <render:element render:x="1004" render:y="386" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
+                </render:g>
+              </render:style>
+              <render:style render:idList="node_24">
+                <render:g render:endHead="line_ending_NONE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="node_25">
+                <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="node_26">
+                <render:g render:endHead="line_ending_CIRCLE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="a2a1e_23">
+                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="590" render:y="190" xsi:type="RenderPoint"/>
+                      <render:element render:x="580" render:y="190" xsi:type="RenderPoint"/>
+                      <render:element render:x="580" render:y="180" xsi:type="RenderPoint"/>
+                      <render:element render:x="590" render:y="180" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
+                </render:g>
+              </render:style>
+              <render:style render:idList="node_28">
+                <render:g render:endHead="line_ending_NONE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="node_29">
+                <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="idc4c8fdab_27">
+                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="738" render:y="135" xsi:type="RenderPoint"/>
+                      <render:element render:x="739" render:y="145" xsi:type="RenderPoint"/>
+                      <render:element render:x="729" render:y="145" xsi:type="RenderPoint"/>
+                      <render:element render:x="728" render:y="135" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
+                </render:g>
+              </render:style>
             </render:listOfStyles>
           </render:renderInformation>
         </render:listOfRenderInformation>
         <layout:dimensions layout:height="727" layout:width="1271"/>
         <layout:listOfCompartmentGlyphs>
-          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="e53de">
+          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="e3aaf">
             <layout:boundingBox>
-              <layout:position layout:x="329.1670720998774" layout:y="369.29977691986636" layout:z="36188"/>
+              <layout:position layout:x="355.1670720998774" layout:y="342.29977691986636" layout:z="36189"/>
               <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:compartmentGlyph>
-          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="e6946">
+          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="cbc01">
             <layout:boundingBox>
-              <layout:position layout:x="426.16707209987703" layout:y="342.29977691986636" layout:z="36191"/>
-              <layout:dimensions layout:height="11" layout:width="11.5"/>
-            </layout:boundingBox>
-          </layout:compartmentGlyph>
-          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="d8199">
-            <layout:boundingBox>
-              <layout:position layout:x="389.1670720998773" layout:y="334.29977691986636" layout:z="36190"/>
+              <layout:position layout:x="322.1670720998774" layout:y="406.2997769198663" layout:z="36187"/>
               <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:compartmentGlyph>
@@ -551,33 +545,21 @@
               <layout:dimensions layout:height="183.0827921131511" layout:width="828.9115500733301"/>
             </layout:boundingBox>
           </layout:compartmentGlyph>
-          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="fda86">
+          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="d7b3e">
             <layout:boundingBox>
-              <layout:position layout:x="361.1670720998774" layout:y="467.29977691986625" layout:z="36192"/>
-              <layout:dimensions layout:height="11" layout:width="11.5"/>
-            </layout:boundingBox>
-          </layout:compartmentGlyph>
-          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="d54da">
-            <layout:boundingBox>
-              <layout:position layout:x="359.1670720998774" layout:y="372.7997769198664" layout:z="16384"/>
-              <layout:dimensions layout:height="68.5" layout:width="76.5"/>
-            </layout:boundingBox>
-          </layout:compartmentGlyph>
-          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="cbc01">
-            <layout:boundingBox>
-              <layout:position layout:x="322.1670720998774" layout:y="406.2997769198663" layout:z="36187"/>
-              <layout:dimensions layout:height="11" layout:width="11.5"/>
-            </layout:boundingBox>
-          </layout:compartmentGlyph>
-          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="e3aaf">
-            <layout:boundingBox>
-              <layout:position layout:x="355.1670720998774" layout:y="342.29977691986636" layout:z="36189"/>
+              <layout:position layout:x="403.16707209987726" layout:y="469.29977691986625" layout:z="36193"/>
               <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:compartmentGlyph>
           <layout:compartmentGlyph layout:compartment="comp_0" layout:id="b826f">
             <layout:boundingBox>
               <layout:position layout:x="455.16707209987703" layout:y="361.29977691986625" layout:z="36185"/>
+              <layout:dimensions layout:height="11" layout:width="11.5"/>
+            </layout:boundingBox>
+          </layout:compartmentGlyph>
+          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="d8199">
+            <layout:boundingBox>
+              <layout:position layout:x="389.1670720998773" layout:y="334.29977691986636" layout:z="36190"/>
               <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:compartmentGlyph>
@@ -593,15 +575,33 @@
               <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:compartmentGlyph>
-          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="d7b3e">
-            <layout:boundingBox>
-              <layout:position layout:x="403.16707209987726" layout:y="469.29977691986625" layout:z="36193"/>
-              <layout:dimensions layout:height="11" layout:width="11.5"/>
-            </layout:boundingBox>
-          </layout:compartmentGlyph>
           <layout:compartmentGlyph layout:compartment="comp_0" layout:id="aa83a">
             <layout:boundingBox>
               <layout:position layout:x="460.16707209987703" layout:y="430.2997769198663" layout:z="36183"/>
+              <layout:dimensions layout:height="11" layout:width="11.5"/>
+            </layout:boundingBox>
+          </layout:compartmentGlyph>
+          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="e6946">
+            <layout:boundingBox>
+              <layout:position layout:x="426.16707209987703" layout:y="342.29977691986636" layout:z="36191"/>
+              <layout:dimensions layout:height="11" layout:width="11.5"/>
+            </layout:boundingBox>
+          </layout:compartmentGlyph>
+          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="d54da">
+            <layout:boundingBox>
+              <layout:position layout:x="359.1670720998774" layout:y="372.7997769198664" layout:z="16384"/>
+              <layout:dimensions layout:height="68.5" layout:width="76.5"/>
+            </layout:boundingBox>
+          </layout:compartmentGlyph>
+          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="fda86">
+            <layout:boundingBox>
+              <layout:position layout:x="361.1670720998774" layout:y="467.29977691986625" layout:z="36192"/>
+              <layout:dimensions layout:height="11" layout:width="11.5"/>
+            </layout:boundingBox>
+          </layout:compartmentGlyph>
+          <layout:compartmentGlyph layout:compartment="comp_0" layout:id="e53de">
+            <layout:boundingBox>
+              <layout:position layout:x="329.1670720998774" layout:y="369.29977691986636" layout:z="36188"/>
               <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:compartmentGlyph>
@@ -613,52 +613,52 @@
           </layout:compartmentGlyph>
         </layout:listOfCompartmentGlyphs>
         <layout:listOfSpeciesGlyphs>
-          <layout:speciesGlyph layout:id="df627" layout:species="species_0">
+          <layout:speciesGlyph layout:id="c9c43" layout:species="species_0">
             <layout:boundingBox>
-              <layout:position layout:x="314.1670720998774" layout:y="326.29977691986636" layout:z="36181"/>
-              <layout:dimensions layout:height="161.9999999999999" layout:width="169.49999999999966"/>
+              <layout:position layout:x="464.16707209987703" layout:y="399.2997769198663" layout:z="36182"/>
+              <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="f34cf" layout:species="species_1">
+          <layout:speciesGlyph layout:id="bab13" layout:species="species_1">
             <layout:boundingBox>
-              <layout:position layout:x="679.9601886714266" layout:y="366.95710392722305" layout:z="-5"/>
+              <layout:position layout:x="679.8366974332773" layout:y="270.6013336253341" layout:z="-7"/>
               <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="e2b6c" layout:species="species_2">
-            <layout:boundingBox>
-              <layout:position layout:x="835.3541270297532" layout:y="482.51905157323347" layout:z="32768"/>
-              <layout:dimensions layout:height="61.3336336993998" layout:width="88.10043252713581"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="ebb43" layout:species="species_3">
+          <layout:speciesGlyph layout:id="ebb43" layout:species="species_2">
             <layout:boundingBox>
               <layout:position layout:x="1114.409318921931" layout:y="483.51479926807656" layout:z="32769"/>
               <layout:dimensions layout:height="63.76697904737557" layout:width="96.46967566612147"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="f86f8" layout:species="species_4">
+          <layout:speciesGlyph layout:id="e166c" layout:species="species_3">
+            <layout:boundingBox>
+              <layout:position layout:x="437.10331604137434" layout:y="157.50072087855835" layout:z="36203"/>
+              <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="f34cf" layout:species="species_4">
+            <layout:boundingBox>
+              <layout:position layout:x="679.9601886714266" layout:y="366.95710392722305" layout:z="-5"/>
+              <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="f86f8" layout:species="species_5">
             <layout:boundingBox>
               <layout:position layout:x="537.8995429945682" layout:y="481.8690335512707" layout:z="32768"/>
               <layout:dimensions layout:height="63.76697904737557" layout:width="95.92898335917675"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="ad44a" layout:species="species_5">
+          <layout:speciesGlyph layout:id="ad44a" layout:species="species_6">
             <layout:boundingBox>
               <layout:position layout:x="679.9445801613858" layout:y="157.50072087855835" layout:z="-6"/>
               <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="c8f71" layout:species="species_6">
+          <layout:speciesGlyph layout:id="e2b6c" layout:species="species_7">
             <layout:boundingBox>
-              <layout:position layout:x="964.5880490805766" layout:y="482.78567018132946" layout:z="32771"/>
+              <layout:position layout:x="835.3541270297532" layout:y="482.51905157323347" layout:z="32768"/>
               <layout:dimensions layout:height="61.3336336993998" layout:width="88.10043252713581"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="e166c" layout:species="species_7">
-            <layout:boundingBox>
-              <layout:position layout:x="437.10331604137434" layout:y="157.50072087855835" layout:z="36203"/>
-              <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
           <layout:speciesGlyph layout:id="b3515" layout:species="species_8">
@@ -667,22 +667,22 @@
               <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="c9c43" layout:species="species_9">
-            <layout:boundingBox>
-              <layout:position layout:x="464.16707209987703" layout:y="399.2997769198663" layout:z="36182"/>
-              <layout:dimensions layout:height="11" layout:width="11.5"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="bab13" layout:species="species_10">
-            <layout:boundingBox>
-              <layout:position layout:x="679.8366974332773" layout:y="270.6013336253341" layout:z="-7"/>
-              <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="a6535" layout:species="species_11">
+          <layout:speciesGlyph layout:id="a6535" layout:species="species_9">
             <layout:boundingBox>
               <layout:position layout:x="855.6446210876936" layout:y="595.4088207039953" layout:z="28672"/>
               <layout:dimensions layout:height="69.68361567743568" layout:width="178.83399413867926"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="c8f71" layout:species="species_10">
+            <layout:boundingBox>
+              <layout:position layout:x="964.5880490805766" layout:y="482.78567018132946" layout:z="32771"/>
+              <layout:dimensions layout:height="61.3336336993998" layout:width="88.10043252713581"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="df627" layout:species="species_11">
+            <layout:boundingBox>
+              <layout:position layout:x="314.1670720998774" layout:y="326.29977691986636" layout:z="36181"/>
+              <layout:dimensions layout:height="161.9999999999999" layout:width="169.49999999999966"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
         </layout:listOfSpeciesGlyphs>
@@ -733,49 +733,75 @@
               </layout:speciesReferenceGlyph>
             </layout:listOfSpeciesReferenceGlyphs>
           </layout:reactionGlyph>
-          <layout:reactionGlyph layout:id="a2a1e_4" layout:reaction="a2a1e">
+          <layout:reactionGlyph layout:id="idcc7fc0b6_4" layout:reaction="idcc7fc0b6">
             <layout:curve>
               <layout:listOfCurveSegments>
                 <layout:curveSegment xsi:type="LineSegment">
-                  <layout:start layout:x="590.2752147604582" layout:y="185.12585604328825" layout:z="36204"/>
-                  <layout:end layout:x="580.2752147604582" layout:y="185.12585604328825" layout:z="36204"/>
+                  <layout:start layout:x="879.4043432933211" layout:y="385.37276018164874" layout:z="36197"/>
+                  <layout:end layout:x="879.4043432933211" layout:y="395.37276018164874" layout:z="36197"/>
                 </layout:curveSegment>
               </layout:listOfCurveSegments>
             </layout:curve>
             <layout:listOfSpeciesReferenceGlyphs>
-              <layout:speciesReferenceGlyph layout:id="node_5" layout:role="substrate" layout:speciesGlyph="ad44a">
+              <layout:speciesReferenceGlyph layout:id="node_5" layout:role="substrate" layout:speciesGlyph="bab13">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="590.2752147604582" layout:y="185.12585604328825" layout:z="36204"/>
-                      <layout:end layout:x="679.9445801613858" layout:y="185.12585604328825" layout:z="36204"/>
+                      <layout:start layout:x="879.4043432933211" layout:y="385.37276018164874" layout:z="36197"/>
+                      <layout:end layout:x="879.4043432933211" layout:y="298.226468790064" layout:z="36197"/>
+                    </layout:curveSegment>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="879.4043432933211" layout:y="298.226468790064" layout:z="36197"/>
+                      <layout:end layout:x="787.4038927442209" layout:y="298.226468790064" layout:z="36197"/>
                     </layout:curveSegment>
                   </layout:listOfCurveSegments>
                 </layout:curve>
               </layout:speciesReferenceGlyph>
-              <layout:speciesReferenceGlyph layout:id="node_6" layout:role="product" layout:speciesGlyph="e166c">
+              <layout:speciesReferenceGlyph layout:id="node_6" layout:role="product" layout:speciesGlyph="e2b6c">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="580.2752147604582" layout:y="185.12585604328825" layout:z="36204"/>
-                      <layout:end layout:x="544.6705113523179" layout:y="185.12585604328825" layout:z="36204"/>
-                    </layout:curveSegment>
-                  </layout:listOfCurveSegments>
-                </layout:curve>
-              </layout:speciesReferenceGlyph>
-              <layout:speciesReferenceGlyph layout:id="node_7" layout:role="modifier" layout:speciesGlyph="f86f8">
-                <layout:curve>
-                  <layout:listOfCurveSegments>
-                    <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="585.8640346741565" layout:y="481.8690335512707" layout:z="36204"/>
-                      <layout:end layout:x="585.2752147604582" layout:y="190.12585604328825" layout:z="36204"/>
+                      <layout:start layout:x="879.4043432933211" layout:y="395.37276018164874" layout:z="36197"/>
+                      <layout:end layout:x="879.4043432933211" layout:y="482.51905157323347" layout:z="36197"/>
                     </layout:curveSegment>
                   </layout:listOfCurveSegments>
                 </layout:curve>
               </layout:speciesReferenceGlyph>
             </layout:listOfSpeciesReferenceGlyphs>
           </layout:reactionGlyph>
-          <layout:reactionGlyph layout:id="id1fae067f_8" layout:reaction="id1fae067f">
+          <layout:reactionGlyph layout:id="idf8eda287_7" layout:reaction="idf8eda287">
+            <layout:curve>
+              <layout:listOfCurveSegments>
+                <layout:curveSegment xsi:type="LineSegment">
+                  <layout:start layout:x="1000.9304628927247" layout:y="565.0715165638402" layout:z="12288"/>
+                  <layout:end layout:x="997.4779191431227" layout:y="574.4566080208843" layout:z="12288"/>
+                </layout:curveSegment>
+              </layout:listOfCurveSegments>
+            </layout:curve>
+            <layout:listOfSpeciesReferenceGlyphs>
+              <layout:speciesReferenceGlyph layout:id="node_8" layout:role="substrate" layout:speciesGlyph="c8f71">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="1000.9304628927247" layout:y="565.0715165638402" layout:z="12288"/>
+                      <layout:end layout:x="1008.6382653441445" layout:y="544.1193038807293" layout:z="12288"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="node_9" layout:role="product" layout:speciesGlyph="a6535">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="997.4779191431227" layout:y="574.4566080208843" layout:z="12288"/>
+                      <layout:end layout:x="990.8058798165835" layout:y="592.593293266882" layout:z="12288"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+            </layout:listOfSpeciesReferenceGlyphs>
+          </layout:reactionGlyph>
+          <layout:reactionGlyph layout:id="id1fae067f_10" layout:reaction="id1fae067f">
             <layout:curve>
               <layout:listOfCurveSegments>
                 <layout:curveSegment xsi:type="LineSegment">
@@ -785,7 +811,7 @@
               </layout:listOfCurveSegments>
             </layout:curve>
             <layout:listOfSpeciesReferenceGlyphs>
-              <layout:speciesReferenceGlyph layout:id="node_9" layout:role="substrate" layout:speciesGlyph="c9c43">
+              <layout:speciesReferenceGlyph layout:id="node_11" layout:role="substrate" layout:speciesGlyph="c9c43">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
@@ -803,7 +829,7 @@
                   </layout:listOfCurveSegments>
                 </layout:curve>
               </layout:speciesReferenceGlyph>
-              <layout:speciesReferenceGlyph layout:id="node_10" layout:role="product" layout:speciesGlyph="f86f8">
+              <layout:speciesReferenceGlyph layout:id="node_12" layout:role="product" layout:speciesGlyph="f86f8">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
@@ -815,75 +841,39 @@
               </layout:speciesReferenceGlyph>
             </layout:listOfSpeciesReferenceGlyphs>
           </layout:reactionGlyph>
-          <layout:reactionGlyph layout:id="idc4c8fdab_11" layout:reaction="idc4c8fdab">
+          <layout:reactionGlyph layout:id="idaa16182f_13" layout:reaction="idaa16182f">
             <layout:curve>
               <layout:listOfCurveSegments>
                 <layout:curveSegment xsi:type="LineSegment">
-                  <layout:start layout:x="733.4170969009729" layout:y="135.21779061063063" layout:z="12288"/>
-                  <layout:end layout:x="733.5566883292174" layout:y="145.21681627482212" layout:z="12288"/>
+                  <layout:start layout:x="887.9965303201064" layout:y="564.9985484508283" layout:z="12288"/>
+                  <layout:end layout:x="891.7609325955781" layout:y="574.2629575258003" layout:z="12288"/>
                 </layout:curveSegment>
               </layout:listOfCurveSegments>
             </layout:curve>
             <layout:listOfSpeciesReferenceGlyphs>
-              <layout:speciesReferenceGlyph layout:id="node_12" layout:role="substrate" layout:speciesGlyph="b3515">
+              <layout:speciesReferenceGlyph layout:id="node_14" layout:role="substrate" layout:speciesGlyph="e2b6c">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="733.4170969009729" layout:y="135.21779061063063" layout:z="12288"/>
-                      <layout:end layout:x="733.2456074133327" layout:y="122.9338860068944" layout:z="12288"/>
+                      <layout:start layout:x="887.9965303201064" layout:y="564.9985484508283" layout:z="12288"/>
+                      <layout:end layout:x="879.4043432933211" layout:y="543.8526852726333" layout:z="12288"/>
                     </layout:curveSegment>
                   </layout:listOfCurveSegments>
                 </layout:curve>
               </layout:speciesReferenceGlyph>
-              <layout:speciesReferenceGlyph layout:id="node_13" layout:role="product" layout:speciesGlyph="ad44a">
+              <layout:speciesReferenceGlyph layout:id="node_15" layout:role="product" layout:speciesGlyph="a6535">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="733.5566883292174" layout:y="145.21681627482212" layout:z="12288"/>
-                      <layout:end layout:x="733.7281778168576" layout:y="157.50072087855835" layout:z="12288"/>
+                      <layout:start layout:x="891.7609325955781" layout:y="574.2629575258003" layout:z="12288"/>
+                      <layout:end layout:x="900.3531196223635" layout:y="595.4088207039953" layout:z="12288"/>
                     </layout:curveSegment>
                   </layout:listOfCurveSegments>
                 </layout:curve>
               </layout:speciesReferenceGlyph>
             </layout:listOfSpeciesReferenceGlyphs>
           </layout:reactionGlyph>
-          <layout:reactionGlyph layout:id="idcc7fc0b6_14" layout:reaction="idcc7fc0b6">
-            <layout:curve>
-              <layout:listOfCurveSegments>
-                <layout:curveSegment xsi:type="LineSegment">
-                  <layout:start layout:x="879.4043432933211" layout:y="385.37276018164874" layout:z="36197"/>
-                  <layout:end layout:x="879.4043432933211" layout:y="395.37276018164874" layout:z="36197"/>
-                </layout:curveSegment>
-              </layout:listOfCurveSegments>
-            </layout:curve>
-            <layout:listOfSpeciesReferenceGlyphs>
-              <layout:speciesReferenceGlyph layout:id="node_15" layout:role="substrate" layout:speciesGlyph="bab13">
-                <layout:curve>
-                  <layout:listOfCurveSegments>
-                    <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="879.4043432933211" layout:y="385.37276018164874" layout:z="36197"/>
-                      <layout:end layout:x="879.4043432933211" layout:y="298.226468790064" layout:z="36197"/>
-                    </layout:curveSegment>
-                    <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="879.4043432933211" layout:y="298.226468790064" layout:z="36197"/>
-                      <layout:end layout:x="787.4038927442209" layout:y="298.226468790064" layout:z="36197"/>
-                    </layout:curveSegment>
-                  </layout:listOfCurveSegments>
-                </layout:curve>
-              </layout:speciesReferenceGlyph>
-              <layout:speciesReferenceGlyph layout:id="node_16" layout:role="product" layout:speciesGlyph="e2b6c">
-                <layout:curve>
-                  <layout:listOfCurveSegments>
-                    <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="879.4043432933211" layout:y="395.37276018164874" layout:z="36197"/>
-                      <layout:end layout:x="879.4043432933211" layout:y="482.51905157323347" layout:z="36197"/>
-                    </layout:curveSegment>
-                  </layout:listOfCurveSegments>
-                </layout:curve>
-              </layout:speciesReferenceGlyph>
-            </layout:listOfSpeciesReferenceGlyphs>
-          </layout:reactionGlyph>
-          <layout:reactionGlyph layout:id="idc0a82d8_17" layout:reaction="idc0a82d8">
+          <layout:reactionGlyph layout:id="idc0a82d8_16" layout:reaction="idc0a82d8">
             <layout:curve>
               <layout:listOfCurveSegments>
                 <layout:curveSegment xsi:type="LineSegment">
@@ -893,7 +883,7 @@
               </layout:listOfCurveSegments>
             </layout:curve>
             <layout:listOfSpeciesReferenceGlyphs>
-              <layout:speciesReferenceGlyph layout:id="node_18" layout:role="substrate" layout:speciesGlyph="ad44a">
+              <layout:speciesReferenceGlyph layout:id="node_17" layout:role="substrate" layout:speciesGlyph="ad44a">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
@@ -903,7 +893,7 @@
                   </layout:listOfCurveSegments>
                 </layout:curve>
               </layout:speciesReferenceGlyph>
-              <layout:speciesReferenceGlyph layout:id="node_19" layout:role="product" layout:speciesGlyph="bab13">
+              <layout:speciesReferenceGlyph layout:id="node_18" layout:role="product" layout:speciesGlyph="bab13">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
@@ -913,7 +903,7 @@
                   </layout:listOfCurveSegments>
                 </layout:curve>
               </layout:speciesReferenceGlyph>
-              <layout:speciesReferenceGlyph layout:id="node_20" layout:role="modifier" layout:speciesGlyph="ebb43">
+              <layout:speciesReferenceGlyph layout:id="node_19" layout:role="modifier" layout:speciesGlyph="ebb43">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
@@ -929,7 +919,7 @@
               </layout:speciesReferenceGlyph>
             </layout:listOfSpeciesReferenceGlyphs>
           </layout:reactionGlyph>
-          <layout:reactionGlyph layout:id="idfa0e6009_21" layout:reaction="idfa0e6009">
+          <layout:reactionGlyph layout:id="idfa0e6009_20" layout:reaction="idfa0e6009">
             <layout:curve>
               <layout:listOfCurveSegments>
                 <layout:curveSegment xsi:type="LineSegment">
@@ -939,7 +929,7 @@
               </layout:listOfCurveSegments>
             </layout:curve>
             <layout:listOfSpeciesReferenceGlyphs>
-              <layout:speciesReferenceGlyph layout:id="node_22" layout:role="substrate" layout:speciesGlyph="bab13">
+              <layout:speciesReferenceGlyph layout:id="node_21" layout:role="substrate" layout:speciesGlyph="bab13">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
@@ -953,7 +943,7 @@
                   </layout:listOfCurveSegments>
                 </layout:curve>
               </layout:speciesReferenceGlyph>
-              <layout:speciesReferenceGlyph layout:id="node_23" layout:role="product" layout:speciesGlyph="c8f71">
+              <layout:speciesReferenceGlyph layout:id="node_22" layout:role="product" layout:speciesGlyph="c8f71">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
@@ -965,64 +955,74 @@
               </layout:speciesReferenceGlyph>
             </layout:listOfSpeciesReferenceGlyphs>
           </layout:reactionGlyph>
-          <layout:reactionGlyph layout:id="idaa16182f_24" layout:reaction="idaa16182f">
+          <layout:reactionGlyph layout:id="a2a1e_23" layout:reaction="a2a1e">
             <layout:curve>
               <layout:listOfCurveSegments>
                 <layout:curveSegment xsi:type="LineSegment">
-                  <layout:start layout:x="887.9965303201064" layout:y="564.9985484508283" layout:z="12288"/>
-                  <layout:end layout:x="891.7609325955781" layout:y="574.2629575258003" layout:z="12288"/>
+                  <layout:start layout:x="590.2752147604582" layout:y="185.12585604328825" layout:z="36204"/>
+                  <layout:end layout:x="580.2752147604582" layout:y="185.12585604328825" layout:z="36204"/>
                 </layout:curveSegment>
               </layout:listOfCurveSegments>
             </layout:curve>
             <layout:listOfSpeciesReferenceGlyphs>
-              <layout:speciesReferenceGlyph layout:id="node_25" layout:role="substrate" layout:speciesGlyph="e2b6c">
+              <layout:speciesReferenceGlyph layout:id="node_24" layout:role="substrate" layout:speciesGlyph="ad44a">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="887.9965303201064" layout:y="564.9985484508283" layout:z="12288"/>
-                      <layout:end layout:x="879.4043432933211" layout:y="543.8526852726333" layout:z="12288"/>
+                      <layout:start layout:x="590.2752147604582" layout:y="185.12585604328825" layout:z="36204"/>
+                      <layout:end layout:x="679.9445801613858" layout:y="185.12585604328825" layout:z="36204"/>
                     </layout:curveSegment>
                   </layout:listOfCurveSegments>
                 </layout:curve>
               </layout:speciesReferenceGlyph>
-              <layout:speciesReferenceGlyph layout:id="node_26" layout:role="product" layout:speciesGlyph="a6535">
+              <layout:speciesReferenceGlyph layout:id="node_25" layout:role="product" layout:speciesGlyph="e166c">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="891.7609325955781" layout:y="574.2629575258003" layout:z="12288"/>
-                      <layout:end layout:x="900.3531196223635" layout:y="595.4088207039953" layout:z="12288"/>
+                      <layout:start layout:x="580.2752147604582" layout:y="185.12585604328825" layout:z="36204"/>
+                      <layout:end layout:x="544.6705113523179" layout:y="185.12585604328825" layout:z="36204"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="node_26" layout:role="modifier" layout:speciesGlyph="f86f8">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="585.8640346741565" layout:y="481.8690335512707" layout:z="36204"/>
+                      <layout:end layout:x="585.2752147604582" layout:y="190.12585604328825" layout:z="36204"/>
                     </layout:curveSegment>
                   </layout:listOfCurveSegments>
                 </layout:curve>
               </layout:speciesReferenceGlyph>
             </layout:listOfSpeciesReferenceGlyphs>
           </layout:reactionGlyph>
-          <layout:reactionGlyph layout:id="idf8eda287_27" layout:reaction="idf8eda287">
+          <layout:reactionGlyph layout:id="idc4c8fdab_27" layout:reaction="idc4c8fdab">
             <layout:curve>
               <layout:listOfCurveSegments>
                 <layout:curveSegment xsi:type="LineSegment">
-                  <layout:start layout:x="1000.9304628927247" layout:y="565.0715165638402" layout:z="12288"/>
-                  <layout:end layout:x="997.4779191431227" layout:y="574.4566080208843" layout:z="12288"/>
+                  <layout:start layout:x="733.4170969009729" layout:y="135.21779061063063" layout:z="12288"/>
+                  <layout:end layout:x="733.5566883292174" layout:y="145.21681627482212" layout:z="12288"/>
                 </layout:curveSegment>
               </layout:listOfCurveSegments>
             </layout:curve>
             <layout:listOfSpeciesReferenceGlyphs>
-              <layout:speciesReferenceGlyph layout:id="node_28" layout:role="substrate" layout:speciesGlyph="c8f71">
+              <layout:speciesReferenceGlyph layout:id="node_28" layout:role="substrate" layout:speciesGlyph="b3515">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="1000.9304628927247" layout:y="565.0715165638402" layout:z="12288"/>
-                      <layout:end layout:x="1008.6382653441445" layout:y="544.1193038807293" layout:z="12288"/>
+                      <layout:start layout:x="733.4170969009729" layout:y="135.21779061063063" layout:z="12288"/>
+                      <layout:end layout:x="733.2456074133327" layout:y="122.9338860068944" layout:z="12288"/>
                     </layout:curveSegment>
                   </layout:listOfCurveSegments>
                 </layout:curve>
               </layout:speciesReferenceGlyph>
-              <layout:speciesReferenceGlyph layout:id="node_29" layout:role="product" layout:speciesGlyph="a6535">
+              <layout:speciesReferenceGlyph layout:id="node_29" layout:role="product" layout:speciesGlyph="ad44a">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="997.4779191431227" layout:y="574.4566080208843" layout:z="12288"/>
-                      <layout:end layout:x="990.8058798165835" layout:y="592.593293266882" layout:z="12288"/>
+                      <layout:start layout:x="733.5566883292174" layout:y="145.21681627482212" layout:z="12288"/>
+                      <layout:end layout:x="733.7281778168576" layout:y="157.50072087855835" layout:z="12288"/>
                     </layout:curveSegment>
                   </layout:listOfCurveSegments>
                 </layout:curve>
@@ -1031,21 +1031,15 @@
           </layout:reactionGlyph>
         </layout:listOfReactionGlyphs>
         <layout:listOfTextGlyphs>
-          <layout:textGlyph layout:graphicalObject="e53de" layout:id="text_e53de" layout:text=" ">
+          <layout:textGlyph layout:graphicalObject="e3aaf" layout:id="text_e3aaf" layout:text=" ">
             <layout:boundingBox>
-              <layout:position layout:x="329.1670720998774" layout:y="369.29977691986636" layout:z="36189"/>
+              <layout:position layout:x="355.1670720998774" layout:y="342.29977691986636" layout:z="36190"/>
               <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="e6946" layout:id="text_e6946" layout:text=" ">
+          <layout:textGlyph layout:graphicalObject="cbc01" layout:id="text_cbc01" layout:text=" ">
             <layout:boundingBox>
-              <layout:position layout:x="426.16707209987703" layout:y="342.29977691986636" layout:z="36192"/>
-              <layout:dimensions layout:height="11" layout:width="11.5"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="d8199" layout:id="text_d8199" layout:text=" ">
-            <layout:boundingBox>
-              <layout:position layout:x="389.1670720998773" layout:y="334.29977691986636" layout:z="36191"/>
+              <layout:position layout:x="322.1670720998774" layout:y="406.2997769198663" layout:z="36188"/>
               <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:textGlyph>
@@ -1055,33 +1049,21 @@
               <layout:dimensions layout:height="35.67928428650612" layout:width="491.67494438592576"/>
             </layout:boundingBox>
           </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="fda86" layout:id="text_fda86" layout:text=" ">
+          <layout:textGlyph layout:graphicalObject="d7b3e" layout:id="text_d7b3e" layout:text=" ">
             <layout:boundingBox>
-              <layout:position layout:x="361.1670720998774" layout:y="467.29977691986625" layout:z="36193"/>
-              <layout:dimensions layout:height="11" layout:width="11.5"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="d54da" layout:id="text_d54da" layout:text=" ">
-            <layout:boundingBox>
-              <layout:position layout:x="359.1670720998774" layout:y="372.7997769198664" layout:z="16385"/>
-              <layout:dimensions layout:height="68.5" layout:width="76.5"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="cbc01" layout:id="text_cbc01" layout:text=" ">
-            <layout:boundingBox>
-              <layout:position layout:x="322.1670720998774" layout:y="406.2997769198663" layout:z="36188"/>
-              <layout:dimensions layout:height="11" layout:width="11.5"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="e3aaf" layout:id="text_e3aaf" layout:text=" ">
-            <layout:boundingBox>
-              <layout:position layout:x="355.1670720998774" layout:y="342.29977691986636" layout:z="36190"/>
+              <layout:position layout:x="403.16707209987726" layout:y="469.29977691986625" layout:z="36194"/>
               <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:textGlyph>
           <layout:textGlyph layout:graphicalObject="b826f" layout:id="text_b826f" layout:text=" ">
             <layout:boundingBox>
               <layout:position layout:x="455.16707209987703" layout:y="361.29977691986625" layout:z="36186"/>
+              <layout:dimensions layout:height="11" layout:width="11.5"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="d8199" layout:id="text_d8199" layout:text=" ">
+            <layout:boundingBox>
+              <layout:position layout:x="389.1670720998773" layout:y="334.29977691986636" layout:z="36191"/>
               <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:textGlyph>
@@ -1097,70 +1079,34 @@
               <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="d7b3e" layout:id="text_d7b3e" layout:text=" ">
-            <layout:boundingBox>
-              <layout:position layout:x="403.16707209987726" layout:y="469.29977691986625" layout:z="36194"/>
-              <layout:dimensions layout:height="11" layout:width="11.5"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
           <layout:textGlyph layout:graphicalObject="aa83a" layout:id="text_aa83a" layout:text=" ">
             <layout:boundingBox>
               <layout:position layout:x="460.16707209987703" layout:y="430.2997769198663" layout:z="36184"/>
               <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="df627" layout:id="text_df627" layout:text="SARS-CoV">
+          <layout:textGlyph layout:graphicalObject="e6946" layout:id="text_e6946" layout:text=" ">
             <layout:boundingBox>
-              <layout:position layout:x="356.6670720998774" layout:y="393.7997769198663" layout:z="36182"/>
-              <layout:dimensions layout:height="25" layout:width="80"/>
+              <layout:position layout:x="426.16707209987703" layout:y="342.29977691986636" layout:z="36192"/>
+              <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="f34cf" layout:id="text_f34cf" layout:text="angiotensin-(1-7)">
+          <layout:textGlyph layout:graphicalObject="d54da" layout:id="text_d54da" layout:text=" ">
             <layout:boundingBox>
-              <layout:position layout:x="679.9601886714266" layout:y="366.95710392722305" layout:z="-4"/>
-              <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
+              <layout:position layout:x="359.1670720998774" layout:y="372.7997769198664" layout:z="16385"/>
+              <layout:dimensions layout:height="68.5" layout:width="76.5"/>
             </layout:boundingBox>
           </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="e2b6c" layout:id="text_e2b6c" layout:text="AT1R">
+          <layout:textGlyph layout:graphicalObject="fda86" layout:id="text_fda86" layout:text=" ">
             <layout:boundingBox>
-              <layout:position layout:x="835.3541270297532" layout:y="482.51905157323347" layout:z="32769"/>
-              <layout:dimensions layout:height="61.3336336993998" layout:width="88.10043252713581"/>
+              <layout:position layout:x="361.1670720998774" layout:y="467.29977691986625" layout:z="36193"/>
+              <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="ebb43" layout:id="text_ebb43" layout:text="ACE">
+          <layout:textGlyph layout:graphicalObject="e53de" layout:id="text_e53de" layout:text=" ">
             <layout:boundingBox>
-              <layout:position layout:x="1114.409318921931" layout:y="483.51479926807656" layout:z="32770"/>
-              <layout:dimensions layout:height="63.76697904737557" layout:width="96.46967566612147"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="f86f8" layout:id="text_f86f8" layout:text="ACE2">
-            <layout:boundingBox>
-              <layout:position layout:x="537.8995429945682" layout:y="481.8690335512707" layout:z="32769"/>
-              <layout:dimensions layout:height="63.76697904737557" layout:width="95.92898335917675"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="ad44a" layout:id="text_ad44a" layout:text="Angiotensin I">
-            <layout:boundingBox>
-              <layout:position layout:x="679.9445801613858" layout:y="157.50072087855835" layout:z="-5"/>
-              <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="c8f71" layout:id="text_c8f71" layout:text="AT2R">
-            <layout:boundingBox>
-              <layout:position layout:x="964.5880490805766" layout:y="482.78567018132946" layout:z="32772"/>
-              <layout:dimensions layout:height="61.3336336993998" layout:width="88.10043252713581"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="e166c" layout:id="text_e166c" layout:text="angiotensin-(1-9)">
-            <layout:boundingBox>
-              <layout:position layout:x="437.10331604137434" layout:y="157.50072087855835" layout:z="36204"/>
-              <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="b3515" layout:id="text_b3515" layout:text="Angiotensinogen">
-            <layout:boundingBox>
-              <layout:position layout:x="679.4620097578609" layout:y="67.6836156774346" layout:z="-3"/>
-              <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
+              <layout:position layout:x="329.1670720998774" layout:y="369.29977691986636" layout:z="36189"/>
+              <layout:dimensions layout:height="11" layout:width="11.5"/>
             </layout:boundingBox>
           </layout:textGlyph>
           <layout:textGlyph layout:graphicalObject="c9c43" layout:id="text_c9c43" layout:text=" ">
@@ -1175,31 +1121,80 @@
               <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
             </layout:boundingBox>
           </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="ebb43" layout:id="text_ebb43" layout:text="ACE">
+            <layout:boundingBox>
+              <layout:position layout:x="1114.409318921931" layout:y="483.51479926807656" layout:z="32770"/>
+              <layout:dimensions layout:height="63.76697904737557" layout:width="96.46967566612147"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="e166c" layout:id="text_e166c" layout:text="angiotensin-(1-9)">
+            <layout:boundingBox>
+              <layout:position layout:x="437.10331604137434" layout:y="157.50072087855835" layout:z="36204"/>
+              <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="f34cf" layout:id="text_f34cf" layout:text="angiotensin-(1-7)">
+            <layout:boundingBox>
+              <layout:position layout:x="679.9601886714266" layout:y="366.95710392722305" layout:z="-4"/>
+              <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="f86f8" layout:id="text_f86f8" layout:text="ACE2">
+            <layout:boundingBox>
+              <layout:position layout:x="537.8995429945682" layout:y="481.8690335512707" layout:z="32769"/>
+              <layout:dimensions layout:height="63.76697904737557" layout:width="95.92898335917675"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="ad44a" layout:id="text_ad44a" layout:text="Angiotensin I">
+            <layout:boundingBox>
+              <layout:position layout:x="679.9445801613858" layout:y="157.50072087855835" layout:z="-5"/>
+              <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="e2b6c" layout:id="text_e2b6c" layout:text="AT1R">
+            <layout:boundingBox>
+              <layout:position layout:x="835.3541270297532" layout:y="482.51905157323347" layout:z="32769"/>
+              <layout:dimensions layout:height="61.3336336993998" layout:width="88.10043252713581"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="b3515" layout:id="text_b3515" layout:text="Angiotensinogen">
+            <layout:boundingBox>
+              <layout:position layout:x="679.4620097578609" layout:y="67.6836156774346" layout:z="-3"/>
+              <layout:dimensions layout:height="55.250270329459795" layout:width="107.56719531094362"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
           <layout:textGlyph layout:graphicalObject="a6535" layout:id="text_a6535" layout:text="Lung injury">
             <layout:boundingBox>
               <layout:position layout:x="855.6446210876936" layout:y="595.4088207039953" layout:z="28673"/>
               <layout:dimensions layout:height="69.68361567743568" layout:width="178.83399413867926"/>
             </layout:boundingBox>
           </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="c8f71" layout:id="text_c8f71" layout:text="AT2R">
+            <layout:boundingBox>
+              <layout:position layout:x="964.5880490805766" layout:y="482.78567018132946" layout:z="32772"/>
+              <layout:dimensions layout:height="61.3336336993998" layout:width="88.10043252713581"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="df627" layout:id="text_df627" layout:text="SARS-CoV">
+            <layout:boundingBox>
+              <layout:position layout:x="356.6670720998774" layout:y="393.7997769198663" layout:z="36182"/>
+              <layout:dimensions layout:height="25" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
         </layout:listOfTextGlyphs>
       </layout:layout>
     </layout:listOfLayouts>
     <multi:listOfSpeciesTypes xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-      <multi:speciesType multi:id="minerva_species_type_Complex" multi:name="Complex" sboTerm="SBO:0000289">
+      <multi:speciesType multi:id="minerva_species_type_Unknown" multi:name="Unknown" sboTerm="SBO:0000285">
         <multi:listOfSpeciesFeatureTypes>
-          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Complex" multi:name="Position to compartment" multi:occur="1">
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Unknown" multi:name="Position to compartment" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Complex_387" multi:name="NULL"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Unknown_1122" multi:name="NULL"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
-          <multi:speciesFeatureType multi:id="minerva_hypothetical_Complex" multi:name="Hypothetical" multi:occur="1">
+          <multi:speciesFeatureType multi:id="minerva_activity_Unknown" multi:name="Activity" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_hypothetical_Complex_388" multi:name="true"/>
-            </multi:listOfPossibleSpeciesFeatureValues>
-          </multi:speciesFeatureType>
-          <multi:speciesFeatureType multi:id="minerva_activity_Complex" multi:name="Activity" multi:occur="1">
-            <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Complex_389" multi:name="false"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Unknown_1123" multi:name="false"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
         </multi:listOfSpeciesFeatureTypes>
@@ -1208,12 +1203,12 @@
         <multi:listOfSpeciesFeatureTypes>
           <multi:speciesFeatureType multi:id="minerva_position_to_compartment_SimpleMolecule" multi:name="Position to compartment" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_SimpleMolecule_390" multi:name="NULL"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_SimpleMolecule_1124" multi:name="NULL"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
           <multi:speciesFeatureType multi:id="minerva_activity_SimpleMolecule" multi:name="Activity" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_SimpleMolecule_391" multi:name="false"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_SimpleMolecule_1125" multi:name="false"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
         </multi:listOfSpeciesFeatureTypes>
@@ -1222,26 +1217,12 @@
         <multi:listOfSpeciesFeatureTypes>
           <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene" multi:name="Position to compartment" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_392" multi:name="NULL"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_1126" multi:name="NULL"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
           <multi:speciesFeatureType multi:id="minerva_activity_Gene" multi:name="Activity" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_393" multi:name="false"/>
-            </multi:listOfPossibleSpeciesFeatureValues>
-          </multi:speciesFeatureType>
-        </multi:listOfSpeciesFeatureTypes>
-      </multi:speciesType>
-      <multi:speciesType multi:id="minerva_species_type_Unknown" multi:name="Unknown" sboTerm="SBO:0000285">
-        <multi:listOfSpeciesFeatureTypes>
-          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Unknown" multi:name="Position to compartment" multi:occur="1">
-            <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Unknown_394" multi:name="NULL"/>
-            </multi:listOfPossibleSpeciesFeatureValues>
-          </multi:speciesFeatureType>
-          <multi:speciesFeatureType multi:id="minerva_activity_Unknown" multi:name="Activity" multi:occur="1">
-            <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Unknown_395" multi:name="false"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_1127" multi:name="false"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
         </multi:listOfSpeciesFeatureTypes>
@@ -1250,12 +1231,31 @@
         <multi:listOfSpeciesFeatureTypes>
           <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Phenotype" multi:name="Position to compartment" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Phenotype_396" multi:name="NULL"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Phenotype_1128" multi:name="NULL"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
           <multi:speciesFeatureType multi:id="minerva_activity_Phenotype" multi:name="Activity" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Phenotype_397" multi:name="false"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Phenotype_1129" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Complex" multi:name="Complex" sboTerm="SBO:0000289">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Complex" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Complex_1130" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_hypothetical_Complex" multi:name="Hypothetical" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_hypothetical_Complex_1131" multi:name="true"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Complex" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Complex_1132" multi:name="false"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
         </multi:listOfSpeciesFeatureTypes>
@@ -1313,7 +1313,7 @@
             </compartment>
     </listOfCompartments>
     <listOfSpecies>
-      <species boundaryCondition="false" compartment="comp_0" constant="false" hasOnlySubstanceUnits="false" id="species_0" initialConcentration="0" multi:speciesType="minerva_species_type_Complex" name="SARS-CoV" sboTerm="SBO:0000289">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_0" initialConcentration="0" multi:speciesType="minerva_species_type_Unknown" sboTerm="SBO:0000285">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1327,24 +1327,19 @@
 </rdf:RDF>
         </annotation>
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Complex">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Unknown">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Complex_387"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Unknown_1122"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_hypothetical_Complex">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Unknown">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_hypothetical_Complex_388"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Complex">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Complex_389"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Unknown_1123"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_1" initialConcentration="0" multi:speciesType="minerva_species_type_SimpleMolecule" name="angiotensin-(1-7)" sboTerm="SBO:0000247">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_1" initialConcentration="0" multi:speciesType="minerva_species_type_SimpleMolecule" name="Angiotensin II" sboTerm="SBO:0000247">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1355,7 +1350,7 @@
 <rdf:Description rdf:about="#species_1">
 <bqbiol:isDescribedBy>
 <rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:obo.chebi:CHEBI%3A55438"/>
+<rdf:li rdf:resource="urn:miriam:hmdb:HMDB0001035"/>
 </rdf:Bag>
 </bqbiol:isDescribedBy>
 <dcterms:modified rdf:parseType="Resource"/>
@@ -1365,17 +1360,17 @@
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
           <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_SimpleMolecule">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_SimpleMolecule_390"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_SimpleMolecule_1124"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
           <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_SimpleMolecule">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_SimpleMolecule_391"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_SimpleMolecule_1125"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="comp_1" constant="false" hasOnlySubstanceUnits="false" id="species_2" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="AT1R" sboTerm="SBO:0000243">
+      <species boundaryCondition="false" compartment="comp_1" constant="false" hasOnlySubstanceUnits="false" id="species_2" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="ACE" sboTerm="SBO:0000243">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1384,37 +1379,6 @@
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
 <rdf:Description rdf:about="#species_2">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:ensembl:ENSMUSG00000049115"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_392"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_393"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="comp_1" constant="false" hasOnlySubstanceUnits="false" id="species_3" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="ACE" sboTerm="SBO:0000243">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_3">
 <bqbiol:isDescribedBy>
 <rdf:Bag>
 <rdf:li rdf:resource="urn:miriam:ensembl:ENSMUSG00000020681"/>
@@ -1427,17 +1391,17 @@
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
           <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_392"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_1126"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
           <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_393"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_1127"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="comp_1" constant="false" hasOnlySubstanceUnits="false" id="species_4" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="ACE2" sboTerm="SBO:0000243">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_3" initialConcentration="0" multi:speciesType="minerva_species_type_SimpleMolecule" name="angiotensin-(1-9)" sboTerm="SBO:0000247">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1445,100 +1409,7 @@
         </notes>
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_4">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:ensembl:ENSMUSG00000015405"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_392"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_393"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_5" initialConcentration="0" multi:speciesType="minerva_species_type_SimpleMolecule" name="Angiotensin I" sboTerm="SBO:0000247">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_5">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:hmdb:HMDB0061196"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_SimpleMolecule">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_SimpleMolecule_390"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_SimpleMolecule">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_SimpleMolecule_391"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="comp_1" constant="false" hasOnlySubstanceUnits="false" id="species_6" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="AT2R" sboTerm="SBO:0000243">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_6">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:ensembl:ENSMUSG00000068122"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_392"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_393"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_7" initialConcentration="0" multi:speciesType="minerva_species_type_SimpleMolecule" name="angiotensin-(1-9)" sboTerm="SBO:0000247">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_7">
+<rdf:Description rdf:about="#species_3">
 <bqbiol:isDescribedBy>
 <rdf:Bag>
 <rdf:li rdf:resource="urn:miriam:obo.chebi:CHEBI%3A80128"/>
@@ -1551,12 +1422,136 @@
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
           <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_SimpleMolecule">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_SimpleMolecule_390"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_SimpleMolecule_1124"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
           <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_SimpleMolecule">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_SimpleMolecule_391"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_SimpleMolecule_1125"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_4" initialConcentration="0" multi:speciesType="minerva_species_type_SimpleMolecule" name="angiotensin-(1-7)" sboTerm="SBO:0000247">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_4">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:obo.chebi:CHEBI%3A55438"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_SimpleMolecule">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_SimpleMolecule_1124"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_SimpleMolecule">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_SimpleMolecule_1125"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="comp_1" constant="false" hasOnlySubstanceUnits="false" id="species_5" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="ACE2" sboTerm="SBO:0000243">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_5">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:ensembl:ENSMUSG00000015405"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_1126"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_1127"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_6" initialConcentration="0" multi:speciesType="minerva_species_type_SimpleMolecule" name="Angiotensin I" sboTerm="SBO:0000247">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_6">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:hmdb:HMDB0061196"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_SimpleMolecule">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_SimpleMolecule_1124"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_SimpleMolecule">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_SimpleMolecule_1125"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="comp_1" constant="false" hasOnlySubstanceUnits="false" id="species_7" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="AT1R" sboTerm="SBO:0000243">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_7">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:ensembl:ENSMUSG00000049115"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_1126"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_1127"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
@@ -1582,17 +1577,17 @@
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
           <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_SimpleMolecule">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_SimpleMolecule_390"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_SimpleMolecule_1124"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
           <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_SimpleMolecule">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_SimpleMolecule_391"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_SimpleMolecule_1125"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_9" initialConcentration="0" multi:speciesType="minerva_species_type_Unknown" sboTerm="SBO:0000285">
+      <species boundaryCondition="false" compartment="comp_1" constant="false" hasOnlySubstanceUnits="false" id="species_9" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype" name="Lung injury" sboTerm="SBO:0000358">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1601,63 +1596,6 @@
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
 <rdf:Description rdf:about="#species_9">
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Unknown">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Unknown_394"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Unknown">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Unknown_395"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_10" initialConcentration="0" multi:speciesType="minerva_species_type_SimpleMolecule" name="Angiotensin II" sboTerm="SBO:0000247">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_10">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:hmdb:HMDB0001035"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_SimpleMolecule">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_SimpleMolecule_390"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_SimpleMolecule">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_SimpleMolecule_391"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="comp_1" constant="false" hasOnlySubstanceUnits="false" id="species_11" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype" name="Lung injury" sboTerm="SBO:0000358">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_11">
 <bqbiol:isDescribedBy>
 <rdf:Bag>
 <rdf:li rdf:resource="urn:miriam:wikipathways:WP5035"/>
@@ -1670,12 +1608,74 @@
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
           <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_396"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_1128"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
           <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_397"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_1129"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="comp_1" constant="false" hasOnlySubstanceUnits="false" id="species_10" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="AT2R" sboTerm="SBO:0000243">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_10">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:ensembl:ENSMUSG00000068122"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_1126"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_1127"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="comp_0" constant="false" hasOnlySubstanceUnits="false" id="species_11" initialConcentration="0" multi:speciesType="minerva_species_type_Complex" name="SARS-CoV" sboTerm="SBO:0000289">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_11">
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Complex">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Complex_1130"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_hypothetical_Complex">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_hypothetical_Complex_1131"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Complex">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Complex_1132"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
@@ -1701,82 +1701,14 @@
 </rdf:RDF>
         </annotation>
               <listOfReactants>
-          <speciesReference constant="false" species="species_10"/>
-        </listOfReactants>
-        <listOfProducts>
           <speciesReference constant="false" species="species_1"/>
-        </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference sboTerm="SBO:0000013" species="species_4"/>
-        </listOfModifiers>
-      </reaction>
-      <reaction id="a2a1e" reversible="false" sboTerm="SBO:0000176">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#a2a1e">
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <listOfReactants>
-          <speciesReference constant="false" species="species_5"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference constant="false" species="species_7"/>
-        </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference sboTerm="SBO:0000013" species="species_4"/>
-        </listOfModifiers>
-      </reaction>
-      <reaction id="id1fae067f" reversible="false" sboTerm="SBO:0000407">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#id1fae067f">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:pubmed:16007097"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <listOfReactants>
-          <speciesReference constant="false" species="species_9"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference constant="false" species="species_4"/>
         </listOfProducts>
-      </reaction>
-      <reaction id="idc4c8fdab" reversible="false" sboTerm="SBO:0000176">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#idc4c8fdab">
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <listOfReactants>
-          <speciesReference constant="false" species="species_8"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference constant="false" species="species_5"/>
-        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference sboTerm="SBO:0000013" species="species_5"/>
+        </listOfModifiers>
       </reaction>
       <reaction id="idcc7fc0b6" reversible="false" sboTerm="SBO:0000411">
         <notes>
@@ -1797,13 +1729,13 @@
 </rdf:RDF>
         </annotation>
               <listOfReactants>
-          <speciesReference constant="false" species="species_10"/>
+          <speciesReference constant="false" species="species_1"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference constant="false" species="species_2"/>
+          <speciesReference constant="false" species="species_7"/>
         </listOfProducts>
       </reaction>
-      <reaction id="idc0a82d8" reversible="false" sboTerm="SBO:0000176">
+      <reaction id="idf8eda287" reversible="false" sboTerm="SBO:0000169">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1811,39 +1743,41 @@
         </notes>
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#idc0a82d8">
+<rdf:Description rdf:about="#idf8eda287">
 <dcterms:modified rdf:parseType="Resource"/>
 </rdf:Description>
 </rdf:RDF>
         </annotation>
               <listOfReactants>
+          <speciesReference constant="false" species="species_10"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="species_9"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="id1fae067f" reversible="false" sboTerm="SBO:0000407">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#id1fae067f">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:pubmed:16007097"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <listOfReactants>
+          <speciesReference constant="false" species="species_0"/>
+        </listOfReactants>
+        <listOfProducts>
           <speciesReference constant="false" species="species_5"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference constant="false" species="species_10"/>
-        </listOfProducts>
-        <listOfModifiers>
-          <modifierSpeciesReference sboTerm="SBO:0000013" species="species_3"/>
-        </listOfModifiers>
-      </reaction>
-      <reaction id="idfa0e6009" reversible="false" sboTerm="SBO:0000411">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#idfa0e6009">
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <listOfReactants>
-          <speciesReference constant="false" species="species_10"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference constant="false" species="species_6"/>
         </listOfProducts>
       </reaction>
       <reaction id="idaa16182f" reversible="false" sboTerm="SBO:0000172">
@@ -1867,13 +1801,13 @@
 </rdf:RDF>
         </annotation>
               <listOfReactants>
-          <speciesReference constant="false" species="species_2"/>
+          <speciesReference constant="false" species="species_7"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference constant="false" species="species_11"/>
+          <speciesReference constant="false" species="species_9"/>
         </listOfProducts>
       </reaction>
-      <reaction id="idf8eda287" reversible="false" sboTerm="SBO:0000169">
+      <reaction id="idc0a82d8" reversible="false" sboTerm="SBO:0000176">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1881,7 +1815,7 @@
         </notes>
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#idf8eda287">
+<rdf:Description rdf:about="#idc0a82d8">
 <dcterms:modified rdf:parseType="Resource"/>
 </rdf:Description>
 </rdf:RDF>
@@ -1890,7 +1824,73 @@
           <speciesReference constant="false" species="species_6"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference constant="false" species="species_11"/>
+          <speciesReference constant="false" species="species_1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference sboTerm="SBO:0000013" species="species_2"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="idfa0e6009" reversible="false" sboTerm="SBO:0000411">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#idfa0e6009">
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <listOfReactants>
+          <speciesReference constant="false" species="species_1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="species_10"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="a2a1e" reversible="false" sboTerm="SBO:0000176">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#a2a1e">
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <listOfReactants>
+          <speciesReference constant="false" species="species_6"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="species_3"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference sboTerm="SBO:0000013" species="species_5"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="idc4c8fdab" reversible="false" sboTerm="SBO:0000176">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#idc4c8fdab">
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <listOfReactants>
+          <speciesReference constant="false" species="species_8"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="species_6"/>
         </listOfProducts>
       </reaction>
     </listOfReactions>
