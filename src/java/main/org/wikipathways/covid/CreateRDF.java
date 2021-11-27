@@ -18,7 +18,7 @@ import org.wikipathways.wp2rdf.io.PathwayReader;
 import org.wikipathways.wp2rdf.GpmlConverter;
 import org.wikipathways.wp2rdf.WPREST2RDF;
 
-import com.hp.hpl.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.Model;
 
 public class CreateRDF {
 
