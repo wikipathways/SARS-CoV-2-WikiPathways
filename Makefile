@@ -8,8 +8,8 @@ SVGS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.svg/' }
 all: wikipathways-SARS-CoV-2-rdf-authors.zip wikipathways-SARS-CoV-2-rdf-wp.zip \
      wikipathways-SARS-CoV-2-rdf-gpml.zip
 
+rdf: ${WPRDFS} ${GPMLRDFS}
 sbml: ${SBMLS}
-
 svg: ${SVGS}
 
 fetch:clean ${GPMLS}
