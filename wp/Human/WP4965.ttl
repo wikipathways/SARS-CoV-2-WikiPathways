@@ -1,23 +1,23 @@
-@prefix void:  <http://rdfs.org/ns/void#> .
-@prefix pav:   <http://purl.org/pav/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix freq:  <http://purl.org/cld/freq/> .
-@prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix cito:  <http://purl.org/spar/cito/> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
-@prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
+@prefix biopax:  <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix cito:    <http://purl.org/spar/cito/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix wprdf: <http://rdf.wikipathways.org/> .
-@prefix prov:  <http://www.w3.org/ns/prov#> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix freq:    <http://purl.org/cld/freq/> .
+@prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix pav:     <http://purl.org/pav/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix wp:      <http://vocabularies.wikipathways.org/wp#> .
+@prefix wprdf:   <http://rdf.wikipathways.org/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/id3c85f717>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4965_r120248> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4965_r120248/Interaction/id3c85f717> ;
         wp:participants   <https://identifiers.org/chebi/CHEBI:55438> , <https://identifiers.org/hmdb/HMDB0001035> ;
@@ -25,7 +25,7 @@
         wp:target         <https://identifiers.org/chebi/CHEBI:55438> .
 
 <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idcc7fc0b6>
-        a                   wp:DirectedInteraction , wp:Interaction , wp:Stimulation ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction , wp:Stimulation ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4965_r120248> ;
         dcterms:references  <https://identifiers.org/pubmed/16007097> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r120248/Interaction/idcc7fc0b6> ;
@@ -33,23 +33,25 @@
         wp:source           <https://identifiers.org/hmdb/HMDB0001035> ;
         wp:target           <https://identifiers.org/ensembl/ENSMUSG00000049115> .
 
-<https://identifiers.org/pubmed/16007097>
-        a                   wp:PublicationReference ;
-        dc:source           "PubMed" ;
-        dcterms:identifier  "16007097" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idcc7fc0b6> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idaa16182f> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idbe2626c9> , <https://identifiers.org/wikipathways/WP4965_r120248> ;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16007097> .
-
 <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/id69cfbf>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4965_r120248> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4965_r120248/Interaction/id69cfbf> ;
         wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000020681> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idc0a82d8> ;
         wp:source         <https://identifiers.org/ensembl/ENSMUSG00000020681> ;
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idc0a82d8> .
 
+<https://identifiers.org/pubmed/16007097>
+        rdf:type            wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "16007097" ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idbe2626c9> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idcc7fc0b6> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idaa16182f> , <https://identifiers.org/wikipathways/WP4965_r120248> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q28260798> ;
+        owl:sameAs          <https://doi.org/10.1038%2FNM1267> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16007097> .
+
 <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idaa16182f>
-        a                   wp:DirectedInteraction , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4965_r120248> ;
         dcterms:references  <https://identifiers.org/pubmed/16007097> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r120248/Interaction/idaa16182f> ;
@@ -57,35 +59,52 @@
         wp:source           <https://identifiers.org/ensembl/ENSMUSG00000049115> ;
         wp:target           <https://identifiers.org/wikipathways/WP5035> .
 
+<https://doi.org/10.1038%2FNM1267>
+        dc:source           "DOI" ;
+        dcterms:identifier  "10.1038/NM1267" .
+
 <https://identifiers.org/hmdb/HMDB0001035>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "Angiotensin II"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "Angiotensin II" ;
+        rdfs:seeAlso        <https://identifiers.org/inchikey/CZGUSIXMZVURDU-JZXHSEFVSA-N> ;
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001035> ;
-        dc:source           "HMDB"^^xsd:string ;
-        dcterms:identifier  "HMDB0001035"^^xsd:string ;
+        dc:source           "HMDB" ;
+        dcterms:identifier  "HMDB0001035" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/id3c85f717> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idc0a82d8> , <https://identifiers.org/wikipathways/WP4965_r120248> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idfa0e6009> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idcc7fc0b6> ;
+        wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:2719> ;
+        wp:bdbChemspider    <https://identifiers.org/chemspider/150504> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0001035> ;
+        wp:bdbInChIKey      <https://identifiers.org/inchikey/CZGUSIXMZVURDU-JZXHSEFVSA-N> ;
+        wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C02135> ;
+        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID172198> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q412999> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r120248/DataNode/bab13> ;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001035> .
 
 <https://identifiers.org/hmdb/HMDB0061196>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "Angiotensin I"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "Angiotensin I" ;
+        rdfs:seeAlso        <https://identifiers.org/inchikey/ORWYRWWVDCYOMK-HBZPZAIKSA-N> ;
         dc:identifier       <https://identifiers.org/hmdb/HMDB0061196> ;
-        dc:source           "HMDB"^^xsd:string ;
-        dcterms:identifier  "HMDB0061196"^^xsd:string ;
+        dc:source           "HMDB" ;
+        dcterms:identifier  "HMDB0061196" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/a2a1e> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idc0a82d8> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idc4c8fdab> , <https://identifiers.org/wikipathways/WP4965_r120248> ;
+        wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:2718> ;
+        wp:bdbChemspider    <https://identifiers.org/chemspider/23150106> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0061196> ;
+        wp:bdbInChIKey      <https://identifiers.org/inchikey/ORWYRWWVDCYOMK-HBZPZAIKSA-N> ;
+        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID3081372> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q539799> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r120248/DataNode/ad44a> ;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0061196> .
 
 <https://identifiers.org/wikipathways/WP4965_r120248>
-        a                       wp:Pathway , skos:Collection ;
+        rdf:type                wp:Pathway , skos:Collection ;
         dc:identifier           <https://identifiers.org/wikipathways/WP4965> ;
-        dc:source               "WikiPathways"^^xsd:string ;
+        dc:source               "WikiPathways" ;
         dc:title                "Deregulation of renin-angiotensin system by SARS-CoV infection"@en ;
         dcterms:description     "The spike protein of SARS-CoV down regulates ACE2, leading to deregulation of the renin-angiotensin system. This deregulation can be the cause of lung injury that is linked to SARS-CoV infection. This work was done in a mouse model." ;
-        dcterms:identifier      "WP4965"^^xsd:string ;
+        dcterms:identifier      "WP4965" ;
         dcterms:references      <https://identifiers.org/pubmed/16007097> ;
         cito:cites              <https://identifiers.org/pubmed/16007097> ;
         wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000003> ;
@@ -93,29 +112,34 @@
         wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP4965_r120248> ;
         wp:ontologyTag          <http://purl.obolibrary.org/obo/CL_0000003> , <http://purl.obolibrary.org/obo/PW_0000125> , <http://purl.obolibrary.org/obo/DOID_934> ;
         wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_10090> ;
-        wp:organismName         "Mus musculus"^^xsd:string ;
+        wp:organismName         "Mus musculus" ;
         wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000125> ;
         foaf:page               <http://www.wikipathways.org/instance/WP4965_r120248> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000068122>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "AT2R"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "AT2R" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000068122> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSMUSG00000068122"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSMUSG00000068122" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idf8eda287> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idfa0e6009> , <https://identifiers.org/wikipathways/WP4965_r120248> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSMUSG00000068122> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r120248/DataNode/c8f71> ;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000068122> .
 
 <https://identifiers.org/chebi/CHEBI:80128>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "angiotensin-(1-9)"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "angiotensin-(1-9)" ;
+        rdfs:seeAlso        <https://identifiers.org/inchikey/LJXGOQOPNPFXFT-JWRYNVNRSA-N> ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:80128> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:80128"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:80128" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/a2a1e> , <https://identifiers.org/wikipathways/WP4965_r120248> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:80128> ;
+        wp:bdbInChIKey      <https://identifiers.org/inchikey/LJXGOQOPNPFXFT-JWRYNVNRSA-N> ;
+        wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C15851> ;
+        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID71745056> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q58310864> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r120248/DataNode/e166c> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:80128> .
 
@@ -123,7 +147,7 @@
         pav:hasVersion  <https://identifiers.org/wikipathways/WP4965_r120248> .
 
 <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idc0a82d8>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4965_r120248> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4965_r120248/Interaction/idc0a82d8> ;
         wp:participants   <https://identifiers.org/hmdb/HMDB0001035> , <https://identifiers.org/hmdb/HMDB0061196> ;
@@ -131,7 +155,7 @@
         wp:target         <https://identifiers.org/hmdb/HMDB0001035> .
 
 <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/a2a1e>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4965_r120248> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4965_r120248/Interaction/a2a1e> ;
         wp:participants   <https://identifiers.org/chebi/CHEBI:80128> , <https://identifiers.org/hmdb/HMDB0061196> ;
@@ -139,7 +163,7 @@
         wp:target         <https://identifiers.org/chebi/CHEBI:80128> .
 
 <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idfa0e6009>
-        a                 wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4965_r120248> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4965_r120248/Interaction/idfa0e6009> ;
         wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000068122> , <https://identifiers.org/hmdb/HMDB0001035> ;
@@ -147,50 +171,50 @@
         wp:target         <https://identifiers.org/ensembl/ENSMUSG00000068122> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000015405>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "ACE2"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "ACE2" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000015405> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSMUSG00000015405"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSMUSG00000015405" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idbe2626c9> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/id7289f3b9> , <https://identifiers.org/wikipathways/WP4965_r120248> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSMUSG00000015405> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r120248/DataNode/f86f8> ;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000015405> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000020681>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "ACE"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "ACE" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000020681> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSMUSG00000020681"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSMUSG00000020681" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4965_r120248> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/id69cfbf> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSMUSG00000020681> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r120248/DataNode/ebb43> ;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000020681> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000049115>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "AT1R"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "AT1R" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000049115> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSMUSG00000049115"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSMUSG00000049115" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4965_r120248> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idcc7fc0b6> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idaa16182f> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSMUSG00000049115> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r120248/DataNode/e2b6c> ;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000049115> .
 
 <https://identifiers.org/wikipathways/WP5035>
-        a                   wp:Pathway , wp:DataNode ;
-        rdfs:label          "Lung injury"^^xsd:string ;
+        rdf:type            wp:Pathway , wp:DataNode ;
+        rdfs:label          "Lung injury" ;
         dc:identifier       <https://identifiers.org/wikipathways/WP5035> ;
-        dc:source           "WikiPathways"^^xsd:string ;
-        dcterms:identifier  "WP5035"^^xsd:string ;
+        dc:source           "WikiPathways" ;
+        dcterms:identifier  "WP5035" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4965_r120248> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idaa16182f> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idf8eda287> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r120248/DataNode/a6535> ;
         foaf:page           <https://www.wikipathways.org/instance/WP5035> .
 
 <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idf8eda287>
-        a                 wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4965_r120248> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4965_r120248/Interaction/idf8eda287> ;
         wp:participants   <https://identifiers.org/wikipathways/WP5035> , <https://identifiers.org/ensembl/ENSMUSG00000068122> ;
@@ -198,7 +222,7 @@
         wp:target         <https://identifiers.org/wikipathways/WP5035> .
 
 <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idbe2626c9>
-        a                   wp:Interaction , wp:DirectedInteraction , wp:Catalysis ;
+        rdf:type            wp:Interaction , wp:DirectedInteraction , wp:Catalysis ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4965_r120248> ;
         dcterms:references  <https://identifiers.org/pubmed/16007097> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r120248/Interaction/idbe2626c9> ;
@@ -207,7 +231,7 @@
         wp:target           <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/id3c85f717> .
 
 <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/id7289f3b9>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4965_r120248> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4965_r120248/Interaction/id7289f3b9> ;
         wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000015405> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/a2a1e> ;
@@ -215,18 +239,24 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/a2a1e> .
 
 <https://identifiers.org/chebi/CHEBI:55438>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "angiotensin-(1-7)"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "angiotensin-(1-7)" ;
+        rdfs:seeAlso        <https://identifiers.org/inchikey/PVHLMTREZMEJCG-GDTLVBQBSA-N> ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:55438> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:55438"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:55438" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4965_r120248> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/id3c85f717> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:55438> ;
+        wp:bdbChemspider    <https://identifiers.org/chemspider/110354> ;
+        wp:bdbInChIKey      <https://identifiers.org/inchikey/PVHLMTREZMEJCG-GDTLVBQBSA-N> ;
+        wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C15850> ;
+        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID123805> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q27074464> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r120248/DataNode/f34cf> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:55438> .
 
 <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idc4c8fdab>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4965_r120248> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4965_r120248/Interaction/idc4c8fdab> ;
         wp:participants   <https://identifiers.org/hmdb/HMDB0061196> , <https://identifiers.org/chebi/CHEBI:2720> ;
@@ -234,12 +264,13 @@
         wp:target         <https://identifiers.org/hmdb/HMDB0061196> .
 
 <https://identifiers.org/chebi/CHEBI:2720>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "Angiotensinogen"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "Angiotensinogen" ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:2720> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:2720"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:2720" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4965_r120248> , <http://rdf.wikipathways.org/Pathway/WP4965_r120248/WP/Interaction/idc4c8fdab> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:2720> ;
+        wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C02246> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4965_r120248/DataNode/b3515> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:2720> .
