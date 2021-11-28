@@ -3,9 +3,9 @@ package org.wikipathways.covid;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.ByteArrayOutputStream;
 import java.util.Collections;
 
 import org.bridgedb.DataSource;
@@ -25,17 +25,20 @@ public class CreateRDF {
     public static void main(String[] args) throws Exception {
         String gpmlFile = args[0];
         String wpid     = gpmlFile.substring(5,11);
-        String rev      = args[1];
+        String rev      = args[2];
+        String outFile  = args[1];
+
         DataSourceTxt.init();
-        // the next line is needed until BridgeDb gets updated
         InputStream input = new FileInputStream(gpmlFile);
         Pathway pathway = PathwayReader.readPathway(input);
+        input.close();
+
         IDMapperStack stack = WPREST2RDF.maps();
         Model model = GpmlConverter.convertWp(pathway, wpid, rev, stack, Collections.<String>emptyList());
-        input.close();
-        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        FileOutputStream output = new FileOutputStream(outFile);
         model.write(output, "TURTLE");
-        System.out.print(new String(output.toByteArray()));
+        output.flush();
+        output.close();
     }
 
 }
