@@ -34,7 +34,7 @@ public class CreateGPMLRDF {
 
         Model model = GpmlConverter.convertGpml(pathway, wpid, rev, Collections.<String>emptyList());
         FileOutputStream output = new FileOutputStream(outFile);
-        model.write(output, "NTRIPLE");
+        model.write(output, "TURTLE");
         output.close();
     }
 
