@@ -39,6 +39,13 @@ branch. The RDF is generated with the following command:
 make
 ```
 
+If wished, the Turtle can be validated using the method proposed in
+[this Open PHACTS specification](https://doi.org/10.5281/zenodo.1204478):
+
+```
+find wp -name "*ttl" | xargs cat | rapper -i turtle -t -q - . > /dev/null
+```
+
 ## Step 5: Update the SBML
 
 ```shell
