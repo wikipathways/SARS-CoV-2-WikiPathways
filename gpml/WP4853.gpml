@@ -2,10 +2,14 @@
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="Linoleic acid metabolism affected by coronavirus infection" Version="20200316" Organism="Homo sapiens">
   <Comment Source="WikiPathways-description">Lipid metabolism alternations that are related to infection by corona viruses. The information comes from the Yan et al. in 2019 in the bibliography, particularly Figure 5. That paper uses the HCoV-229E virus as a model. Note that that is different from the virus that causes the 2020 pandemic SARS-CoV-2. Fig 5 is in turn taken from https://www.kegg.jp/kegg-bin/show_pathway?map00591, which is a very simplified pathway, omitting several steps.
 The paper mentions that after virus infection many of the metabolites in his figure are increased in concentration. Interestingly, exogenous supplement of LA or AA in HCoV-229E-infected cells significantly suppressed HCoV-229E virus replication and this also happened in MERS-CoV.</Comment>
-  <Graphics BoardWidth="994.0" BoardHeight="1061.948946515397" />
+  <Graphics BoardWidth="994.0" BoardHeight="1082.948946515397" />
   <DataNode TextLabel="SARS-CoV-2 and &#xA;COVID-19 Pathway&#xA;Molecular mechanism" GraphId="a93c5" Type="Pathway">
     <Graphics CenterX="184.0" CenterY="133.25" Width="178.0" Height="63.5" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14961e" />
     <Xref Database="WikiPathways" ID="WP4846" />
+  </DataNode>
+  <DataNode TextLabel="mitogen-activated protein kinase" GraphId="b0174" Type="GeneProduct">
+    <Graphics CenterX="693.333333333333" CenterY="529.0509259259256" Width="195.46296296296237" Height="32.17592592592587" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="" ID="" />
   </DataNode>
   <DataNode TextLabel="Omega-6" GraphId="b0824" Type="Metabolite">
     <Graphics CenterX="919.0" CenterY="951.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
@@ -149,21 +153,6 @@ The paper mentions that after virus infection many of the metabolites in his fig
     <Graphics CenterX="826.1574074074074" CenterY="143.1898148148143" Width="90.0" Height="32.71296296296259" ZOrder="33004" FillColor="ffcccc" FontSize="12" Valign="Middle" ShapeType="Oval" />
     <Xref Database="Uniprot-TrEMBL" ID="P0DTC2" />
   </DataNode>
-  <Interaction>
-    <BiopaxRef>a36</BiopaxRef>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="825.8935185185185" Y="240.99999999999994" GraphRef="eef69" RelX="0.0" RelY="1.0" />
-      <Point X="693.333333333333" Y="342.16666666666663" GraphRef="f3245" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
-  <Interaction>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="692.0" Y="373.3333333333333" />
-      <Point X="699.0000000000002" Y="437.8333333333327" ArrowHead="mim-conversion" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
   <Interaction GraphId="id137e44e">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="433.96082082235944" Y="444.89645269125725" GraphRef="a63d3" RelX="0.0" RelY="0.0" />
@@ -174,7 +163,7 @@ The paper mentions that after virus infection many of the metabolites in his fig
   <Interaction GraphId="id18e899db">
     <BiopaxRef>dae</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="531.1004784688995" Y="1014.354066985646" />
+      <Point X="574.0875202593193" Y="1006.948946515397" GraphRef="c4a45" RelX="0.0" RelY="-1.0" />
       <Point X="685.8092865560477" Y="822.6451063137947" GraphRef="a74ef" RelX="0.0" RelY="1.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -183,31 +172,39 @@ The paper mentions that after virus infection many of the metabolites in his fig
     <BiopaxRef>acb</BiopaxRef>
     <BiopaxRef>eff</BiopaxRef>
     <Graphics ConnectorType="Curved" ZOrder="12288" LineThickness="1.0">
-      <Point X="964.0" Y="886.0" />
+      <Point X="919.0" Y="874.5" GraphRef="f8b43" RelX="0.0" RelY="-1.0" />
       <Point X="738.333333333333" Y="348.41666666666663" GraphRef="f3245" RelX="1.0" RelY="-0.5" ArrowHead="mim-inhibition" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction GraphId="id3263c402">
     <BiopaxRef>a36</BiopaxRef>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="529.0" Y="536.0" />
+    <Graphics ConnectorType="Curved" ZOrder="12288" LineThickness="1.0">
+      <Point X="481.8555576644647" Y="517.7191375937837" GraphRef="b9202" RelX="0.5" RelY="-1.0" />
       <Point X="648.333333333333" Y="348.41666666666663" GraphRef="f3245" RelX="-1.0" RelY="-0.5" ArrowHead="mim-inhibition" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction GraphId="id35e835c1">
     <BiopaxRef>b2b</BiopaxRef>
+    <Graphics ConnectorType="Curved" ZOrder="12288" LineThickness="1.0">
+      <Point X="570.0" Y="491.40336851203233" GraphRef="ecc95" RelX="1.0" RelY="-0.5" />
+      <Point X="619.0875202593193" Y="1013.198946515397" GraphRef="c4a45" RelX="1.0" RelY="-0.5" ArrowHead="Arrow" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id488708d6">
+    <BiopaxRef>a23</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="536.7088607594936" Y="475.9493670886076" />
-      <Point X="538.0875202593193" Y="1006.948946515397" GraphRef="c4a45" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
+      <Point X="644.4675925925924" Y="512.9629629629627" GraphRef="b0174" RelX="-0.5" RelY="-1.0" />
+      <Point X="564.5377791930127" Y="423.0" GraphRef="b7b4c" RelX="0.0" RelY="1.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction GraphId="id4f2a84fe">
     <BiopaxRef>acb</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="756.0" Y="922.0" />
+      <Point X="754.939380599935" Y="926.8284446573243" GraphRef="ccb5e" RelX="1.0" RelY="0.5" />
       <Point X="874.0" Y="944.75" GraphRef="b0824" RelX="-1.0" RelY="-0.5" ArrowHead="mim-binding" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -232,6 +229,21 @@ The paper mentions that after virus infection many of the metabolites in his fig
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="732.4456635318678" Y="773.1846917450375" GraphRef="bd87a" RelX="-1.0" RelY="0.0" />
       <Point X="685.8092865560477" Y="765.701980474117" GraphRef="e67d8" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id5b9fb57">
+    <BiopaxRef>a36</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="825.8935185185185" Y="240.99999999999994" GraphRef="eef69" RelX="0.0" RelY="1.0" />
+      <Point X="693.333333333333" Y="342.16666666666663" GraphRef="f3245" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id5cd8db28">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="693.333333333333" Y="367.16666666666663" GraphRef="f3245" RelX="0.0" RelY="1.0" />
+      <Point X="693.3333333333331" Y="426.15740740740733" GraphRef="b668e" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -279,8 +291,16 @@ The paper mentions that after virus infection many of the metabolites in his fig
     <BiopaxRef>acb</BiopaxRef>
     <BiopaxRef>c66</BiopaxRef>
     <Graphics ConnectorType="Curved" ZOrder="12288" LineThickness="1.0">
-      <Point X="964.0" Y="944.75" GraphRef="b0824" RelX="1.0" RelY="-0.5" />
-      <Point X="670.833333333333" Y="367.16666666666663" GraphRef="f3245" RelX="-0.5" RelY="1.0" ArrowHead="mim-inhibition" />
+      <Point X="964.0" Y="957.25" GraphRef="b0824" RelX="1.0" RelY="0.5" />
+      <Point X="715.833333333333" Y="342.16666666666663" GraphRef="f3245" RelX="0.5" RelY="-1.0" ArrowHead="mim-inhibition" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="ida0676778">
+    <BiopaxRef>d3f</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="693.3333333333331" Y="451.15740740740733" GraphRef="b668e" RelX="0.0" RelY="1.0" />
+      <Point X="693.333333333333" Y="512.9629629629627" GraphRef="b0174" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -288,15 +308,15 @@ The paper mentions that after virus infection many of the metabolites in his fig
     <BiopaxRef>fd1</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="434.35980551053484" Y="1017.8282009724473" />
-      <Point X="493.08752025931926" Y="1019.448946515397" GraphRef="c4a45" RelX="-1.0" RelY="0.0" ArrowHead="Arrow" />
+      <Point X="529.0875202593193" Y="1019.448946515397" GraphRef="c4a45" RelX="-1.0" RelY="0.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction GraphId="idbc38d6ef">
     <BiopaxRef>a36</BiopaxRef>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="542.6666666666666" Y="510.6666666666667" />
-      <Point X="583.0875202593193" Y="1019.448946515397" GraphRef="c4a45" RelX="1.0" RelY="0.0" ArrowHead="mim-binding" />
+    <Graphics ConnectorType="Curved" ZOrder="12288" LineThickness="1.0">
+      <Point X="480.0" Y="466.40336851203233" GraphRef="b2e17" RelX="-1.0" RelY="-0.5" />
+      <Point X="529.0875202593193" Y="1013.198946515397" GraphRef="c4a45" RelX="-1.0" RelY="-0.5" ArrowHead="mim-binding" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -317,7 +337,7 @@ The paper mentions that after virus infection many of the metabolites in his fig
   <Interaction GraphId="iddb84e5a">
     <BiopaxRef>acb</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="434.0" Y="446.0" />
+      <Point X="433.96082082235944" Y="444.89645269125725" GraphRef="a63d3" RelX="0.0" RelY="0.0" />
       <Point X="480.0" Y="448.0" GraphRef="c3274" RelX="-1.0" RelY="0.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -340,7 +360,7 @@ The paper mentions that after virus infection many of the metabolites in his fig
     <BiopaxRef>acb</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="433.96082082235944" Y="949.5361086231248" GraphRef="b4efb" RelX="0.0" RelY="1.0" />
-      <Point X="538.0875202593193" Y="1006.948946515397" GraphRef="c4a45" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
+      <Point X="574.0875202593193" Y="1006.948946515397" GraphRef="c4a45" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -417,11 +437,11 @@ The paper mentions that after virus infection many of the metabolites in his fig
       <Point X="306.0833333333328" Y="164.62037037037032" GraphRef="f71d4" RelX="-1.0" RelY="0.0" />
     </Graphics>
   </GraphicalLine>
-  <Label TextLabel="Cytokine Storm" GraphId="c4a45">
-    <Graphics CenterX="538.0875202593193" CenterY="1019.4489465153971" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle" />
+  <Label TextLabel="Virus in cell&#xA;" GraphId="b668e">
+    <Graphics CenterX="693.3333333333331" CenterY="438.65740740740733" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle" />
   </Label>
-  <Label TextLabel="entry" GraphId="d3659">
-    <Graphics CenterX="699.0000000000002" CenterY="450.3333333333327" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle" />
+  <Label TextLabel="Cytokine Storm" GraphId="c4a45">
+    <Graphics CenterX="574.0875202593193" CenterY="1019.448946515397" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle" />
   </Label>
   <Label TextLabel="Host cell" GraphId="e77b7">
     <Graphics CenterX="750.823018458198" CenterY="403.47882736156345" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle" />
@@ -451,29 +471,54 @@ The paper mentions that after virus infection many of the metabolites in his fig
   <Group GroupId="e8b11" GraphId="f1b8f" Style="Group" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="c66">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33377319</bp:ID>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b2b">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34281182</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Omega 3 Fatty Acids and COVID-19: A Comprehensive Review.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infect Chemother</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hathaway D</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pandav K</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patel M</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riva-Moscoso A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Singh BM</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patel A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Min ZC</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Singh-Makkar S</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sana MK</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sanchez-Dopazo R</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Desir R</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fahem MMM</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manella S</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rodriguez I</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alvarez A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abreu R</bp:AUTHORS>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecular Mechanisms of Palmitic Acid Augmentation in COVID-19 Pathologies.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Int J Mol Sci</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joshi C</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jadeja V</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhou H</bp:AUTHORS>
     </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a23">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29167338</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inhibition of Cytosolic Phospholipase A&lt;sub&gt;2&lt;/sub&gt;α Impairs an Early Step of Coronavirus Replication in Cell Culture.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Virol</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Müller C</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hardt M</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schwudke D</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuman BW</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pleschka S</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ziebuhr J</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="fd1">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32469225</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COVID-19 and the immune system.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physiol Res</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paces J</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strizova Z</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smrz D</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cerny J</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="dae">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1608291</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IL-1 alpha increases arachidonyl-CoA: lysophospholipid acyltransferase activity and stimulates [3H]arachidonate incorporation into phospholipids in rat mesangial cells.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Life Sci</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1992</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nakazato Y</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sedor JR</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coronavirus infectious disease</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080599</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="bdb">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20923771</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -509,15 +554,37 @@ The paper mentions that after virus infection many of the metabolites in his fig
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fahy E</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subramaniam S</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a36">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33664446</bp:ID>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="c66">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33377319</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyunsaturated ω-3 fatty acids inhibit ACE2-controlled SARS-CoV-2 binding and cellular entry.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sci Rep</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goc A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Niedzwiecki A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rath M</bp:AUTHORS>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Omega 3 Fatty Acids and COVID-19: A Comprehensive Review.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infect Chemother</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hathaway D</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pandav K</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patel M</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riva-Moscoso A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Singh BM</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patel A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Min ZC</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Singh-Makkar S</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sana MK</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sanchez-Dopazo R</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Desir R</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fahem MMM</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manella S</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rodriguez I</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alvarez A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abreu R</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d3f">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32422320</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p38 MAPK inhibition: A promising therapeutic approach for COVID-19.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Mol Cell Cardiol</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grimes JM</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grimes KV</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d8f">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32130973</bp:ID>
@@ -528,6 +595,19 @@ The paper mentions that after virus infection many of the metabolites in his fig
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sigrist CJ</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bridge A</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Mercier P</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e1a">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32155444</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structure, Function, and Antigenicity of the SARS-CoV-2 Spike Glycoprotein.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Walls AC</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Park YJ</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tortorici MA</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wall A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">McGuire AT</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veesler D</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="fbb">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30654597</bp:ID>
@@ -547,19 +627,6 @@ The paper mentions that after virus infection many of the metabolites in his fig
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chan JF</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yuen KY</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e1a">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32155444</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structure, Function, and Antigenicity of the SARS-CoV-2 Spike Glycoprotein.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Walls AC</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Park YJ</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tortorici MA</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wall A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">McGuire AT</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veesler D</bp:AUTHORS>
-    </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="aa3">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32159237</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -570,22 +637,6 @@ The paper mentions that after virus infection many of the metabolites in his fig
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ibrahim AA</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fayez M</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Al-Nazawi M</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipid metabolic pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000010</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="fd1">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32469225</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COVID-19 and the immune system.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physiol Res</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paces J</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strizova Z</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smrz D</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cerny J</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="acb">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33571544</bp:ID>
@@ -598,24 +649,19 @@ The paper mentions that after virus infection many of the metabolites in his fig
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metharom P</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Falasca M</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b2b">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34281182</bp:ID>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a36">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33664446</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecular Mechanisms of Palmitic Acid Augmentation in COVID-19 Pathologies.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Int J Mol Sci</bp:SOURCE>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyunsaturated ω-3 fatty acids inhibit ACE2-controlled SARS-CoV-2 binding and cellular entry.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sci Rep</bp:SOURCE>
       <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joshi C</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jadeja V</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhou H</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goc A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Niedzwiecki A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rath M</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
       <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">severe acute respiratory syndrome</bp:TERM>
       <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:2945</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coronavirus infectious disease</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080599</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
     </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="eff">
@@ -635,14 +681,10 @@ The paper mentions that after virus infection many of the metabolites in his fig
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Religa D</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bäck M</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="dae">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1608291</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IL-1 alpha increases arachidonyl-CoA: lysophospholipid acyltransferase activity and stimulates [3H]arachidonate incorporation into phospholipids in rat mesangial cells.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Life Sci</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1992</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nakazato Y</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sedor JR</bp:AUTHORS>
-    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipid metabolic pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000010</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
   </Biopax>
 </Pathway>
