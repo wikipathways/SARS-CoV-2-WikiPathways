@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<!-- Created by minerva version 16.0.8 on 2022-03-15 at 07:35:26 CET with JSBML version 1.5. -->
+<!-- Created by minerva version 16.1.0~beta.3 on 2022-04-10 at 08:10:17 CEST with JSBML version 1.6.1. -->
 <sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" layout:required="false" level="3" multi:required="true" render:required="false" version="2" xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1" xmlns:render="http://www.sbml.org/sbml/level3/version1/render/version1">
   <model areaUnits="area_unit" extentUnits="mole" lengthUnits="metre" substanceUnits="mole" timeUnits="second" volumeUnits="litre">
     <notes>
@@ -13,20 +13,19 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 [DataNode:-]	Empty GraphId found. Replacing with: gen_dn_2
 [DataNode:-]	Empty GraphId found. Replacing with: gen_dn_3
 [DataNode:-]	Empty GraphId found. Replacing with: gen_dn_4
-[-:-]	This database type is not implemented yet: BioGrid; resource: 882484
 [LINE:id6de06d86]	Invalid interaction type.
 [LINE:idfc67b63]	Invalid interaction type.
 [LINE:idfe2de42e]	Invalid interaction type.
 [LINE:idf55cb6e4]	Invalid interaction type.
 [LINE:id981d12bb]	Invalid interaction type.
 [MODIFICATION:idd81b881e]	Invalid interaction type.
-[:e7d95]	ROUNDED_RECTANGLE cannot be part of a complex. Skipping.
 [:e69d3]	ROUNDED_RECTANGLE cannot be part of a complex. Skipping.
-[:abe7a]	ROUNDED_RECTANGLE cannot be part of a complex. Skipping.
+[:e7d95]	ROUNDED_RECTANGLE cannot be part of a complex. Skipping.
 [:d2977]	ROUNDED_RECTANGLE cannot be part of a complex. Skipping.
+[:abe7a]	ROUNDED_RECTANGLE cannot be part of a complex. Skipping.
 [:da506]	ROUNDED_RECTANGLE cannot be part of a complex. Skipping.
-[:de707]	ROUNDED_RECTANGLE cannot be part of a complex. Skipping.
 [:a11c4]	ROUNDED_RECTANGLE cannot be part of a complex. Skipping.
+[:de707]	ROUNDED_RECTANGLE cannot be part of a complex. Skipping.
 [:c3cff]	ROUNDED_RECTANGLE cannot be part of a complex. Skipping.</p>
 </body>
     </notes>
@@ -44,8 +43,8 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
             <render:listOfColorDefinitions>
               <render:colorDefinition render:id="color_FFFFFFFF" render:value="#FFFFFFFF"/>
               <render:colorDefinition render:id="color_FF14961E" render:value="#14961EFF"/>
-              <render:colorDefinition render:id="color_FF000000" render:value="#000000FF"/>
               <render:colorDefinition render:id="color_FFF8F7F0" render:value="#F8F7F0FF"/>
+              <render:colorDefinition render:id="color_FF000000" render:value="#000000FF"/>
             </render:listOfColorDefinitions>
             <render:listOfLineEndings>
               <render:lineEnding render:id="line_ending_FULL">
@@ -102,14 +101,6 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <render:style render:idList="text_f9a57">
                 <render:g render:stroke="color_FF14961E" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
-              <render:style render:idList="b6003">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_b6003">
-                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
               <render:style render:idList="d20e7">
                 <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF14961E" render:stroke-width="1">
                   <render:polygon>
@@ -127,12 +118,56 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <render:style render:idList="text_d20e7">
                 <render:g render:stroke="color_FF14961E" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
+              <render:style render:idList="c404e">
+                <render:g render:fill="color_FFF8F7F0" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="5" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="486" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="491" render:y="5" xsi:type="RenderPoint"/>
+                      <render:element render:x="491" render:y="226" xsi:type="RenderPoint"/>
+                      <render:element render:x="486" render:y="231" xsi:type="RenderPoint"/>
+                      <render:element render:x="5" render:y="231" xsi:type="RenderPoint"/>
+                      <render:element render:x="0" render:y="226" xsi:type="RenderPoint"/>
+                      <render:element render:x="0" render:y="5" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_c404e">
+                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="ace80">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF14961E" render:stroke-width="1">
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="0" render:y="17" xsi:type="RenderPoint"/>
+                      <render:element render:x="17" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="101" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="117" render:y="17" xsi:type="RenderPoint"/>
+                      <render:element render:x="101" render:y="34" xsi:type="RenderPoint"/>
+                      <render:element render:x="17" render:y="34" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_ace80">
+                <render:g render:stroke="color_FF14961E" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
               <render:style render:idList="eba5c">
                 <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
                   <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
                 </render:g>
               </render:style>
               <render:style render:idList="text_eba5c">
+                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="f425c">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_f425c">
                 <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
               <render:style render:idList="c757c">
@@ -154,12 +189,62 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <render:style render:idList="text_c757c">
                 <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
+              <render:style render:idList="be0b0">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF14961E" render:stroke-width="1">
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="0" render:y="29" xsi:type="RenderPoint"/>
+                      <render:element render:x="29" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="108" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="137" render:y="29" xsi:type="RenderPoint"/>
+                      <render:element render:x="108" render:y="58" xsi:type="RenderPoint"/>
+                      <render:element render:x="29" render:y="58" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_be0b0">
+                <render:g render:stroke="color_FF14961E" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
               <render:style render:idList="gen_dn_4">
                 <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
                   <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
                 </render:g>
               </render:style>
               <render:style render:idList="text_gen_dn_4">
+                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="c6c98">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF14961E" render:stroke-width="1">
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="0" render:y="18" xsi:type="RenderPoint"/>
+                      <render:element render:x="18" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="123" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="141" render:y="18" xsi:type="RenderPoint"/>
+                      <render:element render:x="123" render:y="37" xsi:type="RenderPoint"/>
+                      <render:element render:x="18" render:y="37" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_c6c98">
+                <render:g render:stroke="color_FF14961E" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="gen_dn_3">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_gen_dn_3">
+                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="eb71b">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_eb71b">
                 <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
               <render:style render:idList="cf7c5">
@@ -170,41 +255,37 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <render:style render:idList="text_cf7c5">
                 <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
-              <render:style render:idList="c404e">
-                <render:g render:fill="color_FFF8F7F0" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="5" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="486" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="491" render:y="5" xsi:type="RenderPoint"/>
-                      <render:element render:x="491" render:y="226" xsi:type="RenderPoint"/>
-                      <render:element render:x="486" render:y="231" xsi:type="RenderPoint"/>
-                      <render:element render:x="5" render:y="231" xsi:type="RenderPoint"/>
-                      <render:element render:x="0" render:y="226" xsi:type="RenderPoint"/>
-                      <render:element render:x="0" render:y="5" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
+              <render:style render:idList="gen_dn_2">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
                 </render:g>
               </render:style>
-              <render:style render:idList="text_c404e">
+              <render:style render:idList="text_gen_dn_2">
                 <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
-              <render:style render:idList="cd4a3">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF14961E" render:stroke-width="1">
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="0" render:y="20" xsi:type="RenderPoint"/>
-                      <render:element render:x="20" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="98" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="118" render:y="20" xsi:type="RenderPoint"/>
-                      <render:element render:x="98" render:y="40" xsi:type="RenderPoint"/>
-                      <render:element render:x="20" render:y="40" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
+              <render:style render:idList="gen_dn_1">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
                 </render:g>
               </render:style>
-              <render:style render:idList="text_cd4a3">
-                <render:g render:stroke="color_FF14961E" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              <render:style render:idList="text_gen_dn_1">
+                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="gen_dn_0">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_gen_dn_0">
+                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
+              </render:style>
+              <render:style render:idList="feac7">
+                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
+                </render:g>
+              </render:style>
+              <render:style render:idList="text_feac7">
+                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
               <render:style render:idList="f33e8">
                 <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
@@ -214,12 +295,23 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <render:style render:idList="text_f33e8">
                 <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
-              <render:style render:idList="gen_dn_0">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
+              <render:style render:idList="a3e09">
+                <render:g render:fill="color_FFF8F7F0" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="5" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="292" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="297" render:y="5" xsi:type="RenderPoint"/>
+                      <render:element render:x="297" render:y="272" xsi:type="RenderPoint"/>
+                      <render:element render:x="292" render:y="277" xsi:type="RenderPoint"/>
+                      <render:element render:x="5" render:y="277" xsi:type="RenderPoint"/>
+                      <render:element render:x="0" render:y="272" xsi:type="RenderPoint"/>
+                      <render:element render:x="0" render:y="5" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
                 </render:g>
               </render:style>
-              <render:style render:idList="text_gen_dn_0">
+              <render:style render:idList="text_a3e09">
                 <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
               <render:style render:idList="ee6e7">
@@ -247,99 +339,6 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <render:style render:idList="text_ac2f7">
                 <render:g render:stroke="color_FF14961E" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
-              <render:style render:idList="ace80">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF14961E" render:stroke-width="1">
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="0" render:y="17" xsi:type="RenderPoint"/>
-                      <render:element render:x="17" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="101" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="117" render:y="17" xsi:type="RenderPoint"/>
-                      <render:element render:x="101" render:y="34" xsi:type="RenderPoint"/>
-                      <render:element render:x="17" render:y="34" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_ace80">
-                <render:g render:stroke="color_FF14961E" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="f425c">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_f425c">
-                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="a3e09">
-                <render:g render:fill="color_FFF8F7F0" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="5" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="292" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="297" render:y="5" xsi:type="RenderPoint"/>
-                      <render:element render:x="297" render:y="272" xsi:type="RenderPoint"/>
-                      <render:element render:x="292" render:y="277" xsi:type="RenderPoint"/>
-                      <render:element render:x="5" render:y="277" xsi:type="RenderPoint"/>
-                      <render:element render:x="0" render:y="272" xsi:type="RenderPoint"/>
-                      <render:element render:x="0" render:y="5" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_a3e09">
-                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="gen_dn_3">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_gen_dn_3">
-                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="eb71b">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_eb71b">
-                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="be0b0">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF14961E" render:stroke-width="1">
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="0" render:y="29" xsi:type="RenderPoint"/>
-                      <render:element render:x="29" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="108" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="137" render:y="29" xsi:type="RenderPoint"/>
-                      <render:element render:x="108" render:y="58" xsi:type="RenderPoint"/>
-                      <render:element render:x="29" render:y="58" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_be0b0">
-                <render:g render:stroke="color_FF14961E" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="gen_dn_2">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_gen_dn_2">
-                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
-              <render:style render:idList="gen_dn_1">
-                <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
-                </render:g>
-              </render:style>
-              <render:style render:idList="text_gen_dn_1">
-                <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
-              </render:style>
               <render:style render:idList="f59b7">
                 <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
                   <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
@@ -348,29 +347,29 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <render:style render:idList="text_f59b7">
                 <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
-              <render:style render:idList="c6c98">
+              <render:style render:idList="cd4a3">
                 <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF14961E" render:stroke-width="1">
                   <render:polygon>
                     <render:listOfElements>
-                      <render:element render:x="0" render:y="18" xsi:type="RenderPoint"/>
-                      <render:element render:x="18" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="123" render:y="0" xsi:type="RenderPoint"/>
-                      <render:element render:x="141" render:y="18" xsi:type="RenderPoint"/>
-                      <render:element render:x="123" render:y="37" xsi:type="RenderPoint"/>
-                      <render:element render:x="18" render:y="37" xsi:type="RenderPoint"/>
+                      <render:element render:x="0" render:y="20" xsi:type="RenderPoint"/>
+                      <render:element render:x="20" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="98" render:y="0" xsi:type="RenderPoint"/>
+                      <render:element render:x="118" render:y="20" xsi:type="RenderPoint"/>
+                      <render:element render:x="98" render:y="40" xsi:type="RenderPoint"/>
+                      <render:element render:x="20" render:y="40" xsi:type="RenderPoint"/>
                     </render:listOfElements>
                   </render:polygon>
                 </render:g>
               </render:style>
-              <render:style render:idList="text_c6c98">
+              <render:style render:idList="text_cd4a3">
                 <render:g render:stroke="color_FF14961E" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
-              <render:style render:idList="feac7">
+              <render:style render:idList="b6003">
                 <render:g render:fill="color_FFFFFFFF" render:font-size="12" render:stroke="color_FF000000" render:stroke-width="1">
                   <render:rectangle render:height="100%" render:rx="0" render:ry="0" render:width="100%" render:x="0" render:y="0"/>
                 </render:g>
               </render:style>
-              <render:style render:idList="text_feac7">
+              <render:style render:idList="text_b6003">
                 <render:g render:stroke="color_FF000000" render:text-anchor="middle" render:vtext-anchor="middle"/>
               </render:style>
               <render:style render:idList="d380c">
@@ -423,25 +422,7 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <render:style render:idList="node_8">
                 <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
               </render:style>
-              <render:style render:idList="idfe2de42e_6">
-                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="836" render:y="471" xsi:type="RenderPoint"/>
-                      <render:element render:x="846" render:y="471" xsi:type="RenderPoint"/>
-                      <render:element render:x="846" render:y="481" xsi:type="RenderPoint"/>
-                      <render:element render:x="836" render:y="481" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
-                </render:g>
-              </render:style>
-              <render:style render:idList="node_10">
-                <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="node_11">
-                <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
-              </render:style>
-              <render:style render:idList="id981d12bb_9">
+              <render:style render:idList="id981d12bb_6">
                 <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-width="1">
                   <render:polygon>
                     <render:listOfElements>
@@ -453,13 +434,49 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
                   </render:polygon>
                 </render:g>
               </render:style>
+              <render:style render:idList="node_10">
+                <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="node_11">
+                <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="id6de06d86_9">
+                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="520" render:y="459" xsi:type="RenderPoint"/>
+                      <render:element render:x="530" render:y="459" xsi:type="RenderPoint"/>
+                      <render:element render:x="530" render:y="469" xsi:type="RenderPoint"/>
+                      <render:element render:x="520" render:y="469" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
+                </render:g>
+              </render:style>
               <render:style render:idList="node_13">
-                <render:g render:endHead="line_ending_NONE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+                <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
               </render:style>
               <render:style render:idList="node_14">
+                <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="idfe2de42e_12">
+                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-width="1">
+                  <render:polygon>
+                    <render:listOfElements>
+                      <render:element render:x="836" render:y="471" xsi:type="RenderPoint"/>
+                      <render:element render:x="846" render:y="471" xsi:type="RenderPoint"/>
+                      <render:element render:x="846" render:y="481" xsi:type="RenderPoint"/>
+                      <render:element render:x="836" render:y="481" xsi:type="RenderPoint"/>
+                    </render:listOfElements>
+                  </render:polygon>
+                </render:g>
+              </render:style>
+              <render:style render:idList="node_16">
+                <render:g render:endHead="line_ending_NONE" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+              </render:style>
+              <render:style render:idList="node_17">
                 <render:g render:endHead="line_ending_OPEN" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
               </render:style>
-              <render:style render:idList="idd81b881e_12">
+              <render:style render:idList="idd81b881e_15">
                 <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-width="1">
                   <render:polygon>
                     <render:listOfElements>
@@ -471,23 +488,20 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
                   </render:polygon>
                 </render:g>
               </render:style>
-              <render:style render:idList="node_16">
-                <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+              <render:style render:idList="layer_text_0">
+                <render:g render:stroke="color_FF000000" render:text-anchor="start" render:vtext-anchor="top"/>
               </render:style>
-              <render:style render:idList="node_17">
-                <render:g render:endHead="line_ending_FULL" render:fill="color_FF000000" render:stroke="color_FF000000" render:stroke-width="1"/>
+              <render:style render:idList="layer_text_1">
+                <render:g render:stroke="color_FF000000" render:text-anchor="start" render:vtext-anchor="top"/>
               </render:style>
-              <render:style render:idList="id6de06d86_15">
-                <render:g render:fill="color_FFFFFFFF" render:stroke="color_FF000000" render:stroke-width="1">
-                  <render:polygon>
-                    <render:listOfElements>
-                      <render:element render:x="520" render:y="459" xsi:type="RenderPoint"/>
-                      <render:element render:x="530" render:y="459" xsi:type="RenderPoint"/>
-                      <render:element render:x="530" render:y="469" xsi:type="RenderPoint"/>
-                      <render:element render:x="520" render:y="469" xsi:type="RenderPoint"/>
-                    </render:listOfElements>
-                  </render:polygon>
-                </render:g>
+              <render:style render:idList="layer_text_2">
+                <render:g render:stroke="color_FF000000" render:text-anchor="start" render:vtext-anchor="top"/>
+              </render:style>
+              <render:style render:idList="layer_text_3">
+                <render:g render:stroke="color_FF000000" render:text-anchor="start" render:vtext-anchor="top"/>
+              </render:style>
+              <render:style render:idList="layer_text_4">
+                <render:g render:stroke="color_FF000000" render:text-anchor="start" render:vtext-anchor="top"/>
               </render:style>
             </render:listOfStyles>
           </render:renderInformation>
@@ -508,124 +522,124 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <layout:dimensions layout:height="48.5" layout:width="150"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="b6003" layout:species="species_1">
-            <layout:boundingBox>
-              <layout:position layout:x="214.8785037705917" layout:y="539.6466519868097" layout:z="32768"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="d20e7" layout:species="species_2">
+          <layout:speciesGlyph layout:id="d20e7" layout:species="species_1">
             <layout:boundingBox>
               <layout:position layout:x="650.6214945774645" layout:y="288.2551548019368" layout:z="-6"/>
               <layout:dimensions layout:height="25" layout:width="90"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="eba5c" layout:species="species_3">
+          <layout:speciesGlyph layout:id="c404e" layout:species="species_2">
             <layout:boundingBox>
-              <layout:position layout:x="74.46392624095152" layout:y="567.7291901644246" layout:z="32768"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="c757c" layout:species="species_4">
-            <layout:boundingBox>
-              <layout:position layout:x="338.1549295774661" layout:y="273.6901408450705" layout:z="-23"/>
-              <layout:dimensions layout:height="385.6143097315142" layout:width="710.6901408450695"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="gen_dn_4" layout:species="species_5">
-            <layout:boundingBox>
-              <layout:position layout:x="709.6214945774645" layout:y="524.3044505765839" layout:z="-9"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="cf7c5" layout:species="species_6">
-            <layout:boundingBox>
-              <layout:position layout:x="387.2714843681874" layout:y="531.6563474274268" layout:z="-15"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="c404e" layout:species="species_7">
-            <layout:boundingBox>
-              <layout:position layout:x="556.0563380281687" layout:y="13.843969265036947" layout:z="32774"/>
+              <layout:position layout:x="556.0563380281687" layout:y="13.843969265036947" layout:z="32770"/>
               <layout:dimensions layout:height="231.31096031242805" layout:width="491.0000000000002"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="cd4a3" layout:species="species_8">
-            <layout:boundingBox>
-              <layout:position layout:x="441.3511382530602" layout:y="402.25996464464015" layout:z="-20"/>
-              <layout:dimensions layout:height="39.58508991996632" layout:width="117.75526975989933"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="f33e8" layout:species="species_9">
-            <layout:boundingBox>
-              <layout:position layout:x="74.46392624095141" layout:y="539.4630483343346" layout:z="32768"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="gen_dn_0" layout:species="species_10">
-            <layout:boundingBox>
-              <layout:position layout:x="711.6585491719566" layout:y="554.4029643090937" layout:z="-19"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="ee6e7" layout:species="species_11">
-            <layout:boundingBox>
-              <layout:position layout:x="895.2714843681856" layout:y="493.28459307776853" layout:z="-10"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="ac2f7" layout:species="species_12">
-            <layout:boundingBox>
-              <layout:position layout:x="47.422535211267984" layout:y="389.3510021742959" layout:z="32768"/>
-              <layout:dimensions layout:height="53.74758937499996" layout:width="240.3805668750001"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="ace80" layout:species="species_13">
+          <layout:speciesGlyph layout:id="ace80" layout:species="species_3">
             <layout:boundingBox>
               <layout:position layout:x="374.15492957746505" layout:y="486.0281690140851" layout:z="-7"/>
               <layout:dimensions layout:height="33.77628156250012" layout:width="117.46656500000017"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="f425c" layout:species="species_14">
+          <layout:speciesGlyph layout:id="eba5c" layout:species="species_4">
+            <layout:boundingBox>
+              <layout:position layout:x="74.46392624095152" layout:y="567.7291901644246" layout:z="32768"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="f425c" layout:species="species_5">
             <layout:boundingBox>
               <layout:position layout:x="710.5811144790446" layout:y="581.1886310876084" layout:z="-13"/>
               <layout:dimensions layout:height="20" layout:width="80"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="a3e09" layout:species="species_15">
+          <layout:speciesGlyph layout:id="c757c" layout:species="species_6">
             <layout:boundingBox>
-              <layout:position layout:x="18.42253521126804" layout:y="371.69331279929656" layout:z="32767"/>
-              <layout:dimensions layout:height="277.40527874999975" layout:width="297"/>
+              <layout:position layout:x="338.1549295774661" layout:y="273.6901408450705" layout:z="-23"/>
+              <layout:dimensions layout:height="385.6143097315142" layout:width="710.6901408450695"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="gen_dn_3" layout:species="species_16">
-            <layout:boundingBox>
-              <layout:position layout:x="706.7052542958586" layout:y="407.9333613277106" layout:z="-11"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="eb71b" layout:species="species_17">
-            <layout:boundingBox>
-              <layout:position layout:x="538.2714843681865" layout:y="454.230232726809" layout:z="-22"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="be0b0" layout:species="species_18">
+          <layout:speciesGlyph layout:id="be0b0" layout:species="species_7">
             <layout:boundingBox>
               <layout:position layout:x="50.870515993142675" layout:y="472.5912939846778" layout:z="32768"/>
               <layout:dimensions layout:height="57.69769256580463" layout:width="136.82116728183377"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="gen_dn_2" layout:species="species_19">
+          <layout:speciesGlyph layout:id="gen_dn_4" layout:species="species_8">
+            <layout:boundingBox>
+              <layout:position layout:x="709.6214945774645" layout:y="524.3044505765839" layout:z="-9"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="c6c98" layout:species="species_9">
+            <layout:boundingBox>
+              <layout:position layout:x="862.1549295774641" layout:y="419.0281690140847" layout:z="-21"/>
+              <layout:dimensions layout:height="36.7762815625" layout:width="141.46656499999835"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="gen_dn_3" layout:species="species_10">
+            <layout:boundingBox>
+              <layout:position layout:x="706.7052542958586" layout:y="407.9333613277106" layout:z="-11"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="eb71b" layout:species="species_11">
+            <layout:boundingBox>
+              <layout:position layout:x="538.2714843681865" layout:y="454.230232726809" layout:z="-22"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="cf7c5" layout:species="species_12">
+            <layout:boundingBox>
+              <layout:position layout:x="387.2714843681874" layout:y="531.6563474274268" layout:z="-15"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="gen_dn_2" layout:species="species_13">
             <layout:boundingBox>
               <layout:position layout:x="707.6214945774645" layout:y="435.9916036225911" layout:z="-12"/>
               <layout:dimensions layout:height="20" layout:width="80"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="gen_dn_1" layout:species="species_20">
+          <layout:speciesGlyph layout:id="gen_dn_1" layout:species="species_14">
             <layout:boundingBox>
               <layout:position layout:x="708.6278196029466" layout:y="495.6096423035253" layout:z="-16"/>
               <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="gen_dn_0" layout:species="species_15">
+            <layout:boundingBox>
+              <layout:position layout:x="711.6585491719566" layout:y="554.4029643090937" layout:z="-19"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="feac7" layout:species="species_16">
+            <layout:boundingBox>
+              <layout:position layout:x="537.6214945774644" layout:y="484.142591064492" layout:z="-14"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="f33e8" layout:species="species_17">
+            <layout:boundingBox>
+              <layout:position layout:x="74.46392624095141" layout:y="539.4630483343346" layout:z="32768"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="a3e09" layout:species="species_18">
+            <layout:boundingBox>
+              <layout:position layout:x="18.42253521126804" layout:y="371.69331279929656" layout:z="32767"/>
+              <layout:dimensions layout:height="277.40527874999975" layout:width="297"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="ee6e7" layout:species="species_19">
+            <layout:boundingBox>
+              <layout:position layout:x="895.2714843681856" layout:y="493.28459307776853" layout:z="-10"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="ac2f7" layout:species="species_20">
+            <layout:boundingBox>
+              <layout:position layout:x="47.422535211267984" layout:y="389.3510021742959" layout:z="32768"/>
+              <layout:dimensions layout:height="53.74758937499996" layout:width="240.3805668750001"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
           <layout:speciesGlyph layout:id="f59b7" layout:species="species_21">
@@ -634,15 +648,15 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <layout:dimensions layout:height="20" layout:width="80"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="c6c98" layout:species="species_22">
+          <layout:speciesGlyph layout:id="cd4a3" layout:species="species_22">
             <layout:boundingBox>
-              <layout:position layout:x="862.1549295774641" layout:y="419.0281690140847" layout:z="-21"/>
-              <layout:dimensions layout:height="36.7762815625" layout:width="141.46656499999835"/>
+              <layout:position layout:x="441.3511382530602" layout:y="402.25996464464015" layout:z="-20"/>
+              <layout:dimensions layout:height="39.58508991996632" layout:width="117.75526975989933"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
-          <layout:speciesGlyph layout:id="feac7" layout:species="species_23">
+          <layout:speciesGlyph layout:id="b6003" layout:species="species_23">
             <layout:boundingBox>
-              <layout:position layout:x="537.6214945774644" layout:y="484.142591064492" layout:z="-14"/>
+              <layout:position layout:x="214.8785037705917" layout:y="539.6466519868097" layout:z="32768"/>
               <layout:dimensions layout:height="20" layout:width="80"/>
             </layout:boundingBox>
           </layout:speciesGlyph>
@@ -734,39 +748,7 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               </layout:speciesReferenceGlyph>
             </layout:listOfSpeciesReferenceGlyphs>
           </layout:reactionGlyph>
-          <layout:reactionGlyph layout:id="idfe2de42e_6" layout:reaction="idfe2de42e">
-            <layout:curve>
-              <layout:listOfCurveSegments>
-                <layout:curveSegment xsi:type="LineSegment">
-                  <layout:start layout:x="836.2601053750377" layout:y="476.16710890300294" layout:z="-27"/>
-                  <layout:end layout:x="846.2597890193797" layout:y="476.2466514267155" layout:z="-27"/>
-                </layout:curveSegment>
-              </layout:listOfCurveSegments>
-            </layout:curve>
-            <layout:listOfSpeciesReferenceGlyphs>
-              <layout:speciesReferenceGlyph layout:id="node_7" layout:role="substrate" layout:speciesGlyph="d380c">
-                <layout:curve>
-                  <layout:listOfCurveSegments>
-                    <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="836.2601053750377" layout:y="476.16710890300294" layout:z="-27"/>
-                      <layout:end layout:x="789.2599471972103" layout:y="475.7932459560015" layout:z="-27"/>
-                    </layout:curveSegment>
-                  </layout:listOfCurveSegments>
-                </layout:curve>
-              </layout:speciesReferenceGlyph>
-              <layout:speciesReferenceGlyph layout:id="node_8" layout:role="product" layout:speciesGlyph="f59b7">
-                <layout:curve>
-                  <layout:listOfCurveSegments>
-                    <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="846.2597890193797" layout:y="476.2466514267155" layout:z="-27"/>
-                      <layout:end layout:x="893.2599471972071" layout:y="476.62051437371696" layout:z="-27"/>
-                    </layout:curveSegment>
-                  </layout:listOfCurveSegments>
-                </layout:curve>
-              </layout:speciesReferenceGlyph>
-            </layout:listOfSpeciesReferenceGlyphs>
-          </layout:reactionGlyph>
-          <layout:reactionGlyph layout:id="id981d12bb_9" layout:reaction="id981d12bb">
+          <layout:reactionGlyph layout:id="id981d12bb_6" layout:reaction="id981d12bb">
             <layout:curve>
               <layout:listOfCurveSegments>
                 <layout:curveSegment xsi:type="LineSegment">
@@ -776,7 +758,7 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               </layout:listOfCurveSegments>
             </layout:curve>
             <layout:listOfSpeciesReferenceGlyphs>
-              <layout:speciesReferenceGlyph layout:id="node_10" layout:role="substrate" layout:speciesGlyph="f425c">
+              <layout:speciesReferenceGlyph layout:id="node_7" layout:role="substrate" layout:speciesGlyph="f425c">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
@@ -794,7 +776,7 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
                   </layout:listOfCurveSegments>
                 </layout:curve>
               </layout:speciesReferenceGlyph>
-              <layout:speciesReferenceGlyph layout:id="node_11" layout:role="product" layout:speciesGlyph="ee6e7">
+              <layout:speciesReferenceGlyph layout:id="node_8" layout:role="product" layout:speciesGlyph="ee6e7">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
@@ -806,39 +788,7 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               </layout:speciesReferenceGlyph>
             </layout:listOfSpeciesReferenceGlyphs>
           </layout:reactionGlyph>
-          <layout:reactionGlyph layout:id="idd81b881e_12" layout:reaction="idd81b881e">
-            <layout:curve>
-              <layout:listOfCurveSegments>
-                <layout:curveSegment xsi:type="LineSegment">
-                  <layout:start layout:x="179.67123809535764" layout:y="549.5396549202745" layout:z="12288"/>
-                  <layout:end layout:x="189.67119191618548" layout:y="549.5700454008698" layout:z="12288"/>
-                </layout:curveSegment>
-              </layout:listOfCurveSegments>
-            </layout:curve>
-            <layout:listOfSpeciesReferenceGlyphs>
-              <layout:speciesReferenceGlyph layout:id="node_13" layout:role="substrate" layout:speciesGlyph="f33e8">
-                <layout:curve>
-                  <layout:listOfCurveSegments>
-                    <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="179.67123809535764" layout:y="549.5396549202745" layout:z="12288"/>
-                      <layout:end layout:x="154.46392624095142" layout:y="549.4630483343346" layout:z="12288"/>
-                    </layout:curveSegment>
-                  </layout:listOfCurveSegments>
-                </layout:curve>
-              </layout:speciesReferenceGlyph>
-              <layout:speciesReferenceGlyph layout:id="node_14" layout:role="product" layout:speciesGlyph="b6003">
-                <layout:curve>
-                  <layout:listOfCurveSegments>
-                    <layout:curveSegment xsi:type="LineSegment">
-                      <layout:start layout:x="189.67119191618548" layout:y="549.5700454008698" layout:z="12288"/>
-                      <layout:end layout:x="214.8785037705917" layout:y="549.6466519868097" layout:z="12288"/>
-                    </layout:curveSegment>
-                  </layout:listOfCurveSegments>
-                </layout:curve>
-              </layout:speciesReferenceGlyph>
-            </layout:listOfSpeciesReferenceGlyphs>
-          </layout:reactionGlyph>
-          <layout:reactionGlyph layout:id="id6de06d86_15" layout:reaction="id6de06d86">
+          <layout:reactionGlyph layout:id="id6de06d86_9" layout:reaction="id6de06d86">
             <layout:curve>
               <layout:listOfCurveSegments>
                 <layout:curveSegment xsi:type="LineSegment">
@@ -848,7 +798,7 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               </layout:listOfCurveSegments>
             </layout:curve>
             <layout:listOfSpeciesReferenceGlyphs>
-              <layout:speciesReferenceGlyph layout:id="node_16" layout:role="substrate" layout:speciesGlyph="cf7c5">
+              <layout:speciesReferenceGlyph layout:id="node_10" layout:role="substrate" layout:speciesGlyph="cf7c5">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
@@ -866,12 +816,76 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
                   </layout:listOfCurveSegments>
                 </layout:curve>
               </layout:speciesReferenceGlyph>
-              <layout:speciesReferenceGlyph layout:id="node_17" layout:role="product" layout:speciesGlyph="eb71b">
+              <layout:speciesReferenceGlyph layout:id="node_11" layout:role="product" layout:speciesGlyph="eb71b">
                 <layout:curve>
                   <layout:listOfCurveSegments>
                     <layout:curveSegment xsi:type="LineSegment">
                       <layout:start layout:x="529.7132069728252" layout:y="464.230232726809" layout:z="-28"/>
                       <layout:end layout:x="538.2714843681865" layout:y="464.230232726809" layout:z="-28"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+            </layout:listOfSpeciesReferenceGlyphs>
+          </layout:reactionGlyph>
+          <layout:reactionGlyph layout:id="idfe2de42e_12" layout:reaction="idfe2de42e">
+            <layout:curve>
+              <layout:listOfCurveSegments>
+                <layout:curveSegment xsi:type="LineSegment">
+                  <layout:start layout:x="836.2601053750377" layout:y="476.16710890300294" layout:z="-27"/>
+                  <layout:end layout:x="846.2597890193797" layout:y="476.2466514267155" layout:z="-27"/>
+                </layout:curveSegment>
+              </layout:listOfCurveSegments>
+            </layout:curve>
+            <layout:listOfSpeciesReferenceGlyphs>
+              <layout:speciesReferenceGlyph layout:id="node_13" layout:role="substrate" layout:speciesGlyph="d380c">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="836.2601053750377" layout:y="476.16710890300294" layout:z="-27"/>
+                      <layout:end layout:x="789.2599471972103" layout:y="475.7932459560015" layout:z="-27"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="node_14" layout:role="product" layout:speciesGlyph="f59b7">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="846.2597890193797" layout:y="476.2466514267155" layout:z="-27"/>
+                      <layout:end layout:x="893.2599471972071" layout:y="476.62051437371696" layout:z="-27"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+            </layout:listOfSpeciesReferenceGlyphs>
+          </layout:reactionGlyph>
+          <layout:reactionGlyph layout:id="idd81b881e_15" layout:reaction="idd81b881e">
+            <layout:curve>
+              <layout:listOfCurveSegments>
+                <layout:curveSegment xsi:type="LineSegment">
+                  <layout:start layout:x="179.67123809535764" layout:y="549.5396549202745" layout:z="12288"/>
+                  <layout:end layout:x="189.67119191618548" layout:y="549.5700454008698" layout:z="12288"/>
+                </layout:curveSegment>
+              </layout:listOfCurveSegments>
+            </layout:curve>
+            <layout:listOfSpeciesReferenceGlyphs>
+              <layout:speciesReferenceGlyph layout:id="node_16" layout:role="substrate" layout:speciesGlyph="f33e8">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="179.67123809535764" layout:y="549.5396549202745" layout:z="12288"/>
+                      <layout:end layout:x="154.46392624095142" layout:y="549.4630483343346" layout:z="12288"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="node_17" layout:role="product" layout:speciesGlyph="b6003">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="189.67119191618548" layout:y="549.5700454008698" layout:z="12288"/>
+                      <layout:end layout:x="214.8785037705917" layout:y="549.6466519868097" layout:z="12288"/>
                     </layout:curveSegment>
                   </layout:listOfCurveSegments>
                 </layout:curve>
@@ -886,76 +900,16 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <layout:dimensions layout:height="48.5" layout:width="150"/>
             </layout:boundingBox>
           </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="b6003" layout:id="text_b6003" layout:text="AGT">
-            <layout:boundingBox>
-              <layout:position layout:x="214.8785037705917" layout:y="539.6466519868097" layout:z="32769"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
           <layout:textGlyph layout:graphicalObject="d20e7" layout:id="text_d20e7" layout:text="Lung fibrosis">
             <layout:boundingBox>
               <layout:position layout:x="650.6214945774645" layout:y="288.2551548019368" layout:z="-5"/>
               <layout:dimensions layout:height="25" layout:width="90"/>
             </layout:boundingBox>
           </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="eba5c" layout:id="text_eba5c" layout:text="TMPRSS2">
+          <layout:textGlyph layout:graphicalObject="c404e" layout:id="text_c404e" layout:text="KE3 (KE:1750) - Increase inflammatory immune responses&#xa;MIE (KE:1739) - Binding of S protein to ACE receptor&#xa;KE4 (KE:1748) -  &#x9;Increase, the risk of acute respiratory failure&#xa;KE1 (KE:1738) - Enhanced viral entry and gene expression&#xa;AO (KE:1751) - Increased mortality&#xa;Events related to the adverse outcome pathway for&#xa;acute respiratory distress associated mortality (AOP:320)&#xa;KE2 (KE:1496) - Increased, secretion of proinflammatory and profibrotic mediators&#xa;Legend">
             <layout:boundingBox>
-              <layout:position layout:x="74.46392624095152" layout:y="567.7291901644246" layout:z="32769"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="c757c" layout:id="text_c757c" layout:text="KE3&#xa;KE1&#xa;KE2">
-            <layout:boundingBox>
-              <layout:position layout:x="885.9669577420303" layout:y="513.1691061391846" layout:z="-22"/>
-              <layout:dimensions layout:height="25" layout:width="90"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="gen_dn_4" layout:id="text_gen_dn_4" layout:text="IL10">
-            <layout:boundingBox>
-              <layout:position layout:x="709.6214945774645" layout:y="524.3044505765839" layout:z="-8"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="cf7c5" layout:id="text_cf7c5" layout:text="IL8">
-            <layout:boundingBox>
-              <layout:position layout:x="387.2714843681874" layout:y="531.6563474274268" layout:z="-14"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="c404e" layout:id="text_c404e" layout:text="KE4 (KE:1748) -  &#x9;Increase, the risk of acute respiratory failure&#xa;AO (KE:1751) - Increased mortality&#xa;Events related to the adverse outcome pathway for&#xa;acute respiratory distress associated mortality (AOP:320)&#xa;Legend&#xa;KE2 (KE:1496) - Increased, secretion of proinflammatory and profibrotic mediators&#xa;MIE (KE:1739) - Binding of S protein to ACE receptor&#xa;KE3 (KE:1750) - Increase inflammatory immune responses&#xa;KE1 (KE:1738) - Enhanced viral entry and gene expression">
-            <layout:boundingBox>
-              <layout:position layout:x="573.0563380281687" layout:y="183.65492957746497" layout:z="32775"/>
-              <layout:dimensions layout:height="25" layout:width="344"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="cd4a3" layout:id="text_cd4a3" layout:text="Toll-like&#xa;receptor signaling">
-            <layout:boundingBox>
-              <layout:position layout:x="441.3511382530602" layout:y="402.25996464464015" layout:z="-19"/>
-              <layout:dimensions layout:height="39.58508991996632" layout:width="117.75526975989933"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="f33e8" layout:id="text_f33e8" layout:text="ACE2">
-            <layout:boundingBox>
-              <layout:position layout:x="74.46392624095141" layout:y="539.4630483343346" layout:z="32769"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="gen_dn_0" layout:id="text_gen_dn_0" layout:text="TNF">
-            <layout:boundingBox>
-              <layout:position layout:x="711.6585491719566" layout:y="554.4029643090937" layout:z="-18"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="ee6e7" layout:id="text_ee6e7" layout:text="CCL2">
-            <layout:boundingBox>
-              <layout:position layout:x="895.2714843681856" layout:y="493.28459307776853" layout:z="-9"/>
-              <layout:dimensions layout:height="20" layout:width="80"/>
-            </layout:boundingBox>
-          </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="ac2f7" layout:id="text_ac2f7" layout:text="SARS-CoV-2 and ACE2 receptor:&#xa;molecular mechanisms and&#xa;potential therapeutic target">
-            <layout:boundingBox>
-              <layout:position layout:x="47.422535211267984" layout:y="389.3510021742959" layout:z="32769"/>
-              <layout:dimensions layout:height="53.74758937499996" layout:width="240.3805668750001"/>
+              <layout:position layout:x="567.0563380281687" layout:y="163.65492957746497" layout:z="32771"/>
+              <layout:dimensions layout:height="25" layout:width="340"/>
             </layout:boundingBox>
           </layout:textGlyph>
           <layout:textGlyph layout:graphicalObject="ace80" layout:id="text_ace80" layout:text="LTF danger signal&#xa;response pathway">
@@ -964,16 +918,40 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <layout:dimensions layout:height="33.77628156250012" layout:width="117.46656500000017"/>
             </layout:boundingBox>
           </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="eba5c" layout:id="text_eba5c" layout:text="TMPRSS2">
+            <layout:boundingBox>
+              <layout:position layout:x="74.46392624095152" layout:y="567.7291901644246" layout:z="32769"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
           <layout:textGlyph layout:graphicalObject="f425c" layout:id="text_f425c" layout:text="IL6">
             <layout:boundingBox>
               <layout:position layout:x="710.5811144790446" layout:y="581.1886310876084" layout:z="-12"/>
               <layout:dimensions layout:height="20" layout:width="80"/>
             </layout:boundingBox>
           </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="a3e09" layout:id="text_a3e09" layout:text="MIE">
+          <layout:textGlyph layout:graphicalObject="c757c" layout:id="text_c757c" layout:text="KE2&#xa;KE3&#xa;KE1">
             <layout:boundingBox>
-              <layout:position layout:x="69.38138806333649" layout:y="586.1734996118957" layout:z="32768"/>
-              <layout:dimensions layout:height="40.92509193739943" layout:width="90"/>
+              <layout:position layout:x="703.9669577420332" layout:y="607.1691061391846" layout:z="-22"/>
+              <layout:dimensions layout:height="25" layout:width="90"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="be0b0" layout:id="text_be0b0" layout:text="SARS-CoV-2 and&#xa;COVID-19 pathway">
+            <layout:boundingBox>
+              <layout:position layout:x="50.870515993142675" layout:y="472.5912939846778" layout:z="32769"/>
+              <layout:dimensions layout:height="57.69769256580463" layout:width="136.82116728183377"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="gen_dn_4" layout:id="text_gen_dn_4" layout:text="IL10">
+            <layout:boundingBox>
+              <layout:position layout:x="709.6214945774645" layout:y="524.3044505765839" layout:z="-8"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="c6c98" layout:id="text_c6c98" layout:text="Positive regulation of&#xa;leukocyte activation">
+            <layout:boundingBox>
+              <layout:position layout:x="862.1549295774641" layout:y="419.0281690140847" layout:z="-20"/>
+              <layout:dimensions layout:height="36.7762815625" layout:width="141.46656499999835"/>
             </layout:boundingBox>
           </layout:textGlyph>
           <layout:textGlyph layout:graphicalObject="gen_dn_3" layout:id="text_gen_dn_3" layout:text="IL1B">
@@ -988,10 +966,10 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <layout:dimensions layout:height="20" layout:width="80"/>
             </layout:boundingBox>
           </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="be0b0" layout:id="text_be0b0" layout:text="SARS-CoV-2 and&#xa;COVID-19 pathway">
+          <layout:textGlyph layout:graphicalObject="cf7c5" layout:id="text_cf7c5" layout:text="IL8">
             <layout:boundingBox>
-              <layout:position layout:x="50.870515993142675" layout:y="472.5912939846778" layout:z="32769"/>
-              <layout:dimensions layout:height="57.69769256580463" layout:width="136.82116728183377"/>
+              <layout:position layout:x="387.2714843681874" layout:y="531.6563474274268" layout:z="-14"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
             </layout:boundingBox>
           </layout:textGlyph>
           <layout:textGlyph layout:graphicalObject="gen_dn_2" layout:id="text_gen_dn_2" layout:text="IL7">
@@ -1006,21 +984,57 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <layout:dimensions layout:height="20" layout:width="80"/>
             </layout:boundingBox>
           </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="gen_dn_0" layout:id="text_gen_dn_0" layout:text="TNF">
+            <layout:boundingBox>
+              <layout:position layout:x="711.6585491719566" layout:y="554.4029643090937" layout:z="-18"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="feac7" layout:id="text_feac7" layout:text="CXCL10">
+            <layout:boundingBox>
+              <layout:position layout:x="537.6214945774644" layout:y="484.142591064492" layout:z="-13"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="f33e8" layout:id="text_f33e8" layout:text="ACE2">
+            <layout:boundingBox>
+              <layout:position layout:x="74.46392624095141" layout:y="539.4630483343346" layout:z="32769"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="a3e09" layout:id="text_a3e09" layout:text="MIE">
+            <layout:boundingBox>
+              <layout:position layout:x="69.38138806333649" layout:y="586.1734996118957" layout:z="32768"/>
+              <layout:dimensions layout:height="40.92509193739943" layout:width="90"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="ee6e7" layout:id="text_ee6e7" layout:text="CCL2">
+            <layout:boundingBox>
+              <layout:position layout:x="895.2714843681856" layout:y="493.28459307776853" layout:z="-9"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="ac2f7" layout:id="text_ac2f7" layout:text="SARS-CoV-2 and ACE2 receptor:&#xa;molecular mechanisms and&#xa;potential therapeutic target">
+            <layout:boundingBox>
+              <layout:position layout:x="47.422535211267984" layout:y="389.3510021742959" layout:z="32769"/>
+              <layout:dimensions layout:height="53.74758937499996" layout:width="240.3805668750001"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
           <layout:textGlyph layout:graphicalObject="f59b7" layout:id="text_f59b7" layout:text="IL2RA">
             <layout:boundingBox>
               <layout:position layout:x="893.2599471972071" layout:y="466.62051437371696" layout:z="-7"/>
               <layout:dimensions layout:height="20" layout:width="80"/>
             </layout:boundingBox>
           </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="c6c98" layout:id="text_c6c98" layout:text="Positive regulation of&#xa;leukocyte activation">
+          <layout:textGlyph layout:graphicalObject="cd4a3" layout:id="text_cd4a3" layout:text="Toll-like&#xa;receptor signaling">
             <layout:boundingBox>
-              <layout:position layout:x="862.1549295774641" layout:y="419.0281690140847" layout:z="-20"/>
-              <layout:dimensions layout:height="36.7762815625" layout:width="141.46656499999835"/>
+              <layout:position layout:x="441.3511382530602" layout:y="402.25996464464015" layout:z="-19"/>
+              <layout:dimensions layout:height="39.58508991996632" layout:width="117.75526975989933"/>
             </layout:boundingBox>
           </layout:textGlyph>
-          <layout:textGlyph layout:graphicalObject="feac7" layout:id="text_feac7" layout:text="CXCL10">
+          <layout:textGlyph layout:graphicalObject="b6003" layout:id="text_b6003" layout:text="AGT">
             <layout:boundingBox>
-              <layout:position layout:x="537.6214945774644" layout:y="484.142591064492" layout:z="-13"/>
+              <layout:position layout:x="214.8785037705917" layout:y="539.6466519868097" layout:z="32769"/>
               <layout:dimensions layout:height="20" layout:width="80"/>
             </layout:boundingBox>
           </layout:textGlyph>
@@ -1030,56 +1044,430 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
               <layout:dimensions layout:height="20" layout:width="80"/>
             </layout:boundingBox>
           </layout:textGlyph>
+          <layout:textGlyph layout:id="layer_text_0" layout:text="15 genes included in the pathway: genes with direct evidence of association to COVID-19 in the Comparative Toxicogenomics Database (https://ctdbase.org)&#xa;&#xa;As of 8th April, 2020">
+            <layout:boundingBox>
+              <layout:position layout:x="123.21126760563453" layout:y="114.57746478872986" layout:z="32772"/>
+              <layout:dimensions layout:height="77" layout:width="351"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:id="layer_text_1" layout:text="KE2 (KE:1496) is also part of the lung fibrosis pathway (WP3624) and AOP (AOP:173)&#xa;&#xa;">
+            <layout:boundingBox>
+              <layout:position layout:x="693.6214945774645" layout:y="332.8044505765847" layout:z="32774"/>
+              <layout:dimensions layout:height="301.5" layout:width="109"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:id="layer_text_2" layout:text="Associated with the MIE in Lung fibrosis AOP:173&#xa;&#xa;">
+            <layout:boundingBox>
+              <layout:position layout:x="361.1549295774656" layout:y="398.99349026415666" layout:z="32773"/>
+              <layout:dimensions layout:height="175.31096031242805" layout:width="267.4665650000002"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:id="layer_text_3" layout:text="Associated with the MIE in Lung fibrosis AOP:173&#xa;&#xa;">
+            <layout:boundingBox>
+              <layout:position layout:x="572.0799688101158" layout:y="21.843969265036947" layout:z="32769"/>
+              <layout:dimensions layout:height="215.31096031242805" layout:width="466.97636921805315"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:id="layer_text_4" layout:text="Pathways and KEs associated with lung fibrosis (AOP:173)&#xa;&#xa;">
+            <layout:boundingBox>
+              <layout:position layout:x="346.1549295774661" layout:y="281.6901408450705" layout:z="32771"/>
+              <layout:dimensions layout:height="369.61430973151414" layout:width="694.6901408450697"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
         </layout:listOfTextGlyphs>
       </layout:layout>
     </layout:listOfLayouts>
     <multi:listOfSpeciesTypes xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-      <multi:speciesType multi:id="minerva_species_type_Phenotype" multi:name="Phenotype" sboTerm="SBO:0000358">
+      <multi:speciesType multi:id="minerva_species_type_Phenotype_f9a57" multi:name="Phenotype" sboTerm="SBO:0000358">
         <multi:listOfSpeciesFeatureTypes>
-          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Phenotype" multi:name="Position to compartment" multi:occur="1">
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Phenotype_f9a57" multi:name="Position to compartment" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Phenotype_263" multi:name="NULL"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Phenotype_f9a57_4681" multi:name="NULL"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
-          <multi:speciesFeatureType multi:id="minerva_activity_Phenotype" multi:name="Activity" multi:occur="1">
+          <multi:speciesFeatureType multi:id="minerva_activity_Phenotype_f9a57" multi:name="Activity" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Phenotype_264" multi:name="false"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Phenotype_f9a57_4682" multi:name="false"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
         </multi:listOfSpeciesFeatureTypes>
       </multi:speciesType>
-      <multi:speciesType multi:id="minerva_species_type_Gene" multi:name="Gene" sboTerm="SBO:0000243">
+      <multi:speciesType multi:id="minerva_species_type_Phenotype_d20e7" multi:name="Phenotype" sboTerm="SBO:0000358">
         <multi:listOfSpeciesFeatureTypes>
-          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene" multi:name="Position to compartment" multi:occur="1">
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Phenotype_d20e7" multi:name="Position to compartment" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_265" multi:name="NULL"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Phenotype_d20e7_4683" multi:name="NULL"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
-          <multi:speciesFeatureType multi:id="minerva_activity_Gene" multi:name="Activity" multi:occur="1">
+          <multi:speciesFeatureType multi:id="minerva_activity_Phenotype_d20e7" multi:name="Activity" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_266" multi:name="false"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Phenotype_d20e7_4684" multi:name="false"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
         </multi:listOfSpeciesFeatureTypes>
       </multi:speciesType>
-      <multi:speciesType multi:id="minerva_species_type_Complex" multi:name="Complex" sboTerm="SBO:0000289">
+      <multi:speciesType multi:id="minerva_species_type_Complex_c404e" multi:name="Complex" sboTerm="SBO:0000289">
         <multi:listOfSpeciesFeatureTypes>
-          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Complex" multi:name="Position to compartment" multi:occur="1">
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Complex_c404e" multi:name="Position to compartment" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Complex_267" multi:name="NULL"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Complex_c404e_4685" multi:name="NULL"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
-          <multi:speciesFeatureType multi:id="minerva_hypothetical_Complex" multi:name="Hypothetical" multi:occur="1">
+          <multi:speciesFeatureType multi:id="minerva_hypothetical_Complex_c404e" multi:name="Hypothetical" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_hypothetical_Complex_268" multi:name="true"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_hypothetical_Complex_c404e_4686" multi:name="true"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
-          <multi:speciesFeatureType multi:id="minerva_activity_Complex" multi:name="Activity" multi:occur="1">
+          <multi:speciesFeatureType multi:id="minerva_activity_Complex_c404e" multi:name="Activity" multi:occur="1">
             <multi:listOfPossibleSpeciesFeatureValues>
-              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Complex_269" multi:name="false"/>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Complex_c404e_4687" multi:name="false"/>
             </multi:listOfPossibleSpeciesFeatureValues>
           </multi:speciesFeatureType>
         </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Phenotype_ace80" multi:name="Phenotype" sboTerm="SBO:0000358">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Phenotype_ace80" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Phenotype_ace80_4688" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Phenotype_ace80" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Phenotype_ace80_4689" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_eba5c" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_eba5c" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_eba5c_4690" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_eba5c" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_eba5c_4691" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_f425c" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_f425c" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_f425c_4692" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_f425c" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_f425c_4693" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_gen_dn_2" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_gen_dn_2" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_gen_dn_2_4709" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_gen_dn_2" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_gen_dn_2_4710" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_ee6e7" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_ee6e7" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_ee6e7_4722" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_ee6e7" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_ee6e7_4723" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_cf7c5" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_cf7c5" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_cf7c5_4707" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_cf7c5" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_cf7c5_4708" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_f59b7" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_f59b7" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_f59b7_4726" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_f59b7" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_f59b7_4727" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_feac7" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_feac7" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_feac7_4715" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_feac7" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_feac7_4716" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Phenotype_cd4a3" multi:name="Phenotype" sboTerm="SBO:0000358">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Phenotype_cd4a3" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Phenotype_cd4a3_4728" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Phenotype_cd4a3" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Phenotype_cd4a3_4729" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_gen_dn_3" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_gen_dn_3" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_gen_dn_3_4703" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_gen_dn_3" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_gen_dn_3_4704" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_gen_dn_0" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_gen_dn_0" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_gen_dn_0_4713" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_gen_dn_0" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_gen_dn_0_4714" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_d380c" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_d380c" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_d380c_4732" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_d380c" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_d380c_4733" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_gen_dn_4" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_gen_dn_4" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_gen_dn_4_4699" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_gen_dn_4" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_gen_dn_4_4700" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_eb71b" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_eb71b" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_eb71b_4705" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_eb71b" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_eb71b_4706" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Phenotype_c6c98" multi:name="Phenotype" sboTerm="SBO:0000358">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Phenotype_c6c98" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Phenotype_c6c98_4701" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Phenotype_c6c98" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Phenotype_c6c98_4702" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_gen_dn_1" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_gen_dn_1" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_gen_dn_1_4711" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_gen_dn_1" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_gen_dn_1_4712" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Complex_c757c" multi:name="Complex" sboTerm="SBO:0000289">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Complex_c757c" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Complex_c757c_4694" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_hypothetical_Complex_c757c" multi:name="Hypothetical" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_hypothetical_Complex_c757c_4695" multi:name="true"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Complex_c757c" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Complex_c757c_4696" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+        <multi:listOfSpeciesTypeInstances>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_gen_dn_2" multi:speciesType="minerva_species_type_Gene_gen_dn_2"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_ee6e7" multi:speciesType="minerva_species_type_Gene_ee6e7"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_cf7c5" multi:speciesType="minerva_species_type_Gene_cf7c5"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Phenotype_ace80" multi:speciesType="minerva_species_type_Phenotype_ace80"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_f59b7" multi:speciesType="minerva_species_type_Gene_f59b7"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_feac7" multi:speciesType="minerva_species_type_Gene_feac7"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Phenotype_d20e7" multi:speciesType="minerva_species_type_Phenotype_d20e7"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Phenotype_cd4a3" multi:speciesType="minerva_species_type_Phenotype_cd4a3"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_gen_dn_3" multi:speciesType="minerva_species_type_Gene_gen_dn_3"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_gen_dn_0" multi:speciesType="minerva_species_type_Gene_gen_dn_0"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_d380c" multi:speciesType="minerva_species_type_Gene_d380c"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_gen_dn_4" multi:speciesType="minerva_species_type_Gene_gen_dn_4"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_eb71b" multi:speciesType="minerva_species_type_Gene_eb71b"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_f425c" multi:speciesType="minerva_species_type_Gene_f425c"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Phenotype_f9a57" multi:speciesType="minerva_species_type_Phenotype_f9a57"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Phenotype_c6c98" multi:speciesType="minerva_species_type_Phenotype_c6c98"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_gen_dn_1" multi:speciesType="minerva_species_type_Gene_gen_dn_1"/>
+        </multi:listOfSpeciesTypeInstances>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Phenotype_be0b0" multi:name="Phenotype" sboTerm="SBO:0000358">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Phenotype_be0b0" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Phenotype_be0b0_4697" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Phenotype_be0b0" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Phenotype_be0b0_4698" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_f33e8" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_f33e8" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_f33e8_4717" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_f33e8" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_f33e8_4718" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Gene_b6003" multi:name="Gene" sboTerm="SBO:0000243">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Gene_b6003" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Gene_b6003_4730" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Gene_b6003" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Gene_b6003_4731" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Phenotype_ac2f7" multi:name="Phenotype" sboTerm="SBO:0000358">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Phenotype_ac2f7" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Phenotype_ac2f7_4724" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Phenotype_ac2f7" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Phenotype_ac2f7_4725" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+      </multi:speciesType>
+      <multi:speciesType multi:id="minerva_species_type_Complex_a3e09" multi:name="Complex" sboTerm="SBO:0000289">
+        <multi:listOfSpeciesFeatureTypes>
+          <multi:speciesFeatureType multi:id="minerva_position_to_compartment_Complex_a3e09" multi:name="Position to compartment" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_position_to_compartment_Complex_a3e09_4719" multi:name="NULL"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_hypothetical_Complex_a3e09" multi:name="Hypothetical" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_hypothetical_Complex_a3e09_4720" multi:name="true"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+          <multi:speciesFeatureType multi:id="minerva_activity_Complex_a3e09" multi:name="Activity" multi:occur="1">
+            <multi:listOfPossibleSpeciesFeatureValues>
+              <multi:possibleSpeciesFeatureValue multi:id="minerva_activity_Complex_a3e09_4721" multi:name="false"/>
+            </multi:listOfPossibleSpeciesFeatureValues>
+          </multi:speciesFeatureType>
+        </multi:listOfSpeciesFeatureTypes>
+        <multi:listOfSpeciesTypeInstances>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_f33e8" multi:speciesType="minerva_species_type_Gene_f33e8"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_b6003" multi:speciesType="minerva_species_type_Gene_b6003"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Phenotype_ac2f7" multi:speciesType="minerva_species_type_Phenotype_ac2f7"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Gene_eba5c" multi:speciesType="minerva_species_type_Gene_eba5c"/>
+          <multi:speciesTypeInstance multi:id="child_minerva_species_type_Phenotype_be0b0" multi:speciesType="minerva_species_type_Phenotype_be0b0"/>
+        </multi:listOfSpeciesTypeInstances>
       </multi:speciesType>
     </multi:listOfSpeciesTypes>
     <listOfUnitDefinitions>
@@ -1106,7 +1494,7 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
             </compartment>
     </listOfCompartments>
     <listOfSpecies>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_0" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype" name="Cytokines and&#xa;inflammatory&#xa;response" sboTerm="SBO:0000358">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_0" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype_f9a57" name="Cytokines and&#xa;inflammatory&#xa;response" sboTerm="SBO:0000358">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1125,19 +1513,19 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 </rdf:RDF>
         </annotation>
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype_f9a57">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_263"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_f9a57_4681"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype_f9a57">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_264"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_f9a57_4682"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_1" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="AGT" sboTerm="SBO:0000243">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_1" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype_d20e7" name="Lung fibrosis" sboTerm="SBO:0000358">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1148,37 +1536,6 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 <rdf:Description rdf:about="#species_1">
 <bqbiol:isDescribedBy>
 <rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:ncbigene:183"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_2" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype" name="Lung fibrosis" sboTerm="SBO:0000358">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_2">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
 <rdf:li rdf:resource="urn:miriam:wikipathways:WP3624"/>
 </rdf:Bag>
 </bqbiol:isDescribedBy>
@@ -1187,19 +1544,50 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 </rdf:RDF>
         </annotation>
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype_d20e7">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_263"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_d20e7_4683"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype_d20e7">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_264"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_d20e7_4684"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_3" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="TMPRSS2" sboTerm="SBO:0000243">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_2" initialConcentration="0" multi:speciesType="minerva_species_type_Complex_c404e" name="KE3 (KE:1750) - Increase inflammatory immune responses&#xa;MIE (KE:1739) - Binding of S protein to ACE receptor&#xa;KE4 (KE:1748) -  &#x9;Increase, the risk of acute respiratory failure&#xa;KE1 (KE:1738) - Enhanced viral entry and gene expression&#xa;AO (KE:1751) - Increased mortality&#xa;Events related to the adverse outcome pathway for&#xa;acute respiratory distress associated mortality (AOP:320)&#xa;KE2 (KE:1496) - Increased, secretion of proinflammatory and profibrotic mediators&#xa;Legend" sboTerm="SBO:0000289">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_2">
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Complex_c404e">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Complex_c404e_4685"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_hypothetical_Complex_c404e">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_hypothetical_Complex_c404e_4686"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Complex_c404e">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Complex_c404e_4687"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_3" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype_ace80" name="LTF danger signal&#xa;response pathway" sboTerm="SBO:0000358">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1210,7 +1598,7 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 <rdf:Description rdf:about="#species_3">
 <bqbiol:isDescribedBy>
 <rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:ncbigene:7113"/>
+<rdf:li rdf:resource="urn:miriam:wikipathways:WP4478"/>
 </rdf:Bag>
 </bqbiol:isDescribedBy>
 <dcterms:modified rdf:parseType="Resource"/>
@@ -1218,19 +1606,19 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 </rdf:RDF>
         </annotation>
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype_ace80">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_ace80_4688"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype_ace80">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_ace80_4689"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_4" initialConcentration="0" multi:speciesType="minerva_species_type_Complex" name="KE3&#xa;KE1&#xa;KE2" sboTerm="SBO:0000289">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_4" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_eba5c" name="TMPRSS2" sboTerm="SBO:0000243">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1239,29 +1627,29 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
 <rdf:Description rdf:about="#species_4">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:ncbigene:7113"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
 <dcterms:modified rdf:parseType="Resource"/>
 </rdf:Description>
 </rdf:RDF>
         </annotation>
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Complex">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_eba5c">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Complex_267"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_eba5c_4690"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_hypothetical_Complex">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_eba5c">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_hypothetical_Complex_268"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Complex">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Complex_269"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_eba5c_4691"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_5" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="IL10" sboTerm="SBO:0000243">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_5" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_f425c" name="IL6" sboTerm="SBO:0000243">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1272,285 +1660,6 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 <rdf:Description rdf:about="#species_5">
 <bqbiol:isDescribedBy>
 <rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:ncbigene:3586"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_6" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="IL8" sboTerm="SBO:0000243">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_6">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:ncbigene:3576"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_7" initialConcentration="0" multi:speciesType="minerva_species_type_Complex" name="KE4 (KE:1748) -  &#x9;Increase, the risk of acute respiratory failure&#xa;AO (KE:1751) - Increased mortality&#xa;Events related to the adverse outcome pathway for&#xa;acute respiratory distress associated mortality (AOP:320)&#xa;Legend&#xa;KE2 (KE:1496) - Increased, secretion of proinflammatory and profibrotic mediators&#xa;MIE (KE:1739) - Binding of S protein to ACE receptor&#xa;KE3 (KE:1750) - Increase inflammatory immune responses&#xa;KE1 (KE:1738) - Enhanced viral entry and gene expression" sboTerm="SBO:0000289">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_7">
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Complex">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Complex_267"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_hypothetical_Complex">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_hypothetical_Complex_268"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Complex">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Complex_269"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_8" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype" name="Toll-like&#xa;receptor signaling" sboTerm="SBO:0000358">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_8">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:wikipathways:WP75"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_263"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_264"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_9" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="ACE2" sboTerm="SBO:0000243">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_9">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:ncbigene:59272"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_10" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="TNF" sboTerm="SBO:0000243">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_10">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:ncbigene:7124"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_11" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="CCL2" sboTerm="SBO:0000243">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_11">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:ncbigene:6347"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_12" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype" name="SARS-CoV-2 and ACE2 receptor:&#xa;molecular mechanisms and&#xa;potential therapeutic target" sboTerm="SBO:0000358">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_12">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:wikipathways:WP4883"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_263"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_264"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_13" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype" name="LTF danger signal&#xa;response pathway" sboTerm="SBO:0000358">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_13">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:wikipathways:WP4478"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_263"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_264"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_14" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="IL6" sboTerm="SBO:0000243">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_14">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
 <rdf:li rdf:resource="urn:miriam:ncbigene:3569"/>
 </rdf:Bag>
 </bqbiol:isDescribedBy>
@@ -1559,19 +1668,19 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 </rdf:RDF>
         </annotation>
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_f425c">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_f425c_4692"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_f425c">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_f425c_4693"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_15" initialConcentration="0" multi:speciesType="minerva_species_type_Complex" name="MIE" sboTerm="SBO:0000289">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_6" initialConcentration="0" multi:speciesType="minerva_species_type_Complex_c757c" name="KE2&#xa;KE3&#xa;KE1" sboTerm="SBO:0000289">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1579,30 +1688,30 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
         </notes>
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_15">
+<rdf:Description rdf:about="#species_6">
 <dcterms:modified rdf:parseType="Resource"/>
 </rdf:Description>
 </rdf:RDF>
         </annotation>
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Complex">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Complex_c757c">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Complex_267"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Complex_c757c_4694"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_hypothetical_Complex">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_hypothetical_Complex_c757c">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_hypothetical_Complex_268"/>
+              <multi:speciesFeatureValue multi:value="minerva_hypothetical_Complex_c757c_4695"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Complex">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Complex_c757c">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Complex_269"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Complex_c757c_4696"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_16" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="IL1B" sboTerm="SBO:0000243">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_7" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype_be0b0" name="SARS-CoV-2 and&#xa;COVID-19 pathway" sboTerm="SBO:0000358">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1610,69 +1719,7 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
         </notes>
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_16">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:ncbigene:3553"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_17" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="CCL3" sboTerm="SBO:0000243">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_17">
-<bqbiol:isDescribedBy>
-<rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:ncbigene:6348"/>
-</rdf:Bag>
-</bqbiol:isDescribedBy>
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
-            <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
-            </multi:listOfSpeciesFeatureValues>
-          </multi:speciesFeature>
-        </multi:listOfSpeciesFeatures>
-      </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_18" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype" name="SARS-CoV-2 and&#xa;COVID-19 pathway" sboTerm="SBO:0000358">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p/>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_18">
+<rdf:Description rdf:about="#species_7">
 <bqbiol:isDescribedBy>
 <rdf:Bag>
 <rdf:li rdf:resource="urn:miriam:wikipathways:WP4846"/>
@@ -1683,19 +1730,19 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 </rdf:RDF>
         </annotation>
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype_be0b0">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_263"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_be0b0_4697"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype_be0b0">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_264"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_be0b0_4698"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_19" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="IL7" sboTerm="SBO:0000243">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_8" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_gen_dn_4" name="IL10" sboTerm="SBO:0000243">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1703,7 +1750,157 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
         </notes>
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_19">
+<rdf:Description rdf:about="#species_8">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:ncbigene:3586"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_gen_dn_4">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_gen_dn_4_4699"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_gen_dn_4">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_gen_dn_4_4700"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_9" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype_c6c98" name="Positive regulation of&#xa;leukocyte activation" sboTerm="SBO:0000358">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_9">
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype_c6c98">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_c6c98_4701"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype_c6c98">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_c6c98_4702"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_10" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_gen_dn_3" name="IL1B" sboTerm="SBO:0000243">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_10">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:ncbigene:3553"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_gen_dn_3">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_gen_dn_3_4703"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_gen_dn_3">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_gen_dn_3_4704"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_11" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_eb71b" name="CCL3" sboTerm="SBO:0000243">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_11">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:ncbigene:6348"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_eb71b">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_eb71b_4705"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_eb71b">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_eb71b_4706"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_12" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_cf7c5" name="IL8" sboTerm="SBO:0000243">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_12">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:ncbigene:3576"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_cf7c5">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_cf7c5_4707"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_cf7c5">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_cf7c5_4708"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_13" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_gen_dn_2" name="IL7" sboTerm="SBO:0000243">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_13">
 <bqbiol:isDescribedBy>
 <rdf:Bag>
 <rdf:li rdf:resource="urn:miriam:ncbigene:3574"/>
@@ -1714,19 +1911,19 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 </rdf:RDF>
         </annotation>
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_gen_dn_2">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_gen_dn_2_4709"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_gen_dn_2">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_gen_dn_2_4710"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_20" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="CSF3" sboTerm="SBO:0000243">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_14" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_gen_dn_1" name="CSF3" sboTerm="SBO:0000243">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1734,7 +1931,7 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
         </notes>
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#species_20">
+<rdf:Description rdf:about="#species_14">
 <bqbiol:isDescribedBy>
 <rdf:Bag>
 <rdf:li rdf:resource="urn:miriam:ncbigene:1440"/>
@@ -1745,19 +1942,205 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 </rdf:RDF>
         </annotation>
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_gen_dn_1">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_gen_dn_1_4711"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_gen_dn_1">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_gen_dn_1_4712"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_21" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="IL2RA" sboTerm="SBO:0000243">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_15" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_gen_dn_0" name="TNF" sboTerm="SBO:0000243">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_15">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:ncbigene:7124"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_gen_dn_0">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_gen_dn_0_4713"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_gen_dn_0">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_gen_dn_0_4714"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_16" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_feac7" name="CXCL10" sboTerm="SBO:0000243">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_16">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:ncbigene:3627"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_feac7">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_feac7_4715"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_feac7">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_feac7_4716"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_17" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_f33e8" name="ACE2" sboTerm="SBO:0000243">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_17">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:ncbigene:59272"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_f33e8">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_f33e8_4717"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_f33e8">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_f33e8_4718"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_18" initialConcentration="0" multi:speciesType="minerva_species_type_Complex_a3e09" name="MIE" sboTerm="SBO:0000289">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_18">
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Complex_a3e09">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Complex_a3e09_4719"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_hypothetical_Complex_a3e09">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_hypothetical_Complex_a3e09_4720"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Complex_a3e09">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Complex_a3e09_4721"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_19" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_ee6e7" name="CCL2" sboTerm="SBO:0000243">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_19">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:ncbigene:6347"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_ee6e7">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_ee6e7_4722"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_ee6e7">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_ee6e7_4723"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_20" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype_ac2f7" name="SARS-CoV-2 and ACE2 receptor:&#xa;molecular mechanisms and&#xa;potential therapeutic target" sboTerm="SBO:0000358">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p/>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#species_20">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:wikipathways:WP4883"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype_ac2f7">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_ac2f7_4724"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype_ac2f7">
+            <multi:listOfSpeciesFeatureValues>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_ac2f7_4725"/>
+            </multi:listOfSpeciesFeatureValues>
+          </multi:speciesFeature>
+        </multi:listOfSpeciesFeatures>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_21" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_f59b7" name="IL2RA" sboTerm="SBO:0000243">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1776,19 +2159,19 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 </rdf:RDF>
         </annotation>
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_f59b7">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_f59b7_4726"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_f59b7">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_f59b7_4727"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_22" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype" name="Positive regulation of&#xa;leukocyte activation" sboTerm="SBO:0000358">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_22" initialConcentration="0" multi:speciesType="minerva_species_type_Phenotype_cd4a3" name="Toll-like&#xa;receptor signaling" sboTerm="SBO:0000358">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1797,24 +2180,29 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
 <rdf:Description rdf:about="#species_22">
+<bqbiol:isDescribedBy>
+<rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:wikipathways:WP75"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
 <dcterms:modified rdf:parseType="Resource"/>
 </rdf:Description>
 </rdf:RDF>
         </annotation>
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Phenotype_cd4a3">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_263"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Phenotype_cd4a3_4728"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Phenotype_cd4a3">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_264"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Phenotype_cd4a3_4729"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_23" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="CXCL10" sboTerm="SBO:0000243">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_23" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_b6003" name="AGT" sboTerm="SBO:0000243">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1825,7 +2213,7 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 <rdf:Description rdf:about="#species_23">
 <bqbiol:isDescribedBy>
 <rdf:Bag>
-<rdf:li rdf:resource="urn:miriam:ncbigene:3627"/>
+<rdf:li rdf:resource="urn:miriam:ncbigene:183"/>
 </rdf:Bag>
 </bqbiol:isDescribedBy>
 <dcterms:modified rdf:parseType="Resource"/>
@@ -1833,19 +2221,19 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 </rdf:RDF>
         </annotation>
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_b6003">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_b6003_4730"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_b6003">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_b6003_4731"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
       </species>
-      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_24" initialConcentration="0" multi:speciesType="minerva_species_type_Gene" name="IL2" sboTerm="SBO:0000243">
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="species_24" initialConcentration="0" multi:speciesType="minerva_species_type_Gene_d380c" name="IL2" sboTerm="SBO:0000243">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
 <p/>
@@ -1864,14 +2252,14 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 </rdf:RDF>
         </annotation>
               <multi:listOfSpeciesFeatures xmlns:multi="http://www.sbml.org/sbml/level3/version1/multi/version1">
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_position_to_compartment_Gene_d380c">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_265"/>
+              <multi:speciesFeatureValue multi:value="minerva_position_to_compartment_Gene_d380c_4732"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
-          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene">
+          <multi:speciesFeature multi:occur="1" multi:speciesFeatureType="minerva_activity_Gene_d380c">
             <multi:listOfSpeciesFeatureValues>
-              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_266"/>
+              <multi:speciesFeatureValue multi:value="minerva_activity_Gene_d380c_4733"/>
             </multi:listOfSpeciesFeatureValues>
           </multi:speciesFeature>
         </multi:listOfSpeciesFeatures>
@@ -1894,10 +2282,10 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 </rdf:RDF>
         </annotation>
               <listOfReactants>
-          <speciesReference constant="false" species="species_6"/>
+          <speciesReference constant="false" species="species_12"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference constant="false" species="species_23"/>
+          <speciesReference constant="false" species="species_16"/>
         </listOfProducts>
       </reaction>
       <reaction id="idf55cb6e4" reversible="true" sboTerm="SBO:0000396">
@@ -1916,10 +2304,54 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 </rdf:RDF>
         </annotation>
               <listOfReactants>
-          <speciesReference constant="false" species="species_14"/>
+          <speciesReference constant="false" species="species_5"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference constant="false" species="species_6"/>
+          <speciesReference constant="false" species="species_12"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="id981d12bb" reversible="true" sboTerm="SBO:0000396">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p>GeneMANIA predicted interaction
+
+</p>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#id981d12bb">
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <listOfReactants>
+          <speciesReference constant="false" species="species_5"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="species_19"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="id6de06d86" reversible="true" sboTerm="SBO:0000396">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+<p>GeneMANIA predicted interaction
+
+</p>
+</body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+<rdf:Description rdf:about="#id6de06d86">
+<dcterms:modified rdf:parseType="Resource"/>
+</rdf:Description>
+</rdf:RDF>
+        </annotation>
+              <listOfReactants>
+          <speciesReference constant="false" species="species_12"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="species_11"/>
         </listOfProducts>
       </reaction>
       <reaction id="idfe2de42e" reversible="true" sboTerm="SBO:0000396">
@@ -1944,28 +2376,6 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
           <speciesReference constant="false" species="species_21"/>
         </listOfProducts>
       </reaction>
-      <reaction id="id981d12bb" reversible="true" sboTerm="SBO:0000396">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p>GeneMANIA predicted interaction
-
-</p>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#id981d12bb">
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <listOfReactants>
-          <speciesReference constant="false" species="species_14"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference constant="false" species="species_11"/>
-        </listOfProducts>
-      </reaction>
       <reaction id="idd81b881e" reversible="false" sboTerm="SBO:0000171">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
@@ -1979,6 +2389,11 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 <rdf:Description rdf:about="#idd81b881e">
 <bqbiol:isDescribedBy>
 <rdf:Bag>
+<rdf:li rdf:resource="urn:miriam:biogrid:882484"/>
+</rdf:Bag>
+</bqbiol:isDescribedBy>
+<bqbiol:isDescribedBy>
+<rdf:Bag>
 <rdf:li rdf:resource="urn:miriam:pubmed:10969042"/>
 </rdf:Bag>
 </bqbiol:isDescribedBy>
@@ -1987,32 +2402,10 @@ Experimenting with links in line with bioinformatics analysis of COVID-19 genes 
 </rdf:RDF>
         </annotation>
               <listOfReactants>
-          <speciesReference constant="false" species="species_9"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference constant="false" species="species_1"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="id6de06d86" reversible="true" sboTerm="SBO:0000396">
-        <notes>
-          <body xmlns="http://www.w3.org/1999/xhtml">
-<p>GeneMANIA predicted interaction
-
-</p>
-</body>
-        </notes>
-        <annotation>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-<rdf:Description rdf:about="#id6de06d86">
-<dcterms:modified rdf:parseType="Resource"/>
-</rdf:Description>
-</rdf:RDF>
-        </annotation>
-              <listOfReactants>
-          <speciesReference constant="false" species="species_6"/>
-        </listOfReactants>
-        <listOfProducts>
           <speciesReference constant="false" species="species_17"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="species_23"/>
         </listOfProducts>
       </reaction>
     </listOfReactions>
