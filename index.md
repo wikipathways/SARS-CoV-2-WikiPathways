@@ -40,3 +40,4 @@ The pathways evaluated here are part of the [COVID-19 Disease Map](https://www.e
 * [reports/WP5148.md](reports/WP5148.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://new.wikipathways.org/SARS-CoV-2-WikiPathways/reports/WP5148.json">
 * [reports/WP5156.md](reports/WP5156.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://new.wikipathways.org/SARS-CoV-2-WikiPathways/reports/WP5156.json">
 * [reports/WP5183.md](reports/WP5183.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://new.wikipathways.org/SARS-CoV-2-WikiPathways/reports/WP5183.json">
+* [reports/WP5218.md](reports/WP5218.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://new.wikipathways.org/SARS-CoV-2-WikiPathways/reports/WP5218.json">
