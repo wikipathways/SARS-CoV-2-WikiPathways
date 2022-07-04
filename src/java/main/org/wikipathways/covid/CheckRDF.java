@@ -150,7 +150,7 @@ public class CheckRDF {
                 }
             } else if (assertion instanceof AssertTrue) {
                 AssertTrue typedAssertion = (AssertTrue)assertion;
-                if ((boolean)typedAssertion.getValue()) {
+                if (!(boolean)typedAssertion.getValue()) {
                    message += "x";
                    assertionsFailed++;
                    errors += "            * Expected true but found false";
