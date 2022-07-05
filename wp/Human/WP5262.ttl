@@ -1,0 +1,57 @@
+@prefix biopax:  <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix cito:    <http://purl.org/spar/cito/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix freq:    <http://purl.org/cld/freq/> .
+@prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix pav:     <http://purl.org/pav/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix wp:      <http://vocabularies.wikipathways.org/wp#> .
+@prefix wprdf:   <http://rdf.wikipathways.org/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://rdf.wikipathways.org/Pathway/WP5262_r123227/WP/Interaction/ida02e4b1>
+        rdf:type          wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5262_r123227> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5262_r123227/Interaction/ida02e4b1> .
+
+<https://identifiers.org/chembl.compound/CHEBI:58922>
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "angiotensin-(1-7)" ;
+        dc:identifier       <https://identifiers.org/chembl.compound/CHEBI:58922> ;
+        dc:source           "ChEMBL compound" ;
+        dcterms:identifier  "CHEBI:58922" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5262_r123227> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5262_r123227/DataNode/fc6b6> ;
+        foaf:page           <https://www.ebi.ac.uk/chembl/compound/inspect/CHEBI:58922> .
+
+<https://identifiers.org/chembl.compound/CHEBI:58506>
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "angiotensin II" ;
+        dc:identifier       <https://identifiers.org/chembl.compound/CHEBI:58506> ;
+        dc:source           "ChEMBL compound" ;
+        dcterms:identifier  "CHEBI:58506" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5262_r123227> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5262_r123227/DataNode/b57d4> ;
+        foaf:page           <https://www.ebi.ac.uk/chembl/compound/inspect/CHEBI:58506> .
+
+<https://identifiers.org/wikipathways/WP5262>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP5262_r123227> .
+
+<https://identifiers.org/wikipathways/WP5262_r123227>
+        rdf:type             wp:Pathway , skos:Collection ;
+        dc:identifier        <https://identifiers.org/wikipathways/WP5262> ;
+        dc:source            "WikiPathways" ;
+        dc:title             "Figure_2"@en ;
+        dcterms:description  "Physiopathology of endothelial dysfunction in COVID-19 \nFigure 2 https://doi.org/10.3390/biomedicines10040812" ;
+        dcterms:identifier   "WP5262" ;
+        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5262_r123227> ;
+        wp:organism          <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:organismName      "Homo sapiens" ;
+        foaf:page            <http://www.wikipathways.org/instance/WP5262_r123227> .

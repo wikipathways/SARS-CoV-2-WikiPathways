@@ -1,0 +1,127 @@
+@prefix biopax:  <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix cito:    <http://purl.org/spar/cito/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix freq:    <http://purl.org/cld/freq/> .
+@prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix pav:     <http://purl.org/pav/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix wp:      <http://vocabularies.wikipathways.org/wp#> .
+@prefix wprdf:   <http://rdf.wikipathways.org/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<https://identifiers.org/chebi/CHEBI:16247>
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "Phospholipids" ;
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:16247> ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "16247" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123219> ;
+        wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16247> ;
+        wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C00865> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q186915> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123219/DataNode/dabb2> ;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=16247> .
+
+<https://identifiers.org/chebi/CHEBI:16113>
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "cholesterol" ;
+        rdfs:seeAlso        <https://identifiers.org/inchikey/HVYWMOMLDIMFJA-DPAQBDIFSA-N> ;
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:16113> ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "16113" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123219> ;
+        wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16113> ;
+        wp:bdbChemspider    <https://identifiers.org/chemspider/5775> ;
+        wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0000067> ;
+        wp:bdbInChIKey      <https://identifiers.org/inchikey/HVYWMOMLDIMFJA-DPAQBDIFSA-N> ;
+        wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C00187> ;
+        wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMST01010001> ;
+        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5997> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q43656> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123219/DataNode/a5d90> ;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=16113> .
+
+<https://identifiers.org/chebi/CHEBI:60971>
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "procoagulant aminophospholipid" ;
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:60971> ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "60971" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123219> ;
+        wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:60971> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q34484526> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123219/DataNode/d08be> ;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=60971> .
+
+<https://identifiers.org/wikipathways/WP5255>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP5255_r123219> .
+
+<https://identifiers.org/wikipathways/WP5255_r123219>
+        rdf:type             wp:Pathway , skos:Collection ;
+        dc:identifier        <https://identifiers.org/wikipathways/WP5255> ;
+        dc:source            "WikiPathways" ;
+        dc:title             "SARS-CoV-2 envelope lipid composition"@en ;
+        dcterms:description  "Template for entereing data from the cited article" ;
+        dcterms:identifier   "WP5255" ;
+        dcterms:references   <https://identifiers.org/pubmed/35436499> ;
+        cito:cites           <https://identifiers.org/pubmed/35436499> ;
+        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5255_r123219> ;
+        wp:organism          <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:organismName      "Homo sapiens" ;
+        foaf:page            <http://www.wikipathways.org/instance/WP5255_r123219> .
+
+<https://identifiers.org/chebi/CHEBI:26739>
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "sphingolipids" ;
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:26739> ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "26739" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123219> ;
+        wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:26739> ;
+        wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMSP> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q410395> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123219/DataNode/ed1e3> ;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26739> .
+
+<https://identifiers.org/pubmed/35436499>
+        rdf:type            wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "35436499" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123219> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/35436499> .
+
+<https://identifiers.org/chebi/CHEBI:18303>
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "phosphatidyl-L-serine" ;
+        rdfs:seeAlso        <https://identifiers.org/inchikey/UNJJBGNPUUVVFQ-ZJUUUORDSA-N> ;
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:18303> ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "18303" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123219> ;
+        wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:18303> ;
+        wp:bdbChemspider    <https://identifiers.org/chemspider/13628254> ;
+        wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0014291> ;
+        wp:bdbInChIKey      <https://identifiers.org/inchikey/UNJJBGNPUUVVFQ-ZJUUUORDSA-N> ;
+        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID6323481> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q2354337> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123219/DataNode/c5ecb> ;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=18303> .
+
+<https://identifiers.org/chebi/CHEBI:16038>
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "phosphatidyl- ethanolamine" ;
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:16038> ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "16038" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123219> ;
+        wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16038> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q426095> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123219/DataNode/d0696> ;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=16038> .
