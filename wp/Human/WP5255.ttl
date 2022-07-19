@@ -22,11 +22,11 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:16247> ;
         dc:source           "ChEBI" ;
         dcterms:identifier  "16247" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123219> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123355> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16247> ;
         wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C00865> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q186915> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123219/DataNode/dabb2> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123355/DataNode/dabb2> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=16247> .
 
 <https://identifiers.org/chebi/CHEBI:16113>
@@ -36,7 +36,7 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:16113> ;
         dc:source           "ChEBI" ;
         dcterms:identifier  "16113" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123219> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123355> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16113> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/5775> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0000067> ;
@@ -45,7 +45,7 @@
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMST01010001> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5997> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q43656> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123219/DataNode/a5d90> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123355/DataNode/a5d90> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=16113> .
 
 <https://identifiers.org/chebi/CHEBI:60971>
@@ -54,28 +54,40 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:60971> ;
         dc:source           "ChEBI" ;
         dcterms:identifier  "60971" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123219> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123355> , <http://rdf.wikipathways.org/Pathway/WP5255_r123355/WP/Interaction/idc62c4a09> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:60971> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q34484526> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123219/DataNode/d08be> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123355/DataNode/d08be> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=60971> .
 
-<https://identifiers.org/wikipathways/WP5255>
-        pav:hasVersion  <https://identifiers.org/wikipathways/WP5255_r123219> .
+<https://identifiers.org/wikipathways/WP4927>
+        rdf:type            wp:DataNode , wp:Pathway ;
+        rdfs:label          "Blood clothing" ;
+        dc:identifier       <https://identifiers.org/wikipathways/WP4927> ;
+        dc:source           "WikiPathways" ;
+        dcterms:identifier  "WP4927" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123355> , <http://rdf.wikipathways.org/Pathway/WP5255_r123355/WP/Interaction/idc62c4a09> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123355/DataNode/fa433> ;
+        foaf:page           <https://www.wikipathways.org/instance/WP4927> .
 
-<https://identifiers.org/wikipathways/WP5255_r123219>
-        rdf:type             wp:Pathway , skos:Collection ;
-        dc:identifier        <https://identifiers.org/wikipathways/WP5255> ;
-        dc:source            "WikiPathways" ;
-        dc:title             "SARS-CoV-2 envelope lipid composition"@en ;
-        dcterms:description  "Template for entereing data from the cited article" ;
-        dcterms:identifier   "WP5255" ;
-        dcterms:references   <https://identifiers.org/pubmed/35436499> ;
-        cito:cites           <https://identifiers.org/pubmed/35436499> ;
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5255_r123219> ;
-        wp:organism          <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
-        wp:organismName      "Homo sapiens" ;
-        foaf:page            <http://www.wikipathways.org/instance/WP5255_r123219> .
+<http://rdf.wikipathways.org/Pathway/WP5255_r123355/WP/Interaction/id80aa832e>
+        rdf:type            wp:Interaction , wp:Binding , wp:DirectedInteraction ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123355> ;
+        dcterms:references  <https://identifiers.org/pubmed/34797899> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123355/Interaction/id80aa832e> ;
+        wp:participants     <https://identifiers.org/chebi/CHEBI:18303> , <https://identifiers.org/ensembl/ENSG00000167601> ;
+        wp:source           <https://identifiers.org/chebi/CHEBI:18303> ;
+        wp:target           <https://identifiers.org/ensembl/ENSG00000167601> .
+
+<https://identifiers.org/pubmed/34797899>
+        rdf:type            wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "34797899" ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5255_r123355/WP/Interaction/id80aa832e> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/34797899> .
+
+<https://identifiers.org/wikipathways/WP5255>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP5255_r123355> .
 
 <https://identifiers.org/chebi/CHEBI:26739>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -83,19 +95,34 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:26739> ;
         dc:source           "ChEBI" ;
         dcterms:identifier  "26739" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123219> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123355> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:26739> ;
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMSP> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q410395> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123219/DataNode/ed1e3> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123355/DataNode/ed1e3> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=26739> .
 
 <https://identifiers.org/pubmed/35436499>
         rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "35436499" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123219> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5255_r123355/WP/Interaction/idc62c4a09> , <https://identifiers.org/wikipathways/WP5255_r123355> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/35436499> .
+
+<https://identifiers.org/ensembl/ENSG00000167601>
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "AXL" ;
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000167601> ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000167601" ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5255_r123355/WP/Interaction/id80aa832e> , <https://identifiers.org/wikipathways/WP5255_r123355> ;
+        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000167601> ;
+        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/558> ;
+        wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/AXL> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/P30530> , <https://identifiers.org/uniprot/M0R0W6> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q17836543> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123355/DataNode/a6b42> ;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000167601> .
 
 <https://identifiers.org/chebi/CHEBI:18303>
         rdf:type            wp:Metabolite , wp:DataNode ;
@@ -104,15 +131,41 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:18303> ;
         dc:source           "ChEBI" ;
         dcterms:identifier  "18303" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123219> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5255_r123355/WP/Interaction/id80aa832e> , <https://identifiers.org/wikipathways/WP5255_r123355> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:18303> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/13628254> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0014291> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/UNJJBGNPUUVVFQ-ZJUUUORDSA-N> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID6323481> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q2354337> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123219/DataNode/c5ecb> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123355/DataNode/c5ecb> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=18303> .
+
+<https://identifiers.org/wikipathways/WP5255_r123355>
+        rdf:type               skos:Collection , wp:Pathway ;
+        dc:identifier          <https://identifiers.org/wikipathways/WP5255> ;
+        dc:source              "WikiPathways" ;
+        dc:title               "SARS-CoV-2 envelope lipid composition and human cell binding"@en ;
+        dcterms:description    "This pathway captures the finding of Saud et al. that it is the virion membrane that is an active participant in the cellular uptake of the SARS-CoV-2 virion. Results show the lipid composition of the virion membrane to resembled that of human cell organel membranes, rather than the cell membrane itself." ;
+        dcterms:identifier     "WP5255" ;
+        dcterms:references     <https://identifiers.org/pubmed/35436499> ;
+        cito:cites             <https://identifiers.org/pubmed/35436499> , <https://identifiers.org/pubmed/34797899> ;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_0080600> ;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5255_r123355> ;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/DOID_0080600> ;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:organismName        "Homo sapiens" ;
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000013> ;
+        foaf:page              <http://www.wikipathways.org/instance/WP5255_r123355> .
+
+<http://rdf.wikipathways.org/Pathway/WP5255_r123355/WP/Interaction/idc62c4a09>
+        rdf:type            wp:DirectedInteraction , wp:Interaction , wp:Stimulation ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123355> ;
+        dcterms:references  <https://identifiers.org/pubmed/35436499> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123355/Interaction/idc62c4a09> ;
+        wp:participants     <https://identifiers.org/wikipathways/WP4927> , <https://identifiers.org/chebi/CHEBI:60971> ;
+        wp:source           <https://identifiers.org/chebi/CHEBI:60971> ;
+        wp:target           <https://identifiers.org/wikipathways/WP4927> .
 
 <https://identifiers.org/chebi/CHEBI:16038>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -120,8 +173,8 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:16038> ;
         dc:source           "ChEBI" ;
         dcterms:identifier  "16038" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123219> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5255_r123355> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16038> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q426095> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123219/DataNode/d0696> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5255_r123355/DataNode/d0696> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=16038> .
