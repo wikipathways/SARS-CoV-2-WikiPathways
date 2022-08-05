@@ -36,7 +36,8 @@ wikipathways-SARS-CoV-2-rdf-gpml.zip: ${GPMLRDFS}
 sbml/%.sbml: gpml/%.gpml
 	@mkdir -p sbml
 	@echo "Fetching SBML for $< ..."
-	@curl -X POST --data-binary @$< -H "Content-Type: text/plain" https://minerva-dev.lcsb.uni.lu/minerva/api/convert/GPML:SBML > $@
+	curl -X POST --data-binary @$< https://minerva-service.lcsb.uni.lu/minerva/api/convert/GPML:SBML > $@
+	@sleep 1
 
 sbml/%.txt: sbml/%.sbml
 	@echo "Extracting notes for $@ ..."
