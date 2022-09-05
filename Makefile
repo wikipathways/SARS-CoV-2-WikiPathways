@@ -87,3 +87,11 @@ index.md: ${REPORTS}
 
 update:
 	@wget -O src/java/main/org/wikipathways/covid/CheckRDF.java https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/src/java/main/org/wikipathways/covid/CheckRDF.java
+
+updateTests:
+	@jar tf libs/wikipathways.curator-1-SNAPSHOT.jar | grep '.class' \
+	  | grep 'nl.unimaas.bigcat.wikipathways.curator.tests' | tr / . \
+	  | sed 's/\.class//' | xargs javap -public -cp libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar \
+	  > tests.tmp
+	@groovy extractTests.groovy > tests.tmp2
+	@mv tests.tmp2 tests.txt
