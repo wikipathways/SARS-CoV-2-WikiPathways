@@ -2,8 +2,8 @@
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="SARS-CoV-2 B.1.1.7 variant antagonises innate immune activation" Version="20210610" Organism="Homo sapiens">
   <Comment Source="WikiPathways-description">This pathway describes the antagonistic effects of the SARS-CoV-2 B.1.1.7 (Alpha) variant on innate immune activation. The pathway is based on Figure 5 from [https://www.biorxiv.org/content/10.1101/2021.06.06.446826v1.full Thorne et al.]
 
-SARS-CoV-2 is known to antagonize innate immune activation, and the highly transmissible B.1.1.7 variant does this more effectively by increased RNA synthesis and increased protein expression of key innate immune antagonists, Orf9b, Orf6 and N:
-N prevents activation of RNA sensor RIG-1 (DDX58), Orf6 inhibits IRF3 nuclear translocation and subsequent type 1 interferon production and Orf9b inhibits RNA-sensing by binding to TOM70 (TOMM70). The latter interaction is regulated by phosphorylation of Orf9b on Ser53; Orf9b that is phosphorylated on Ser53 cannot bind to TOM70.</Comment>
+SARS-CoV-2 is known to antagonize innate immune activation, and the highly transmissible B.1.1.7 variant does this more effectively by increased RNA synthesis and increased protein expression of key innate immune antagonists, orf9b, orf6 and N:
+N prevents activation of RNA sensor RIG-1 (DDX58), orf6 inhibits IRF3 nuclear translocation and subsequent type 1 interferon production and orf9b inhibits RNA-sensing by binding to TOM70 (TOMM70). The latter interaction is regulated by phosphorylation of orf9b on Ser53; orf9b that is phosphorylated on Ser53 cannot bind to TOM70.</Comment>
   <BiopaxRef>d27</BiopaxRef>
   <Graphics BoardWidth="878.7394957983192" BoardHeight="985.8823529411764" />
   <DataNode TextLabel="IFNB1" GraphId="a3d27" Type="GeneProduct">
@@ -18,14 +18,14 @@ N prevents activation of RNA sensor RIG-1 (DDX58), Orf6 inhibits IRF3 nuclear tr
     <Graphics CenterX="350.5" CenterY="437.0" Width="79.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000107201" />
   </DataNode>
-  <DataNode TextLabel="Orf6 sgRNA" GraphId="da33c" Type="Rna" GroupRef="e546c">
+  <DataNode TextLabel="orf6 sgRNA" GraphId="da33c" Type="Rna" GroupRef="e546c">
     <Graphics CenterX="350.5" CenterY="318.0" Width="79.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="43740572" />
   </DataNode>
   <DataNode TextLabel="N" GraphId="e93f4" Type="Protein">
     <Comment>PDB structure for SARS-CoV strain: 6JYT</Comment>
     <Graphics CenterX="489.5322762716073" CenterY="464.1611129249801" Width="54.992746849132345" Height="30.0" ZOrder="32924" FillColor="ffcccc" FontSize="12" Valign="Middle" ShapeType="Oval" />
-    <Xref Database="Other" ID="P0DTC9" />
+    <Xref Database="Uniprot-TrEMBL" ID="P0DTC9" />
   </DataNode>
   <DataNode TextLabel="TRAF6" GraphId="d9774" Type="GeneProduct" GroupRef="e6ffb">
     <Graphics CenterX="389.592105263157" CenterY="580.9056833259654" Width="79.0" Height="25.0" ZOrder="36843" FontSize="12" Valign="Middle" />
@@ -43,12 +43,12 @@ N prevents activation of RNA sensor RIG-1 (DDX58), Orf6 inhibits IRF3 nuclear tr
     <Graphics CenterX="389.592105263157" CenterY="530.9056833259654" Width="79.0" Height="25.0" ZOrder="36846" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000154174" />
   </DataNode>
-  <DataNode TextLabel="Orf9b" GraphId="b9a5e" Type="Protein">
+  <DataNode TextLabel="orf9b" GraphId="b9a5e" Type="Protein">
     <Comment>promotes mitochondrial fusion</Comment>
     <Graphics CenterX="606.0909090909131" CenterY="465.1993022003321" Width="96.0" Height="25.0" ZOrder="36847" FillColor="ffcccc" FontSize="12" Valign="Middle" ShapeType="Oval" />
     <Xref Database="Uniprot-TrEMBL" ID="P0DTD2" />
   </DataNode>
-  <DataNode TextLabel="Orf6" GraphId="d7474" Type="GeneProduct">
+  <DataNode TextLabel="orf6" GraphId="d7474" Type="GeneProduct">
     <Graphics CenterX="738.9424622086121" CenterY="466.89526049664266" Width="95.16273653893899" Height="25.0" ZOrder="36848" FillColor="ffcccc" FontSize="12" Valign="Middle" ShapeType="Oval" />
     <Xref Database="Uniprot-TrEMBL" ID="P0DTC6" />
   </DataNode>
@@ -56,7 +56,7 @@ N prevents activation of RNA sensor RIG-1 (DDX58), Orf6 inhibits IRF3 nuclear tr
     <Graphics CenterX="509.0" CenterY="673.891472868217" Width="79.0" Height="25.0" ZOrder="36881" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000126456" />
   </DataNode>
-  <DataNode TextLabel="Orf9b" GraphId="eba16" Type="Protein">
+  <DataNode TextLabel="orf9b" GraphId="eba16" Type="Protein">
     <Comment>promotes mitochondrial fusion</Comment>
     <Graphics CenterX="606.0909090909131" CenterY="541.1993022003321" Width="96.0" Height="25.0" ZOrder="36883" FillColor="ffcccc" FontSize="12" Valign="Middle" ShapeType="Oval" />
     <Xref Database="Uniprot-TrEMBL" ID="P0DTD2" />
@@ -69,7 +69,7 @@ N prevents activation of RNA sensor RIG-1 (DDX58), Orf6 inhibits IRF3 nuclear tr
     <Graphics CenterX="350.5" CenterY="377.0" Width="79.0" Height="25.0" ZOrder="36890" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="43740575" />
   </DataNode>
-  <DataNode TextLabel="Orf9b sgRNA" GraphId="a1e44" Type="Rna" GroupRef="e546c">
+  <DataNode TextLabel="orf9b sgRNA" GraphId="a1e44" Type="Rna" GroupRef="e546c">
     <Graphics CenterX="350.5" CenterY="347.0" Width="79.0" Height="25.0" ZOrder="36891" FontSize="12" Valign="Middle" />
     <Xref Database="" ID="" />
   </DataNode>
@@ -82,7 +82,7 @@ N prevents activation of RNA sensor RIG-1 (DDX58), Orf6 inhibits IRF3 nuclear tr
     <Xref Database="Ensembl" ID="ENSG00000263528" />
   </DataNode>
   <State GraphRef="eba16" TextLabel="P" GraphId="d2c1a">
-    <Comment>parentid=P0DTD2; parentsymbol=Orf9b; site=; position=ser53; sitegrpid=; ptm=p; direction=d</Comment>
+    <Comment>parentid=P0DTD2; parentsymbol=orf9b; site=; position=ser53; sitegrpid=; ptm=p; direction=d</Comment>
     <Graphics RelX="0.7916666666666666" RelY="-0.6" Width="15.0" Height="15.0" ShapeType="Oval" />
     <Xref Database="" ID="" />
   </State>
