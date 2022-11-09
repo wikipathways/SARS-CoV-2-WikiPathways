@@ -45,7 +45,7 @@ sbml/%.txt: sbml/%.sbml
 
 sbml/%.svg: sbml/%.sbml
 	@echo "Fetching SVG for $@ ..."
-	@curl -H "Content-Type: application/octet-stream" -X POST --data-binary @$< -H "Content-Type: text/plain" https://minerva-service.lcsb.uni.lu/minerva/api/convert/image/SBML:svg > $@
+	@curl -H "Content-Type: application/octet-stream" -X POST --data-binary @$< https://minerva-service.lcsb.uni.lu/minerva/api/convert/image/SBML:svg > $@
 
 wp/Human/%.ttl: gpml/%.gpml src/java/main/org/wikipathways/covid/CreateRDF.class
 	@mkdir -p wp/Human
