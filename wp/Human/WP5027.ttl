@@ -16,16 +16,30 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b97c5>
-        rdf:type             wp:Complex , wp:DataNode ;
-        rdfs:label           "Eukaryotic translation initiation\nfactor 3 complex\n" ;
-        dc:identifier        <https://identifiers.org/complexportal/CPX-6036> ;
-        dc:source            "Complex Portal" ;
-        dcterms:identifier   "CPX-6036" ;
-        dcterms:isPartOf     <https://identifiers.org/wikipathways/WP5027_r120060> ;
-        wp:bdbComplexPortal  <https://identifiers.org/complexportal/CPX-6036> ;
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Group/b97c5> ;
-        wp:participants      <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/8665> , <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/8667> .
+<https://identifiers.org/wikipathways/WP5027_r124644>
+        rdf:type               skos:Collection , wp:Pathway ;
+        dc:identifier          <https://identifiers.org/wikipathways/WP5027> ;
+        dc:source              "WikiPathways" ;
+        dc:title               "nsp1 from SARS-CoV-2 inhibits translation initiation in the host cell"@en ;
+        dcterms:description    "The pathway depicted how nsp1 from SARS-CoV 2 may inhibit translation in the host cell (Yuan S et al 2020, PubMed 33188728). nsp1 protein competes with the EIF3J subunit of the EIF3s complex for binding to the 40S ribosomal subunit. The resulted 43S pre-initiation complex can no longer load the mRNA from the host cell for starting translation." ;
+        dcterms:identifier     "WP5027" ;
+        dcterms:references     <https://identifiers.org/pubmed/33188728> ;
+        cito:cites             <https://identifiers.org/pubmed/33188728> ;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_0080600> , <http://purl.obolibrary.org/obo/DOID_934> ;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5027_r124644> ;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/PW_0000580> , <http://purl.obolibrary.org/obo/DOID_0080600> ;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:organismName        "Homo sapiens" ;
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000580> ;
+        foaf:page              <http://www.wikipathways.org/instance/WP5027_r124644> .
+
+<http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/idad839e9d>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r124644> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Interaction/idad839e9d> ;
+        wp:participants   <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/wikidata/Q90038952> ;
+        wp:source         <https://identifiers.org/wikidata/Q90038952> ;
+        wp:target         <https://identifiers.org/ncbigene/8669> .
 
 <https://identifiers.org/complexportal/CPX-6036>
         rdf:type             wp:DataNode , wp:Complex ;
@@ -33,9 +47,9 @@
         dc:identifier        <https://identifiers.org/complexportal/CPX-6036> ;
         dc:source            "Complex Portal" ;
         dcterms:identifier   "CPX-6036" ;
-        dcterms:isPartOf     <https://identifiers.org/wikipathways/WP5027_r120060> ;
+        dcterms:isPartOf     <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:bdbComplexPortal  <https://identifiers.org/complexportal/CPX-6036> ;
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/e2998> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/efc00> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/ba5cd> ;
+        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/e2998> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/efc00> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/ba5cd> ;
         foaf:page            <https://www.ebi.ac.uk/complexportal/complex/CPX-6036> .
 
 <https://identifiers.org/ncbigene/8662>
@@ -44,12 +58,12 @@
         dc:identifier       <https://identifiers.org/ncbigene/8662> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "8662" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b97c5> , <https://identifiers.org/wikipathways/WP5027_r120060> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <https://identifiers.org/wikipathways/WP5027_r124644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000106263> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/8662> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF3B> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/C9JZG1> , <https://identifiers.org/uniprot/P55884> , <https://identifiers.org/uniprot/C9JQN7> , <https://identifiers.org/uniprot/A0A024R821> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/c8d87> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/f3d5e> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/de38c> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/c8d87> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/de38c> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/f3d5e> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8662> .
 
 <https://identifiers.org/ncbigene/8668>
@@ -58,21 +72,13 @@
         dc:identifier       <https://identifiers.org/ncbigene/8668> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "8668" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b97c5> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> , <https://identifiers.org/wikipathways/WP5027_r120060> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> , <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000084623> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/8668> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF3I> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/A0A7I2YQN1> , <https://identifiers.org/uniprot/A0A7I2V613> , <https://identifiers.org/uniprot/A0A7I2YQT9> , <https://identifiers.org/uniprot/A0A7I2V5E4> , <https://identifiers.org/uniprot/A0A7I2V3K6> , <https://identifiers.org/uniprot/A0A7I2V640> , <https://identifiers.org/uniprot/A0A7I2YQP9> , <https://identifiers.org/uniprot/A0A7I2YQF8> , <https://identifiers.org/uniprot/Q5TFK1> , <https://identifiers.org/uniprot/A0A7I2V2M3> , <https://identifiers.org/uniprot/Q5U0F4> , <https://identifiers.org/uniprot/A0A7I2YQU2> , <https://identifiers.org/uniprot/A0A7I2YQI6> , <https://identifiers.org/uniprot/A0A7I2YQC8> , <https://identifiers.org/uniprot/A0A7I2V5V8> , <https://identifiers.org/uniprot/A0A7I2V3U3> , <https://identifiers.org/uniprot/A0A7I2V607> , <https://identifiers.org/uniprot/A0A7I2V4S8> , <https://identifiers.org/uniprot/A0A7I2V685> , <https://identifiers.org/uniprot/A0A7I2V415> , <https://identifiers.org/uniprot/A0A7I2YQI2> , <https://identifiers.org/uniprot/Q13347> , <https://identifiers.org/uniprot/A0A7I2V391> , <https://identifiers.org/uniprot/A0A7I2YQX4> , <https://identifiers.org/uniprot/A0A7I2V3N2> , <https://identifiers.org/uniprot/A0A7I2V3T4> , <https://identifiers.org/uniprot/A0A7I2V4C2> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/bb488> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/ae83c> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/e4095> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/e4095> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/ae83c> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/bb488> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8668> .
-
-<http://rdf.wikipathways.org/Pathway/WP5027_r120060/WP/Interaction/id8da43876>
-        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r120060> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Interaction/id8da43876> ;
-        wp:participants   <https://identifiers.org/complexportal/CPX-5223> , <https://identifiers.org/ncbigene/1964> ;
-        wp:source         <https://identifiers.org/ncbigene/1964> ;
-        wp:target         <https://identifiers.org/complexportal/CPX-5223> .
 
 <https://identifiers.org/ncbigene/8894>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -80,19 +86,21 @@
         dc:identifier       <https://identifiers.org/ncbigene/8894> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "8894" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/d6fe1> , <https://identifiers.org/wikipathways/WP5027_r120060> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/d6fe1> , <https://identifiers.org/wikipathways/WP5027_r124644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000125977> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/8894> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF2S2> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/Q6IBR8> , <https://identifiers.org/uniprot/P20042> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/d9b72> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/c0e9b> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/c0e9b> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/d9b72> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8894> .
 
-<http://rdf.wikipathways.org/Pathway/WP5027_r120060/ComplexBinding/b97c5>
-        rdf:type          wp:Interaction , wp:Binding , wp:ComplexBinding ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r120060> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Group/b97c5> ;
-        wp:participants   <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/8667> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b97c5> , <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/8665> .
+<http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/id8da43876>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r124644> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Interaction/id8da43876> ;
+        wp:participants   <https://identifiers.org/complexportal/CPX-5223> , <https://identifiers.org/ncbigene/1964> ;
+        wp:source         <https://identifiers.org/ncbigene/1964> ;
+        wp:target         <https://identifiers.org/complexportal/CPX-5223> .
 
 <https://identifiers.org/ncbigene/3646>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -100,19 +108,13 @@
         dc:identifier       <https://identifiers.org/ncbigene/3646> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "3646" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6> , <https://identifiers.org/wikipathways/WP5027_r120060> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b97c5> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5027_r124644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000104408> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3646> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF3E> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/E5RHS5> , <https://identifiers.org/uniprot/A0A7I2V2H9> , <https://identifiers.org/uniprot/E5RGA2> , <https://identifiers.org/uniprot/H0YBP5> , <https://identifiers.org/uniprot/A0A7I2V4B4> , <https://identifiers.org/uniprot/A0A7I2V429> , <https://identifiers.org/uniprot/A0A7I2V2Q9> , <https://identifiers.org/uniprot/A0A7I2V570> , <https://identifiers.org/uniprot/P60228> , <https://identifiers.org/uniprot/E5RIP5> , <https://identifiers.org/uniprot/A0A161SXE1> , <https://identifiers.org/uniprot/H0YBR5> , <https://identifiers.org/uniprot/A0A7I2V3S3> , <https://identifiers.org/uniprot/A0A7I2V4G3> , <https://identifiers.org/uniprot/H0YAW4> , <https://identifiers.org/uniprot/A0A7I2V5Z6> , <https://identifiers.org/uniprot/E5RII3> , <https://identifiers.org/uniprot/A0A7I2V3I2> , <https://identifiers.org/uniprot/A0A7I2V5P9> , <https://identifiers.org/uniprot/E5RJ25> , <https://identifiers.org/uniprot/A0A7I2V2S9> , <https://identifiers.org/uniprot/B3KW56> , <https://identifiers.org/uniprot/A0A7I2V3W9> , <https://identifiers.org/uniprot/A0A7I2V3I0> , <https://identifiers.org/uniprot/A0A7I2V5K7> , <https://identifiers.org/uniprot/A0A7I2V2W0> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/ec570> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/db7eb> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/b787e> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/ec570> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/b787e> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/db7eb> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3646> .
-
-<http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/d6fe1>
-        rdf:type          wp:Complex , wp:DataNode ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r120060> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Group/d6fe1> ;
-        wp:participants   <https://identifiers.org/ncbigene/1968> , <https://identifiers.org/chebi/CHEBI:13145> , <https://identifiers.org/ncbigene/8894> , <https://identifiers.org/ncbigene/1965> .
 
 <https://identifiers.org/ncbigene/8661>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -120,12 +122,12 @@
         dc:identifier       <https://identifiers.org/ncbigene/8661> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "8661" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6> , <https://identifiers.org/wikipathways/WP5027_r120060> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b97c5> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5> , <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000107581> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/8661> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF3A> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/Q14152> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/d8dac> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/dfc2c> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/b462b> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/d8dac> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/b462b> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/dfc2c> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8661> .
 
 <https://identifiers.org/ncbigene/8667>
@@ -134,32 +136,16 @@
         dc:identifier       <https://identifiers.org/ncbigene/8667> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "8667" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6> , <https://identifiers.org/wikipathways/WP5027_r120060> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b97c5> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> , <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000147677> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/8667> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF3H> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/E5RGU4> , <https://identifiers.org/uniprot/E5RH59> , <https://identifiers.org/uniprot/B3KS98> , <https://identifiers.org/uniprot/E5RJT0> , <https://identifiers.org/uniprot/O15372> , <https://identifiers.org/uniprot/E5RHC7> , <https://identifiers.org/uniprot/Q6IB98> , <https://identifiers.org/uniprot/E5RFW7> , <https://identifiers.org/uniprot/E5RFH0> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/f6a15> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/e3723> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/d7c5e> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/f6a15> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/e3723> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/d7c5e> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8667> .
 
-<http://rdf.wikipathways.org/Pathway/WP5027_r120060/WP/Interaction/id573935d6>
-        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r120060> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Interaction/id573935d6> ;
-        wp:participants   <https://identifiers.org/complexportal/CPX-5223> , <https://identifiers.org/ncbigene/10209> ;
-        wp:source         <https://identifiers.org/ncbigene/10209> ;
-        wp:target         <https://identifiers.org/complexportal/CPX-5223> .
-
-<http://rdf.wikipathways.org/Pathway/WP5027_r120060/WP/Interaction/id8b1ce7b7>
-        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r120060> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Interaction/id8b1ce7b7> ;
-        wp:participants   <https://identifiers.org/complexportal/CPX-5223> , <https://identifiers.org/ncbigene/1983> ;
-        wp:source         <https://identifiers.org/ncbigene/1983> ;
-        wp:target         <https://identifiers.org/complexportal/CPX-5223> .
-
 <https://identifiers.org/wikipathways/WP5027>
-        pav:hasVersion  <https://identifiers.org/wikipathways/WP5027_r120060> .
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP5027_r124644> .
 
 <https://identifiers.org/ncbigene/1965>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -167,13 +153,29 @@
         dc:identifier       <https://identifiers.org/ncbigene/1965> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "1965" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5027_r120060> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/d6fe1> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/d6fe1> , <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000134001> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/1965> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF2S1> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/Q53XC0> , <https://identifiers.org/uniprot/H0YJS4> , <https://identifiers.org/uniprot/G3V4T5> , <https://identifiers.org/uniprot/P05198> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/e219c> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/bef0c> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/e219c> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/bef0c> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1965> .
+
+<http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/id573935d6>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r124644> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Interaction/id573935d6> ;
+        wp:participants   <https://identifiers.org/complexportal/CPX-5223> , <https://identifiers.org/ncbigene/10209> ;
+        wp:source         <https://identifiers.org/ncbigene/10209> ;
+        wp:target         <https://identifiers.org/complexportal/CPX-5223> .
+
+<http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/id8b1ce7b7>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r124644> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Interaction/id8b1ce7b7> ;
+        wp:participants   <https://identifiers.org/complexportal/CPX-5223> , <https://identifiers.org/ncbigene/1983> ;
+        wp:source         <https://identifiers.org/ncbigene/1983> ;
+        wp:target         <https://identifiers.org/complexportal/CPX-5223> .
 
 <https://identifiers.org/ncbigene/8666>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -181,41 +183,25 @@
         dc:identifier       <https://identifiers.org/ncbigene/8666> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "8666" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b97c5> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6> , <https://identifiers.org/wikipathways/WP5027_r120060> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5> , <https://identifiers.org/wikipathways/WP5027_r124644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000130811> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/8666> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF3G> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/K7ENA8> , <https://identifiers.org/uniprot/K7EP16> , <https://identifiers.org/uniprot/K7EL20> , <https://identifiers.org/uniprot/K7ERL8> , <https://identifiers.org/uniprot/K7ER90> , <https://identifiers.org/uniprot/O75821> , <https://identifiers.org/uniprot/K7EL60> , <https://identifiers.org/uniprot/K7ENH0> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/e267f> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/f60cb> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/e303e> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/e303e> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/e267f> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/f60cb> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8666> .
 
-<http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e>
-        rdf:type             wp:DataNode , wp:Complex ;
-        rdfs:label           "40S cytosolic small \nribosomal subunit" ;
-        dc:identifier        <https://identifiers.org/complexportal/CPX-5223> ;
-        dc:source            "Complex Portal" ;
-        dcterms:identifier   "CPX-5223" ;
-        dcterms:isPartOf     <https://identifiers.org/wikipathways/WP5027_r120060> ;
-        wp:bdbComplexPortal  <https://identifiers.org/complexportal/CPX-5223> ;
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Group/b327e> ;
-        wp:participants      <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/1983> , <https://identifiers.org/chebi/CHEBI:13145> , <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/ncbigene/10209> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/8894> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/1965> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/1964> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/1968> , <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/8665> .
+<http://rdf.wikipathways.org/Pathway/WP5027_r124644/ComplexBinding/d6fe1>
+        rdf:type          wp:Binding , wp:ComplexBinding , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r124644> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Group/d6fe1> ;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:13145> , <https://identifiers.org/ncbigene/8894> , <https://identifiers.org/ncbigene/1968> , <https://identifiers.org/ncbigene/1965> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/d6fe1> .
 
-<http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6>
-        rdf:type             wp:DataNode , wp:Complex ;
-        rdfs:label           "Eukaryotic translation initiation\nfactor 3 complex\n" ;
-        dc:identifier        <https://identifiers.org/complexportal/CPX-6036> ;
-        dc:source            "Complex Portal" ;
-        dcterms:identifier   "CPX-6036" ;
-        dcterms:isPartOf     <https://identifiers.org/wikipathways/WP5027_r120060> ;
-        wp:bdbComplexPortal  <https://identifiers.org/complexportal/CPX-6036> ;
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Group/ed8b6> ;
-        wp:participants      <https://identifiers.org/ncbigene/1964> , <https://identifiers.org/ncbigene/8665> , <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/10209> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/1983> .
-
-<http://rdf.wikipathways.org/Pathway/WP5027_r120060/ComplexBinding/d6fe1>
+<http://rdf.wikipathways.org/Pathway/WP5027_r124644/ComplexBinding/b97c5>
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r120060> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Group/d6fe1> ;
-        wp:participants   <https://identifiers.org/ncbigene/1968> , <https://identifiers.org/ncbigene/8894> , <https://identifiers.org/ncbigene/1965> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/d6fe1> , <https://identifiers.org/chebi/CHEBI:13145> .
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r124644> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Group/b97c5> ;
+        wp:participants   <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/8665> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/8669> .
 
 <https://identifiers.org/ncbigene/10209>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -223,30 +209,13 @@
         dc:identifier       <https://identifiers.org/ncbigene/10209> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "10209" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5027_r120060> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/WP/Interaction/id573935d6> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <https://identifiers.org/wikipathways/WP5027_r124644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/id573935d6> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000173812> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/10209> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF1> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/K7EQP2> , <https://identifiers.org/uniprot/P41567> , <https://identifiers.org/uniprot/K7EM18> , <https://identifiers.org/uniprot/Q6IAV3> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/e393f> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/fea09> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/e78ce> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/fea09> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/e78ce> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/e393f> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/10209> .
-
-<https://identifiers.org/wikipathways/WP5027_r120060>
-        rdf:type               wp:Pathway , skos:Collection ;
-        dc:identifier          <https://identifiers.org/wikipathways/WP5027> ;
-        dc:source              "WikiPathways" ;
-        dc:title               "nsp1 from SARS-CoV-2 inhibits translation initiation in the host cell"@en ;
-        dcterms:description    "The pathway depicted how nsp1 from SARS-CoV 2 may inhibit translation in the host cell (Yuan S et al 2020, PubMed 33188728). nsp1 protein competes with the EIF3J subunit of the EIF3s complex for binding to the 40S ribosomal subunit. The resulted 43S pre-initiation complex can no longer load the mRNA from the host cell for starting translation." ;
-        dcterms:identifier     "WP5027" ;
-        dcterms:references     <https://identifiers.org/pubmed/33188728> ;
-        cito:cites             <https://identifiers.org/pubmed/33188728> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/DOID_0080600> ;
-        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5027_r120060> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/PW_0000580> , <http://purl.obolibrary.org/obo/DOID_0080600> , <http://purl.obolibrary.org/obo/DOID_934> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
-        wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000580> ;
-        foaf:page              <http://www.wikipathways.org/instance/WP5027_r120060> .
 
 <https://identifiers.org/ncbigene/1983>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -254,12 +223,12 @@
         dc:identifier       <https://identifiers.org/ncbigene/1983> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "1983" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r120060/WP/Interaction/id8b1ce7b7> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6> , <https://identifiers.org/wikipathways/WP5027_r120060> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/id8b1ce7b7> , <https://identifiers.org/wikipathways/WP5027_r124644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000100664> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/1983> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF5> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/H0YK29> , <https://identifiers.org/uniprot/H0YK11> , <https://identifiers.org/uniprot/H0YMJ8> , <https://identifiers.org/uniprot/H0YM54> , <https://identifiers.org/uniprot/P55010> , <https://identifiers.org/uniprot/H0YLZ1> , <https://identifiers.org/uniprot/A0A024R6Q1> , <https://identifiers.org/uniprot/H0YN40> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/db339> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/e66ea> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/f653e> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/f653e> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/db339> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/e66ea> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1983> .
 
 <https://identifiers.org/ncbigene/1964>
@@ -268,13 +237,19 @@
         dc:identifier       <https://identifiers.org/ncbigene/1964> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "1964" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/WP/Interaction/id8da43876> , <https://identifiers.org/wikipathways/WP5027_r120060> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/id8da43876> , <https://identifiers.org/wikipathways/WP5027_r124644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000173674> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/1964> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF1AX> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/X6RAC9> , <https://identifiers.org/uniprot/P47813> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/c747d> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/ca957> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/ea644> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/c747d> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/ea644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/ca957> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1964> .
+
+<http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/d6fe1>
+        rdf:type          wp:Complex , wp:DataNode ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r124644> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Group/d6fe1> ;
+        wp:participants   <https://identifiers.org/ncbigene/1968> , <https://identifiers.org/chebi/CHEBI:13145> , <https://identifiers.org/ncbigene/8894> , <https://identifiers.org/ncbigene/1965> .
 
 <https://identifiers.org/ncbigene/8665>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -282,34 +257,37 @@
         dc:identifier       <https://identifiers.org/ncbigene/8665> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "8665" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b97c5> , <https://identifiers.org/wikipathways/WP5027_r120060> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> , <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000175390> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/8665> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF3F> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/A0A7I2V4S2> , <https://identifiers.org/uniprot/O00303> , <https://identifiers.org/uniprot/A0A1W2PP79> , <https://identifiers.org/uniprot/H0YDT6> , <https://identifiers.org/uniprot/A0A7I2YQA0> , <https://identifiers.org/uniprot/E9PQV8> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/c3726> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/ce516> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/dac70> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/dac70> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/ce516> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/c3726> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8665> .
 
 <https://identifiers.org/pubmed/33188728>
         rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "33188728" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5027_r120060> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5027_r124644> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/33188728> .
 
-<http://rdf.wikipathways.org/Pathway/WP5027_r120060/WP/Interaction/idad839e9d>
-        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r120060> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Interaction/idad839e9d> ;
-        wp:participants   <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/wikidata/Q90038952> ;
-        wp:source         <https://identifiers.org/wikidata/Q90038952> ;
-        wp:target         <https://identifiers.org/ncbigene/8669> .
+<http://rdf.wikipathways.org/Pathway/WP5027_r124644/ComplexBinding/b327e>
+        rdf:type          wp:Interaction , wp:ComplexBinding , wp:Binding ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r124644> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Group/b327e> ;
+        wp:participants   <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/1964> , <https://identifiers.org/ncbigene/1983> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/1968> , <https://identifiers.org/ncbigene/10209> , <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/1965> , <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/8894> , <https://identifiers.org/chebi/CHEBI:13145> , <https://identifiers.org/ncbigene/8665> .
 
-<http://rdf.wikipathways.org/Pathway/WP5027_r120060/ComplexBinding/b327e>
-        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r120060> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Group/b327e> ;
-        wp:participants   <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/10209> , <https://identifiers.org/ncbigene/1964> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/chebi/CHEBI:13145> , <https://identifiers.org/ncbigene/8665> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/1983> , <https://identifiers.org/ncbigene/1968> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/8894> , <https://identifiers.org/ncbigene/1965> , <https://identifiers.org/ncbigene/8664> .
+<http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5>
+        rdf:type             wp:DataNode , wp:Complex ;
+        rdfs:label           "Eukaryotic translation initiation\nfactor 3 complex\n" ;
+        dc:identifier        <https://identifiers.org/complexportal/CPX-6036> ;
+        dc:source            "Complex Portal" ;
+        dcterms:identifier   "CPX-6036" ;
+        dcterms:isPartOf     <https://identifiers.org/wikipathways/WP5027_r124644> ;
+        wp:bdbComplexPortal  <https://identifiers.org/complexportal/CPX-6036> ;
+        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Group/b97c5> ;
+        wp:participants      <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/8665> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/3646> .
 
 <https://identifiers.org/complexportal/CPX-5223>
         rdf:type             wp:DataNode , wp:Complex ;
@@ -317,10 +295,16 @@
         dc:identifier        <https://identifiers.org/complexportal/CPX-5223> ;
         dc:source            "Complex Portal" ;
         dcterms:identifier   "CPX-5223" ;
-        dcterms:isPartOf     <http://rdf.wikipathways.org/Pathway/WP5027_r120060/WP/Interaction/id8da43876> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/WP/Interaction/id573935d6> , <https://identifiers.org/wikipathways/WP5027_r120060> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/WP/Interaction/id8b1ce7b7> ;
+        dcterms:isPartOf     <http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/id573935d6> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/id8da43876> , <https://identifiers.org/wikipathways/WP5027_r124644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/id8b1ce7b7> ;
         wp:bdbComplexPortal  <https://identifiers.org/complexportal/CPX-5223> ;
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/eb85c> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/df993> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/dc35b> ;
+        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/df993> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/dc35b> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/eb85c> ;
         foaf:page            <https://www.ebi.ac.uk/complexportal/complex/CPX-5223> .
+
+<http://rdf.wikipathways.org/Pathway/WP5027_r124644/ComplexBinding/ed8b6>
+        rdf:type          wp:Interaction , wp:Binding , wp:ComplexBinding ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r124644> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Group/ed8b6> ;
+        wp:participants   <https://identifiers.org/ncbigene/8665> , <https://identifiers.org/ncbigene/10209> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/1983> , <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/3646> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> , <https://identifiers.org/ncbigene/1964> , <https://identifiers.org/ncbigene/8666> .
 
 <https://identifiers.org/wikidata/Q90038952>
         rdf:type            wp:Protein , wp:DataNode ;
@@ -328,17 +312,11 @@
         dc:identifier       <https://identifiers.org/wikidata/Q90038952> ;
         dc:source           "Wikidata" ;
         dcterms:identifier  "Q90038952" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5027_r120060> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/WP/Interaction/idad839e9d> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/idad839e9d> , <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/P0DTD1-PRO_0000449619> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q90038952> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/e6110> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/e6110> ;
         foaf:page           <https://scholia.toolforge.org/Q90038952> .
-
-<http://rdf.wikipathways.org/Pathway/WP5027_r120060/ComplexBinding/ed8b6>
-        rdf:type          wp:Binding , wp:Interaction , wp:ComplexBinding ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r120060> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Group/ed8b6> ;
-        wp:participants   <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/8665> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/10209> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6> , <https://identifiers.org/ncbigene/1983> , <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/1964> .
 
 <https://identifiers.org/ncbigene/8664>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -346,13 +324,24 @@
         dc:identifier       <https://identifiers.org/ncbigene/8664> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "8664" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b97c5> , <https://identifiers.org/wikipathways/WP5027_r120060> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> , <https://identifiers.org/wikipathways/WP5027_r124644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000100353> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/8664> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF3D> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/B0QYA6> , <https://identifiers.org/uniprot/O15371> , <https://identifiers.org/uniprot/B0QYA4> , <https://identifiers.org/uniprot/B0QYA8> , <https://identifiers.org/uniprot/B0QYA5> , <https://identifiers.org/uniprot/A0A0D9SGB5> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/ad713> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/ee2ad> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/eb78e> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/eb78e> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/ee2ad> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/ad713> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8664> .
+
+<http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e>
+        rdf:type             wp:DataNode , wp:Complex ;
+        rdfs:label           "40S cytosolic small \nribosomal subunit" ;
+        dc:identifier        <https://identifiers.org/complexportal/CPX-5223> ;
+        dc:source            "Complex Portal" ;
+        dcterms:identifier   "CPX-5223" ;
+        dcterms:isPartOf     <https://identifiers.org/wikipathways/WP5027_r124644> ;
+        wp:bdbComplexPortal  <https://identifiers.org/complexportal/CPX-5223> ;
+        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Group/b327e> ;
+        wp:participants      <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/1964> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/8894> , <https://identifiers.org/ncbigene/1968> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/8665> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/chebi/CHEBI:13145> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/1983> , <https://identifiers.org/ncbigene/10209> , <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/1965> .
 
 <https://identifiers.org/chebi/CHEBI:13145>
         rdf:type            wp:Metabolite , wp:DataNode ;
@@ -360,11 +349,22 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:13145> ;
         dc:source           "ChEBI" ;
         dcterms:identifier  "CHEBI:13145" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/d6fe1> , <https://identifiers.org/wikipathways/WP5027_r120060> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/d6fe1> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:13145> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q60213464> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/d1c45> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/ba070> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/ba070> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/d1c45> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:13145> .
+
+<http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6>
+        rdf:type             wp:DataNode , wp:Complex ;
+        rdfs:label           "Eukaryotic translation initiation\nfactor 3 complex\n" ;
+        dc:identifier        <https://identifiers.org/complexportal/CPX-6036> ;
+        dc:source            "Complex Portal" ;
+        dcterms:identifier   "CPX-6036" ;
+        dcterms:isPartOf     <https://identifiers.org/wikipathways/WP5027_r124644> ;
+        wp:bdbComplexPortal  <https://identifiers.org/complexportal/CPX-6036> ;
+        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Group/ed8b6> ;
+        wp:participants      <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/8665> , <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/1964> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/1983> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/10209> , <https://identifiers.org/ncbigene/8669> .
 
 <https://identifiers.org/ncbigene/1968>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -372,12 +372,12 @@
         dc:identifier       <https://identifiers.org/ncbigene/1968> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "1968" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5027_r120060> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/d6fe1> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <https://identifiers.org/wikipathways/WP5027_r124644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/d6fe1> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000130741> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/1968> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF2S3> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/P41091> , <https://identifiers.org/uniprot/H7BZU1> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/b1123> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/d733f> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/b1123> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/d733f> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1968> .
 
 <https://identifiers.org/ncbigene/8663>
@@ -386,12 +386,12 @@
         dc:identifier       <https://identifiers.org/ncbigene/8663> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "8663" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5027_r120060> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b97c5> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> , <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000184110> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/8663> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF3C> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/Q99613> , <https://identifiers.org/uniprot/H3BTY8> , <https://identifiers.org/uniprot/H3BPE4> , <https://identifiers.org/uniprot/A0A024QYU9> , <https://identifiers.org/uniprot/H3BPE3> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/b48a0> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/d73f5> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/f2395> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/b48a0> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/f2395> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/d73f5> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8663> .
 
 <https://identifiers.org/ncbigene/8669>
@@ -400,10 +400,10 @@
         dc:identifier       <https://identifiers.org/ncbigene/8669> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "8669" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/WP/Interaction/idad839e9d> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/ed8b6> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/Complex/b97c5> , <https://identifiers.org/wikipathways/WP5027_r120060> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/idad839e9d> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <https://identifiers.org/wikipathways/WP5027_r124644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000104131> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/8669> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF3J> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/H0YGJ7> , <https://identifiers.org/uniprot/H0YLP3> , <https://identifiers.org/uniprot/A0A024R5S5> , <https://identifiers.org/uniprot/O75822> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/a413c> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/b0411> , <http://rdf.wikipathways.org/Pathway/WP5027_r120060/DataNode/efe7f> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/a413c> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/b0411> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/efe7f> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8669> .
