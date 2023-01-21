@@ -1,1 +1,170 @@
-error code: 1020
+<?xml version="1.0" encoding="UTF-8"?>
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="Physiopathology of endothelial dysfunction in COVID-19" Version="20220705" Organism="Homo sapiens">
+  <Comment Source="WikiPathways-description">Physiopathology of endothelial dysfunction in COVID-19</Comment>
+  <Graphics BoardWidth="1671.533458411508" BoardHeight="777.2470293933719" />
+  <DataNode TextLabel="TNF" GraphId="a40d2" Type="Protein">
+    <Graphics CenterX="427.43595041322226" CenterY="167.33333333333331" Width="118.26859504132221" Height="35.16666666666663" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Uniprot-TrEMBL" ID="P01375" />
+  </DataNode>
+  <DataNode TextLabel="SARS-CoV-2 spike" GraphId="a4889" Type="Protein">
+    <Graphics CenterX="994.4166666666669" CenterY="193.08333333333337" Width="109.83333333333326" Height="35.16666666666663" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Uniprot-TrEMBL" ID="P0DTC2" />
+  </DataNode>
+  <DataNode TextLabel="NADPH oxidase 1" GraphId="ab5bf" Type="Protein">
+    <Comment>I assuming the authors refer to NADPH oxidase 1</Comment>
+    <Graphics CenterX="599.8243801652899" CenterY="246.82920110192833" Width="118.26859504132224" Height="50.086776859504205" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Uniprot-TrEMBL" ID="Q9Y5S8" />
+  </DataNode>
+  <DataNode TextLabel="ACE2" GraphId="ab792" Type="Protein">
+    <Graphics CenterX="994.2745724342174" CenterY="259.597967996527" Width="108.62419177274978" Height="43.655846370923655" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Uniprot-TrEMBL" ID="Q9BYF1" />
+  </DataNode>
+  <DataNode TextLabel="Reactive Oxygen Species" GraphId="b5930" Type="Metabolite">
+    <Graphics CenterX="607.4153577462208" CenterY="396.4182495472057" Width="217.4421487603306" Height="50.086776859504084" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="26523" />
+  </DataNode>
+  <DataNode TextLabel="TNFRSF1A" GraphId="b896f" Type="Protein">
+    <Graphics CenterX="389.0805785123966" CenterY="245.54614325068908" Width="118.26859504132224" Height="50.086776859504205" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Uniprot-TrEMBL" ID="P19438" />
+  </DataNode>
+  <DataNode TextLabel="NFKB1" GraphId="c6d49" Type="Protein">
+    <Graphics CenterX="607.0575506445655" CenterY="534.4461325966839" Width="168.5" Height="60.5" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Uniprot-TrEMBL" ID="P19838" />
+  </DataNode>
+  <DataNode TextLabel="nitric oxide" GraphId="c865d" Type="Metabolite">
+    <Graphics CenterX="368.00214804877635" CenterY="393.2299288692678" Width="112.07024793388427" Height="62.483471074380205" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="CHEBI:16480" />
+  </DataNode>
+  <DataNode TextLabel="ICAM1" GraphId="d0b32" Type="Protein">
+    <Graphics CenterX="466.8070902394118" CenterY="692.2509208103138" Width="128.5" Height="56.5" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Uniprot-TrEMBL" ID="K7EKL8" />
+  </DataNode>
+  <DataNode TextLabel="ang II" GraphId="f1316" Type="Metabolite">
+    <Graphics CenterX="845.9038461538468" CenterY="395.83820089637845" Width="98.06097560975627" Height="39.89962476547845" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="CHEBI:48432" />
+  </DataNode>
+  <DataNode TextLabel="ACE2" GraphId="ae41e" Type="Protein">
+    <Graphics CenterX="998.6944619369797" CenterY="394.74324422377225" Width="108.62419177274978" Height="41.89493433395842" ZOrder="32769" FontSize="12" Valign="Middle" />
+    <Xref Database="Uniprot-TrEMBL" ID="Q9BYF1" />
+  </DataNode>
+  <DataNode TextLabel="SARS-CoV-2 spike" GraphId="a28d2" Type="Protein">
+    <Graphics CenterX="609.7500000000005" CenterY="168.41666666666666" Width="109.83333333333326" Height="35.16666666666663" ZOrder="32770" FontSize="12" Valign="Middle" />
+    <Xref Database="Uniprot-TrEMBL" ID="P0DTC2" />
+  </DataNode>
+  <Interaction GraphId="id17f32001">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="796.8733583489686" Y="395.83820089637845" GraphRef="f1316" RelX="-1.0" RelY="0.0" />
+      <Point X="716.1364321263861" Y="396.4182495472057" GraphRef="b5930" RelX="1.0" RelY="0.0" ArrowHead="mim-stimulation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id1ef1e4a">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="607.0575506445655" Y="564.6961325966839" GraphRef="c6d49" RelX="0.0" RelY="1.0" />
+      <Point X="612.1546961325967" Y="678.4530386740331" ArrowHead="mim-binding" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id22a67503">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="448.21487603305775" Y="245.5461432506891" GraphRef="b896f" RelX="1.0" RelY="0.0" />
+      <Point X="540.6900826446288" Y="246.82920110192833" GraphRef="ab5bf" RelX="-1.0" RelY="0.0" ArrowHead="mim-stimulation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id34434cee">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="994.4166666666669" Y="210.66666666666669" GraphRef="a4889" RelX="0.0" RelY="1.0" />
+      <Point X="994.2745724342174" Y="237.7700448110652" GraphRef="ab792" RelX="0.0" RelY="-1.0" ArrowHead="mim-necessary-stimulation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id351dca77">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="606.2514071294561" Y="274.0162601626019" />
+      <Point X="607.4153577462208" Y="371.37486111745363" GraphRef="b5930" RelX="0.0" RelY="-1.0" ArrowHead="mim-stimulation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id3bcf6265">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="554.8333333333338" Y="168.41666666666666" GraphRef="a28d2" RelX="-1.0" RelY="0.0" />
+      <Point X="486.57024793388337" Y="167.33333333333331" GraphRef="a40d2" RelX="1.0" RelY="0.0" ArrowHead="mim-stimulation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id4fd78cda">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="994.2745724342174" Y="281.42589118198885" GraphRef="ab792" RelX="0.0" RelY="1.0" />
+      <Point X="998.6944619369797" Y="373.79577705679304" GraphRef="ae41e" RelX="0.0" RelY="-1.0" ArrowHead="mim-inhibition" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id613c9560">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="607.4153577462208" Y="421.4616379769577" GraphRef="b5930" RelX="0.0" RelY="1.0" />
+      <Point X="607.0575506445655" Y="504.1961325966839" GraphRef="c6d49" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id72029093">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="498.6942833660555" Y="396.4182495472057" GraphRef="b5930" RelX="-1.0" RelY="0.0" />
+      <Point X="424.0372720157185" Y="393.2299288692678" GraphRef="c865d" RelX="1.0" RelY="0.0" ArrowHead="mim-inhibition" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id7ea1cb18">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="622.6666666666666" Y="693.3333333333334" />
+      <Point X="531.0570902394118" Y="692.2509208103138" GraphRef="d0b32" RelX="1.0" RelY="0.0" ArrowHead="mim-stimulation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="idaf482125">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="944.3823660506048" Y="394.74324422377225" GraphRef="ae41e" RelX="-1.0" RelY="0.0" />
+      <Point X="894.9343339587249" Y="395.83820089637845" GraphRef="f1316" RelX="1.0" RelY="0.0" ArrowHead="mim-stimulation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="ide87af51a">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="427.43595041322226" Y="184.91666666666663" GraphRef="a40d2" RelX="0.0" RelY="1.0" />
+      <Point X="389.08057851239664" Y="220.502754820937" GraphRef="b896f" RelX="0.0" RelY="-1.0" ArrowHead="mim-binding" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Label TextLabel="Endothelial cell" GraphId="acb07">
+    <Graphics CenterX="293.50000000000045" CenterY="723.75" Width="173.0" Height="37.83333333333326" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="20" Valign="Middle" />
+  </Label>
+  <Label TextLabel="Immune system" GraphId="f87a8">
+    <Graphics CenterX="564.4696969696984" CenterY="85.452479338843" Width="193.7603305785126" Height="29.02892561983478" ZOrder="28672" FillColor="ffffff" FontSize="24" Valign="Middle" />
+  </Label>
+  <Label TextLabel="Nucleus" GraphId="fdfc2">
+    <Graphics CenterX="1072.1666666666677" CenterY="689.75" Width="173.0" Height="37.83333333333326" ZOrder="32772" FillColor="ffffff" FontWeight="Bold" FontSize="20" Valign="Middle" />
+  </Label>
+  <Shape GraphId="e9033">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Nucleus" />
+    <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
+    <Graphics CenterX="1036.7499999999977" CenterY="692.0000000000001" Width="954.5" Height="88.00000000000023" ZOrder="16384" FontSize="12" Valign="Middle" ShapeType="Oval" LineThickness="3.0" Color="c0c0c0" Rotation="0.0" />
+  </Shape>
+  <Shape GraphId="ff25d">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Cell" />
+    <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
+    <Graphics CenterX="910.2641746649515" CenterY="501.1623186495698" Width="1462.538567493113" Height="492.16942148760427" ZOrder="16384" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" LineThickness="3.0" Color="c0c0c0" Rotation="0.0" />
+  </Shape>
+  <InfoBox CenterX="0.0" CenterY="0.0" />
+  <Biopax>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COVID-19</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080600</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000013</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+  </Biopax>
+</Pathway>
