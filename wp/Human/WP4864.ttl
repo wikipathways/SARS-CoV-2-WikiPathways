@@ -20,7 +20,7 @@
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4864_r124634> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4864_r124634/Group/a042f> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000117560> , <https://identifiers.org/ensembl/ENSG00000232810> , <http://rdf.wikipathways.org/Pathway/WP4864_r124634/Complex/a042f> .
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000232810> , <https://identifiers.org/ensembl/ENSG00000117560> , <http://rdf.wikipathways.org/Pathway/WP4864_r124634/Complex/a042f> .
 
 <https://identifiers.org/uniprot/P59596>
         rdf:type            wp:DataNode , wp:Protein ;
@@ -90,16 +90,17 @@
         wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
         wp:organismName        "Homo sapiens" ;
         wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/PW_0000009> ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4864&oldid=124634> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4864&oldid=124634> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4864_r124634> .
-
-<https://identifiers.org/wikipathways/WP4864>
-        pav:hasVersion  <https://identifiers.org/wikipathways/WP4864_r124634> .
 
 <http://rdf.wikipathways.org/Pathway/WP4864_r124634/Complex/a042f>
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4864_r124634> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4864_r124634/Group/a042f> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000117560> , <https://identifiers.org/ensembl/ENSG00000232810> .
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000232810> , <https://identifiers.org/ensembl/ENSG00000117560> .
+
+<https://identifiers.org/wikipathways/WP4864>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP4864_r124634> .
 
 <https://identifiers.org/ensembl/ENSG00000064012>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -226,6 +227,10 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q88175978> , <http://www.wikidata.org/entity/Q88365908> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4864_r124634/DataNode/a523f> ;
         foaf:page           <http://www.uniprot.org/uniprot/P59633> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4864&oldid=124634>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ensembl/ENSG00000232810>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -355,6 +360,14 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4864_r124634/DataNode/e4372> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000171552> .
 
+<http://rdf.wikipathways.org/Pathway/WP4864_r124634/WP/Interaction/id812e8e5d>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4864_r124634> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4864_r124634/Interaction/id812e8e5d> ;
+        wp:participants   <https://identifiers.org/ncbigene/207> , <https://identifiers.org/uniprot/P59596> ;
+        wp:source         <https://identifiers.org/uniprot/P59596> ;
+        wp:target         <https://identifiers.org/ncbigene/207> .
+
 <https://identifiers.org/uniprot/P59637>
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "E" ;
@@ -368,13 +381,9 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4864_r124634/DataNode/a63a3> , <http://rdf.wikipathways.org/Pathway/WP4864_r124634/DataNode/d3730> ;
         foaf:page           <http://www.uniprot.org/uniprot/P59637> .
 
-<http://rdf.wikipathways.org/Pathway/WP4864_r124634/WP/Interaction/id812e8e5d>
-        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4864_r124634> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4864_r124634/Interaction/id812e8e5d> ;
-        wp:participants   <https://identifiers.org/ncbigene/207> , <https://identifiers.org/uniprot/P59596> ;
-        wp:source         <https://identifiers.org/uniprot/P59596> ;
-        wp:target         <https://identifiers.org/ncbigene/207> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4864&oldid=124634>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ensembl/ENSG00000105327>
         rdf:type            wp:GeneProduct , wp:DataNode ;
