@@ -2,7 +2,7 @@
 <Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="Cytokine storm syndrome" Version="20220705" Organism="Homo sapiens">
   <Comment Source="WikiPathways-description">Farahani et al. 2022. Schematic Cytokine Storm</Comment>
   <BiopaxRef>afa</BiopaxRef>
-  <Graphics BoardWidth="1048.1725272268532" BoardHeight="771.4831985056197"/>
+  <Graphics BoardWidth="1048.1725272268532" BoardHeight="768.1725245627954"/>
   <DataNode TextLabel="IL2" GraphId="bf33e" Type="GeneProduct" GroupRef="be4fd">
     <Graphics CenterX="120.17204016205443" CenterY="667.2762900531582" Width="89.31710520112355" Height="25.030852413600684" ZOrder="32768" FontSize="12" Valign="Middle"/>
     <Xref Database="Ensembl" ID="ENSG00000109471"/>
@@ -250,7 +250,7 @@
   <Label TextLabel="Fever" GraphId="b797e">
     <Graphics CenterX="664.3032799974445" CenterY="300.2139823065373" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle"/>
   </Label>
-  <Label TextLabel="Dentritic Cell" GraphId="c0299">
+  <Label TextLabel="Dendritic cell" GraphId="c0299">
     <Graphics CenterX="328.6300783759637" CenterY="206.2207769656182" Width="115.62771078025537" Height="38.98539154259579" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle"/>
   </Label>
   <Label TextLabel="Systemic illness" GraphId="ed9b1">
@@ -259,16 +259,16 @@
   <Label TextLabel="PAMPs" GraphId="f1ba1">
     <Graphics CenterX="141.6291437209804" CenterY="184.40129628869192" Width="69.33345347975981" Height="74.97614180928332" ZOrder="28672" FillColor="3300cc" FontSize="12" Valign="Middle"/>
   </Label>
-  <Label TextLabel="Cytokine Storm" GraphId="fabef">
+  <Label TextLabel="Cytokine storm" GraphId="fabef">
     <Graphics CenterX="449.45312391934317" CenterY="534.8586877279603" Width="166.39137790356403" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="20" Valign="Middle"/>
   </Label>
-  <Label TextLabel="Cytokine Release" GraphId="f28d6">
+  <Label TextLabel="Cytokine release" GraphId="f28d6">
     <Graphics CenterX="115.36065599948876" CenterY="566.7335513458692" Width="115.3003964832078" Height="72.11696102541174" ZOrder="32772" FillColor="ffffff" FontSize="12" Valign="Middle"/>
   </Label>
-  <Label TextLabel="CD8+  T cell" GraphId="acc5c">
+  <Label TextLabel="CD8+ T cell" GraphId="acc5c">
     <Graphics CenterX="161.88412029242716" CenterY="504.06064314838466" Width="115.3003964832078" Height="72.11696102541174" ZOrder="32774" FillColor="ffffff" FontSize="12" Valign="Middle"/>
   </Label>
-  <Label TextLabel="CD4+  helper &#10;T cell" GraphId="df192">
+  <Label TextLabel="CD4+ helper &#10;T cell" GraphId="df192">
     <Graphics CenterX="59.95023428553165" CenterY="500.67724373451665" Width="115.3003964832078" Height="72.11696102541174" ZOrder="32775" FillColor="ffff66" FontSize="12" Valign="Middle"/>
   </Label>
   <Label TextLabel="Hyperinflammation" GraphId="ee47e">
@@ -338,5 +338,30 @@
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rasmi Y</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tayebi L</bp:AUTHORS>
     </bp:PublicationXref>
-  <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"><bp:TERM>COVID-19</bp:TERM><bp:ID>DOID:0080600</bp:ID><bp:Ontology>Disease</bp:Ontology></bp:openControlledVocabulary></Biopax>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendritic cell</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000451</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Type</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta T cell</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000625</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Type</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helper T cell</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000912</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Type</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COVID-19</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080600</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macrophage</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000235</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Type</bp:Ontology>
+    </bp:openControlledVocabulary>
+  <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"><bp:TERM>CD4-positive helper T cell</bp:TERM><bp:ID>CL:0000492</bp:ID><bp:Ontology>Cell Type</bp:Ontology></bp:openControlledVocabulary><bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"><bp:TERM>cytokine mediated signaling pathway</bp:TERM><bp:ID>PW:0000828</bp:ID><bp:Ontology>Pathway Ontology</bp:Ontology></bp:openControlledVocabulary></Biopax>
 </Pathway>
