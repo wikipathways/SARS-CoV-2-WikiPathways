@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -22,28 +23,28 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/IL6ST> ;
         dc:source           "HGNC" ;
         dcterms:identifier  "IL6ST" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/a9407> , <https://identifiers.org/wikipathways/WP5063_r118833> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/be433> ;
-        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000134352> ;
-        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3572> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/a9407> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/be433> , <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000134352> , <https://identifiers.org/ensembl/ENSOANG00000005447> , <https://identifiers.org/ensembl/ENSSSCG00000016916> ;
+        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/100037294> , <https://identifiers.org/ncbigene/3572> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/IL6ST> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/Q5FC05> , <https://identifiers.org/uniprot/A0A0A0N0L2> , <https://identifiers.org/uniprot/A0A494BZU0> , <https://identifiers.org/uniprot/Q5FC02> , <https://identifiers.org/uniprot/D6RH03> , <https://identifiers.org/uniprot/P40189> , <https://identifiers.org/uniprot/Q5FC07> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/c88f4> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/e7817> .
+        wp:bdbUniprot       <https://identifiers.org/uniprot/A0A4X1SJH4> , <https://identifiers.org/uniprot/Q5FC05> , <https://identifiers.org/uniprot/A0A4X1SIN4> , <https://identifiers.org/uniprot/A0A8V8TM11> , <https://identifiers.org/uniprot/A0A0A0N0L5> , <https://identifiers.org/uniprot/A0A5G2R149> , <https://identifiers.org/uniprot/A0A8V8TMJ4> , <https://identifiers.org/uniprot/A0A4X1SJG9> , <https://identifiers.org/uniprot/A0A8V8TNI8> , <https://identifiers.org/uniprot/A0A5G2QW91> , <https://identifiers.org/uniprot/A0A8V8TNU5> , <https://identifiers.org/uniprot/A0A0A0N0L2> , <https://identifiers.org/uniprot/A0A494BZU0> , <https://identifiers.org/uniprot/Q5FC02> , <https://identifiers.org/uniprot/D6RH03> , <https://identifiers.org/uniprot/P40189> , <https://identifiers.org/uniprot/F1SLL1> , <https://identifiers.org/uniprot/A0A8V8TMJ9> , <https://identifiers.org/uniprot/A0A8V8TNI4> , <https://identifiers.org/uniprot/F6RHV6> , <https://identifiers.org/uniprot/Q5FC07> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/e7817> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/c88f4> ;
+        foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/IL6ST> .
 
 <https://identifiers.org/pubmed/3091479>
         rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "3091479" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/ef23b> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/c84bb> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/ef23b> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/c84bb> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/3091479> .
 
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id2dd693e9>
-        rdf:type            wp:DirectedInteraction , wp:Interaction , wp:Stimulation ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        dcterms:references  <https://identifiers.org/pubmed/30076771> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Interaction/id2dd693e9> ;
-        wp:participants     <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/ae481> , <https://identifiers.org/uniprot/B7ZLG1> ;
-        wp:source           <https://identifiers.org/uniprot/B7ZLG1> ;
-        wp:target           <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/ae481> .
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/ef23b>
+        rdf:type                       wp:Complex , wp:DataNode ;
+        dcterms:bibliographicCitation  <https://identifiers.org/pubmed/3091479> ;
+        dcterms:isPartOf               <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id62c8b91d> , <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        dcterms:references             <https://identifiers.org/pubmed/3091479> ;
+        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Group/ef23b> ;
+        wp:participants                <https://identifiers.org/hgnc.symbol/IL2RB> , <https://identifiers.org/hgnc.symbol/IL2RG> , <https://identifiers.org/hgnc.symbol/IL2RA> .
 
 <https://identifiers.org/ensembl/ENSG00000049768>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -51,29 +52,55 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000049768> ;
         dc:source           "Ensembl" ;
         dcterms:identifier  "ENSG00000049768" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/ae481> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id461fe58b> , <https://identifiers.org/wikipathways/WP5063_r118833> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/ae481> , <https://identifiers.org/wikipathways/WP5063_r134370> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id461fe58b> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000049768> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/50943> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/FOXP3> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/B7ZLG1> , <https://identifiers.org/uniprot/Q9BZS1> , <https://identifiers.org/uniprot/A0A494C1K1> , <https://identifiers.org/uniprot/A0A494BZV0> , <https://identifiers.org/uniprot/A0A494C0B0> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/B7ZLG1> , <https://identifiers.org/uniprot/A0A804HK12> , <https://identifiers.org/uniprot/Q9BZS1> , <https://identifiers.org/uniprot/A0A494BZV0> , <https://identifiers.org/uniprot/A0A494C0B0> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q21163319> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/b80c0> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/f6c0b> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/b80c0> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/f6c0b> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000049768> .
 
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/ef23b>
-        rdf:type                       wp:Complex , wp:DataNode ;
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/c84bb>
+        rdf:type                       wp:DataNode , wp:Complex ;
         dcterms:bibliographicCitation  <https://identifiers.org/pubmed/3091479> ;
-        dcterms:isPartOf               <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id62c8b91d> , <https://identifiers.org/wikipathways/WP5063_r118833> ;
+        dcterms:isPartOf               <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id53f164a2> , <https://identifiers.org/wikipathways/WP5063_r134370> ;
         dcterms:references             <https://identifiers.org/pubmed/3091479> ;
-        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Group/ef23b> ;
-        wp:participants                <https://identifiers.org/hgnc.symbol/IL2RB> , <https://identifiers.org/hgnc.symbol/IL2RG> , <https://identifiers.org/hgnc.symbol/IL2RA> .
+        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Group/c84bb> ;
+        wp:participants                <https://identifiers.org/hgnc.symbol/IL2RA> , <https://identifiers.org/hgnc.symbol/IL2RG> , <https://identifiers.org/hgnc.symbol/IL2RB> .
+
+<https://identifiers.org/wikipathways/WP5063_r134370>
+        rdf:type                skos:Collection , wp:Pathway ;
+        dc:identifier           <https://identifiers.org/wikipathways/WP5063> ;
+        dc:source               "WikiPathways" ;
+        dc:title                "FOXP3 in COVID-19"@en ;
+        dcterms:description     "FOXP3 in Covid-19" ;
+        dcterms:identifier      "WP5063" ;
+        cito:cites              <https://identifiers.org/pubmed/12522256> , <https://identifiers.org/pubmed/30076771> , <https://identifiers.org/pubmed/26215792> , <https://identifiers.org/pubmed/3091479> , <https://identifiers.org/pubmed/29456534> ;
+        wp:cellTypeOntologyTag  obo:CL_0000084 ;
+        wp:diseaseOntologyTag   obo:DOID_0080600 ;
+        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP5063_r134370> ;
+        wp:ontologyTag          obo:CL_0000084 , obo:PW_0000013 , obo:DOID_0080600 ;
+        wp:organism             obo:NCBITaxon_9606 ;
+        wp:organismName         "Homo sapiens" ;
+        wp:pathwayOntologyTag   obo:PW_0000013 ;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5063&oldid=134370> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5063&oldid=134370> ;
+        foaf:page               <http://www.wikipathways.org/instance/WP5063_r134370> .
 
 <https://identifiers.org/pubmed/29456534>
         rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "29456534" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id62c8b91d> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id53f164a2> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id62c8b91d> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id53f164a2> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/29456534> .
+
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id918fca0c>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Interaction/id918fca0c> ;
+        wp:participants   <https://identifiers.org/hgnc.symbol/IL2> , <https://identifiers.org/uniprot/B7ZLG1> ;
+        wp:source         <https://identifiers.org/uniprot/B7ZLG1> ;
+        wp:target         <https://identifiers.org/hgnc.symbol/IL2> .
 
 <https://identifiers.org/hgnc.symbol/IL2>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -81,20 +108,17 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/IL2> ;
         dc:source           "HGNC" ;
         dcterms:identifier  "IL2" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id60c4d9a9> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id918fca0c> ;
-        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000109471> ;
-        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3558> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id60c4d9a9> , <https://identifiers.org/wikipathways/WP5063_r134370> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id918fca0c> ;
+        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000109471> , <https://identifiers.org/ensembl/ENSSSCG00000033267> ;
+        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/396868> , <https://identifiers.org/ncbigene/3558> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/IL2> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/P60568> , <https://identifiers.org/uniprot/Q0GK43> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/a9782> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/d91fa> .
+        wp:bdbUniprot       <https://identifiers.org/uniprot/A8D5G2> , <https://identifiers.org/uniprot/P60568> , <https://identifiers.org/uniprot/Q0GK43> , <https://identifiers.org/uniprot/P26891> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/d91fa> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/a9782> ;
+        foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/IL2> .
 
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/c84bb>
-        rdf:type                       wp:DataNode , wp:Complex ;
-        dcterms:bibliographicCitation  <https://identifiers.org/pubmed/3091479> ;
-        dcterms:isPartOf               <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id53f164a2> , <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        dcterms:references             <https://identifiers.org/pubmed/3091479> ;
-        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Group/c84bb> ;
-        wp:participants                <https://identifiers.org/hgnc.symbol/IL2RG> , <https://identifiers.org/hgnc.symbol/IL2RA> , <https://identifiers.org/hgnc.symbol/IL2RB> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5063&oldid=134370>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/pfam/PF00993>
         rdf:type            wp:Complex , wp:DataNode ;
@@ -102,22 +126,30 @@
         dc:identifier       <https://identifiers.org/pfam/PF00993> ;
         dc:source           "Pfam" ;
         dcterms:identifier  "PF00993" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/b61a9> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/b61a9> ;
         foaf:page           <https://pfam.xfam.org/family/PF00993/> .
+
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id461fe58b>
+        rdf:type          wp:TranscriptionTranslation , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Interaction/id461fe58b> ;
+        wp:participants   <https://identifiers.org/uniprot/B7ZLG1> , <https://identifiers.org/ensembl/ENSG00000049768> ;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000049768> ;
+        wp:target         <https://identifiers.org/uniprot/B7ZLG1> .
 
 <https://identifiers.org/uniprot/P42081>
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "CD86" ;
         dc:identifier       <https://identifiers.org/uniprot/P42081> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P42081" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r134370> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000114013> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/942> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/CD86> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/C9JXS1> , <https://identifiers.org/uniprot/H7C4F8> , <https://identifiers.org/uniprot/P42081> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/b9eee> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/b9eee> ;
         foaf:page           <http://www.uniprot.org/uniprot/P42081> .
 
 <https://identifiers.org/hgnc.symbol/IL7R>
@@ -126,12 +158,19 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/IL7R> ;
         dc:source           "HGNC" ;
         dcterms:identifier  "IL7R" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id68d6bd5c> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/a8c31> ;
-        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000168685> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id68d6bd5c> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/a8c31> , <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSSSCG00000016832> , <https://identifiers.org/ensembl/ENSG00000168685> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3575> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/IL7R> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/D6RG28> , <https://identifiers.org/uniprot/B8YG18> , <https://identifiers.org/uniprot/D6RDM4> , <https://identifiers.org/uniprot/H0YA41> , <https://identifiers.org/uniprot/P16871> , <https://identifiers.org/uniprot/D6RCR9> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/d3b3a> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/c175f> .
+        wp:bdbUniprot       <https://identifiers.org/uniprot/A0A5G2QWG6> , <https://identifiers.org/uniprot/D6RG28> , <https://identifiers.org/uniprot/B8YG18> , <https://identifiers.org/uniprot/A0A8D0LIA1> , <https://identifiers.org/uniprot/K7GLC0> , <https://identifiers.org/uniprot/D6RDM4> , <https://identifiers.org/uniprot/H0YA41> , <https://identifiers.org/uniprot/A0A4X1TE78> , <https://identifiers.org/uniprot/P16871> , <https://identifiers.org/uniprot/D6RCR9> , <https://identifiers.org/uniprot/A0A5G2QQS2> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/d3b3a> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/c175f> ;
+        foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/IL7R> .
+
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/a9407>
+        rdf:type          wp:Complex , wp:DataNode ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Group/a9407> ;
+        wp:participants   <https://identifiers.org/hgnc.symbol/IL6R> , <https://identifiers.org/hgnc.symbol/IL6ST> .
 
 <https://identifiers.org/ensembl/ENSG00000173757>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -139,20 +178,29 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000173757> ;
         dc:source           "Ensembl" ;
         dcterms:identifier  "ENSG00000173757" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r134370> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000173757> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/6777> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/STAT5B> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/C9J4I3> , <https://identifiers.org/uniprot/P51692> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/C9J4I3> , <https://identifiers.org/uniprot/A0A8V8TP00> , <https://identifiers.org/uniprot/A0A8V8TM84> , <https://identifiers.org/uniprot/A0A8V8TP21> , <https://identifiers.org/uniprot/A0A8V8TMR0> , <https://identifiers.org/uniprot/A0A8V8TMP4> , <https://identifiers.org/uniprot/P51692> , <https://identifiers.org/uniprot/A0A8V8TM91> , <https://identifiers.org/uniprot/A0A8V8TP16> , <https://identifiers.org/uniprot/A0A8V8TMQ6> , <https://identifiers.org/uniprot/A0A8V8TMA6> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q18031752> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/b3743> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/b23df> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/b3743> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/b23df> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000173757> .
 
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/a9407>
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id2dd693e9>
+        rdf:type            wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        dcterms:references  <https://identifiers.org/pubmed/30076771> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Interaction/id2dd693e9> ;
+        wp:participants     <https://identifiers.org/uniprot/B7ZLG1> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/ae481> ;
+        wp:source           <https://identifiers.org/uniprot/B7ZLG1> ;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/ae481> .
+
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/be433>
         rdf:type          wp:Complex , wp:DataNode ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Group/a9407> ;
-        wp:participants   <https://identifiers.org/hgnc.symbol/IL6R> , <https://identifiers.org/hgnc.symbol/IL6ST> .
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Group/be433> ;
+        wp:participants   <https://identifiers.org/hgnc.symbol/IL6ST> , <https://identifiers.org/hgnc.symbol/IL6R> .
 
 <https://identifiers.org/hgnc.symbol/STAT3>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -160,27 +208,26 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/STAT3> ;
         dc:source           "HGNC" ;
         dcterms:identifier  "STAT3" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000168610> ;
-        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/6774> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSSSCG00000017403> , <https://identifiers.org/ensembl/ENSG00000168610> , <https://identifiers.org/ensembl/ENSOANG00000045032> ;
+        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/6774> , <https://identifiers.org/ncbigene/100087932> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/STAT3> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/A0A7I2V552> , <https://identifiers.org/uniprot/A0A7I2V4C8> , <https://identifiers.org/uniprot/A0A7I2V444> , <https://identifiers.org/uniprot/P40763> , <https://identifiers.org/uniprot/A0A7I2V3V0> , <https://identifiers.org/uniprot/A0A7I2YQR5> , <https://identifiers.org/uniprot/A0A7I2YQI1> , <https://identifiers.org/uniprot/G8JLH9> , <https://identifiers.org/uniprot/A0A7I2V5N9> , <https://identifiers.org/uniprot/A0A7I2V4F6> , <https://identifiers.org/uniprot/A0A7I2V4R2> , <https://identifiers.org/uniprot/A0A7I2YQD2> , <https://identifiers.org/uniprot/A0A7I2V2G1> , <https://identifiers.org/uniprot/A0A7I2V4R3> , <https://identifiers.org/uniprot/A0A7I2V2T1> , <https://identifiers.org/uniprot/A0A7I2V395> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/bd0f4> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/a3a45> .
+        wp:bdbUniprot       <https://identifiers.org/uniprot/A0A7I2V552> , <https://identifiers.org/uniprot/A0A7I2V4C8> , <https://identifiers.org/uniprot/A0A7I2V444> , <https://identifiers.org/uniprot/P40763> , <https://identifiers.org/uniprot/A0A287BBE2> , <https://identifiers.org/uniprot/A0A287AJZ1> , <https://identifiers.org/uniprot/A0A7I2V3V0> , <https://identifiers.org/uniprot/A0A7I2YQR5> , <https://identifiers.org/uniprot/A0A7I2YQI1> , <https://identifiers.org/uniprot/G8JLH9> , <https://identifiers.org/uniprot/A0A7I2V5N9> , <https://identifiers.org/uniprot/A0A7I2V4F6> , <https://identifiers.org/uniprot/A0A7I2V4R2> , <https://identifiers.org/uniprot/A0A7I2YQD2> , <https://identifiers.org/uniprot/A0A7I2V2G1> , <https://identifiers.org/uniprot/A0A2C9F3G4> , <https://identifiers.org/uniprot/A0A7I2V4R3> , <https://identifiers.org/uniprot/A0A7I2V2T1> , <https://identifiers.org/uniprot/A0A7I2V395> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/a3a45> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/bd0f4> ;
+        foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/STAT3> .
 
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id53f164a2>
-        rdf:type            wp:DirectedInteraction , wp:Interaction , wp:Stimulation ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        dcterms:references  <https://identifiers.org/pubmed/29456534> , <https://identifiers.org/pubmed/26215792> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Interaction/id53f164a2> ;
-        wp:participants     <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/c84bb> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id461fe58b> ;
-        wp:source           <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/c84bb> ;
-        wp:target           <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id461fe58b> .
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/ComplexBinding/a9407>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Group/a9407> ;
+        wp:participants   <https://identifiers.org/hgnc.symbol/IL6R> , <https://identifiers.org/hgnc.symbol/IL6ST> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/a9407> .
 
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/be433>
-        rdf:type          wp:Complex , wp:DataNode ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Group/be433> ;
-        wp:participants   <https://identifiers.org/hgnc.symbol/IL6R> , <https://identifiers.org/hgnc.symbol/IL6ST> .
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/ComplexBinding/ef23b>
+        rdf:type                       wp:Interaction , wp:ComplexBinding , wp:Binding ;
+        dcterms:bibliographicCitation  <https://identifiers.org/pubmed/3091479> ;
+        dcterms:isPartOf               <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Group/ef23b> ;
+        wp:participants                <https://identifiers.org/hgnc.symbol/IL2RG> , <https://identifiers.org/hgnc.symbol/IL2RA> , <https://identifiers.org/hgnc.symbol/IL2RB> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/ef23b> .
 
 <https://identifiers.org/hgnc.symbol/IL6>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -188,48 +235,61 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/IL6> ;
         dc:source           "HGNC" ;
         dcterms:identifier  "IL6" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r134370> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000136244> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3569> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/IL6> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/P05231> , <https://identifiers.org/uniprot/C9J5B0> , <https://identifiers.org/uniprot/B5MCZ3> , <https://identifiers.org/uniprot/B5MC14> , <https://identifiers.org/uniprot/B5MC21> , <https://identifiers.org/uniprot/B4DNV3> , <https://identifiers.org/uniprot/Q75MH2> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/d8de6> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/b47d5> .
+        wp:bdbUniprot       <https://identifiers.org/uniprot/P05231> , <https://identifiers.org/uniprot/C9J5B0> , <https://identifiers.org/uniprot/B5MCZ3> , <https://identifiers.org/uniprot/A0A8Q3SJL1> , <https://identifiers.org/uniprot/B5MC14> , <https://identifiers.org/uniprot/B5MC21> , <https://identifiers.org/uniprot/B4DNV3> , <https://identifiers.org/uniprot/Q75MH2> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/b47d5> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/d8de6> ;
+        foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/IL6> .
 
-<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5063&oldid=118833>
-        rdf:type        foaf:Image ;
-        dcterms:format  "image/svg+xml" .
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/ae481>
+        rdf:type          wp:TranscriptionTranslation , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Interaction/ae481> ;
+        wp:participants   <https://identifiers.org/uniprot/B7ZLG1> , <https://identifiers.org/ensembl/ENSG00000049768> ;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000049768> ;
+        wp:target         <https://identifiers.org/uniprot/B7ZLG1> .
 
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id60c4d9a9>
-        rdf:type            wp:Inhibition , wp:Interaction , wp:DirectedInteraction ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        dcterms:references  <https://identifiers.org/pubmed/26215792> , <https://identifiers.org/pubmed/12522256> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Interaction/id60c4d9a9> ;
-        wp:participants     <https://identifiers.org/hgnc.symbol/IL2> , <https://identifiers.org/uniprot/B7ZLG1> ;
-        wp:source           <https://identifiers.org/uniprot/B7ZLG1> ;
-        wp:target           <https://identifiers.org/hgnc.symbol/IL2> .
-
-<https://identifiers.org/wikipathways/WP5063>
-        pav:hasVersion  <https://identifiers.org/wikipathways/WP5063_r118833> .
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 
 <https://identifiers.org/pubmed/30076771>
         rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "30076771" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id2dd693e9> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id2dd693e9> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/30076771> .
+
+<https://identifiers.org/wikipathways/WP5063>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP5063_r134370> .
+
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/ComplexBinding/be433>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Group/be433> ;
+        wp:participants   <https://identifiers.org/hgnc.symbol/IL6ST> , <https://identifiers.org/hgnc.symbol/IL6R> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/be433> .
+
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/ComplexBinding/c84bb>
+        rdf:type                       wp:Interaction , wp:ComplexBinding , wp:Binding ;
+        dcterms:bibliographicCitation  <https://identifiers.org/pubmed/3091479> ;
+        dcterms:isPartOf               <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Group/c84bb> ;
+        wp:participants                <https://identifiers.org/hgnc.symbol/IL2RB> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/c84bb> , <https://identifiers.org/hgnc.symbol/IL2RG> , <https://identifiers.org/hgnc.symbol/IL2RA> .
+
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/a8c31>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Interaction/a8c31> ;
+        wp:participants   <https://identifiers.org/hgnc.symbol/IL7R> , <https://identifiers.org/uniprot/B7ZLG1> ;
+        wp:source         <https://identifiers.org/uniprot/B7ZLG1> ;
+        wp:target         <https://identifiers.org/hgnc.symbol/IL7R> .
 
 <https://identifiers.org/pubmed/12522256>
         rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "12522256" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id60c4d9a9> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id60c4d9a9> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/12522256> .
-
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/ComplexBinding/a9407>
-        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Group/a9407> ;
-        wp:participants   <https://identifiers.org/hgnc.symbol/IL6R> , <https://identifiers.org/hgnc.symbol/IL6ST> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/a9407> .
 
 <https://identifiers.org/pfam/PF00969>
         rdf:type            wp:Protein , wp:DataNode ;
@@ -237,75 +297,39 @@
         dc:identifier       <https://identifiers.org/pfam/PF00969> ;
         dc:source           "Pfam" ;
         dcterms:identifier  "PF00969" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/b9b92> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/b9b92> ;
         foaf:page           <https://pfam.xfam.org/family/PF00969/> .
-
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/ComplexBinding/ef23b>
-        rdf:type                       wp:ComplexBinding , wp:Interaction , wp:Binding ;
-        dcterms:bibliographicCitation  <https://identifiers.org/pubmed/3091479> ;
-        dcterms:isPartOf               <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Group/ef23b> ;
-        wp:participants                <https://identifiers.org/hgnc.symbol/IL2RB> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/ef23b> , <https://identifiers.org/hgnc.symbol/IL2RA> , <https://identifiers.org/hgnc.symbol/IL2RG> .
 
 <https://identifiers.org/pubmed/26215792>
         rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "26215792" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id62c8b91d> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id60c4d9a9> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id53f164a2> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id62c8b91d> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id60c4d9a9> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id53f164a2> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/26215792> .
-
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id68d6bd5c>
-        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Interaction/id68d6bd5c> ;
-        wp:participants   <https://identifiers.org/hgnc.symbol/IL7R> , <https://identifiers.org/uniprot/B7ZLG1> ;
-        wp:source         <https://identifiers.org/uniprot/B7ZLG1> ;
-        wp:target         <https://identifiers.org/hgnc.symbol/IL7R> .
-
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/ComplexBinding/be433>
-        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Group/be433> ;
-        wp:participants   <https://identifiers.org/hgnc.symbol/IL6R> , <https://identifiers.org/hgnc.symbol/IL6ST> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/be433> .
-
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/ComplexBinding/c84bb>
-        rdf:type                       wp:Binding , wp:Interaction , wp:ComplexBinding ;
-        dcterms:bibliographicCitation  <https://identifiers.org/pubmed/3091479> ;
-        dcterms:isPartOf               <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Group/c84bb> ;
-        wp:participants                <https://identifiers.org/hgnc.symbol/IL2RA> , <https://identifiers.org/hgnc.symbol/IL2RB> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/c84bb> , <https://identifiers.org/hgnc.symbol/IL2RG> .
-
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id62c8b91d>
-        rdf:type            wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        dcterms:references  <https://identifiers.org/pubmed/26215792> , <https://identifiers.org/pubmed/29456534> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Interaction/id62c8b91d> ;
-        wp:participants     <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/ef23b> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/ae481> ;
-        wp:source           <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/ef23b> ;
-        wp:target           <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/ae481> .
-
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/a8c31>
-        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Interaction/a8c31> ;
-        wp:participants   <https://identifiers.org/hgnc.symbol/IL7R> , <https://identifiers.org/uniprot/B7ZLG1> ;
-        wp:source         <https://identifiers.org/uniprot/B7ZLG1> ;
-        wp:target         <https://identifiers.org/hgnc.symbol/IL7R> .
 
 <https://identifiers.org/uniprot/B7ZLG1>
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "FOXP3" ;
         dc:identifier       <https://identifiers.org/uniprot/B7ZLG1> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "B7ZLG1" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/a8c31> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id2dd693e9> , <https://identifiers.org/wikipathways/WP5063_r118833> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id68d6bd5c> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id918fca0c> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id461fe58b> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id60c4d9a9> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/ae481> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id68d6bd5c> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id918fca0c> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id2dd693e9> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/ae481> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/a8c31> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id461fe58b> , <https://identifiers.org/wikipathways/WP5063_r134370> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id60c4d9a9> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000049768> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/50943> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/FOXP3> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/B7ZLG1> , <https://identifiers.org/uniprot/Q9BZS1> , <https://identifiers.org/uniprot/A0A494BZV0> , <https://identifiers.org/uniprot/A0A494C0B0> , <https://identifiers.org/uniprot/A0A494C1K1> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/cfeb2> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/c6ad9> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/B7ZLG1> , <https://identifiers.org/uniprot/Q9BZS1> , <https://identifiers.org/uniprot/A0A494BZV0> , <https://identifiers.org/uniprot/A0A494C0B0> , <https://identifiers.org/uniprot/A0A804HK12> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/c6ad9> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/cfeb2> ;
         foaf:page           <http://www.uniprot.org/uniprot/B7ZLG1> .
+
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id53f164a2>
+        rdf:type            wp:DirectedInteraction , wp:Stimulation , wp:Interaction ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        dcterms:references  <https://identifiers.org/pubmed/29456534> , <https://identifiers.org/pubmed/26215792> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Interaction/id53f164a2> ;
+        wp:participants     <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id461fe58b> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/c84bb> ;
+        wp:source           <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/c84bb> ;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id461fe58b> .
 
 <https://identifiers.org/hgnc.symbol/IL6R>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -313,12 +337,22 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/IL6R> ;
         dc:source           "HGNC" ;
         dcterms:identifier  "IL6R" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/be433> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/a9407> , <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000160712> ;
-        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3570> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/a9407> , <https://identifiers.org/wikipathways/WP5063_r134370> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/be433> ;
+        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSSSCG00000027628> , <https://identifiers.org/ensembl/ENSG00000160712> ;
+        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/399522> , <https://identifiers.org/ncbigene/3570> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/IL6R> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/A0N0L5> , <https://identifiers.org/uniprot/P08887> , <https://identifiers.org/uniprot/A0A087WTB5> , <https://identifiers.org/uniprot/D6R9R8> , <https://identifiers.org/uniprot/H0Y9B1> , <https://identifiers.org/uniprot/H0Y949> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/e9a97> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/fab48> .
+        wp:bdbUniprot       <https://identifiers.org/uniprot/A0N0L5> , <https://identifiers.org/uniprot/P08887> , <https://identifiers.org/uniprot/A0A8D1JHD4> , <https://identifiers.org/uniprot/K7GQ55> , <https://identifiers.org/uniprot/A0A4X1VZS7> , <https://identifiers.org/uniprot/A0A087WTB5> , <https://identifiers.org/uniprot/A0A5G2QS46> , <https://identifiers.org/uniprot/A0A8D1FR76> , <https://identifiers.org/uniprot/I3LGM2> , <https://identifiers.org/uniprot/A0A5G2R3E9> , <https://identifiers.org/uniprot/D6R9R8> , <https://identifiers.org/uniprot/H0Y9B1> , <https://identifiers.org/uniprot/H0Y949> , <https://identifiers.org/uniprot/A0A480V8W8> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/e9a97> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/fab48> ;
+        foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/IL6R> .
+
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id60c4d9a9>
+        rdf:type            wp:Interaction , wp:DirectedInteraction , wp:Inhibition ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        dcterms:references  <https://identifiers.org/pubmed/26215792> , <https://identifiers.org/pubmed/12522256> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Interaction/id60c4d9a9> ;
+        wp:participants     <https://identifiers.org/hgnc.symbol/IL2> , <https://identifiers.org/uniprot/B7ZLG1> ;
+        wp:source           <https://identifiers.org/uniprot/B7ZLG1> ;
+        wp:target           <https://identifiers.org/hgnc.symbol/IL2> .
 
 <https://identifiers.org/hgnc.symbol/IL2RB>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -326,12 +360,13 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/IL2RB> ;
         dc:source           "HGNC" ;
         dcterms:identifier  "IL2RB" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/c84bb> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/ef23b> , <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000100385> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/ef23b> , <https://identifiers.org/wikipathways/WP5063_r134370> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/c84bb> ;
+        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000100385> , <https://identifiers.org/ensembl/ENSSSCG00000029668> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3560> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/IL2RB> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/B0QYC0> , <https://identifiers.org/uniprot/P14784> , <https://identifiers.org/uniprot/B0QYC2> , <https://identifiers.org/uniprot/B0QYC1> , <https://identifiers.org/uniprot/H7C1H9> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/bc300> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/b90e9> .
+        wp:bdbUniprot       <https://identifiers.org/uniprot/B0QYC0> , <https://identifiers.org/uniprot/A0A287AFR0> , <https://identifiers.org/uniprot/A0A8W6ANL8> , <https://identifiers.org/uniprot/P14784> , <https://identifiers.org/uniprot/B0QYC2> , <https://identifiers.org/uniprot/A0A8V8TMD8> , <https://identifiers.org/uniprot/B0QYC1> , <https://identifiers.org/uniprot/A0A8V8TNV4> , <https://identifiers.org/uniprot/H7C1H9> , <https://identifiers.org/uniprot/A0A8V8TMF6> , <https://identifiers.org/uniprot/A0A8V8TMD3> , <https://identifiers.org/uniprot/A0A8V8TP57> , <https://identifiers.org/uniprot/A0A287A8Z4> , <https://identifiers.org/uniprot/A0A8V8TNU9> , <https://identifiers.org/uniprot/A0A8V8TP62> , <https://identifiers.org/uniprot/A0A8V8TMF2> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/bc300> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/b90e9> ;
+        foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/IL2RB> .
 
 <https://identifiers.org/ensembl/ENSG00000126561>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -339,62 +374,36 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000126561> ;
         dc:source           "Ensembl" ;
         dcterms:identifier  "ENSG00000126561" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r134370> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000126561> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/6776> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/STAT5A> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/A0A7I2YQF1> , <https://identifiers.org/uniprot/A0A7I2YQY3> , <https://identifiers.org/uniprot/P42229> , <https://identifiers.org/uniprot/K7EK35> , <https://identifiers.org/uniprot/A0A7I2V380> , <https://identifiers.org/uniprot/K7EIF9> , <https://identifiers.org/uniprot/A0A384N5W4> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q18031751> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/db807> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/fde26> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/fde26> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/db807> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000126561> .
 
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/ae481>
-        rdf:type          wp:TranscriptionTranslation , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Interaction/ae481> ;
-        wp:participants   <https://identifiers.org/uniprot/B7ZLG1> , <https://identifiers.org/ensembl/ENSG00000049768> ;
-        wp:source         <https://identifiers.org/ensembl/ENSG00000049768> ;
-        wp:target         <https://identifiers.org/uniprot/B7ZLG1> .
-
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id918fca0c>
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id68d6bd5c>
         rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Interaction/id918fca0c> ;
-        wp:participants   <https://identifiers.org/hgnc.symbol/IL2> , <https://identifiers.org/uniprot/B7ZLG1> ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Interaction/id68d6bd5c> ;
+        wp:participants   <https://identifiers.org/hgnc.symbol/IL7R> , <https://identifiers.org/uniprot/B7ZLG1> ;
         wp:source         <https://identifiers.org/uniprot/B7ZLG1> ;
-        wp:target         <https://identifiers.org/hgnc.symbol/IL2> .
+        wp:target         <https://identifiers.org/hgnc.symbol/IL7R> .
 
 <https://identifiers.org/uniprot/P33681>
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "CD80" ;
         dc:identifier       <https://identifiers.org/uniprot/P33681> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P33681" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r134370> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000121594> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/941> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/CD80> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/P33681> , <https://identifiers.org/uniprot/A0N0P2> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/f8f22> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/f8f22> ;
         foaf:page           <http://www.uniprot.org/uniprot/P33681> .
-
-<https://identifiers.org/wikipathways/WP5063_r118833>
-        rdf:type                wp:Pathway , skos:Collection ;
-        dc:identifier           <https://identifiers.org/wikipathways/WP5063> ;
-        dc:source               "WikiPathways" ;
-        dc:title                "FOXP3 in COVID-19"@en ;
-        dcterms:description     "FOXP3 in Covid-19" , "FOXP3 in Covid-19\n" ;
-        dcterms:identifier      "WP5063" ;
-        cito:cites              <https://identifiers.org/pubmed/30076771> , <https://identifiers.org/pubmed/29456534> , <https://identifiers.org/pubmed/12522256> , <https://identifiers.org/pubmed/26215792> , <https://identifiers.org/pubmed/3091479> ;
-        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000084> ;
-        wp:diseaseOntologyTag   <http://purl.obolibrary.org/obo/DOID_0080600> ;
-        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP5063_r118833> ;
-        wp:ontologyTag          <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/DOID_0080600> , <http://purl.obolibrary.org/obo/CL_0000084> ;
-        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
-        wp:organismName         "Homo sapiens" ;
-        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000013> ;
-        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5063&oldid=118833> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5063&oldid=118833> ;
-        foaf:page               <http://www.wikipathways.org/instance/WP5063_r118833> .
 
 <https://identifiers.org/hgnc.symbol/IL2RG>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -402,16 +411,26 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/IL2RG> ;
         dc:source           "HGNC" ;
         dcterms:identifier  "IL2RG" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/ef23b> , <https://identifiers.org/wikipathways/WP5063_r118833> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/c84bb> ;
-        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000147168> ;
-        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3561> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/ef23b> , <https://identifiers.org/wikipathways/WP5063_r134370> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/c84bb> ;
+        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSECAG00000016543> , <https://identifiers.org/ensembl/ENSSSCG00000012397> , <https://identifiers.org/ensembl/ENSMMUG00000017795> , <https://identifiers.org/ensembl/ENSG00000147168> ;
+        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3561> , <https://identifiers.org/ncbigene/641338> , <https://identifiers.org/ncbigene/100055911> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/IL2RG> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/D6R964> , <https://identifiers.org/uniprot/P31785> , <https://identifiers.org/uniprot/H0Y8J6> , <https://identifiers.org/uniprot/D6RDW9> , <https://identifiers.org/uniprot/Q5FC10> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/dcf7b> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/d06a6> .
+        wp:bdbUniprot       <https://identifiers.org/uniprot/D6R964> , <https://identifiers.org/uniprot/A0A5G2RBK3> , <https://identifiers.org/uniprot/A0A5F8A3G1> , <https://identifiers.org/uniprot/A0A5F5PEE0> , <https://identifiers.org/uniprot/F6PZ59> , <https://identifiers.org/uniprot/A0A5F5PG76> , <https://identifiers.org/uniprot/K7GPF4> , <https://identifiers.org/uniprot/P31785> , <https://identifiers.org/uniprot/A0A8D0XLE8> , <https://identifiers.org/uniprot/A0A5F8A199> , <https://identifiers.org/uniprot/H0Y8J6> , <https://identifiers.org/uniprot/D6RDW9> , <https://identifiers.org/uniprot/Q76KD0> , <https://identifiers.org/uniprot/A0A8D0SC02> , <https://identifiers.org/uniprot/A0A8D1UQV4> , <https://identifiers.org/uniprot/A0A3Q2IFC0> , <https://identifiers.org/uniprot/F6YMI2> , <https://identifiers.org/uniprot/A0A3Q2H8A3> , <https://identifiers.org/uniprot/Q38JL2> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/dcf7b> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/d06a6> ;
+        foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/IL2RG> .
 
-<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5063&oldid=118833>
+<http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/id62c8b91d>
+        rdf:type            wp:DirectedInteraction , wp:Stimulation , wp:Interaction ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r134370> ;
+        dcterms:references  <https://identifiers.org/pubmed/29456534> , <https://identifiers.org/pubmed/26215792> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Interaction/id62c8b91d> ;
+        wp:participants     <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/ae481> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/ef23b> ;
+        wp:source           <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/ef23b> ;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP5063_r134370/WP/Interaction/ae481> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5063&oldid=134370>
         rdf:type        foaf:Image ;
-        dcterms:format  "image/png" .
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/hgnc.symbol/IL2RA>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -419,31 +438,24 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/IL2RA> ;
         dc:source           "HGNC" ;
         dcterms:identifier  "IL2RA" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/c84bb> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Complex/ef23b> ;
-        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000134460> ;
-        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3559> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/c84bb> , <https://identifiers.org/wikipathways/WP5063_r134370> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/Complex/ef23b> ;
+        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000134460> , <https://identifiers.org/ensembl/ENSSSCG00000022849> ;
+        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/396814> , <https://identifiers.org/ncbigene/3559> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/IL2RA> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/Q5W006> , <https://identifiers.org/uniprot/P01589> , <https://identifiers.org/uniprot/Q5W005> , <https://identifiers.org/uniprot/H0Y5Z0> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/f2e9c> , <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/dbe46> .
-
-<http://rdf.wikipathways.org/Pathway/WP5063_r118833/WP/Interaction/id461fe58b>
-        rdf:type          wp:TranscriptionTranslation , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5063_r118833> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5063_r118833/Interaction/id461fe58b> ;
-        wp:participants   <https://identifiers.org/uniprot/B7ZLG1> , <https://identifiers.org/ensembl/ENSG00000049768> ;
-        wp:source         <https://identifiers.org/ensembl/ENSG00000049768> ;
-        wp:target         <https://identifiers.org/uniprot/B7ZLG1> .
+        wp:bdbUniprot       <https://identifiers.org/uniprot/A0A4X1T7J3> , <https://identifiers.org/uniprot/A0A8V8TMM2> , <https://identifiers.org/uniprot/A0A480Q7I8> , <https://identifiers.org/uniprot/Q5W006> , <https://identifiers.org/uniprot/P01589> , <https://identifiers.org/uniprot/A0A4X1T516> , <https://identifiers.org/uniprot/Q5W005> , <https://identifiers.org/uniprot/H0Y5Z0> , <https://identifiers.org/uniprot/A0A287A7A4> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/dbe46> , <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/f2e9c> ;
+        foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/IL2RA> .
 
 <https://identifiers.org/uniprot/P10747>
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "CD28" ;
         dc:identifier       <https://identifiers.org/uniprot/P10747> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P10747" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r118833> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5063_r134370> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000178562> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/940> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/CD28> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/P10747> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r118833/DataNode/ec7ef> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5063_r134370/DataNode/ec7ef> ;
         foaf:page           <http://www.uniprot.org/uniprot/P10747> .

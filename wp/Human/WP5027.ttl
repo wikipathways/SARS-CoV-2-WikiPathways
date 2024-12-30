@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -25,12 +26,12 @@
         dcterms:identifier     "WP5027" ;
         dcterms:references     <https://identifiers.org/pubmed/33188728> ;
         cito:cites             <https://identifiers.org/pubmed/33188728> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_0080600> , <http://purl.obolibrary.org/obo/DOID_934> ;
+        wp:diseaseOntologyTag  obo:DOID_2945 , obo:DOID_0080600 , obo:DOID_934 ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5027_r124644> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/PW_0000580> , <http://purl.obolibrary.org/obo/DOID_0080600> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:DOID_2945 , obo:DOID_934 , obo:PW_0000580 , obo:DOID_0080600 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000580> ;
+        wp:pathwayOntologyTag  obo:PW_0000580 ;
         foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5027&oldid=124644> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5027&oldid=124644> ;
         foaf:page              <http://www.wikipathways.org/instance/WP5027_r124644> .
 
@@ -50,6 +51,7 @@
         dcterms:identifier   "CPX-6036" ;
         dcterms:isPartOf     <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:bdbComplexPortal  <https://identifiers.org/complexportal/CPX-6036> ;
+        wp:bdbWikidata       <http://www.wikidata.org/entity/Q107516196> ;
         wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/e2998> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/efc00> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/ba5cd> ;
         foaf:page            <https://www.ebi.ac.uk/complexportal/complex/CPX-6036> .
 
@@ -77,7 +79,7 @@
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000084623> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/8668> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF3I> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/A0A7I2YQN1> , <https://identifiers.org/uniprot/A0A7I2V613> , <https://identifiers.org/uniprot/A0A7I2YQT9> , <https://identifiers.org/uniprot/A0A7I2V5E4> , <https://identifiers.org/uniprot/A0A7I2V3K6> , <https://identifiers.org/uniprot/A0A7I2V640> , <https://identifiers.org/uniprot/A0A7I2YQP9> , <https://identifiers.org/uniprot/A0A7I2YQF8> , <https://identifiers.org/uniprot/Q5TFK1> , <https://identifiers.org/uniprot/A0A7I2V2M3> , <https://identifiers.org/uniprot/Q5U0F4> , <https://identifiers.org/uniprot/A0A7I2YQU2> , <https://identifiers.org/uniprot/A0A7I2YQI6> , <https://identifiers.org/uniprot/A0A7I2YQC8> , <https://identifiers.org/uniprot/A0A7I2V5V8> , <https://identifiers.org/uniprot/A0A7I2V3U3> , <https://identifiers.org/uniprot/A0A7I2V607> , <https://identifiers.org/uniprot/A0A7I2V4S8> , <https://identifiers.org/uniprot/A0A7I2V685> , <https://identifiers.org/uniprot/A0A7I2V415> , <https://identifiers.org/uniprot/A0A7I2YQI2> , <https://identifiers.org/uniprot/Q13347> , <https://identifiers.org/uniprot/A0A7I2V391> , <https://identifiers.org/uniprot/A0A7I2YQX4> , <https://identifiers.org/uniprot/A0A7I2V3N2> , <https://identifiers.org/uniprot/A0A7I2V3T4> , <https://identifiers.org/uniprot/A0A7I2V4C2> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/A0A7I2YQN1> , <https://identifiers.org/uniprot/A0A7I2V613> , <https://identifiers.org/uniprot/A0A7I2YQT9> , <https://identifiers.org/uniprot/A0A7I2V5E4> , <https://identifiers.org/uniprot/A0A7I2V3K6> , <https://identifiers.org/uniprot/A0A7I2V640> , <https://identifiers.org/uniprot/A0A7I2YQP9> , <https://identifiers.org/uniprot/A0A7I2YQF8> , <https://identifiers.org/uniprot/Q5TFK1> , <https://identifiers.org/uniprot/A0A7I2V2M3> , <https://identifiers.org/uniprot/Q5U0F4> , <https://identifiers.org/uniprot/A0A7I2YQU2> , <https://identifiers.org/uniprot/A0A7I2YQI6> , <https://identifiers.org/uniprot/A0A7I2YQC8> , <https://identifiers.org/uniprot/A0A7I2V5V8> , <https://identifiers.org/uniprot/A0A7I2V3U3> , <https://identifiers.org/uniprot/A0A7I2V607> , <https://identifiers.org/uniprot/A0A7I2V4S8> , <https://identifiers.org/uniprot/A0A7I2V685> , <https://identifiers.org/uniprot/A0A7I2V415> , <https://identifiers.org/uniprot/A0A7I2YQI2> , <https://identifiers.org/uniprot/Q13347> , <https://identifiers.org/uniprot/A0A7P0MRT9> , <https://identifiers.org/uniprot/A0A7I2V391> , <https://identifiers.org/uniprot/A0A7I2YQX4> , <https://identifiers.org/uniprot/A0A7I2V3N2> , <https://identifiers.org/uniprot/A0A7I2V3T4> , <https://identifiers.org/uniprot/A0A7I2V4C2> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/e4095> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/ae83c> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/bb488> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8668> .
 
@@ -202,7 +204,7 @@
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Group/b97c5> ;
-        wp:participants   <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/8665> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/8669> .
+        wp:participants   <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/8665> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/8669> .
 
 <https://identifiers.org/ncbigene/10209>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -240,7 +242,7 @@
         dcterms:identifier  "1964" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/id8da43876> , <https://identifiers.org/wikipathways/WP5027_r124644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000173674> ;
-        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/1964> ;
+        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/124905557> , <https://identifiers.org/ncbigene/1964> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF1AX> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/X6RAC9> , <https://identifiers.org/uniprot/P47813> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/c747d> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/ea644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/ca957> ;
@@ -250,7 +252,7 @@
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Group/d6fe1> ;
-        wp:participants   <https://identifiers.org/ncbigene/8894> , <https://identifiers.org/ncbigene/1968> , <https://identifiers.org/chebi/CHEBI:13145> , <https://identifiers.org/ncbigene/1965> .
+        wp:participants   <https://identifiers.org/chebi/CHEBI:13145> , <https://identifiers.org/ncbigene/1965> , <https://identifiers.org/ncbigene/8894> , <https://identifiers.org/ncbigene/1968> .
 
 <https://identifiers.org/ncbigene/8665>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -287,6 +289,7 @@
         dcterms:identifier   "CPX-6036" ;
         dcterms:isPartOf     <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:bdbComplexPortal  <https://identifiers.org/complexportal/CPX-6036> ;
+        wp:bdbWikidata       <http://www.wikidata.org/entity/Q107516196> ;
         wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Group/b97c5> ;
         wp:participants      <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/8665> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/3646> .
 
@@ -304,6 +307,7 @@
         dcterms:identifier   "CPX-5223" ;
         dcterms:isPartOf     <http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/id573935d6> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/id8da43876> , <https://identifiers.org/wikipathways/WP5027_r124644> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/WP/Interaction/id8b1ce7b7> ;
         wp:bdbComplexPortal  <https://identifiers.org/complexportal/CPX-5223> ;
+        wp:bdbWikidata       <http://www.wikidata.org/entity/Q107516638> ;
         wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/df993> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/dc35b> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/eb85c> ;
         foaf:page            <https://www.ebi.ac.uk/complexportal/complex/CPX-5223> .
 
@@ -323,6 +327,8 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/e6110> ;
         foaf:page           <https://scholia.toolforge.org/Q90038952> .
 
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
+
 <https://identifiers.org/ncbigene/8664>
         rdf:type            wp:GeneProduct , wp:DataNode ;
         rdfs:label          "EIF3D" ;
@@ -339,14 +345,15 @@
 
 <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e>
         rdf:type             wp:DataNode , wp:Complex ;
-        rdfs:label           "Eukaryotic translation initiation\nfactor 3 complex\n" ;
-        dc:identifier        <https://identifiers.org/complexportal/CPX-6036> ;
+        rdfs:label           "40S cytosolic small \nribosomal subunit" ;
+        dc:identifier        <https://identifiers.org/complexportal/CPX-5223> ;
         dc:source            "Complex Portal" ;
-        dcterms:identifier   "CPX-6036" ;
+        dcterms:identifier   "CPX-5223" ;
         dcterms:isPartOf     <https://identifiers.org/wikipathways/WP5027_r124644> ;
-        wp:bdbComplexPortal  <https://identifiers.org/complexportal/CPX-6036> ;
+        wp:bdbComplexPortal  <https://identifiers.org/complexportal/CPX-5223> ;
+        wp:bdbWikidata       <http://www.wikidata.org/entity/Q107516638> ;
         wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Group/b327e> ;
-        wp:participants      <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/1964> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/8894> , <https://identifiers.org/ncbigene/1968> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/8665> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/chebi/CHEBI:13145> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/1983> , <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/10209> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/1965> .
+        wp:participants      <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/1964> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/8894> , <https://identifiers.org/ncbigene/1968> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/8665> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/8669> , <https://identifiers.org/chebi/CHEBI:13145> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/1983> , <https://identifiers.org/ncbigene/10209> , <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/1965> .
 
 <https://identifiers.org/chebi/CHEBI:13145>
         rdf:type            wp:Metabolite , wp:DataNode ;
@@ -358,7 +365,7 @@
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:13145> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q60213464> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/ba070> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/d1c45> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:13145> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:13145> .
 
 <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6>
         rdf:type             wp:DataNode , wp:Complex ;
@@ -368,6 +375,7 @@
         dcterms:identifier   "CPX-5223" ;
         dcterms:isPartOf     <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:bdbComplexPortal  <https://identifiers.org/complexportal/CPX-5223> ;
+        wp:bdbWikidata       <http://www.wikidata.org/entity/Q107516638> ;
         wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Group/ed8b6> ;
         wp:participants      <https://identifiers.org/ncbigene/8668> , <https://identifiers.org/ncbigene/8665> , <https://identifiers.org/ncbigene/3646> , <https://identifiers.org/ncbigene/8666> , <https://identifiers.org/ncbigene/1964> , <https://identifiers.org/ncbigene/8663> , <https://identifiers.org/ncbigene/8664> , <https://identifiers.org/ncbigene/8661> , <https://identifiers.org/ncbigene/1983> , <https://identifiers.org/ncbigene/8662> , <https://identifiers.org/ncbigene/8667> , <https://identifiers.org/ncbigene/10209> , <https://identifiers.org/ncbigene/8669> .
 
@@ -397,7 +405,7 @@
         dcterms:identifier  "8663" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b327e> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/b97c5> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/Complex/ed8b6> , <https://identifiers.org/wikipathways/WP5027_r124644> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000184110> ;
-        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/8663> ;
+        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/728689> , <https://identifiers.org/ncbigene/8663> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/EIF3C> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/Q99613> , <https://identifiers.org/uniprot/H3BTY8> , <https://identifiers.org/uniprot/H3BPE4> , <https://identifiers.org/uniprot/A0A024QYU9> , <https://identifiers.org/uniprot/H3BPE3> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/b48a0> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/f2395> , <http://rdf.wikipathways.org/Pathway/WP5027_r124644/DataNode/d73f5> ;

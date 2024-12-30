@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -26,7 +27,7 @@
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4904_r124593> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Group/b0004> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000124225> , <https://identifiers.org/ensembl/ENSG00000168675> , <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Complex/b0004> .
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000168675> , <https://identifiers.org/ensembl/ENSG00000124225> , <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Complex/b0004> .
 
 <http://rdf.wikipathways.org/Pathway/WP4904_r124593/WP/Interaction/id694a53fa>
         rdf:type            wp:Interaction ;
@@ -43,7 +44,7 @@
         dcterms:identifier  "MIMAT0000075" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4904_r124593> , <http://rdf.wikipathways.org/Pathway/WP4904_r124593/WP/Interaction/idfdf4dec2> , <http://rdf.wikipathways.org/Pathway/WP4904_r124593/WP/Interaction/id3b8d16d5> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4904_r124593/DataNode/f25b2> ;
-        foaf:page           <http://www.mirbase.org/cgi-bin/mature.pl?mature_acc=MIMAT0000075> .
+        foaf:page           <https://mirbase.org/mature/MIMAT0000075> .
 
 <https://identifiers.org/wikipathways/WP4217>
         rdf:type            wp:DataNode , wp:Pathway ;
@@ -55,14 +56,6 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4904_r124593/DataNode/b8756> ;
         foaf:page           <https://www.wikipathways.org/instance/WP4217> .
 
-<https://doi.org/10.1093%2FIJNP%2FPYZ066>
-        dc:source           "DOI" ;
-        dcterms:identifier  "10.1093/IJNP/PYZ066" .
-
-<https://doi.org/10.1038%2FS41419-020-2338-Y>
-        dc:source           "DOI" ;
-        dcterms:identifier  "10.1038/S41419-020-2338-Y" .
-
 <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4904&oldid=124593>
         rdf:type        foaf:Image ;
         dcterms:format  "image/svg+xml" .
@@ -72,17 +65,7 @@
         dc:source           "PubMed" ;
         dcterms:identifier  "26186194" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Complex/ea922> ;
-        wp:bdbWikidata      <http://www.wikidata.org/entity/Q34485581> ;
-        owl:sameAs          <https://doi.org/10.1016%2FJ.CELL.2015.06.043> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/26186194> .
-
-<https://doi.org/10.1038%2FNG.384>
-        dc:source           "DOI" ;
-        dcterms:identifier  "10.1038/NG.384" .
-
-<https://doi.org/10.1016%2FJ.YEXCR.2017.09.005>
-        dc:source           "DOI" ;
-        dcterms:identifier  "10.1016/J.YEXCR.2017.09.005" .
 
 <https://identifiers.org/ensembl/ENSG00000168675>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -94,7 +77,7 @@
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000168675> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/753> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/LDLRAD4> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/A0A7I2V575> , <https://identifiers.org/uniprot/A0A7I2V3Z2> , <https://identifiers.org/uniprot/O15165> , <https://identifiers.org/uniprot/A0A7I2V658> , <https://identifiers.org/uniprot/A0A7I2V3W1> , <https://identifiers.org/uniprot/A0A7I2YQI3> , <https://identifiers.org/uniprot/K7EJM9> , <https://identifiers.org/uniprot/A0A7I2V3Q9> , <https://identifiers.org/uniprot/K7EMG1> , <https://identifiers.org/uniprot/A0A7I2V2E6> , <https://identifiers.org/uniprot/A0A7I2V2Z9> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/A0A7I2V575> , <https://identifiers.org/uniprot/A0A7I2V3Z2> , <https://identifiers.org/uniprot/O15165> , <https://identifiers.org/uniprot/A0A7I2V3W1> , <https://identifiers.org/uniprot/A0A7I2YQI3> , <https://identifiers.org/uniprot/K7EJM9> , <https://identifiers.org/uniprot/A0A7I2V3Q9> , <https://identifiers.org/uniprot/K7EMG1> , <https://identifiers.org/uniprot/A0A7I2V2E6> , <https://identifiers.org/uniprot/A0A7I2V2Z9> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q17854294> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4904_r124593/DataNode/d98b8> , <http://rdf.wikipathways.org/Pathway/WP4904_r124593/DataNode/e9bfd> , <http://rdf.wikipathways.org/Pathway/WP4904_r124593/DataNode/ca96b> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000168675> .
@@ -104,8 +87,6 @@
         dc:source           "PubMed" ;
         dcterms:identifier  "28888937" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4904_r124593/WP/Interaction/id6cc9fb0d> ;
-        wp:bdbWikidata      <http://www.wikidata.org/entity/Q47693855> ;
-        owl:sameAs          <https://doi.org/10.1016%2FJ.YEXCR.2017.09.005> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/28888937> .
 
 <http://rdf.wikipathways.org/Pathway/WP4904_r124593/WP/Interaction/idf54d419>
@@ -115,14 +96,6 @@
         wp:participants   <https://identifiers.org/ensembl/ENSG00000168675> ;
         wp:source         <https://identifiers.org/ensembl/ENSG00000168675> ;
         wp:target         <https://identifiers.org/ensembl/ENSG00000168675> .
-
-<https://doi.org/10.1016%2FJ.CELL.2015.06.043>
-        dc:source           "DOI" ;
-        dcterms:identifier  "10.1016/J.CELL.2015.06.043" .
-
-<https://doi.org/10.1016%2FJ.LFS.2015.07.002>
-        dc:source           "DOI" ;
-        dcterms:identifier  "10.1016/J.LFS.2015.07.002" .
 
 <http://rdf.wikipathways.org/Pathway/WP4904_r124593/WP/Interaction/id6cc9fb0d>
         rdf:type            wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
@@ -137,21 +110,19 @@
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4904_r124593> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Group/e3254> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000163513> , <https://identifiers.org/ensembl/ENSG00000106799> , <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Complex/e3254> .
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000106799> , <https://identifiers.org/ensembl/ENSG00000163513> , <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Complex/e3254> .
 
 <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Complex/b0004>
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4904_r124593> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Group/b0004> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000124225> , <https://identifiers.org/ensembl/ENSG00000168675> .
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000168675> , <https://identifiers.org/ensembl/ENSG00000124225> .
 
 <https://identifiers.org/pubmed/31602316>
         rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "31602316" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4904_r124593/WP/Interaction/id6fa109c9> ;
-        wp:bdbWikidata      <http://www.wikidata.org/entity/Q90643818> ;
-        owl:sameAs          <https://doi.org/10.1038%2FS41525-019-0098-3> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/31602316> .
 
 <http://rdf.wikipathways.org/Pathway/WP4904_r124593/ComplexBinding/df78d>
@@ -159,6 +130,8 @@
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4904_r124593> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Group/df78d> ;
         wp:participants   <https://identifiers.org/ensembl/ENSG00000175387> , <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Complex/df78d> .
+
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 
 <https://identifiers.org/ensembl/ENSG00000267690>
         rdf:type            wp:DataNode , wp:Rna ;
@@ -193,7 +166,7 @@
         dcterms:bibliographicCitation  <https://identifiers.org/pubmed/26186194> ;
         dcterms:isPartOf               <https://identifiers.org/wikipathways/WP4904_r124593> ;
         wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Group/ea922> ;
-        wp:participants                <https://identifiers.org/ensembl/ENSG00000069869> , <https://identifiers.org/ensembl/ENSG00000168675> , <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Complex/ea922> .
+        wp:participants                <https://identifiers.org/ensembl/ENSG00000168675> , <https://identifiers.org/ensembl/ENSG00000069869> , <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Complex/ea922> .
 
 <http://rdf.wikipathways.org/Pathway/WP4904_r124593/WP/Interaction/id3b8d16d5>
         rdf:type            wp:DirectedInteraction , wp:Interaction , wp:Inhibition ;
@@ -228,8 +201,6 @@
         dc:source           "PubMed" ;
         dcterms:identifier  "31819986" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4904_r124593/WP/Interaction/idfdf4dec2> ;
-        wp:bdbWikidata      <http://www.wikidata.org/entity/Q91224814> ;
-        owl:sameAs          <https://doi.org/10.1093%2FIJNP%2FPYZ066> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/31819986> .
 
 <https://identifiers.org/pubmed/19430479>
@@ -237,8 +208,6 @@
         dc:source           "PubMed" ;
         dcterms:identifier  "19430479" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4904_r124593/WP/Interaction/idef60a322> ;
-        wp:bdbWikidata      <http://www.wikidata.org/entity/Q28943443> ;
-        owl:sameAs          <https://doi.org/10.1038%2FNG.384> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/19430479> .
 
 <https://identifiers.org/wikipathways/WP4904_r124593>
@@ -249,18 +218,14 @@
         dcterms:description    "A recent GWAS study was tweeted (https://twitter.com/BrentRichards19/status/1251550109931888643) showing an intronic SNP in LDLRAD4 as relevant. This pathway summarizes what is known of the biological role of this gene and its proteins." ;
         dcterms:identifier     "WP4904" ;
         cito:cites             <https://identifiers.org/pubmed/28888937> , <https://identifiers.org/pubmed/26186194> , <https://identifiers.org/pubmed/26165754> , <https://identifiers.org/pubmed/32111819> , <https://identifiers.org/pubmed/19430479> , <https://identifiers.org/pubmed/31819986> , <https://identifiers.org/pubmed/31602316> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_0050117> ;
+        wp:diseaseOntologyTag  obo:DOID_0050117 ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4904_r124593> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_0050117> , <http://purl.obolibrary.org/obo/PW_0000013> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:DOID_0050117 , obo:PW_0000013 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000013> ;
+        wp:pathwayOntologyTag  obo:PW_0000013 ;
         foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4904&oldid=124593> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4904&oldid=124593> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4904_r124593> .
-
-<https://doi.org/10.1038%2FS41525-019-0098-3>
-        dc:source           "DOI" ;
-        dcterms:identifier  "10.1038/S41525-019-0098-3" .
 
 <https://identifiers.org/wikipathways/WP3874>
         rdf:type            wp:Pathway , wp:DataNode ;
@@ -282,7 +247,7 @@
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000106799> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/7046> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/TGFBR1> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/F8VXZ5> , <https://identifiers.org/uniprot/F8VVC4> , <https://identifiers.org/uniprot/F8W1R9> , <https://identifiers.org/uniprot/Q5T7S2> , <https://identifiers.org/uniprot/P36897> , <https://identifiers.org/uniprot/F8VRH6> , <https://identifiers.org/uniprot/B4DY26> , <https://identifiers.org/uniprot/F8W0K6> , <https://identifiers.org/uniprot/H0YHS4> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/F8VXZ5> , <https://identifiers.org/uniprot/F8VVC4> , <https://identifiers.org/uniprot/F8W1R9> , <https://identifiers.org/uniprot/Q5T7S2> , <https://identifiers.org/uniprot/A0A8V8TMH4> , <https://identifiers.org/uniprot/P36897> , <https://identifiers.org/uniprot/F8VRH6> , <https://identifiers.org/uniprot/A0A8V8TMI6> , <https://identifiers.org/uniprot/B4DY26> , <https://identifiers.org/uniprot/F8W0K6> , <https://identifiers.org/uniprot/H0YHS4> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q14911572> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4904_r124593/DataNode/ea248> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000106799> .
@@ -357,7 +322,7 @@
         dcterms:isPartOf               <https://identifiers.org/wikipathways/WP4904_r124593> ;
         dcterms:references             <https://identifiers.org/pubmed/26186194> ;
         wp:isAbout                     <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Group/ea922> ;
-        wp:participants                <https://identifiers.org/ensembl/ENSG00000069869> , <https://identifiers.org/ensembl/ENSG00000168675> .
+        wp:participants                <https://identifiers.org/ensembl/ENSG00000168675> , <https://identifiers.org/ensembl/ENSG00000069869> .
 
 <https://identifiers.org/ensembl/ENSG00000175387>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -379,8 +344,6 @@
         dc:source           "PubMed" ;
         dcterms:identifier  "26165754" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4904_r124593/WP/Interaction/id694a53fa> , <http://rdf.wikipathways.org/Pathway/WP4904_r124593/WP/Interaction/id3b8d16d5> ;
-        wp:bdbWikidata      <http://www.wikidata.org/entity/Q38854062> ;
-        owl:sameAs          <https://doi.org/10.1016%2FJ.LFS.2015.07.002> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/26165754> .
 
 <http://rdf.wikipathways.org/Pathway/WP4904_r124593/WP/Interaction/id71ecd0f3>
@@ -394,15 +357,13 @@
         dc:source           "PubMed" ;
         dcterms:identifier  "32111819" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4904_r124593/WP/Interaction/idfb4f20fd> ;
-        wp:bdbWikidata      <http://www.wikidata.org/entity/Q89947530> ;
-        owl:sameAs          <https://doi.org/10.1038%2FS41419-020-2338-Y> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/32111819> .
 
 <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Complex/e3254>
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4904_r124593> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4904_r124593/Group/e3254> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000163513> , <https://identifiers.org/ensembl/ENSG00000106799> .
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000106799> , <https://identifiers.org/ensembl/ENSG00000163513> .
 
 <https://identifiers.org/ensembl/ENSG00000124225>
         rdf:type            wp:GeneProduct , wp:DataNode ;

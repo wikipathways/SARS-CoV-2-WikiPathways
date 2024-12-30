@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -27,7 +28,7 @@
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000140564> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/5045> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/FURIN> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/A0A024RC70> , <https://identifiers.org/uniprot/P09958> , <https://identifiers.org/uniprot/H0YNB5> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/A0A7P0T8P1> , <https://identifiers.org/uniprot/A0A024RC70> , <https://identifiers.org/uniprot/P09958> , <https://identifiers.org/uniprot/A0A7P0T9X7> , <https://identifiers.org/uniprot/H0YNB5> , <https://identifiers.org/uniprot/A0A7P0T8U2> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q14916427> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5065_r124651/DataNode/ab236> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000140564> .
@@ -36,7 +37,7 @@
         rdf:type            wp:DataNode , wp:Protein ;
         rdfs:label          "Surface glycoprotein S" ;
         dc:identifier       <https://identifiers.org/uniprot/P0DTC2> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P0DTC2" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5065_r124651/WP/Interaction/idcb5a79c6> , <http://rdf.wikipathways.org/Pathway/WP5065_r124651/WP/Interaction/idc047fb67> , <https://identifiers.org/wikipathways/WP5065_r124651> , <http://rdf.wikipathways.org/Pathway/WP5065_r124651/WP/Interaction/id30105322> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/43740568> ;
@@ -50,6 +51,8 @@
         dc:source           "PubMed" ;
         dcterms:identifier  "33082294" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1993> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q100750026> ;
+        owl:sameAs          <https://doi.org/10.1126%2FSCIENCE.ABD3072> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/33082294> .
 
 <http://rdf.wikipathways.org/Pathway/WP5065_r124651/WP/Interaction/idcb5a79c6>
@@ -76,6 +79,10 @@
         wp:participants     <http://rdf.wikipathways.org/Pathway/WP5065_r124651/WP/Interaction/id43cd660f> , <https://identifiers.org/wikidata/Q106020256> ;
         wp:source           <https://identifiers.org/wikidata/Q106020256> ;
         wp:target           <http://rdf.wikipathways.org/Pathway/WP5065_r124651/WP/Interaction/id43cd660f> .
+
+<https://doi.org/10.1126%2FSCIENCE.ABD3072>
+        dc:source           "DOI" ;
+        dcterms:identifier  "10.1126/SCIENCE.ABD3072" .
 
 <https://identifiers.org/ensembl/ENSG00000130234>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -267,6 +274,8 @@
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5065_r124651/Group/e0e95> ;
         wp:participants   <https://identifiers.org/ensembl/ENSG00000099250> , <https://identifiers.org/ensembl/ENSG00000128052> , <http://rdf.wikipathways.org/Pathway/WP5065_r124651/Complex/e0e95> .
 
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
+
 <https://identifiers.org/wikipathways/WP5065_r124651>
         rdf:type               wp:Pathway , skos:Collection ;
         dc:identifier          <https://identifiers.org/wikipathways/WP5065> ;
@@ -275,12 +284,12 @@
         dcterms:description    "Mechanism of how the SARS-cov-2 virus is involved in altering angiogenesis and how NRP1 might play a role as an entry factor for the virus. " ;
         dcterms:identifier     "WP5065" ;
         cito:cites             <https://identifiers.org/pubmed/33395426> , <https://identifiers.org/pubmed/32869019> , <https://identifiers.org/pubmed/9529250> , <https://identifiers.org/pubmed/33458558> , <https://identifiers.org/pubmed/33082294> , <https://identifiers.org/pubmed/33442700> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_0080600> ;
+        wp:diseaseOntologyTag  obo:DOID_2945 , obo:DOID_0080600 ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5065_r124651> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_0080600> , <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/DOID_2945> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:DOID_0080600 , obo:PW_0000013 , obo:DOID_2945 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000013> ;
+        wp:pathwayOntologyTag  obo:PW_0000013 ;
         foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5065&oldid=124651> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5065&oldid=124651> ;
         foaf:page              <http://www.wikipathways.org/instance/WP5065_r124651> .
 

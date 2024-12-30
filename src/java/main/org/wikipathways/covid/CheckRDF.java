@@ -5,12 +5,15 @@ import java.io.FileInputStream;
 import java.io.Writer;
 import java.io.PrintWriter;
 
+import java.lang.reflect.Method;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 import nl.unimaas.bigcat.wikipathways.curator.assertions.*;
 import nl.unimaas.bigcat.wikipathways.curator.SPARQLHelper;
+import nl.unimaas.bigcat.wikipathways.curator.StringMatrix;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -32,15 +35,8 @@ public class CheckRDF {
         PrintWriter reportStatus = new PrintWriter(reportFile.replace(".md",".txt"));
         PrintWriter reportJSON = new PrintWriter(reportFile.replace(".md",".json"));
 
-        report.println("<img style=\"float: right; width: 200px\" src=\"../logo.png\" />");
+        report.println("<img style=\"float: right; width: 200px\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Wplogo_with_text_500.png/640px-Wplogo_with_text_500.png\" />");
 
-        report.println("# WikiPathways " + wpid + "\n");
-        report.println("* WikiPathways Classic: [" + wpid + "](https://classic.wikipathways.org/instance/" + wpid + ")");
-        report.println("* WikiPathways: [" + wpid + "](https://identifiers.org/wikipathways:" + wpid + ")");
-        report.println("* Scholia: [" + wpid + "](https://scholia.toolforge.org/wikipathways/" + wpid + ")");
-        report.println("* WPRDF file: [" + wpFile + "](../" + wpFile + ")");
-        report.println("* GPMLRDF file: [" + gpmlFile + "](../" + gpmlFile + ")");
-        report.println("* SBML file: [" + sbmlFile + "](../" + sbmlFile + ") ([SVG](../" + svgFile + ")) ([conversion notes](../" + notesFile + "))\n");
         List<IAssertion> assertions = new ArrayList<IAssertion>();
         Model loadedData = ModelFactory.createDefaultModel();
         loadedData.read(new FileInputStream(new File(wpFile)), "", "TURTLE");
@@ -48,13 +44,34 @@ public class CheckRDF {
 
         SPARQLHelper helper = new SPARQLHelper(loadedData);
 
+        // determind the species of the pathway
+        StringMatrix results = helper.sparql("PREFIX wp: <http://vocabularies.wikipathways.org/wp#> SELECT DISTINCT ?species WHERE { ?pathway wp:organismName ?species }");
+        String species = results.getColumn("species").get(0);
+        boolean isHuman = "Homo sapiens".equals(species.trim());
+
+        report.println("# WikiPathways " + wpid + "\n");
+        report.println("* WikiPathways: [" + wpid + "](https://wikipathways.org/pathways/" + wpid + ") ([classic](https://classic.wikipathways.org/instance/" + wpid + "))");
+        report.println("* Species: " + species);
+        if (isHuman) report.println("* Scholia: [" + wpid + "](https://scholia.toolforge.org/wikipathways/" + wpid + ")");
+        report.println("* WPRDF file: [" + wpFile + "](../" + wpFile + ")");
+        report.println("* GPMLRDF file: [" + gpmlFile + "](../" + gpmlFile + ")");
+        report.println("* SBML file: [" + sbmlFile + "](../" + sbmlFile + ") ([SVG](../" + svgFile + ")) ([conversion notes](../" + notesFile + "))\n");
+
         Scanner testConfigFile = new Scanner(new FileInputStream("tests.txt"));
         while (testConfigFile.hasNextLine()) {
             String testConfig = testConfigFile.nextLine().trim();
             if (!testConfig.startsWith("#")) { // comment lines start with #
                 String[] config = testConfig.split("\\.");
                 Class testClass = Class.forName("nl.unimaas.bigcat.wikipathways.curator.tests." + config[0]);
-                assertions.addAll((List<IAssertion>)testClass.getDeclaredMethod(config[1], SPARQLHelper.class).invoke(null, helper));
+                Method declaredMethod = null;
+                try {
+                    declaredMethod = testClass.getDeclaredMethod(config[1], SPARQLHelper.class, String.class);
+                    assertions.addAll((List<IAssertion>)declaredMethod.invoke(null, helper, "text/markdown"));
+                } catch (NoSuchMethodException exception) {
+                    // try the old method, without the format parameter
+                    declaredMethod = testClass.getDeclaredMethod(config[1], SPARQLHelper.class);
+                    assertions.addAll((List<IAssertion>)declaredMethod.invoke(null, helper));
+                }
             }
         }
 
@@ -73,7 +90,7 @@ public class CheckRDF {
         String errors = "";
         int assertionsFailed = 0;
         for (IAssertion assertion : assertions) {
-            if (assertion.getTestClass() != currentTestClass) {
+            if (assertion.getTest().getClassName() != currentTestClass) {
                 // is there report output to finish?
                 if (testClasses > 0) {
                   // wrap up last test of the previous test class
@@ -90,7 +107,7 @@ public class CheckRDF {
                 }
 
                 // reset properties for new test
-                currentTestClass = assertion.getTestClass();
+                currentTestClass = assertion.getTest().getClassName();
                 currentTest = "";
                 testClasses++;
                 currentTestClassMessages = "";
@@ -102,8 +119,8 @@ public class CheckRDF {
             }
 
             // new test ?
-            if (assertion.getTest() != currentTest) {
-                currentTest = assertion.getTest();
+            if (assertion.getTest().getTestName() != currentTest) {
+                currentTest = assertion.getTest().getTestName();
                 if (!message.isEmpty()) {
                   if (assertionsFailed == 0) { message += " all OK!"; } else { message += " we found " + assertionsFailed + " problem(s):"; }
                   if (!errors.isEmpty()) message += "\n" + errors;
@@ -121,7 +138,7 @@ public class CheckRDF {
                 if (!typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
                    message += "x";
                    assertionsFailed++;
-                   errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
+                   errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTest().getClassName() + assertion.getTest().getTestName() + assertion.getMessage()) + ")";
                    failedAssertions.add(assertion);
                    currentTestClassHasFails = true;
                 } else {
@@ -132,7 +149,7 @@ public class CheckRDF {
                 if (typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
                    message += "x";
                    assertionsFailed++;
-                   errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
+                   errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTest().getClassName() + assertion.getTest().getTestName() + assertion.getMessage()) + ")";
                    failedAssertions.add(assertion);
                    currentTestClassHasFails = true;
                 } else {
@@ -189,27 +206,40 @@ public class CheckRDF {
 
         report.println("\n## Fails\n");
         for (IAssertion assertion : failedAssertions) {
-            report.println("<a name=\"" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + "\" />\n");
-            report.println("## " + assertion.getTestClass() + "." + assertion.getTest());
+            report.println("<a name=\"" + getHashcode(assertion.getTest().getClassName() + assertion.getTest().getTestName() + assertion.getMessage()) + "\" />\n");
+            report.println("## " + assertion.getTest().getTitle());
             report.println("\n" + assertion.getMessage());
             if (assertion.getDetails() != null && !assertion.getDetails().isEmpty()) {
-                report.println("```\n" + assertion.getDetails() + "```\n");
-                if (assertion.hasLinkToDocs()) {
-                    report.println("More details at [" + assertion.getLinkToDocs() + "](" + assertion.getLinkToDocs() + ")\n");
+                if ("text/markdown".equals(assertion.getDetailsFormat())) {
+                  report.println("\n" + assertion.getDetails() + "\n");
+                } else {
+                  report.println("```\n" + assertion.getDetails() + "```\n");
+                }
+                if (assertion.getTest().hasLinkToDocs()) {
+                    report.println("More details at [" + assertion.getTest().getLinkToDocs() + "](" + assertion.getTest().getLinkToDocs() + ")\n");
                 }
             }
         }
         reportJSON.println("{");
         reportJSON.println("  \"schemaVersion\": 1,");
         reportJSON.println("  \"label\": \"curation\",");
+        double ratio = (double)failedAssertions.size() / (double)assertions.size();
+        // reportJSON.println("  \"ratio\": \"" + ratio + "\",");
         if (anyTestClassHasFails) {
+          String color = "yellow";
+          if (ratio > 0.05) { color = "red"; }
+          else if  (ratio > 0.01) { color = "orange"; };
           reportStatus.println("status=⨯");
-          reportJSON.println("  \"message\": \"" + failedAssertions.size() + " issue(s)\",");
-          reportJSON.println("  \"color\": \"red\"");
+          reportJSON.println("  \"message\": \"" +
+            (failedAssertions.size() == 1
+               ? "1 issue"
+               : failedAssertions.size() + " issues")
+            + "\",");
+          reportJSON.println("  \"color\": \"" + color + "\"");
         } else {
           reportStatus.println("status=✓");
           reportJSON.println("  \"message\": \"success\",");
-          reportJSON.println("  \"color\": \"green\"");
+          reportJSON.println("  \"color\": \"brightgreen\"");
         }
         reportJSON.println("}");
 

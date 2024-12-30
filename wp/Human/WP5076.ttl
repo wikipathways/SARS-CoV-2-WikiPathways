@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -47,7 +48,7 @@
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000151694> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/6868> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/ADAM17> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/A0A3B3ITW9> , <https://identifiers.org/uniprot/A0A3B3ITB5> , <https://identifiers.org/uniprot/P78536> , <https://identifiers.org/uniprot/A0A3B3ISQ1> , <https://identifiers.org/uniprot/A6H8L4> , <https://identifiers.org/uniprot/A0A3B3IST4> , <https://identifiers.org/uniprot/B2RNB2> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/A0A8V8TPG8> , <https://identifiers.org/uniprot/A0A8V8TN27> , <https://identifiers.org/uniprot/A0A8V8TNK2> , <https://identifiers.org/uniprot/A8K1B4> , <https://identifiers.org/uniprot/A0A3B3ITW9> , <https://identifiers.org/uniprot/A0A8V8TNK7> , <https://identifiers.org/uniprot/A0A3B3ITB5> , <https://identifiers.org/uniprot/P78536> , <https://identifiers.org/uniprot/A0A3B3ISQ1> , <https://identifiers.org/uniprot/A6H8L4> , <https://identifiers.org/uniprot/A0A3B3IST4> , <https://identifiers.org/uniprot/A0A8V8TPV7> , <https://identifiers.org/uniprot/B2RNB2> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q14907942> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5076_r124654/DataNode/fc900> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000151694> .
@@ -155,6 +156,8 @@
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5076_r124654> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/33713620> .
 
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
+
 <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5076&oldid=124654>
         rdf:type        foaf:Image ;
         dcterms:format  "image/png" .
@@ -168,12 +171,12 @@
         dcterms:identifier     "WP5076" ;
         dcterms:references     <https://identifiers.org/pubmed/33713620> ;
         cito:cites             <https://identifiers.org/pubmed/33713620> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_0080600> , <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_934> ;
+        wp:diseaseOntologyTag  obo:DOID_0080600 , obo:DOID_2945 , obo:DOID_934 ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5076_r124654> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_934> , <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_0080600> , <http://purl.obolibrary.org/obo/PW_0000281> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:DOID_934 , obo:DOID_2945 , obo:DOID_0080600 , obo:PW_0000281 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000281> ;
+        wp:pathwayOntologyTag  obo:PW_0000281 ;
         foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5076&oldid=124654> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5076&oldid=124654> ;
         foaf:page              <http://www.wikipathways.org/instance/WP5076_r124654> .
 
