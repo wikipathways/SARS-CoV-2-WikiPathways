@@ -1,340 +1,257 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="Role of ROS in COVID-19 endothelial dysfunction" Version="20220705" Organism="Homo sapiens">
-  <Comment Source="WikiPathways-description">Proposed mechanism for COVID-19 induced endothelial dysfunction via ROS, as described by Ma et Al. (2022)</Comment>
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="ROS in COVID-19 endothelial dysfunction" Version="20220705" Organism="Homo sapiens">
+  <Comment Source="WikiPathways-description">Proposed mechanism for COVID-19 induced endothelial dysfunction via ROS, as described by Ma et Al. (2022).
+TNF-α stimulation of NADPH oxidase leads to accumulation of reactive oxygen species (ROS). Increased levels of IFN reduces the expression of functional ACE2, which leads to increased ROS via imbalanced RAS signaling. Excessive ROS disturbs vascular tone and increases endothelial permeability.
+
+Description modified from [https://europepmc.org/article/MED/34838588 Ma et. al.].</Comment>
   <BiopaxRef>dfb</BiopaxRef>
-  <Graphics BoardWidth="1093.0" BoardHeight="663.0"/>
+  <Graphics BoardWidth="1060.6666666666667" BoardHeight="524.0" />
   <DataNode TextLabel="IFNAR1" GraphId="a473c" Type="GeneProduct">
-    <Graphics CenterX="936.0" CenterY="166.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle"/>
-    <Xref Database="Ensembl" ID="ENSG00000142166"/>
+    <Graphics CenterX="936.0" CenterY="166.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000142166" />
   </DataNode>
   <DataNode TextLabel="RAS signaling" GraphId="b397a" Type="Pathway">
     <BiopaxRef>a02</BiopaxRef>
-    <Graphics CenterX="711.0" CenterY="248.0" Width="90.0" Height="25.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e"/>
-    <Xref Database="" ID=""/>
+    <Graphics CenterX="701.6666666666665" CenterY="227.08333333333337" Width="100.66666666666708" Height="31.166666666666686" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
+    <Xref Database="" ID="" />
   </DataNode>
   <DataNode TextLabel="TNFRSF1A" GraphId="b3db6" Type="GeneProduct">
-    <Graphics CenterX="260.0" CenterY="154.25" Width="90.0" Height="39.5" ZOrder="32768" FontSize="12" Valign="Middle"/>
-    <Xref Database="Ensembl" ID="ENSG00000067182"/>
+    <Graphics CenterX="260.0" CenterY="162.25000000000003" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000067182" />
   </DataNode>
   <DataNode TextLabel="ICAM1" GraphId="bc886" Type="GeneProduct">
-    <Graphics CenterX="201.5" CenterY="461.5" Width="90.0" Height="17.0" ZOrder="32768" FontSize="12" Valign="Middle"/>
-    <Xref Database="Ensembl" ID="ENSG00000090339"/>
+    <Graphics CenterX="124.83333333333368" CenterY="417.4999999999999" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000090339" />
   </DataNode>
   <DataNode TextLabel="NOX1" GraphId="c182b" Type="GeneProduct">
-    <Graphics CenterX="391.0" CenterY="154.25" Width="90.0" Height="39.5" ZOrder="32768" FontSize="12" Valign="Middle"/>
-    <Xref Database="HGNC" ID="NOX1"/>
+    <Graphics CenterX="406.99999999999983" CenterY="162.25000000000003" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="HGNC" ID="NOX1" />
   </DataNode>
   <DataNode TextLabel="TNF" GraphId="c8351" Type="GeneProduct">
-    <Graphics CenterX="260.0" CenterY="55.25" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle"/>
-    <Xref Database="Ensembl" ID="ENSG00000232810"/>
-  </DataNode>
-  <DataNode TextLabel="ANGPT2" GraphId="ccd19" Type="GeneProduct">
-    <Graphics CenterX="601.0" CenterY="245.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle"/>
-    <Xref Database="Ensembl" ID="ENSG00000091879"/>
+    <Graphics CenterX="260.0" CenterY="55.25" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000232810" />
   </DataNode>
   <DataNode TextLabel="ACE2" GraphId="cf782" Type="GeneProduct">
-    <Graphics CenterX="804.0" CenterY="165.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle"/>
-    <Xref Database="Ensembl" ID="ENSG00000130234"/>
+    <Graphics CenterX="804.0" CenterY="165.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000130234" />
   </DataNode>
   <DataNode TextLabel="NFKB1" GraphId="d0c54" Type="GeneProduct">
-    <Graphics CenterX="277.0" CenterY="245.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle"/>
-    <Xref Database="Ensembl" ID="ENSG00000109320"/>
+    <Graphics CenterX="301.6666666666664" CenterY="245.0" Width="75.33333333333343" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000109320" />
   </DataNode>
-  <DataNode TextLabel="nitric oxide" GraphId="da2b5" Type="Metabolite">
-    <Graphics CenterX="432.5" CenterY="315.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle"/>
-    <Xref Database="ChEBI" ID="CHEBI:16480"/>
+  <DataNode TextLabel="Nitric oxide" GraphId="da2b5" Type="Metabolite">
+    <Graphics CenterX="443.1666666666667" CenterY="314.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="3333ff" />
+    <Xref Database="ChEBI" ID="CHEBI:16480" />
   </DataNode>
   <DataNode TextLabel="IFNA1" GraphId="daaa8" Type="GeneProduct">
-    <Graphics CenterX="936.0" CenterY="52.25" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle"/>
-    <Xref Database="Ensembl" ID="ENSG00000197919"/>
+    <Graphics CenterX="936.0" CenterY="60.250000000000014" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000197919" />
+  </DataNode>
+  <DataNode TextLabel="Angiotensin II" GraphId="dacc9" Type="Metabolite">
+    <Graphics CenterX="603.9999999999994" CenterY="245.3333333333333" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="HMDB" ID="HMDB01035" />
   </DataNode>
   <DataNode TextLabel="ACE2" GraphId="dcb13" Type="GeneProduct">
-    <Graphics CenterX="804.0" CenterY="235.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle"/>
-    <Xref Database="Ensembl" ID="ENSG00000130234"/>
+    <Graphics CenterX="804.0" CenterY="240.3333333333333" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000130234" />
   </DataNode>
   <DataNode TextLabel="Reactive oxygen species" GraphId="e5a21" Type="Metabolite">
-    <Graphics CenterX="432.5" CenterY="245.0" Width="165.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff"/>
-    <Xref Database="" ID=""/>
+    <Graphics CenterX="442.5" CenterY="245.0" Width="143.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="CHEBI:26523" />
   </DataNode>
   <DataNode TextLabel="ACE2 (truncated)" GraphId="daefd" Type="GeneProduct">
-    <Graphics CenterX="804.0" CenterY="283.0" Width="120.0" Height="25.0" ZOrder="32769" FontSize="12" Valign="Middle"/>
-    <Xref Database="Ensembl" ID="ENSG00000130234"/>
+    <Graphics CenterX="804.0" CenterY="275.0000000000001" Width="120.0" Height="25.0" ZOrder="32769" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000130234" />
   </DataNode>
-  <Interaction>
-    <BiopaxRef>f47</BiopaxRef>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="473.0" Y="55.25" GraphRef="b94b4" RelX="1.0" RelY="0.0"/>
-      <Point X="891.0" Y="52.25" GraphRef="daaa8" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion"/>
-    </Graphics>
-    <Xref Database="" ID=""/>
-  </Interaction>
-  <Interaction>
-    <BiopaxRef>a40</BiopaxRef>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="395.5" Y="55.25" GraphRef="b94b4" RelX="-1.0" RelY="0.0"/>
-      <Point X="305.0" Y="55.25" GraphRef="c8351" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion"/>
-    </Graphics>
-    <Xref Database="" ID=""/>
-  </Interaction>
-  <Interaction>
-    <BiopaxRef>d16</BiopaxRef>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="260.0" Y="67.75" GraphRef="c8351" RelX="0.0" RelY="1.0"/>
-      <Point X="260.0" Y="134.5" GraphRef="b3db6" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion"/>
-    </Graphics>
-    <Xref Database="" ID=""/>
-  </Interaction>
-  <Interaction>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="305.0" Y="154.25" GraphRef="b3db6" RelX="1.0" RelY="0.0"/>
-      <Point X="346.0" Y="154.25" GraphRef="c182b" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion"/>
-    </Graphics>
-    <Xref Database="" ID=""/>
-  </Interaction>
-  <Interaction>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="936.0" Y="64.75" GraphRef="daaa8" RelX="0.0" RelY="1.0"/>
-      <Point X="936.0" Y="153.5" GraphRef="a473c" RelX="0.0" RelY="-1.0" ArrowHead="Arrow"/>
-    </Graphics>
-    <Xref Database="" ID=""/>
-  </Interaction>
-  <Interaction>
+  <DataNode TextLabel="ICAM1" GraphId="bc67d" Type="GeneProduct">
+    <Graphics CenterX="254.9166666666661" CenterY="418.166666666667" Width="68.49999999999947" Height="25.0" ZOrder="32770" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000090339" />
+  </DataNode>
+  <DataNode TextLabel="ACE2 (truncated)" GraphId="bbafd" Type="GeneProduct">
+    <Graphics CenterX="803.3333333333336" CenterY="409.0" Width="121.33333333333306" Height="25.0" ZOrder="32771" FontSize="12" Valign="Middle" />
+    <Xref Database="Ensembl" ID="ENSG00000130234" />
+  </DataNode>
+  <DataNode TextLabel="IFN signaling" GraphId="c09be" Type="Pathway">
+    <Graphics CenterX="978.3333333333326" CenterY="299.3333333333334" Width="90.0" Height="25.0" ZOrder="32772" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="None" Color="14961e" />
+    <Xref Database="" ID="" />
+  </DataNode>
+  <Interaction GraphId="id1c7c5bd8">
     <BiopaxRef>e87</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="473.0" Y="71.625" GraphRef="b94b4" RelX="1.0" RelY="0.5"/>
-      <Point X="804.0" Y="152.5" GraphRef="cf782" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion"/>
+      <Point X="804.0" Y="177.5" GraphRef="cf782" RelX="0.0" RelY="1.0" />
+      <Point X="804.0" Y="227.8333333333333" GraphRef="dcb13" RelX="0.0" RelY="-1.0" ArrowHead="mim-inhibition" />
     </Graphics>
-    <Xref Database="" ID=""/>
+    <Xref Database="" ID="" />
   </Interaction>
-  <Interaction>
+  <Interaction GraphId="id260039df">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="936.0" Y="72.75000000000001" GraphRef="daaa8" RelX="0.0" RelY="1.0" />
+      <Point X="936.0" Y="153.5" GraphRef="a473c" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id355a55f8">
+    <BiopaxRef>cee</BiopaxRef>
+    <Graphics ConnectorType="Elbow" ZOrder="12288" LineThickness="1.0">
+      <Point X="320.4999999999998" Y="257.5" GraphRef="d0c54" RelX="0.5" RelY="1.0" />
+      <Point X="289.16666666666583" Y="418.166666666667" GraphRef="bc67d" RelX="1.0" RelY="0.0" ArrowHead="mim-transcription-translation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id48739a9">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="744.0" Y="275.0000000000001" GraphRef="daefd" RelX="-1.0" RelY="0.0" />
+      <Point X="648.9999999999994" Y="245.33333333333326" GraphRef="dacc9" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id64983066">
+    <BiopaxRef>e87</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="484.25" Y="74.08333333333333" GraphRef="b94b4" RelX="1.0" RelY="0.5" />
+      <Point X="804.0" Y="152.5" GraphRef="cf782" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id748b9d75">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="305.0" Y="162.25000000000003" GraphRef="b3db6" RelX="1.0" RelY="0.0" />
+      <Point X="361.99999999999983" Y="162.25000000000003" GraphRef="c182b" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id7bb48f6f">
     <BiopaxRef>bbe</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="556.0" Y="245.0" GraphRef="ccd19" RelX="-1.0" RelY="0.0"/>
-      <Point X="515.0" Y="245.0" GraphRef="e5a21" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion"/>
+      <Point X="558.9999999999994" Y="245.33333333333326" GraphRef="dacc9" RelX="-1.0" RelY="0.0" />
+      <Point X="514.0" Y="245.0" GraphRef="e5a21" RelX="1.0" RelY="0.0" ArrowHead="Arrow" />
     </Graphics>
-    <Xref Database="" ID=""/>
+    <Xref Database="" ID="" />
   </Interaction>
-  <Interaction>
+  <Interaction GraphId="id8c38d739">
+    <BiopaxRef>f47</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="484.25" Y="56.58333333333333" GraphRef="b94b4" RelX="1.0" RelY="0.0" />
+      <Point X="891.0" Y="60.250000000000014" GraphRef="daaa8" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id8d9d5eb3">
+    <BiopaxRef>f27</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="488.1666666666667" Y="314.0" GraphRef="da2b5" RelX="1.0" RelY="0.0" />
+      <Point X="516.0" Y="315.0" GraphRef="afb08" RelX="-1.0" RelY="0.0" ArrowHead="Arrow" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id9893fd00">
+    <BiopaxRef>d16</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="260.0" Y="67.75" GraphRef="c8351" RelX="0.0" RelY="1.0" />
+      <Point X="260.0" Y="149.75000000000003" GraphRef="b3db6" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id9a9ed424">
     <BiopaxRef>ffe</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="390.0" Y="176.0"/>
-      <Point X="391.25" Y="232.5" GraphRef="e5a21" RelX="-0.5" RelY="-1.0" ArrowHead="mim-conversion"/>
+      <Point X="406.99999999999983" Y="174.75000000000003" GraphRef="c182b" RelX="0.0" RelY="1.0" />
+      <Point X="406.75" Y="232.5" GraphRef="e5a21" RelX="-0.5" RelY="-1.0" ArrowHead="mim-conversion" />
     </Graphics>
-    <Xref Database="" ID=""/>
+    <Xref Database="" ID="" />
   </Interaction>
-  <Interaction>
+  <Interaction GraphId="idaa474948">
+    <BiopaxRef>f74</BiopaxRef>
+    <Graphics ConnectorType="Elbow" ZOrder="12288" LineThickness="1.0">
+      <Point X="936.0" Y="178.5" GraphRef="a473c" RelX="0.0" RelY="1.0" />
+      <Point X="864.0000000000001" Y="409.0" GraphRef="bbafd" RelX="1.0" RelY="0.0" ArrowHead="mim-transcription-translation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="idb14e7f6e">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="759.0" Y="240.3333333333333" GraphRef="dcb13" RelX="-1.0" RelY="0.0" />
+      <Point X="648.9999999999994" Y="245.33333333333326" GraphRef="dacc9" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="idb73e5566">
     <BiopaxRef>f27</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="432.5" Y="257.5" GraphRef="e5a21" RelX="0.0" RelY="1.0"/>
-      <Point X="432.5" Y="302.5" GraphRef="da2b5" RelX="0.0" RelY="-1.0" ArrowHead="mim-inhibition"/>
+      <Point X="442.5" Y="257.5" GraphRef="e5a21" RelX="0.0" RelY="1.0" />
+      <Point X="443.1666666666667" Y="301.5" GraphRef="da2b5" RelX="0.0" RelY="-1.0" ArrowHead="mim-inhibition" />
     </Graphics>
-    <Xref Database="" ID=""/>
+    <Xref Database="" ID="" />
   </Interaction>
-  <Interaction>
-    <BiopaxRef>f27</BiopaxRef>
+  <Interaction GraphId="idbed4e731">
+    <BiopaxRef>f74</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="477.5" Y="315.0" GraphRef="da2b5" RelX="1.0" RelY="0.0"/>
-      <Point X="516.0" Y="315.0" GraphRef="afb08" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion"/>
+      <Point X="803.3333333333336" Y="396.5" GraphRef="bbafd" RelX="0.0" RelY="-1.0" />
+      <Point X="804.0" Y="287.5000000000001" GraphRef="daefd" RelX="0.0" RelY="1.0" ArrowHead="mim-conversion" />
     </Graphics>
-    <Xref Database="" ID=""/>
+    <Xref Database="" ID="" />
   </Interaction>
-  <Interaction>
-    <BiopaxRef>cee</BiopaxRef>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="350.0" Y="245.0" GraphRef="e5a21" RelX="-1.0" RelY="0.0"/>
-      <Point X="322.0" Y="245.0" GraphRef="d0c54" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion"/>
-    </Graphics>
-    <Xref Database="" ID=""/>
-  </Interaction>
-  <Interaction>
+  <Interaction GraphId="idcf89604c">
     <BiopaxRef>e03</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="201.5" Y="453.0" GraphRef="bc886" RelX="0.0" RelY="-1.0"/>
-      <Point X="201.5" Y="400.5" GraphRef="b4158" RelX="0.0" RelY="1.0" ArrowHead="Arrow"/>
+      <Point X="124.83333333333368" Y="404.9999999999999" GraphRef="bc886" RelX="0.0" RelY="-1.0" />
+      <Point X="124.83333333333368" Y="352.2080867850097" GraphRef="b4158" RelX="0.0" RelY="1.0" ArrowHead="Arrow" />
     </Graphics>
-    <Xref Database="" ID=""/>
+    <Xref Database="" ID="" />
   </Interaction>
-  <Interaction>
-    <BiopaxRef>e87</BiopaxRef>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="804.0" Y="177.5" GraphRef="cf782" RelX="0.0" RelY="1.0"/>
-      <Point X="804.0" Y="222.5" GraphRef="dcb13" RelX="0.0" RelY="-1.0" ArrowHead="mim-inhibition"/>
-    </Graphics>
-    <Xref Database="" ID=""/>
-  </Interaction>
-  <Interaction>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="759.0" Y="235.0" GraphRef="dcb13" RelX="-1.0" RelY="0.0"/>
-      <Point X="646.0" Y="238.75" GraphRef="ccd19" RelX="1.0" RelY="-0.5" ArrowHead="mim-conversion"/>
-    </Graphics>
-    <Xref Database="" ID=""/>
-  </Interaction>
-  <Interaction>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="744.0" Y="283.0" GraphRef="daefd" RelX="-1.0" RelY="0.0"/>
-      <Point X="646.0" Y="245.0" GraphRef="ccd19" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion"/>
-    </Graphics>
-    <Xref Database="" ID=""/>
-  </Interaction>
-  <Interaction>
-    <BiopaxRef>f74</BiopaxRef>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="946.0" Y="178.0"/>
-      <Point X="948.0" Y="413.0" ArrowHead="mim-conversion"/>
-    </Graphics>
-    <Xref Database="" ID=""/>
-  </Interaction>
-  <Interaction>
-    <BiopaxRef>f74</BiopaxRef>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="923.0" Y="408.0"/>
-      <Point X="804.0" Y="295.5" GraphRef="daefd" RelX="0.0" RelY="1.0" ArrowHead="mim-conversion"/>
-    </Graphics>
-    <Xref Database="" ID=""/>
-  </Interaction>
-  <Interaction>
+  <Interaction GraphId="iddb0c791d">
     <BiopaxRef>cee</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="299.5" Y="257.5" GraphRef="d0c54" RelX="0.5" RelY="1.0"/>
-      <Point X="349.0" Y="446.0" ArrowHead="mim-conversion"/>
+      <Point X="371.0" Y="245.0" GraphRef="e5a21" RelX="-1.0" RelY="0.0" />
+      <Point X="339.33333333333314" Y="245.0" GraphRef="d0c54" RelX="1.0" RelY="0.0" ArrowHead="Arrow" />
     </Graphics>
-    <Xref Database="" ID=""/>
+    <Xref Database="" ID="" />
   </Interaction>
-  <Interaction>
+  <Interaction GraphId="ide5f8fc10">
     <BiopaxRef>cee</BiopaxRef>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="354.0" Y="461.0"/>
-      <Point X="246.5" Y="461.5" GraphRef="bc886" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion"/>
+      <Point X="220.66666666666634" Y="418.166666666667" GraphRef="bc67d" RelX="-1.0" RelY="0.0" />
+      <Point X="169.83333333333368" Y="417.4999999999999" GraphRef="bc886" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion" />
     </Graphics>
-    <Xref Database="" ID=""/>
+    <Xref Database="" ID="" />
   </Interaction>
+  <Interaction GraphId="idf188f6a">
+    <BiopaxRef>a40</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="384.25" Y="56.58333333333333" GraphRef="b94b4" RelX="-1.0" RelY="0.0" />
+      <Point X="305.0" Y="55.25" GraphRef="c8351" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Label TextLabel="Endothelial cell" GraphId="a48be">
+    <Graphics CenterX="91.0" CenterY="475.0" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle" Color="c0c0c0" />
+  </Label>
   <Label TextLabel="Disturbed vascular tone " GraphId="afb08">
-    <Graphics CenterX="595.0" CenterY="315.0" Width="158.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle"/>
+    <Graphics CenterX="595.0" CenterY="315.0" Width="158.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
   </Label>
   <Label TextLabel="Increased permeability" GraphId="b4158">
-    <Graphics CenterX="201.5" CenterY="388.0" Width="143.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle"/>
+    <Graphics CenterX="124.83333333333368" CenterY="339.7080867850097" Width="143.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" />
   </Label>
-  <Label TextLabel="SARS-CoV-2" GraphId="b6732">
-    <Graphics CenterX="433.0" CenterY="55.0" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" Color="ffcccc"/>
+  <Label TextLabel="Nucleus" GraphId="ec4fc">
+    <Graphics CenterX="578.0" CenterY="455.0" Width="90.0" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="12" Valign="Middle" Color="c0c0c0" />
   </Label>
-  <Shape GraphId="a4f59">
-    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Nucleus"/>
-    <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double"/>
-    <Graphics CenterX="643.75" CenterY="432.5" Width="706.5" Height="197.0" ZOrder="16384" FontSize="12" Valign="Middle" ShapeType="Oval" LineThickness="3.0" Color="c0c0c0" Rotation="0.0"/>
-  </Shape>
-  <Shape GraphId="b94b4">
-    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Vesicle"/>
-    <Graphics CenterX="434.25" CenterY="55.25" Width="77.5" Height="65.5" ZOrder="16384" FontSize="12" Valign="Middle" ShapeType="Oval" LineThickness="3.0" Color="c0c0c0" Rotation="0.0"/>
-  </Shape>
   <Shape GraphId="f32c3">
     <BiopaxRef>d16</BiopaxRef>
-    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Cell"/>
-    <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double"/>
-    <Graphics CenterX="582.0" CenterY="398.75" Width="962.0" Height="468.5" ZOrder="16384" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" LineThickness="3.0" Color="c0c0c0" Rotation="0.0"/>
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Cell" />
+    <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
+    <Graphics CenterX="534.0000000000001" CenterY="329.9166666666667" Width="993.3333333333333" Height="328.16666666666663" ZOrder="-2" FontSize="12" Valign="Bottom" Align="Left" ShapeType="RoundedRectangle" LineThickness="3.0" Color="c0c0c0" Rotation="0.0" />
   </Shape>
-  <InfoBox CenterX="0.0" CenterY="0.0"/>
+  <Shape GraphId="a4f59">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Nucleus" />
+    <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
+    <Graphics CenterX="578.0" CenterY="418.0" Width="756.0" Height="108.0" ZOrder="16384" FontSize="12" Valign="Bottom" ShapeType="RoundedRectangle" LineThickness="3.0" Color="c0c0c0" Rotation="0.0" />
+  </Shape>
+  <Shape TextLabel="SARS-CoV-2" GraphId="b94b4">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Vesicle" />
+    <Graphics CenterX="434.25" CenterY="56.58333333333333" Width="100.0" Height="70.0" ZOrder="16384" FontSize="12" Valign="Middle" ShapeType="Oval" LineThickness="3.0" Color="ff33cc" Rotation="0.0" />
+  </Shape>
+  <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e87">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32336612</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32336612</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The pivotal link between ACE2 deficiency and SARS-CoV-2 infection.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eur J Intern Med</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Verdecchia P</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cavallini C</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spanevello A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angeli F</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="f74">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33077915</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tissue-specific and interferon-inducible expression of nonfunctional ACE2 through endogenous retroelement co-option.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nat Genet</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ng KW</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attig J</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bolland W</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young GR</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major J</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wrobel AG</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamblin S</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wack A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kassiotis G</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="bbe">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33162896</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angiotensin II Decreases Endothelial Nitric Oxide Synthase Phosphorylation&lt;i&gt;via&lt;/i&gt;AT&lt;sub&gt;1&lt;/sub&gt;R Nox/ROS/PP2A Pathway.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Front Physiol</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ding J</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yu M</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jiang J</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luo Y</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhang Q</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wang S</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yang F</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wang A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wang L</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhuang M</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wu S</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xia Y</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lu D</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="f27">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28579545</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxidative stress and reactive oxygen species in endothelial dysfunction associated with cardiovascular and metabolic diseases.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vascul Pharmacol</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incalza MA</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D'Oria R</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natalicchio A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perrini S</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laviola L</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giorgino F</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="cee">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10425270</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxidant stress regulation of IL-8 and ICAM-1gene expression: differential activation and binding of the transcription factors AP-1 and NF-kappaB (Review).</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Int J Mol Med</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roebuck KA</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="ffe">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23970124</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d16">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26858641</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NADPH Oxidase/ROS-Dependent VCAM-1 Induction on TNF-α-Challenged Human Cardiac Fibroblasts Enhances Monocyte Adhesion.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Front Pharmacol</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lin CC</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yang CC</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wang CY</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tseng HC</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pan CS</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hsiao LD</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yang CM</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e03">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMC7977775</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
-    </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a40">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31986264</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -371,15 +288,6 @@
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wang J</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cao B</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="f47">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32464097</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type I and Type III Interferons - Induction, Signaling, Evasion, and Application to Combat COVID-19.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Host Microbe</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Park A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iwasaki A</bp:AUTHORS>
-    </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a02">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21189404</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -397,6 +305,34 @@
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kassiri Z</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oudit GY</bp:AUTHORS>
     </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000013</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e03">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMC7977775</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed Central</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICAM-1: A master regulator of cellular responses in inflammation, injury resolution, and tumorigenesis</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Leukoc Biol.</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e87">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32336612</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></bp:YEAR>
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32336612</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The pivotal link between ACE2 deficiency and SARS-CoV-2 infection.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eur J Intern Med</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Verdecchia P</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cavallini C</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spanevello A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angeli F</bp:AUTHORS>
+    </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="dfb">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34838588</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -408,5 +344,107 @@
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Huang Y</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lui KO</bp:AUTHORS>
     </bp:PublicationXref>
-  <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"><bp:TERM>COVID-19</bp:TERM><bp:ID>DOID:0080600</bp:ID><bp:Ontology>Disease</bp:Ontology></bp:openControlledVocabulary></Biopax>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="f74">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33077915</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tissue-specific and interferon-inducible expression of nonfunctional ACE2 through endogenous retroelement co-option.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nat Genet</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ng KW</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attig J</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bolland W</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young GR</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Major J</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wrobel AG</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamblin S</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wack A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kassiotis G</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COVID-19</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080600</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infectious disease pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001028</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="ffe">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23970124</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NADPH oxidases, reactive oxygen species, and the kidney: friend and foe</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Am Soc Nephrol.</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013</bp:YEAR>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000115</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Type</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d16">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26858641</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NADPH Oxidase/ROS-Dependent VCAM-1 Induction on TNF-α-Challenged Human Cardiac Fibroblasts Enhances Monocyte Adhesion.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Front Pharmacol</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lin CC</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yang CC</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wang CY</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tseng HC</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pan CS</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hsiao LD</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yang CM</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="f27">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28579545</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxidative stress and reactive oxygen species in endothelial dysfunction associated with cardiovascular and metabolic diseases.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vascul Pharmacol</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incalza MA</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D'Oria R</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natalicchio A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perrini S</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laviola L</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giorgino F</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="bbe">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">33162896</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angiotensin II Decreases Endothelial Nitric Oxide Synthase Phosphorylation&lt;i&gt;via&lt;/i&gt;AT&lt;sub&gt;1&lt;/sub&gt;R Nox/ROS/PP2A Pathway.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Front Physiol</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ding J</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yu M</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jiang J</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luo Y</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhang Q</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wang S</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yang F</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wang A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wang L</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhuang M</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wu S</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xia Y</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lu D</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="cee">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10425270</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxidant stress regulation of IL-8 and ICAM-1gene expression: differential activation and binding of the transcription factors AP-1 and NF-kappaB (Review).</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Int J Mol Med</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roebuck KA</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="f47">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32464097</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type I and Type III Interferons - Induction, Signaling, Evasion, and Application to Combat COVID-19.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Host Microbe</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Park A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iwasaki A</bp:AUTHORS>
+    </bp:PublicationXref>
+  </Biopax>
 </Pathway>
