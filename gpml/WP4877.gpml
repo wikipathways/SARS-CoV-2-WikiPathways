@@ -78,6 +78,10 @@
     <Graphics CenterX="257.739844425238" CenterY="281.0587726879858" Width="80.0" Height="20.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Entrez Gene" ID="5594" />
   </DataNode>
+  <DataNode TextLabel="Apoptosis" GraphId="b18d4" Type="Pathway">
+    <Graphics CenterX="620.0" CenterY="501.0" Width="90.0" Height="25.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14961e" />
+    <Xref Database="WikiPathways" ID="WP254" />
+  </DataNode>
   <DataNode TextLabel="ATF2" GraphId="b7c92" Type="GeneProduct" GroupRef="df530">
     <Graphics CenterX="149.97320656871207" CenterY="408.2178046672414" Width="80.0" Height="20.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000115966" />
@@ -247,6 +251,10 @@
     <Graphics CenterX="922.8339283898697" CenterY="647.1576262662677" Width="70.0" Height="20.0" ZOrder="32806" FontSize="12" Valign="Middle" />
     <Xref Database="Ensembl" ID="ENSG00000185885" />
   </DataNode>
+  <DataNode TextLabel="Autophagy" GraphId="b1ed5" Type="Pathway">
+    <Graphics CenterX="890.0" CenterY="501.0" Width="90.0" Height="25.0" ZOrder="32821" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14961e" />
+    <Xref Database="WikiPathways" ID="WP4923" />
+  </DataNode>
   <State GraphRef="d5b14" TextLabel="" GraphId="a3cf3">
     <Graphics RelX="1.0" RelY="0.8271391529818459" Width="15.0" Height="15.0" ShapeType="Oval" />
     <Xref Database="" ID="" />
@@ -297,7 +305,7 @@
   <Interaction GraphId="id392d909b">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="522.2169403630078" Y="432.2687986171133" GraphRef="ce80a" RelX="0.0" RelY="1.0" />
-      <Point X="500.3406680805925" Y="488.54231087981" GraphRef="f2195" RelX="0.5" RelY="-1.0" ArrowHead="mim-stimulation" />
+      <Point X="500.3406680805925" Y="488.5" GraphRef="f2195" RelX="0.5" RelY="-1.0" ArrowHead="mim-stimulation" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -326,7 +334,7 @@
   <Interaction GraphId="id4b1d8b89">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="890.4472774416614" Y="430.6266205704413" GraphRef="e21a3" RelX="0.0" RelY="1.0" />
-      <Point X="890.4472774416615" Y="488.54231087981" GraphRef="c2a13" RelX="0.0" RelY="-1.0" ArrowHead="mim-stimulation" />
+      <Point X="890.0" Y="488.5" GraphRef="b1ed5" RelX="0.0" RelY="-1.0" ArrowHead="mim-stimulation" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -369,7 +377,7 @@
   <Interaction GraphId="id63f652b7">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="413.9783923941242" Y="452.8876404494374" GraphRef="dd506" RelX="0.5" RelY="1.0" />
-      <Point X="434.36240721102735" Y="488.54231087981" GraphRef="f2195" RelX="-0.5" RelY="-1.0" ArrowHead="mim-stimulation" />
+      <Point X="434.36240721102735" Y="488.5" GraphRef="f2195" RelX="-0.5" RelY="-1.0" ArrowHead="mim-stimulation" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -404,14 +412,14 @@
   <Interaction GraphId="id80dca1f4">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="173.97320656871207" Y="446.2178046672414" GraphRef="b90b1" RelX="0.5" RelY="1.0" />
-      <Point X="238.78446447507844" Y="488.54231087981" GraphRef="ff1ce" RelX="-0.5" RelY="-1.0" ArrowHead="mim-stimulation" />
+      <Point X="238.78446447507844" Y="483.08510074231094" GraphRef="ff1ce" RelX="-0.5" RelY="-1.0" ArrowHead="mim-stimulation" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction GraphId="id81035407">
     <Graphics ConnectorType="Elbow" ZOrder="12288" LineThickness="1.0">
       <Point X="850.4472774416614" Y="420.6266205704413" GraphRef="e21a3" RelX="-1.0" RelY="0.0" />
-      <Point X="668.4623541887572" Y="506.45721013749903" GraphRef="a6e04" RelX="1.0" RelY="0.0" ArrowHead="mim-inhibition" />
+      <Point X="665.0" Y="501.0" GraphRef="b18d4" RelX="1.0" RelY="0.0" ArrowHead="mim-inhibition" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -467,7 +475,7 @@
   <Interaction GraphId="idc1c0f088">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="365.9783923941242" Y="452.8876404494374" GraphRef="dd506" RelX="-0.5" RelY="1.0" />
-      <Point X="304.76272534464357" Y="488.54231087981" GraphRef="ff1ce" RelX="0.5" RelY="-1.0" ArrowHead="mim-stimulation" />
+      <Point X="304.76272534464357" Y="483.08510074231094" GraphRef="ff1ce" RelX="0.5" RelY="-1.0" ArrowHead="mim-stimulation" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -503,7 +511,7 @@
   <Interaction GraphId="ide06bd151">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="612.9688850475347" Y="433.7467588591181" GraphRef="a158c" RelX="0.0" RelY="1.0" />
-      <Point X="627.7094379639441" Y="488.54231087981" GraphRef="a6e04" RelX="0.0" RelY="-1.0" ArrowHead="mim-stimulation" />
+      <Point X="620.0" Y="488.5" GraphRef="b18d4" RelX="0.0" RelY="-1.0" ArrowHead="mim-stimulation" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -609,7 +617,7 @@
     <Graphics CenterX="750.0000000000006" CenterY="555.6792873051226" Width="90.00000000000006" Height="35.82979851537806" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" />
   </Label>
   <Label TextLabel="Cell survival &#xA;and proliferation" GraphId="ff1ce">
-    <Graphics CenterX="271.773594909861" CenterY="506.45721013749903" Width="131.95652173913024" Height="35.82979851537807" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14931d" />
+    <Graphics CenterX="271.773594909861" CenterY="501.0" Width="131.95652173913024" Height="35.82979851537807" ZOrder="28672" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14931d" />
   </Label>
   <Label TextLabel="phos-S380" GraphId="a246e">
     <Graphics CenterX="488.8245462402765" CenterY="352.2644770959377" Width="90.0" Height="25.0" ZOrder="32770" FillColor="ffffff" FontSize="12" Valign="Middle" />
@@ -632,14 +640,8 @@
   <Label TextLabel="AP-1 complex" GraphId="e659d">
     <Graphics CenterX="748.7277441659478" CenterY="386.0432152117542" Width="90.0" Height="25.0" ZOrder="32813" FillColor="ffffff" FontSize="12" Valign="Middle" />
   </Label>
-  <Label TextLabel="Protein&#xA;synthesis" GraphId="f2195">
-    <Graphics CenterX="467.3515376458099" CenterY="506.4572101374991" Width="131.95652173913024" Height="35.82979851537807" ZOrder="32814" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14931d" />
-  </Label>
-  <Label TextLabel="Apoptosis" GraphId="a6e04">
-    <Graphics CenterX="627.709437963944" CenterY="506.4572101374991" Width="81.50583244962613" Height="35.82979851537807" ZOrder="32815" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14931d" />
-  </Label>
-  <Label TextLabel="Autophagy" GraphId="c2a13">
-    <Graphics CenterX="890.4472774416614" CenterY="506.45721013749903" Width="81.50583244962613" Height="35.82979851537807" ZOrder="32816" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14931d" />
+  <Label TextLabel="Protein synthesis" GraphId="f2195">
+    <Graphics CenterX="467.3515376458099" CenterY="501.00000000000006" Width="131.95652173913024" Height="25.0" ZOrder="32814" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="14931d" />
   </Label>
   <Label TextLabel="SARS, MERS, &#xA;229E infection" GraphId="d18f3">
     <Graphics CenterX="361.9596881160299" CenterY="105.6108151531748" Width="131.95652173913024" Height="35.82979851537807" ZOrder="32818" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="cc0033" />
@@ -668,11 +670,6 @@
   <Group GroupId="f0475" GraphId="f9084" Style="Group" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">signaling pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000003</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a72">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31226023</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -683,9 +680,14 @@
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liu DX</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">viral infectious disease</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:934</bp:ID>
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">severe acute respiratory syndrome</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:2945</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">signaling pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000003</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
     </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b6f">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.1101/2020.03.15.20033472</bp:ID>
@@ -712,11 +714,6 @@
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zhenglin Yang</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">severe acute respiratory syndrome</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:2945</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
       <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p38 MAPK signaling pathway</bp:TERM>
       <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000198</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
@@ -724,6 +721,11 @@
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
       <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COVID-19</bp:TERM>
       <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0080600</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">viral infectious disease</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:934</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
     </bp:openControlledVocabulary>
   </Biopax>
